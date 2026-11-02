@@ -1,0 +1,3311 @@
+{
+  "generatedOn": "2026-10-31",
+  "generator": "scripts/extract_elections.py",
+  "elections": [
+    {
+      "id": "2003",
+      "year": 2003,
+      "kind": "general",
+      "label": "2003 General Election",
+      "turnout": {
+        "eligibleElectors": 1825139,
+        "numberVoted": 699483,
+        "turnoutPct": 38.32,
+        "publishedPct": 38.32,
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Voter Statistics",
+          "datasetUrl": "https://open.toronto.ca/dataset/elections-voter-statistics/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/7dc606ab-f042-4d90-99e2-9247cb5953d2/resource/030a7234-7ee0-46a0-94de-3a31fa58352a/download/2003-voter-statistics.xls",
+          "member": null,
+          "sheet": "2003 Voter Turnout",
+          "locator": "Sheet “2003 Voter Turnout”, Grand Total row (row 1973)",
+          "method": "Turnout = Number Voted ÷ Total Eligible Electors, both from the Grand Total row."
+        }
+      },
+      "mayor": {
+        "totalVotes": 692085,
+        "candidateCount": 44,
+        "top": [
+          {
+            "rank": 1,
+            "nameAsListed": "Miller, David",
+            "displayName": "David Miller",
+            "votes": 299385,
+            "sharePct": 43.26
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "Tory, John",
+            "displayName": "John Tory",
+            "votes": 263189,
+            "sharePct": 38.03
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "Hall, Barbara",
+            "displayName": "Barbara Hall",
+            "votes": 63751,
+            "sharePct": 9.21
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "Nunziata, John",
+            "displayName": "John Nunziata",
+            "votes": 36021,
+            "sharePct": 5.2
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "Jakobek, Tom",
+            "displayName": "Tom Jakobek",
+            "votes": 5277,
+            "sharePct": 0.76
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "Campbell, Douglas",
+            "displayName": "Douglas Campbell",
+            "votes": 2197,
+            "sharePct": 0.32
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "Shehab, Ahmad",
+            "displayName": "Ahmad Shehab",
+            "votes": 2084,
+            "sharePct": 0.3
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "Castillo, Jaime",
+            "displayName": "Jaime Castillo",
+            "votes": 1616,
+            "sharePct": 0.23
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "Silva, Luis",
+            "displayName": "Luis Silva",
+            "votes": 1305,
+            "sharePct": 0.19
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "Andrews, Don",
+            "displayName": "Don Andrews",
+            "votes": 1220,
+            "sharePct": 0.18
+          }
+        ],
+        "candidates": [
+          {
+            "rank": 1,
+            "nameAsListed": "Miller, David",
+            "displayName": "David Miller",
+            "votes": 299385
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "Tory, John",
+            "displayName": "John Tory",
+            "votes": 263189
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "Hall, Barbara",
+            "displayName": "Barbara Hall",
+            "votes": 63751
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "Nunziata, John",
+            "displayName": "John Nunziata",
+            "votes": 36021
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "Jakobek, Tom",
+            "displayName": "Tom Jakobek",
+            "votes": 5277
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "Campbell, Douglas",
+            "displayName": "Douglas Campbell",
+            "votes": 2197
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "Shehab, Ahmad",
+            "displayName": "Ahmad Shehab",
+            "votes": 2084
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "Castillo, Jaime",
+            "displayName": "Jaime Castillo",
+            "votes": 1616
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "Silva, Luis",
+            "displayName": "Luis Silva",
+            "votes": 1305
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "Andrews, Don",
+            "displayName": "Don Andrews",
+            "votes": 1220
+          },
+          {
+            "rank": 11,
+            "nameAsListed": "McAuliffe, Timothy",
+            "displayName": "Timothy McAuliffe",
+            "votes": 821
+          },
+          {
+            "rank": 12,
+            "nameAsListed": "Clarke, Kevin",
+            "displayName": "Kevin Clarke",
+            "votes": 804
+          },
+          {
+            "rank": 13,
+            "nameAsListed": "Hartnett, John",
+            "displayName": "John Hartnett",
+            "votes": 803
+          },
+          {
+            "rank": 14,
+            "nameAsListed": "Benner, Gary",
+            "displayName": "Gary Benner",
+            "votes": 802
+          },
+          {
+            "rank": 15,
+            "nameAsListed": "Howell, Albert",
+            "displayName": "Albert Howell",
+            "votes": 717
+          },
+          {
+            "rank": 16,
+            "nameAsListed": "Jahshan, John",
+            "displayName": "John Jahshan",
+            "votes": 703
+          },
+          {
+            "rank": 17,
+            "nameAsListed": "Brausewetter, Michael",
+            "displayName": "Michael Brausewetter",
+            "votes": 672
+          },
+          {
+            "rank": 18,
+            "nameAsListed": "Lichacz, David",
+            "displayName": "David Lichacz",
+            "votes": 659
+          },
+          {
+            "rank": 19,
+            "nameAsListed": "Narula, Ram",
+            "displayName": "Ram Narula",
+            "votes": 645
+          },
+          {
+            "rank": 20,
+            "nameAsListed": "Makhoul, Elias",
+            "displayName": "Elias Makhoul",
+            "votes": 644
+          },
+          {
+            "rank": 21,
+            "nameAsListed": "Poremski, Daniel",
+            "displayName": "Daniel Poremski",
+            "votes": 627
+          },
+          {
+            "rank": 22,
+            "nameAsListed": "Graham, Ronald",
+            "displayName": "Ronald Graham",
+            "votes": 619
+          },
+          {
+            "rank": 23,
+            "nameAsListed": "Peters, Fen",
+            "displayName": "Fen Peters",
+            "votes": 598
+          },
+          {
+            "rank": 24,
+            "nameAsListed": "Naimji, Duri",
+            "displayName": "Duri Naimji",
+            "votes": 569
+          },
+          {
+            "rank": 25,
+            "nameAsListed": "Yee, Scott",
+            "displayName": "Scott Yee",
+            "votes": 551
+          },
+          {
+            "rank": 26,
+            "nameAsListed": "Hossain, Monowar",
+            "displayName": "Monowar Hossain",
+            "votes": 537
+          },
+          {
+            "rank": 27,
+            "nameAsListed": "Cocon, Axcel",
+            "displayName": "Axcel Cocon",
+            "votes": 498
+          },
+          {
+            "rank": 28,
+            "nameAsListed": "Kerr, Ben",
+            "displayName": "Ben Kerr",
+            "votes": 433
+          },
+          {
+            "rank": 29,
+            "nameAsListed": "Glisic, Aleksandar",
+            "displayName": "Aleksandar Glisic",
+            "votes": 420
+          },
+          {
+            "rank": 30,
+            "nameAsListed": "Gold, Mitch",
+            "displayName": "Mitch Gold",
+            "votes": 412
+          },
+          {
+            "rank": 31,
+            "nameAsListed": "Safi, Hashmat",
+            "displayName": "Hashmat Safi",
+            "votes": 383
+          },
+          {
+            "rank": 32,
+            "nameAsListed": "Shaw, Simon",
+            "displayName": "Simon Shaw",
+            "votes": 376
+          },
+          {
+            "rank": 33,
+            "nameAsListed": "O'Beirne, Patricia",
+            "displayName": "Patricia O'Beirne",
+            "votes": 358
+          },
+          {
+            "rank": 34,
+            "nameAsListed": "Van Wyk, Abel",
+            "displayName": "Abel Van Wyk",
+            "votes": 332
+          },
+          {
+            "rank": 35,
+            "nameAsListed": "Mbaegbu, Benjamin",
+            "displayName": "Benjamin Mbaegbu",
+            "votes": 288
+          },
+          {
+            "rank": 36,
+            "nameAsListed": "Derome, Gerald",
+            "displayName": "Gerald Derome",
+            "votes": 278
+          },
+          {
+            "rank": 37,
+            "nameAsListed": "Prashad, Rabindra",
+            "displayName": "Rabindra Prashad",
+            "votes": 271
+          },
+          {
+            "rank": 38,
+            "nameAsListed": "Lewin, Paul",
+            "displayName": "Paul Lewin",
+            "votes": 271
+          },
+          {
+            "rank": 39,
+            "nameAsListed": "Dhir, Hardy",
+            "displayName": "Hardy Dhir",
+            "votes": 199
+          },
+          {
+            "rank": 40,
+            "nameAsListed": "Csak, Kendal",
+            "displayName": "Kendal Csak",
+            "votes": 193
+          },
+          {
+            "rank": 41,
+            "nameAsListed": "Yagiz, Mehmet",
+            "displayName": "Mehmet Yagiz",
+            "votes": 193
+          },
+          {
+            "rank": 42,
+            "nameAsListed": "Weston, Richard",
+            "displayName": "Richard Weston",
+            "votes": 133
+          },
+          {
+            "rank": 43,
+            "nameAsListed": "Wadhwa, Ratan",
+            "displayName": "Ratan Wadhwa",
+            "votes": 121
+          },
+          {
+            "rank": 44,
+            "nameAsListed": "Pletch, Barry",
+            "displayName": "Barry Pletch",
+            "votes": 110
+          }
+        ],
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Official Results",
+          "datasetUrl": "https://open.toronto.ca/dataset/election-results-official/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/96d35404-44d9-49d8-95bb-fb1e5489240d/resource/1ed53c9d-a316-465e-96ce-e72be74f8aa9/download/2003-results.zip",
+          "member": "2003 Results/2003_Toronto_Poll_by_Poll_Mayor.xls",
+          "locator": "“Total” column of each candidate row, summed across all 44 ward sheets",
+          "method": "Votes = sum of the candidate's ward Totals. Share = votes ÷ all votes cast for mayor in the file."
+        }
+      }
+    },
+    {
+      "id": "2006",
+      "year": 2006,
+      "kind": "general",
+      "label": "2006 General Election",
+      "turnout": {
+        "eligibleElectors": 1521121,
+        "numberVoted": 597754,
+        "turnoutPct": 39.3,
+        "publishedPct": 39.3,
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Voter Statistics",
+          "datasetUrl": "https://open.toronto.ca/dataset/elections-voter-statistics/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/7dc606ab-f042-4d90-99e2-9247cb5953d2/resource/0b5691a6-7235-46d0-94a6-47f309605829/download/2006-voter-statistics.xls",
+          "member": null,
+          "sheet": "2006 Voter Turnout",
+          "locator": "Sheet “2006 Voter Turnout”, Grand Total row (row 1992)",
+          "method": "Turnout = Number Voted ÷ Total Eligible Electors, both from the Grand Total row."
+        }
+      },
+      "mayor": {
+        "totalVotes": 584484,
+        "candidateCount": 38,
+        "top": [
+          {
+            "rank": 1,
+            "nameAsListed": "MILLER DAVID",
+            "displayName": "David Miller",
+            "votes": 332969,
+            "sharePct": 56.97
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "PITFIELD JANE",
+            "displayName": "Jane Pitfield",
+            "votes": 188932,
+            "sharePct": 32.32
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "LEDREW STEPHEN",
+            "displayName": "Stephen Ledrew",
+            "votes": 8078,
+            "sharePct": 1.38
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "ALEXANDER MICHAEL",
+            "displayName": "Michael Alexander",
+            "votes": 5247,
+            "sharePct": 0.9
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "CASTILLO JAIME",
+            "displayName": "Jaime Castillo",
+            "votes": 5215,
+            "sharePct": 0.89
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "CAMPBELL DOUGLAS",
+            "displayName": "Douglas Campbell",
+            "votes": 4183,
+            "sharePct": 0.72
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "JACKSON HAZEL",
+            "displayName": "Hazel Jackson",
+            "votes": 3333,
+            "sharePct": 0.57
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "ROMANO LEE",
+            "displayName": "Lee Romano",
+            "votes": 3108,
+            "sharePct": 0.53
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "BRUCE SHAUN",
+            "displayName": "Shaun Bruce",
+            "votes": 2820,
+            "sharePct": 0.48
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "HOSSAIN MONOWAR",
+            "displayName": "Monowar Hossain",
+            "votes": 2726,
+            "sharePct": 0.47
+          }
+        ],
+        "candidates": [
+          {
+            "rank": 1,
+            "nameAsListed": "MILLER DAVID",
+            "displayName": "David Miller",
+            "votes": 332969
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "PITFIELD JANE",
+            "displayName": "Jane Pitfield",
+            "votes": 188932
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "LEDREW STEPHEN",
+            "displayName": "Stephen Ledrew",
+            "votes": 8078
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "ALEXANDER MICHAEL",
+            "displayName": "Michael Alexander",
+            "votes": 5247
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "CASTILLO JAIME",
+            "displayName": "Jaime Castillo",
+            "votes": 5215
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "CAMPBELL DOUGLAS",
+            "displayName": "Douglas Campbell",
+            "votes": 4183
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "JACKSON HAZEL",
+            "displayName": "Hazel Jackson",
+            "votes": 3333
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "ROMANO LEE",
+            "displayName": "Lee Romano",
+            "votes": 3108
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "BRUCE SHAUN",
+            "displayName": "Shaun Bruce",
+            "votes": 2820
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "HOSSAIN MONOWAR",
+            "displayName": "Monowar Hossain",
+            "votes": 2726
+          },
+          {
+            "rank": 11,
+            "nameAsListed": "YOUNG JOSEPH",
+            "displayName": "Joseph Young",
+            "votes": 2264
+          },
+          {
+            "rank": 12,
+            "nameAsListed": "CLARKE KEVIN",
+            "displayName": "Kevin Clarke",
+            "votes": 2081
+          },
+          {
+            "rank": 13,
+            "nameAsListed": "RUBINOVICH JOEL",
+            "displayName": "Joel Rubinovich",
+            "votes": 1642
+          },
+          {
+            "rank": 14,
+            "nameAsListed": "YEE SCOTT",
+            "displayName": "Scott Yee",
+            "votes": 1538
+          },
+          {
+            "rank": 15,
+            "nameAsListed": "MUIR RODNEY",
+            "displayName": "Rodney Muir",
+            "votes": 1458
+          },
+          {
+            "rank": 16,
+            "nameAsListed": "BROOKS NICHOLAS",
+            "displayName": "Nicholas Brooks",
+            "votes": 1397
+          },
+          {
+            "rank": 17,
+            "nameAsListed": "PORTER JOHN",
+            "displayName": "John Porter",
+            "votes": 1348
+          },
+          {
+            "rank": 18,
+            "nameAsListed": "MAXTED DIANA-DE",
+            "displayName": "Diana-De Maxted",
+            "votes": 1311
+          },
+          {
+            "rank": 19,
+            "nameAsListed": "DICKS DAVID",
+            "displayName": "David Dicks",
+            "votes": 1283
+          },
+          {
+            "rank": 20,
+            "nameAsListed": "NAIMJI DURI",
+            "displayName": "Duri Naimji",
+            "votes": 1240
+          },
+          {
+            "rank": 21,
+            "nameAsListed": "SMITH BOB",
+            "displayName": "Bob Smith",
+            "votes": 1105
+          },
+          {
+            "rank": 22,
+            "nameAsListed": "KOROLNEK MARK",
+            "displayName": "Mark Korolnek",
+            "votes": 1079
+          },
+          {
+            "rank": 23,
+            "nameAsListed": "COLES GLENN",
+            "displayName": "Glenn Coles",
+            "votes": 1019
+          },
+          {
+            "rank": 24,
+            "nameAsListed": "STYRSKY PETER",
+            "displayName": "Peter Styrsky",
+            "votes": 945
+          },
+          {
+            "rank": 25,
+            "nameAsListed": "GOLD MITCH",
+            "displayName": "Mitch Gold",
+            "votes": 880
+          },
+          {
+            "rank": 26,
+            "nameAsListed": "GOLDHAR RYAN",
+            "displayName": "Ryan Goldhar",
+            "votes": 787
+          },
+          {
+            "rank": 27,
+            "nameAsListed": "YAGIZ MEHMET ALI",
+            "displayName": "Yagiz Mehmet Ali",
+            "votes": 753
+          },
+          {
+            "rank": 28,
+            "nameAsListed": "WADHWA RATAN",
+            "displayName": "Ratan Wadhwa",
+            "votes": 696
+          },
+          {
+            "rank": 29,
+            "nameAsListed": "SIT ADAM",
+            "displayName": "Adam Sit",
+            "votes": 663
+          },
+          {
+            "rank": 30,
+            "nameAsListed": "SHELDON PAUL",
+            "displayName": "Paul Sheldon",
+            "votes": 624
+          },
+          {
+            "rank": 31,
+            "nameAsListed": "DUMOULIN DAVE",
+            "displayName": "Dave Dumoulin",
+            "votes": 601
+          },
+          {
+            "rank": 32,
+            "nameAsListed": "DEROME GERALD",
+            "displayName": "Gerald Derome",
+            "votes": 578
+          },
+          {
+            "rank": 33,
+            "nameAsListed": "SHIPLEY THOMAS",
+            "displayName": "Thomas Shipley",
+            "votes": 574
+          },
+          {
+            "rank": 34,
+            "nameAsListed": "DEB SOUMEN",
+            "displayName": "Soumen Deb",
+            "votes": 517
+          },
+          {
+            "rank": 35,
+            "nameAsListed": "SCHIEBEL DAVID",
+            "displayName": "David Schiebel",
+            "votes": 498
+          },
+          {
+            "rank": 36,
+            "nameAsListed": "VALLANCE DAVID",
+            "displayName": "David Vallance",
+            "votes": 486
+          },
+          {
+            "rank": 37,
+            "nameAsListed": "WEINGUST JOHN",
+            "displayName": "John Weingust",
+            "votes": 312
+          },
+          {
+            "rank": 38,
+            "nameAsListed": "STATE MARK",
+            "displayName": "Mark State",
+            "votes": 194
+          }
+        ],
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Official Results",
+          "datasetUrl": "https://open.toronto.ca/dataset/election-results-official/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/96d35404-44d9-49d8-95bb-fb1e5489240d/resource/3fb1227c-a279-4523-a1aa-f00190ba717f/download/2006-results.zip",
+          "member": "2006 Results/2006_Toronto_Poll_by_Poll_Mayor.xls",
+          "locator": "“Total” column of each candidate row, summed across all 44 ward sheets",
+          "method": "Votes = sum of the candidate's ward Totals. Share = votes ÷ all votes cast for mayor in the file. Cross-checked against the City's own ward-totals rows."
+        }
+      }
+    },
+    {
+      "id": "2010",
+      "year": 2010,
+      "kind": "general",
+      "label": "2010 General Election",
+      "turnout": {
+        "eligibleElectors": 1637311,
+        "numberVoted": 827723,
+        "turnoutPct": 50.55,
+        "publishedPct": 50.55,
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Voter Statistics",
+          "datasetUrl": "https://open.toronto.ca/dataset/elections-voter-statistics/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/7dc606ab-f042-4d90-99e2-9247cb5953d2/resource/4615e48b-11f1-4965-94f1-170401b674c4/download/2010-voter-statistics.xls",
+          "member": null,
+          "sheet": "2010 Voter Turnout",
+          "locator": "Sheet “2010 Voter Turnout”, Grand Total row (row 1916)",
+          "method": "Turnout = Number Voted ÷ Total Eligible Electors, both from the Grand Total row."
+        }
+      },
+      "mayor": {
+        "totalVotes": 813984,
+        "candidateCount": 40,
+        "top": [
+          {
+            "rank": 1,
+            "nameAsListed": "FORD ROB",
+            "displayName": "Rob Ford",
+            "votes": 383501,
+            "sharePct": 47.11
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "SMITHERMAN GEORGE",
+            "displayName": "George Smitherman",
+            "votes": 289832,
+            "sharePct": 35.61
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "PANTALONE JOE",
+            "displayName": "Joe Pantalone",
+            "votes": 95482,
+            "sharePct": 11.73
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "ROSSI ROCCO",
+            "displayName": "Rocco Rossi",
+            "votes": 5012,
+            "sharePct": 0.62
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "BABULA GEORGE",
+            "displayName": "George Babula",
+            "votes": 3273,
+            "sharePct": 0.4
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "ACHAMPONG ROCCO",
+            "displayName": "Rocco Achampong",
+            "votes": 2805,
+            "sharePct": 0.34
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "GHAZI ABDULLAH-BAQUIE",
+            "displayName": "Abdullah-Baquie Ghazi",
+            "votes": 2761,
+            "sharePct": 0.34
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "ALEXANDER MICHAEL",
+            "displayName": "Michael Alexander",
+            "votes": 2470,
+            "sharePct": 0.3
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "SARMA VIJAY",
+            "displayName": "Vijay Sarma",
+            "votes": 2264,
+            "sharePct": 0.28
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "THOMSON SARAH",
+            "displayName": "Sarah Thomson",
+            "votes": 1883,
+            "sharePct": 0.23
+          }
+        ],
+        "candidates": [
+          {
+            "rank": 1,
+            "nameAsListed": "FORD ROB",
+            "displayName": "Rob Ford",
+            "votes": 383501
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "SMITHERMAN GEORGE",
+            "displayName": "George Smitherman",
+            "votes": 289832
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "PANTALONE JOE",
+            "displayName": "Joe Pantalone",
+            "votes": 95482
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "ROSSI ROCCO",
+            "displayName": "Rocco Rossi",
+            "votes": 5012
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "BABULA GEORGE",
+            "displayName": "George Babula",
+            "votes": 3273
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "ACHAMPONG ROCCO",
+            "displayName": "Rocco Achampong",
+            "votes": 2805
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "GHAZI ABDULLAH-BAQUIE",
+            "displayName": "Abdullah-Baquie Ghazi",
+            "votes": 2761
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "ALEXANDER MICHAEL",
+            "displayName": "Michael Alexander",
+            "votes": 2470
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "SARMA VIJAY",
+            "displayName": "Vijay Sarma",
+            "votes": 2264
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "THOMSON SARAH",
+            "displayName": "Sarah Thomson",
+            "votes": 1883
+          },
+          {
+            "rank": 11,
+            "nameAsListed": "CASTILLO JAIME",
+            "displayName": "Jaime Castillo",
+            "votes": 1874
+          },
+          {
+            "rank": 12,
+            "nameAsListed": "LEE DEWITT",
+            "displayName": "Dewitt Lee",
+            "votes": 1699
+          },
+          {
+            "rank": 13,
+            "nameAsListed": "CAMPBELL DOUGLAS",
+            "displayName": "Douglas Campbell",
+            "votes": 1428
+          },
+          {
+            "rank": 14,
+            "nameAsListed": "CLARKE KEVIN",
+            "displayName": "Kevin Clarke",
+            "votes": 1411
+          },
+          {
+            "rank": 15,
+            "nameAsListed": "PAMPENA JOSEPH",
+            "displayName": "Joseph Pampena",
+            "votes": 1319
+          },
+          {
+            "rank": 16,
+            "nameAsListed": "EPSTEIN DAVID",
+            "displayName": "David Epstein",
+            "votes": 1202
+          },
+          {
+            "rank": 17,
+            "nameAsListed": "HOSSAIN MONOWAR",
+            "displayName": "Monowar Hossain",
+            "votes": 1194
+          },
+          {
+            "rank": 18,
+            "nameAsListed": "FLIE MICHAEL",
+            "displayName": "Michael Flie",
+            "votes": 1190
+          },
+          {
+            "rank": 19,
+            "nameAsListed": "ANDREWS DON",
+            "displayName": "Don Andrews",
+            "votes": 1032
+          },
+          {
+            "rank": 20,
+            "nameAsListed": "TANG WEIZHEN",
+            "displayName": "Weizhen Tang",
+            "votes": 890
+          },
+          {
+            "rank": 21,
+            "nameAsListed": "WALKER DANIEL",
+            "displayName": "Daniel Walker",
+            "votes": 804
+          },
+          {
+            "rank": 22,
+            "nameAsListed": "COLE KEITH",
+            "displayName": "Keith Cole",
+            "votes": 801
+          },
+          {
+            "rank": 23,
+            "nameAsListed": "BRAUSEWETTER MICHAEL",
+            "displayName": "Michael Brausewetter",
+            "votes": 796
+          },
+          {
+            "rank": 24,
+            "nameAsListed": "GOODHEAD BARRY",
+            "displayName": "Barry Goodhead",
+            "votes": 740
+          },
+          {
+            "rank": 25,
+            "nameAsListed": "STEINBERGER TIBOR",
+            "displayName": "Tibor Steinberger",
+            "votes": 735
+          },
+          {
+            "rank": 26,
+            "nameAsListed": "COTTLE CHARLENE",
+            "displayName": "Charlene Cottle",
+            "votes": 733
+          },
+          {
+            "rank": 27,
+            "nameAsListed": "BALL CHRISTOPHER",
+            "displayName": "Christopher Ball",
+            "votes": 696
+          },
+          {
+            "rank": 28,
+            "nameAsListed": "DI FIORE JAMES",
+            "displayName": "Di Fiore James",
+            "votes": 655
+          },
+          {
+            "rank": 29,
+            "nameAsListed": "DEVENYI DIANE",
+            "displayName": "Diane Devenyi",
+            "votes": 629
+          },
+          {
+            "rank": 30,
+            "nameAsListed": "LETONJA JOHN",
+            "displayName": "John Letonja",
+            "votes": 592
+          },
+          {
+            "rank": 31,
+            "nameAsListed": "SYED HIMY",
+            "displayName": "Himy Syed",
+            "votes": 582
+          },
+          {
+            "rank": 32,
+            "nameAsListed": "MACKLIN CARMEN",
+            "displayName": "Carmen Macklin",
+            "votes": 575
+          },
+          {
+            "rank": 33,
+            "nameAsListed": "GOMBERG HOWARD",
+            "displayName": "Howard Gomberg",
+            "votes": 477
+          },
+          {
+            "rank": 34,
+            "nameAsListed": "VALLANCE DAVID",
+            "displayName": "David Vallance",
+            "votes": 444
+          },
+          {
+            "rank": 35,
+            "nameAsListed": "STATE MARK",
+            "displayName": "Mark State",
+            "votes": 438
+          },
+          {
+            "rank": 36,
+            "nameAsListed": "TAYLOR PHIL",
+            "displayName": "Phil Taylor",
+            "votes": 429
+          },
+          {
+            "rank": 37,
+            "nameAsListed": "MAGEE COLIN",
+            "displayName": "Colin Magee",
+            "votes": 401
+          },
+          {
+            "rank": 38,
+            "nameAsListed": "FIRTH SELWYN",
+            "displayName": "Selwyn Firth",
+            "votes": 394
+          },
+          {
+            "rank": 39,
+            "nameAsListed": "WADHWA RATAN",
+            "displayName": "Ratan Wadhwa",
+            "votes": 290
+          },
+          {
+            "rank": 40,
+            "nameAsListed": "DEROME GERALD",
+            "displayName": "Gerald Derome",
+            "votes": 251
+          }
+        ],
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Official Results",
+          "datasetUrl": "https://open.toronto.ca/dataset/election-results-official/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/96d35404-44d9-49d8-95bb-fb1e5489240d/resource/6fbfaab0-bb84-442a-8e4b-1c14d4c10d6d/download/2010-results.zip",
+          "member": "2010_Toronto_Poll_by_Poll_Mayor.xls",
+          "locator": "“Total” column of each candidate row, summed across all 44 ward sheets",
+          "method": "Votes = sum of the candidate's ward Totals. Share = votes ÷ all votes cast for mayor in the file. Cross-checked against the City's own ward-totals rows."
+        }
+      }
+    },
+    {
+      "id": "2014",
+      "year": 2014,
+      "kind": "general",
+      "label": "2014 General Election",
+      "turnout": {
+        "eligibleElectors": 1813915,
+        "numberVoted": 991754,
+        "turnoutPct": 54.67,
+        "publishedPct": 54.67,
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Voter Statistics",
+          "datasetUrl": "https://open.toronto.ca/dataset/elections-voter-statistics/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/7dc606ab-f042-4d90-99e2-9247cb5953d2/resource/a20ad5ef-c77c-4ea3-8144-e270c1f6f9d1/download/2014-voter-statistics.xls",
+          "member": null,
+          "sheet": "2014 Voter Turnout",
+          "locator": "Sheet “2014 Voter Turnout”, Grand Total row (row 1813)",
+          "method": "Turnout = Number Voted ÷ Total Eligible Electors, both from the Grand Total row."
+        }
+      },
+      "mayor": {
+        "totalVotes": 981054,
+        "candidateCount": 65,
+        "top": [
+          {
+            "rank": 1,
+            "nameAsListed": "TORY JOHN",
+            "displayName": "John Tory",
+            "votes": 395124,
+            "sharePct": 40.28
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "FORD DOUG",
+            "displayName": "Doug Ford",
+            "votes": 331006,
+            "sharePct": 33.74
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "CHOW OLIVIA",
+            "displayName": "Olivia Chow",
+            "votes": 227003,
+            "sharePct": 23.14
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "GOLDKIND ARI",
+            "displayName": "Ari Goldkind",
+            "votes": 3916,
+            "sharePct": 0.4
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "CHAN SELINA",
+            "displayName": "Selina Chan",
+            "votes": 2336,
+            "sharePct": 0.24
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "DI PAOLA ROCCO",
+            "displayName": "Di Paola Rocco",
+            "votes": 1557,
+            "sharePct": 0.16
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "ANDREWS DON",
+            "displayName": "Don Andrews",
+            "votes": 1012,
+            "sharePct": 0.1
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "BASKIN MORGAN",
+            "displayName": "Morgan Baskin",
+            "votes": 1009,
+            "sharePct": 0.1
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "TIWARI RAMNARINE",
+            "displayName": "Ramnarine Tiwari",
+            "votes": 1008,
+            "sharePct": 0.1
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "DEDOPOULOS GEORGE",
+            "displayName": "George Dedopoulos",
+            "votes": 941,
+            "sharePct": 0.1
+          }
+        ],
+        "candidates": [
+          {
+            "rank": 1,
+            "nameAsListed": "TORY JOHN",
+            "displayName": "John Tory",
+            "votes": 395124
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "FORD DOUG",
+            "displayName": "Doug Ford",
+            "votes": 331006
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "CHOW OLIVIA",
+            "displayName": "Olivia Chow",
+            "votes": 227003
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "GOLDKIND ARI",
+            "displayName": "Ari Goldkind",
+            "votes": 3916
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "CHAN SELINA",
+            "displayName": "Selina Chan",
+            "votes": 2336
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "DI PAOLA ROCCO",
+            "displayName": "Di Paola Rocco",
+            "votes": 1557
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "ANDREWS DON",
+            "displayName": "Don Andrews",
+            "votes": 1012
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "BASKIN MORGAN",
+            "displayName": "Morgan Baskin",
+            "votes": 1009
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "TIWARI RAMNARINE",
+            "displayName": "Ramnarine Tiwari",
+            "votes": 1008
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "DEDOPOULOS GEORGE",
+            "displayName": "George Dedopoulos",
+            "votes": 941
+          },
+          {
+            "rank": 11,
+            "nameAsListed": "ALY SAID",
+            "displayName": "Said Aly",
+            "votes": 800
+          },
+          {
+            "rank": 12,
+            "nameAsListed": "JOHANNES ROBB",
+            "displayName": "Robb Johannes",
+            "votes": 756
+          },
+          {
+            "rank": 13,
+            "nameAsListed": "GLAISTER JONATHAN",
+            "displayName": "Jonathan Glaister",
+            "votes": 748
+          },
+          {
+            "rank": 14,
+            "nameAsListed": "HOSSAIN MONOWAR",
+            "displayName": "Monowar Hossain",
+            "votes": 614
+          },
+          {
+            "rank": 15,
+            "nameAsListed": "GALLAY MIKE",
+            "displayName": "Mike Gallay",
+            "votes": 570
+          },
+          {
+            "rank": 16,
+            "nameAsListed": "SURENDRAN SAM",
+            "displayName": "Sam Surendran",
+            "votes": 569
+          },
+          {
+            "rank": 17,
+            "nameAsListed": "TRAMOV MICHAEL",
+            "displayName": "Michael Tramov",
+            "votes": 560
+          },
+          {
+            "rank": 18,
+            "nameAsListed": "CLARKE KEVIN",
+            "displayName": "Kevin Clarke",
+            "votes": 547
+          },
+          {
+            "rank": 19,
+            "nameAsListed": "WONG MATTHEW",
+            "displayName": "Matthew Wong",
+            "votes": 491
+          },
+          {
+            "rank": 20,
+            "nameAsListed": "LEE DEWITT",
+            "displayName": "Dewitt Lee",
+            "votes": 489
+          },
+          {
+            "rank": 21,
+            "nameAsListed": "SYED HÏMY",
+            "displayName": "Hïmy Syed",
+            "votes": 465
+          },
+          {
+            "rank": 22,
+            "nameAsListed": "CIDADE MARK",
+            "displayName": "Mark Cidade",
+            "votes": 453
+          },
+          {
+            "rank": 23,
+            "nameAsListed": "YOUNG TROY",
+            "displayName": "Troy Young",
+            "votes": 411
+          },
+          {
+            "rank": 24,
+            "nameAsListed": "MCKAY DAVE",
+            "displayName": "Dave Mckay",
+            "votes": 407
+          },
+          {
+            "rank": 25,
+            "nameAsListed": "GORDON MICHAEL",
+            "displayName": "Michael Gordon",
+            "votes": 388
+          },
+          {
+            "rank": 26,
+            "nameAsListed": "BALL CHRISTOPHER",
+            "displayName": "Christopher Ball",
+            "votes": 377
+          },
+          {
+            "rank": 27,
+            "nameAsListed": "SAJNANI ASHOK",
+            "displayName": "Ashok Sajnani",
+            "votes": 368
+          },
+          {
+            "rank": 28,
+            "nameAsListed": "CRACK MATTHEW",
+            "displayName": "Matthew Crack",
+            "votes": 366
+          },
+          {
+            "rank": 29,
+            "nameAsListed": "BURGESS FRANK",
+            "displayName": "Frank Burgess",
+            "votes": 335
+          },
+          {
+            "rank": 30,
+            "nameAsListed": "RENÉE D!ONNE",
+            "displayName": "D!Onne Renée",
+            "votes": 323
+          },
+          {
+            "rank": 31,
+            "nameAsListed": "TASEVSKI MICHAEL",
+            "displayName": "Michael Tasevski",
+            "votes": 319
+          },
+          {
+            "rank": 32,
+            "nameAsListed": "OKHOVAT MOHAMMAD",
+            "displayName": "Mohammad Okhovat",
+            "votes": 318
+          },
+          {
+            "rank": 33,
+            "nameAsListed": "HUYNH CHINH",
+            "displayName": "Chinh Huynh",
+            "votes": 312
+          },
+          {
+            "rank": 34,
+            "nameAsListed": "KEMBHAVIMATH VEERAYYA",
+            "displayName": "Veerayya Kembhavimath",
+            "votes": 294
+          },
+          {
+            "rank": 35,
+            "nameAsListed": "BILLARD JEFF",
+            "displayName": "Jeff Billard",
+            "votes": 288
+          },
+          {
+            "rank": 36,
+            "nameAsListed": "ROBERGE PAT",
+            "displayName": "Pat Roberge",
+            "votes": 273
+          },
+          {
+            "rank": 37,
+            "nameAsListed": "ROMANOV LEE",
+            "displayName": "Lee Romanov",
+            "votes": 271
+          },
+          {
+            "rank": 38,
+            "nameAsListed": "POPESCU RADU",
+            "displayName": "Radu Popescu",
+            "votes": 233
+          },
+          {
+            "rank": 39,
+            "nameAsListed": "KARSEMEYER JON",
+            "displayName": "Jon Karsemeyer",
+            "votes": 232
+          },
+          {
+            "rank": 40,
+            "nameAsListed": "LAM STEVEN",
+            "displayName": "Steven Lam",
+            "votes": 226
+          },
+          {
+            "rank": 41,
+            "nameAsListed": "BLIGUIN JONATHAN",
+            "displayName": "Jonathan Bliguin",
+            "votes": 207
+          },
+          {
+            "rank": 42,
+            "nameAsListed": "VAN EYCK CHRISTINA",
+            "displayName": "Van Eyck Christina",
+            "votes": 203
+          },
+          {
+            "rank": 43,
+            "nameAsListed": "RACHLIS JOSH",
+            "displayName": "Josh Rachlis",
+            "votes": 201
+          },
+          {
+            "rank": 44,
+            "nameAsListed": "RITCH CARLIE",
+            "displayName": "Carlie Ritch",
+            "votes": 194
+          },
+          {
+            "rank": 45,
+            "nameAsListed": "STEINBERGER TIBOR",
+            "displayName": "Tibor Steinberger",
+            "votes": 188
+          },
+          {
+            "rank": 46,
+            "nameAsListed": "KHOMENKO KLIM",
+            "displayName": "Klim Khomenko",
+            "votes": 186
+          },
+          {
+            "rank": 47,
+            "nameAsListed": "GAMBIN LEO",
+            "displayName": "Leo Gambin",
+            "votes": 165
+          },
+          {
+            "rank": 48,
+            "nameAsListed": "WALKER DANIEL",
+            "displayName": "Daniel Walker",
+            "votes": 162
+          },
+          {
+            "rank": 49,
+            "nameAsListed": "NARULA RAM",
+            "displayName": "Ram Narula",
+            "votes": 156
+          },
+          {
+            "rank": 50,
+            "nameAsListed": "SHANNON JAMIE",
+            "displayName": "Jamie Shannon",
+            "votes": 156
+          },
+          {
+            "rank": 51,
+            "nameAsListed": "NICULA MICHAEL",
+            "displayName": "Michael Nicula",
+            "votes": 145
+          },
+          {
+            "rank": 52,
+            "nameAsListed": "MCBEAN GARY",
+            "displayName": "Gary Mcbean",
+            "votes": 135
+          },
+          {
+            "rank": 53,
+            "nameAsListed": "HUANG CHARLES",
+            "displayName": "Charles Huang",
+            "votes": 134
+          },
+          {
+            "rank": 54,
+            "nameAsListed": "SAUNDERS RUSSELL",
+            "displayName": "Russell Saunders",
+            "votes": 134
+          },
+          {
+            "rank": 55,
+            "nameAsListed": "MAXTED DIANA",
+            "displayName": "Diana Maxted",
+            "votes": 117
+          },
+          {
+            "rank": 56,
+            "nameAsListed": "RUEL JIM",
+            "displayName": "Jim Ruel",
+            "votes": 110
+          },
+          {
+            "rank": 57,
+            "nameAsListed": "SNIEDZINS ERWIN",
+            "displayName": "Erwin Sniedzins",
+            "votes": 105
+          },
+          {
+            "rank": 58,
+            "nameAsListed": "KALEVAR CHAI",
+            "displayName": "Chai Kalevar",
+            "votes": 102
+          },
+          {
+            "rank": 59,
+            "nameAsListed": "MERNAGH MATT",
+            "displayName": "Matt Mernagh",
+            "votes": 102
+          },
+          {
+            "rank": 60,
+            "nameAsListed": "SCHWAUSS WALLY",
+            "displayName": "Wally Schwauss",
+            "votes": 97
+          },
+          {
+            "rank": 61,
+            "nameAsListed": "SEARCHWELL DONOVAN",
+            "displayName": "Donovan Searchwell",
+            "votes": 90
+          },
+          {
+            "rank": 62,
+            "nameAsListed": "WADHWA RATAN",
+            "displayName": "Ratan Wadhwa",
+            "votes": 73
+          },
+          {
+            "rank": 63,
+            "nameAsListed": "VIAU RENÉ",
+            "displayName": "René Viau",
+            "votes": 69
+          },
+          {
+            "rank": 64,
+            "nameAsListed": "ONGWEN OWEKA-ARAC",
+            "displayName": "Oweka-Arac Ongwen",
+            "votes": 56
+          },
+          {
+            "rank": 65,
+            "nameAsListed": "WEENEN JACK",
+            "displayName": "Jack Weenen",
+            "votes": 52
+          }
+        ],
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Official Results",
+          "datasetUrl": "https://open.toronto.ca/dataset/election-results-official/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/96d35404-44d9-49d8-95bb-fb1e5489240d/resource/d59b5a52-33c3-4380-a136-82707e4d9aae/download/2014-results.zip",
+          "member": "MAYOR.xls",
+          "locator": "“Total” column of each candidate row, summed across all 44 ward sheets",
+          "method": "Votes = sum of the candidate's ward Totals. Share = votes ÷ all votes cast for mayor in the file. Cross-checked against the City's own ward-totals rows."
+        }
+      }
+    },
+    {
+      "id": "2018",
+      "year": 2018,
+      "kind": "general",
+      "label": "2018 General Election",
+      "turnout": {
+        "eligibleElectors": 1880371,
+        "numberVoted": 769044,
+        "turnoutPct": 40.9,
+        "publishedPct": 41.0,
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Voter Statistics",
+          "datasetUrl": "https://open.toronto.ca/dataset/elections-voter-statistics/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/7dc606ab-f042-4d90-99e2-9247cb5953d2/resource/cb352fd3-7228-48f3-bac3-00c6f7c5dfa6/download/2018-voter-statistics.zip",
+          "member": "2018_Voter_Turnout_Statistics_FINAL.XLSX",
+          "sheet": "2018 Voter Turnout Statistics",
+          "locator": "Sheet “2018 Voter Turnout Statistics”, Grand Total row (row 1802)",
+          "method": "Turnout = Number Voted ÷ Total Eligible Electors, both from the Grand Total row."
+        }
+      },
+      "mayor": {
+        "totalVotes": 755493,
+        "candidateCount": 35,
+        "top": [
+          {
+            "rank": 1,
+            "nameAsListed": "Tory John",
+            "displayName": "John Tory",
+            "votes": 479659,
+            "sharePct": 63.49
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "Keesmaat Jennifer",
+            "displayName": "Jennifer Keesmaat",
+            "votes": 178193,
+            "sharePct": 23.59
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "Goldy Faith",
+            "displayName": "Faith Goldy",
+            "votes": 25667,
+            "sharePct": 3.4
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "Gebresellassi Saron",
+            "displayName": "Saron Gebresellassi",
+            "votes": 15222,
+            "sharePct": 2.01
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "Lam Steven",
+            "displayName": "Steven Lam",
+            "votes": 5920,
+            "sharePct": 0.78
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "Climenhaga Sarah",
+            "displayName": "Sarah Climenhaga",
+            "votes": 4765,
+            "sharePct": 0.63
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "Clarke Kevin",
+            "displayName": "Kevin Clarke",
+            "votes": 3853,
+            "sharePct": 0.51
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "Hossain Monowar",
+            "displayName": "Monowar Hossain",
+            "votes": 3602,
+            "sharePct": 0.48
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "Choy Logan",
+            "displayName": "Logan Choy",
+            "votes": 3518,
+            "sharePct": 0.47
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "Singh Knia",
+            "displayName": "Knia Singh",
+            "votes": 3244,
+            "sharePct": 0.43
+          }
+        ],
+        "candidates": [
+          {
+            "rank": 1,
+            "nameAsListed": "Tory John",
+            "displayName": "John Tory",
+            "votes": 479659
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "Keesmaat Jennifer",
+            "displayName": "Jennifer Keesmaat",
+            "votes": 178193
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "Goldy Faith",
+            "displayName": "Faith Goldy",
+            "votes": 25667
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "Gebresellassi Saron",
+            "displayName": "Saron Gebresellassi",
+            "votes": 15222
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "Lam Steven",
+            "displayName": "Steven Lam",
+            "votes": 5920
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "Climenhaga Sarah",
+            "displayName": "Sarah Climenhaga",
+            "votes": 4765
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "Clarke Kevin",
+            "displayName": "Kevin Clarke",
+            "votes": 3853
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "Hossain Monowar",
+            "displayName": "Monowar Hossain",
+            "votes": 3602
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "Choy Logan",
+            "displayName": "Logan Choy",
+            "votes": 3518
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "Singh Knia",
+            "displayName": "Knia Singh",
+            "votes": 3244
+          },
+          {
+            "rank": 11,
+            "nameAsListed": "Basaric Dobrosav",
+            "displayName": "Dobrosav Basaric",
+            "votes": 2882
+          },
+          {
+            "rank": 12,
+            "nameAsListed": "Brosky Chris",
+            "displayName": "Chris Brosky",
+            "votes": 2782
+          },
+          {
+            "rank": 13,
+            "nameAsListed": "McMillan Jim",
+            "displayName": "Jim McMillan",
+            "votes": 2422
+          },
+          {
+            "rank": 14,
+            "nameAsListed": "Haque Tofazzel",
+            "displayName": "Tofazzel Haque",
+            "votes": 2307
+          },
+          {
+            "rank": 15,
+            "nameAsListed": "Buckingham Drew",
+            "displayName": "Drew Buckingham",
+            "votes": 1971
+          },
+          {
+            "rank": 16,
+            "nameAsListed": "Gallay Mike",
+            "displayName": "Mike Gallay",
+            "votes": 1940
+          },
+          {
+            "rank": 17,
+            "nameAsListed": "Christoff Daryl",
+            "displayName": "Daryl Christoff",
+            "votes": 1751
+          },
+          {
+            "rank": 18,
+            "nameAsListed": "Nath Gautam",
+            "displayName": "Gautam Nath",
+            "votes": 1474
+          },
+          {
+            "rank": 19,
+            "nameAsListed": "Humphrey Christopher",
+            "displayName": "Christopher Humphrey",
+            "votes": 1428
+          },
+          {
+            "rank": 20,
+            "nameAsListed": "O'Neill Thomas",
+            "displayName": "Thomas O'Neill",
+            "votes": 1325
+          },
+          {
+            "rank": 21,
+            "nameAsListed": "Renée D!ONNE",
+            "displayName": "D!ONNE Renée",
+            "votes": 1280
+          },
+          {
+            "rank": 22,
+            "nameAsListed": "Buffey Brian",
+            "displayName": "Brian Buffey",
+            "votes": 1275
+          },
+          {
+            "rank": 23,
+            "nameAsListed": "Graff Brian",
+            "displayName": "Brian Graff",
+            "votes": 1139
+          },
+          {
+            "rank": 24,
+            "nameAsListed": "Nicula Michael",
+            "displayName": "Michael Nicula",
+            "votes": 1048
+          },
+          {
+            "rank": 25,
+            "nameAsListed": "Kardys Andrzej",
+            "displayName": "Andrzej Kardys",
+            "votes": 1035
+          },
+          {
+            "rank": 26,
+            "nameAsListed": "Pampena Joseph",
+            "displayName": "Joseph Pampena",
+            "votes": 773
+          },
+          {
+            "rank": 27,
+            "nameAsListed": "Vardy Jakob",
+            "displayName": "Jakob Vardy",
+            "votes": 757
+          },
+          {
+            "rank": 28,
+            "nameAsListed": "Langenfeld Kris",
+            "displayName": "Kris Langenfeld",
+            "votes": 695
+          },
+          {
+            "rank": 29,
+            "nameAsListed": "Sears James",
+            "displayName": "James Sears",
+            "votes": 680
+          },
+          {
+            "rank": 30,
+            "nameAsListed": "Kalevar Chai",
+            "displayName": "Chai Kalevar",
+            "votes": 615
+          },
+          {
+            "rank": 31,
+            "nameAsListed": "Weenen Jack",
+            "displayName": "Jack Weenen",
+            "votes": 607
+          },
+          {
+            "rank": 32,
+            "nameAsListed": "Vintila Ion Gelu",
+            "displayName": "Vintila Ion Gelu",
+            "votes": 565
+          },
+          {
+            "rank": 33,
+            "nameAsListed": "Osuji Joseph",
+            "displayName": "Joseph Osuji",
+            "votes": 486
+          },
+          {
+            "rank": 34,
+            "nameAsListed": "Rachlis Josh",
+            "displayName": "Josh Rachlis",
+            "votes": 337
+          },
+          {
+            "rank": 35,
+            "nameAsListed": "Ruel Jim",
+            "displayName": "Jim Ruel",
+            "votes": 276
+          }
+        ],
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Official Results",
+          "datasetUrl": "https://open.toronto.ca/dataset/election-results-official/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/96d35404-44d9-49d8-95bb-fb1e5489240d/resource/2fcd5f20-90f5-4dd0-88eb-22e978b9bf89/download/2018-results.zip",
+          "member": "2018_Toronto_Poll_By_Poll_Mayor.xlsx",
+          "locator": "“Total” column of each candidate row, summed across all 25 ward sheets",
+          "method": "Votes = sum of the candidate's ward Totals. Share = votes ÷ all votes cast for mayor in the file. Cross-checked against the City's own ward-totals rows."
+        }
+      }
+    },
+    {
+      "id": "2022",
+      "year": 2022,
+      "kind": "general",
+      "label": "2022 General Election",
+      "turnout": {
+        "eligibleElectors": 1898750,
+        "numberVoted": 563124,
+        "turnoutPct": 29.66,
+        "publishedPct": 30.0,
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Voter Statistics",
+          "datasetUrl": "https://open.toronto.ca/dataset/elections-voter-statistics/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/7dc606ab-f042-4d90-99e2-9247cb5953d2/resource/631b7042-bd71-46b1-9c27-2d4119462ec7/download/2022_voter_turnout_statistics_final.xlsx",
+          "member": null,
+          "sheet": "2022 Voter Turnout Statistics",
+          "locator": "Sheet “2022 Voter Turnout Statistics”, Grand Total row (row 1562)",
+          "method": "Turnout = Number Voted ÷ Total Eligible Electors, both from the Grand Total row."
+        }
+      },
+      "mayor": {
+        "totalVotes": 551890,
+        "candidateCount": 31,
+        "top": [
+          {
+            "rank": 1,
+            "nameAsListed": "Tory John",
+            "displayName": "John Tory",
+            "votes": 342158,
+            "sharePct": 62.0
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "Penalosa Gil",
+            "displayName": "Gil Penalosa",
+            "votes": 98525,
+            "sharePct": 17.85
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "Brown Chloe-Marie",
+            "displayName": "Chloe-Marie Brown",
+            "votes": 34821,
+            "sharePct": 6.31
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "Acton Blake",
+            "displayName": "Blake Acton",
+            "votes": 8893,
+            "sharePct": 1.61
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "Climenhaga Sarah",
+            "displayName": "Sarah Climenhaga",
+            "votes": 6729,
+            "sharePct": 1.22
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "Luk Tony",
+            "displayName": "Tony Luk",
+            "votes": 6662,
+            "sharePct": 1.21
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "Yan Jack",
+            "displayName": "Jack Yan",
+            "votes": 5585,
+            "sharePct": 1.01
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "Punwasi Stephen",
+            "displayName": "Stephen Punwasi",
+            "votes": 5236,
+            "sharePct": 0.95
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "Clarke Kevin",
+            "displayName": "Kevin Clarke",
+            "votes": 4333,
+            "sharePct": 0.79
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "Tull Reginald",
+            "displayName": "Reginald Tull",
+            "votes": 3935,
+            "sharePct": 0.71
+          }
+        ],
+        "candidates": [
+          {
+            "rank": 1,
+            "nameAsListed": "Tory John",
+            "displayName": "John Tory",
+            "votes": 342158
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "Penalosa Gil",
+            "displayName": "Gil Penalosa",
+            "votes": 98525
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "Brown Chloe-Marie",
+            "displayName": "Chloe-Marie Brown",
+            "votes": 34821
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "Acton Blake",
+            "displayName": "Blake Acton",
+            "votes": 8893
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "Climenhaga Sarah",
+            "displayName": "Sarah Climenhaga",
+            "votes": 6729
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "Luk Tony",
+            "displayName": "Tony Luk",
+            "votes": 6662
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "Yan Jack",
+            "displayName": "Jack Yan",
+            "votes": 5585
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "Punwasi Stephen",
+            "displayName": "Stephen Punwasi",
+            "votes": 5236
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "Clarke Kevin",
+            "displayName": "Kevin Clarke",
+            "votes": 4333
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "Tull Reginald",
+            "displayName": "Reginald Tull",
+            "votes": 3935
+          },
+          {
+            "rank": 11,
+            "nameAsListed": "Jamal Khadijah",
+            "displayName": "Khadijah Jamal",
+            "votes": 3656
+          },
+          {
+            "rank": 12,
+            "nameAsListed": "Singh Knia",
+            "displayName": "Knia Singh",
+            "votes": 3030
+          },
+          {
+            "rank": 13,
+            "nameAsListed": "Gupta Arjun",
+            "displayName": "Arjun Gupta",
+            "votes": 2843
+          },
+          {
+            "rank": 14,
+            "nameAsListed": "Atkinson Darren",
+            "displayName": "Darren Atkinson",
+            "votes": 2580
+          },
+          {
+            "rank": 15,
+            "nameAsListed": "Srivastava Sandeep",
+            "displayName": "Sandeep Srivastava",
+            "votes": 2024
+          },
+          {
+            "rank": 16,
+            "nameAsListed": "Hatton Robert",
+            "displayName": "Robert Hatton",
+            "votes": 1918
+          },
+          {
+            "rank": 17,
+            "nameAsListed": "Hossain Monowar",
+            "displayName": "Monowar Hossain",
+            "votes": 1840
+          },
+          {
+            "rank": 18,
+            "nameAsListed": "D'Cruze Phillip",
+            "displayName": "Phillip D'Cruze",
+            "votes": 1695
+          },
+          {
+            "rank": 19,
+            "nameAsListed": "Buckingham Drew",
+            "displayName": "Drew Buckingham",
+            "votes": 1679
+          },
+          {
+            "rank": 20,
+            "nameAsListed": "Hossain Soaad",
+            "displayName": "Soaad Hossain",
+            "votes": 1670
+          },
+          {
+            "rank": 21,
+            "nameAsListed": "Renée D!ONNE",
+            "displayName": "D!ONNE Renée",
+            "votes": 1483
+          },
+          {
+            "rank": 22,
+            "nameAsListed": "Schwartz Kyle",
+            "displayName": "Kyle Schwartz",
+            "votes": 1357
+          },
+          {
+            "rank": 23,
+            "nameAsListed": "Langenfeld Kris",
+            "displayName": "Kris Langenfeld",
+            "votes": 1326
+          },
+          {
+            "rank": 24,
+            "nameAsListed": "Caputolan Elvira",
+            "displayName": "Elvira Caputolan",
+            "votes": 1280
+          },
+          {
+            "rank": 25,
+            "nameAsListed": "Gamk Isabella",
+            "displayName": "Isabella Gamk",
+            "votes": 1151
+          },
+          {
+            "rank": 26,
+            "nameAsListed": "Deville Cory",
+            "displayName": "Cory Deville",
+            "votes": 1142
+          },
+          {
+            "rank": 27,
+            "nameAsListed": "Arrobas Avraham",
+            "displayName": "Avraham Arrobas",
+            "votes": 942
+          },
+          {
+            "rank": 28,
+            "nameAsListed": "Malek Ferin",
+            "displayName": "Ferin Malek",
+            "votes": 939
+          },
+          {
+            "rank": 29,
+            "nameAsListed": "Letonja John",
+            "displayName": "John Letonja",
+            "votes": 859
+          },
+          {
+            "rank": 30,
+            "nameAsListed": "Efimovskikh Alexey",
+            "displayName": "Alexey Efimovskikh",
+            "votes": 844
+          },
+          {
+            "rank": 31,
+            "nameAsListed": "Handjis Peter",
+            "displayName": "Peter Handjis",
+            "votes": 755
+          }
+        ],
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Official Results",
+          "datasetUrl": "https://open.toronto.ca/dataset/election-results-official/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/96d35404-44d9-49d8-95bb-fb1e5489240d/resource/3ad371de-7c51-45d3-9ea4-0b4efac5fc2b/download/2022-results.zip",
+          "member": "2022_Toronto_Poll_By_Poll_Mayor.xlsx",
+          "locator": "“Total” column of each candidate row, summed across all 25 ward sheets",
+          "method": "Votes = sum of the candidate's ward Totals. Share = votes ÷ all votes cast for mayor in the file. Cross-checked against the City's own ward-totals rows."
+        }
+      }
+    },
+    {
+      "id": "2023-mayoral-by-election",
+      "year": 2023,
+      "kind": "by-election",
+      "label": "2023 Mayoral By-Election",
+      "turnout": {
+        "eligibleElectors": 1947242,
+        "numberVoted": 724638,
+        "turnoutPct": 37.21,
+        "publishedPct": "37%",
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – By-Election Voter Statistics",
+          "datasetUrl": "https://open.toronto.ca/dataset/elections-by-election-voter-statistics/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/c1c7ea74-0088-484f-9508-2165d3dfd629/resource/46ccd64f-4a40-41b3-b045-d13ab34e54eb/download/2023-mayoral-by-election-voter-statistics-1.xlsx",
+          "member": null,
+          "sheet": "2023 Voter Turnout Statisti M",
+          "locator": "Sheet “2023 Voter Turnout Statisti M”, Grand Total row (row 1478)",
+          "method": "Turnout = Number Voted ÷ Total Eligible Electors, both from the Grand Total row."
+        }
+      },
+      "mayor": {
+        "totalVotes": 724638,
+        "candidateCount": 102,
+        "top": [
+          {
+            "rank": 1,
+            "nameAsListed": "Chow Olivia",
+            "displayName": "Olivia Chow",
+            "votes": 269372,
+            "sharePct": 37.17
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "Bailão Ana",
+            "displayName": "Ana Bailão",
+            "votes": 235175,
+            "sharePct": 32.45
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "Saunders Mark",
+            "displayName": "Mark Saunders",
+            "votes": 62167,
+            "sharePct": 8.58
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "Furey Anthony",
+            "displayName": "Anthony Furey",
+            "votes": 35899,
+            "sharePct": 4.95
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "Matlow Josh",
+            "displayName": "Josh Matlow",
+            "votes": 35572,
+            "sharePct": 4.91
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "Hunter Mitzie",
+            "displayName": "Mitzie Hunter",
+            "votes": 21229,
+            "sharePct": 2.93
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "Brown Chloe",
+            "displayName": "Chloe Brown",
+            "votes": 18831,
+            "sharePct": 2.6
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "Bradford Brad",
+            "displayName": "Brad Bradford",
+            "votes": 9254,
+            "sharePct": 1.28
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "Saccoccia Chris",
+            "displayName": "Chris Saccoccia",
+            "votes": 8001,
+            "sharePct": 1.1
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "Perruzza Anthony",
+            "displayName": "Anthony Perruzza",
+            "votes": 3025,
+            "sharePct": 0.42
+          }
+        ],
+        "candidates": [
+          {
+            "rank": 1,
+            "nameAsListed": "Chow Olivia",
+            "displayName": "Olivia Chow",
+            "votes": 269372
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "Bailão Ana",
+            "displayName": "Ana Bailão",
+            "votes": 235175
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "Saunders Mark",
+            "displayName": "Mark Saunders",
+            "votes": 62167
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "Furey Anthony",
+            "displayName": "Anthony Furey",
+            "votes": 35899
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "Matlow Josh",
+            "displayName": "Josh Matlow",
+            "votes": 35572
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "Hunter Mitzie",
+            "displayName": "Mitzie Hunter",
+            "votes": 21229
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "Brown Chloe",
+            "displayName": "Chloe Brown",
+            "votes": 18831
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "Bradford Brad",
+            "displayName": "Brad Bradford",
+            "votes": 9254
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "Saccoccia Chris",
+            "displayName": "Chris Saccoccia",
+            "votes": 8001
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "Perruzza Anthony",
+            "displayName": "Anthony Perruzza",
+            "votes": 3025
+          },
+          {
+            "rank": 11,
+            "nameAsListed": "Gong Xiao Hua",
+            "displayName": "Gong Xiao Hua",
+            "votes": 2983
+          },
+          {
+            "rank": 12,
+            "nameAsListed": "Sanders Lyall",
+            "displayName": "Lyall Sanders",
+            "votes": 2775
+          },
+          {
+            "rank": 13,
+            "nameAsListed": "Mammoliti Giorgio",
+            "displayName": "Giorgio Mammoliti",
+            "votes": 1105
+          },
+          {
+            "rank": 14,
+            "nameAsListed": "Abdulsalam Bahira",
+            "displayName": "Bahira Abdulsalam",
+            "votes": 913
+          },
+          {
+            "rank": 15,
+            "nameAsListed": "Ahmed Sharif",
+            "displayName": "Sharif Ahmed",
+            "votes": 814
+          },
+          {
+            "rank": 16,
+            "nameAsListed": "Sivaneswaran Raksheni",
+            "displayName": "Raksheni Sivaneswaran",
+            "votes": 779
+          },
+          {
+            "rank": 17,
+            "nameAsListed": "Apostolopoulos Dionysios",
+            "displayName": "Dionysios Apostolopoulos",
+            "votes": 726
+          },
+          {
+            "rank": 18,
+            "nameAsListed": "Choy Logan",
+            "displayName": "Logan Choy",
+            "votes": 695
+          },
+          {
+            "rank": 19,
+            "nameAsListed": "Heaps Toby",
+            "displayName": "Toby Heaps",
+            "votes": 593
+          },
+          {
+            "rank": 20,
+            "nameAsListed": "Chan Roland",
+            "displayName": "Roland Chan",
+            "votes": 515
+          },
+          {
+            "rank": 21,
+            "nameAsListed": "Tull Reginald",
+            "displayName": "Reginald Tull",
+            "votes": 482
+          },
+          {
+            "rank": 22,
+            "nameAsListed": "Davis Rob",
+            "displayName": "Rob Davis",
+            "votes": 378
+          },
+          {
+            "rank": 23,
+            "nameAsListed": "Atkinson Jamie",
+            "displayName": "Jamie Atkinson",
+            "votes": 361
+          },
+          {
+            "rank": 24,
+            "nameAsListed": "D'Amico Frank",
+            "displayName": "Frank D'Amico",
+            "votes": 357
+          },
+          {
+            "rank": 25,
+            "nameAsListed": "Allan Gru Jesse",
+            "displayName": "Allan Gru Jesse",
+            "votes": 352
+          },
+          {
+            "rank": 26,
+            "nameAsListed": "D'Angelo Frank",
+            "displayName": "Frank D'Angelo",
+            "votes": 343
+          },
+          {
+            "rank": 27,
+            "nameAsListed": "Bonilla Eliazar",
+            "displayName": "Eliazar Bonilla",
+            "votes": 310
+          },
+          {
+            "rank": 28,
+            "nameAsListed": "He Heather",
+            "displayName": "Heather He",
+            "votes": 297
+          },
+          {
+            "rank": 29,
+            "nameAsListed": "Vadivelu Kiri",
+            "displayName": "Kiri Vadivelu",
+            "votes": 290
+          },
+          {
+            "rank": 30,
+            "nameAsListed": "Baking Jose",
+            "displayName": "Jose Baking",
+            "votes": 284
+          },
+          {
+            "rank": 31,
+            "nameAsListed": "Chevalier Romero Danny",
+            "displayName": "Chevalier Romero Danny",
+            "votes": 281
+          },
+          {
+            "rank": 32,
+            "nameAsListed": "Forrester Monica",
+            "displayName": "Monica Forrester",
+            "votes": 278
+          },
+          {
+            "rank": 33,
+            "nameAsListed": "Marshall Cleveland",
+            "displayName": "Cleveland Marshall",
+            "votes": 270
+          },
+          {
+            "rank": 34,
+            "nameAsListed": "Clarke Kevin",
+            "displayName": "Kevin Clarke",
+            "votes": 265
+          },
+          {
+            "rank": 35,
+            "nameAsListed": "Acton Blake",
+            "displayName": "Blake Acton",
+            "votes": 264
+          },
+          {
+            "rank": 36,
+            "nameAsListed": "LeLiever Mark",
+            "displayName": "Mark LeLiever",
+            "votes": 259
+          },
+          {
+            "rank": 37,
+            "nameAsListed": "Hall Thomas",
+            "displayName": "Thomas Hall",
+            "votes": 258
+          },
+          {
+            "rank": 38,
+            "nameAsListed": "Alam Asadul",
+            "displayName": "Asadul Alam",
+            "votes": 257
+          },
+          {
+            "rank": 39,
+            "nameAsListed": "Mohee Faizul",
+            "displayName": "Faizul Mohee",
+            "votes": 255
+          },
+          {
+            "rank": 40,
+            "nameAsListed": "Caesar-Chavannes Celina",
+            "displayName": "Celina Caesar-Chavannes",
+            "votes": 254
+          },
+          {
+            "rank": 41,
+            "nameAsListed": "Singh Knia",
+            "displayName": "Knia Singh",
+            "votes": 246
+          },
+          {
+            "rank": 42,
+            "nameAsListed": "Lee Rick",
+            "displayName": "Rick Lee",
+            "votes": 241
+          },
+          {
+            "rank": 43,
+            "nameAsListed": "Acquaye Emmanuel",
+            "displayName": "Emmanuel Acquaye",
+            "votes": 236
+          },
+          {
+            "rank": 44,
+            "nameAsListed": "Reodica Willie",
+            "displayName": "Willie Reodica",
+            "votes": 225
+          },
+          {
+            "rank": 45,
+            "nameAsListed": "Johnston Patricia",
+            "displayName": "Patricia Johnston",
+            "votes": 217
+          },
+          {
+            "rank": 46,
+            "nameAsListed": "Cohen Gordon",
+            "displayName": "Gordon Cohen",
+            "votes": 214
+          },
+          {
+            "rank": 47,
+            "nameAsListed": "Bankas Ben",
+            "displayName": "Ben Bankas",
+            "votes": 203
+          },
+          {
+            "rank": 48,
+            "nameAsListed": "Murphy Bob",
+            "displayName": "Bob Murphy",
+            "votes": 203
+          },
+          {
+            "rank": 49,
+            "nameAsListed": "Gao Feng",
+            "displayName": "Feng Gao",
+            "votes": 198
+          },
+          {
+            "rank": 50,
+            "nameAsListed": "Desai Habiba",
+            "displayName": "Habiba Desai",
+            "votes": 196
+          },
+          {
+            "rank": 51,
+            "nameAsListed": "Climenhaga Sarah",
+            "displayName": "Sarah Climenhaga",
+            "votes": 195
+          },
+          {
+            "rank": 52,
+            "nameAsListed": "Atkinson Darren",
+            "displayName": "Darren Atkinson",
+            "votes": 192
+          },
+          {
+            "rank": 53,
+            "nameAsListed": "Renée D!ONNE",
+            "displayName": "D!ONNE Renée",
+            "votes": 188
+          },
+          {
+            "rank": 54,
+            "nameAsListed": "Yan Nathalie Xian Yi",
+            "displayName": "Yan Nathalie Xian Yi",
+            "votes": 180
+          },
+          {
+            "rank": 55,
+            "nameAsListed": "Grosman Ari",
+            "displayName": "Ari Grosman",
+            "votes": 177
+          },
+          {
+            "rank": 56,
+            "nameAsListed": "Collins Paul",
+            "displayName": "Paul Collins",
+            "votes": 168
+          },
+          {
+            "rank": 57,
+            "nameAsListed": "Srivastava Sandeep",
+            "displayName": "Sandeep Srivastava",
+            "votes": 166
+          },
+          {
+            "rank": 58,
+            "nameAsListed": "Hossain Monowar",
+            "displayName": "Monowar Hossain",
+            "votes": 164
+          },
+          {
+            "rank": 59,
+            "nameAsListed": "MacLeod Norman",
+            "displayName": "Norman MacLeod",
+            "votes": 163
+          },
+          {
+            "rank": 60,
+            "nameAsListed": "Williams Jody",
+            "displayName": "Jody Williams",
+            "votes": 160
+          },
+          {
+            "rank": 61,
+            "nameAsListed": "Beals Claudette",
+            "displayName": "Claudette Beals",
+            "votes": 151
+          },
+          {
+            "rank": 62,
+            "nameAsListed": "Carrie Mason",
+            "displayName": "Mason Carrie",
+            "votes": 150
+          },
+          {
+            "rank": 63,
+            "nameAsListed": "Aly Atef",
+            "displayName": "Atef Aly",
+            "votes": 147
+          },
+          {
+            "rank": 64,
+            "nameAsListed": "Jaffery Syed",
+            "displayName": "Syed Jaffery",
+            "votes": 147
+          },
+          {
+            "rank": 65,
+            "nameAsListed": "Langenfeld Kris",
+            "displayName": "Kris Langenfeld",
+            "votes": 137
+          },
+          {
+            "rank": 66,
+            "nameAsListed": "Charlton Matti",
+            "displayName": "Matti Charlton",
+            "votes": 134
+          },
+          {
+            "rank": 67,
+            "nameAsListed": "Singh Partap Dua",
+            "displayName": "Singh Partap Dua",
+            "votes": 132
+          },
+          {
+            "rank": 68,
+            "nameAsListed": "Deb Samson",
+            "displayName": "Samson Deb",
+            "votes": 129
+          },
+          {
+            "rank": 69,
+            "nameAsListed": "Straus Meir",
+            "displayName": "Meir Straus",
+            "votes": 129
+          },
+          {
+            "rank": 70,
+            "nameAsListed": "Handjis Peter",
+            "displayName": "Peter Handjis",
+            "votes": 127
+          },
+          {
+            "rank": 71,
+            "nameAsListed": "Mann Steve",
+            "displayName": "Steve Mann",
+            "votes": 127
+          },
+          {
+            "rank": 72,
+            "nameAsListed": "Tang Weizhen",
+            "displayName": "Weizhen Tang",
+            "votes": 125
+          },
+          {
+            "rank": 73,
+            "nameAsListed": "Gulyas David",
+            "displayName": "David Gulyas",
+            "votes": 120
+          },
+          {
+            "rank": 74,
+            "nameAsListed": "Lamoureux Michael",
+            "displayName": "Michael Lamoureux",
+            "votes": 120
+          },
+          {
+            "rank": 75,
+            "nameAsListed": "Benway Glen",
+            "displayName": "Glen Benway",
+            "votes": 118
+          },
+          {
+            "rank": 76,
+            "nameAsListed": "Winter John",
+            "displayName": "John Winter",
+            "votes": 118
+          },
+          {
+            "rank": 77,
+            "nameAsListed": "Jensen Michael",
+            "displayName": "Michael Jensen",
+            "votes": 115
+          },
+          {
+            "rank": 78,
+            "nameAsListed": "Shusterman Robert",
+            "displayName": "Robert Shusterman",
+            "votes": 114
+          },
+          {
+            "rank": 79,
+            "nameAsListed": "Buffey Brian",
+            "displayName": "Brian Buffey",
+            "votes": 113
+          },
+          {
+            "rank": 80,
+            "nameAsListed": "Furnival Scott",
+            "displayName": "Scott Furnival",
+            "votes": 110
+          },
+          {
+            "rank": 81,
+            "nameAsListed": "Khan Walayat",
+            "displayName": "Walayat Khan",
+            "votes": 109
+          },
+          {
+            "rank": 82,
+            "nameAsListed": "Goraya Adil",
+            "displayName": "Adil Goraya",
+            "votes": 104
+          },
+          {
+            "rank": 83,
+            "nameAsListed": "Guglielmin James",
+            "displayName": "James Guglielmin",
+            "votes": 101
+          },
+          {
+            "rank": 84,
+            "nameAsListed": "Fenby Simryn",
+            "displayName": "Simryn Fenby",
+            "votes": 97
+          },
+          {
+            "rank": 85,
+            "nameAsListed": "Deville Cory",
+            "displayName": "Cory Deville",
+            "votes": 96
+          },
+          {
+            "rank": 86,
+            "nameAsListed": "Korovitsyn Serge",
+            "displayName": "Serge Korovitsyn",
+            "votes": 96
+          },
+          {
+            "rank": 87,
+            "nameAsListed": "Schipano Rocco",
+            "displayName": "Rocco Schipano",
+            "votes": 94
+          },
+          {
+            "rank": 88,
+            "nameAsListed": "Graff Brian",
+            "displayName": "Brian Graff",
+            "votes": 89
+          },
+          {
+            "rank": 89,
+            "nameAsListed": "Gamk Isabella",
+            "displayName": "Isabella Gamk",
+            "votes": 88
+          },
+          {
+            "rank": 90,
+            "nameAsListed": "Nicula Michael",
+            "displayName": "Michael Nicula",
+            "votes": 88
+          },
+          {
+            "rank": 91,
+            "nameAsListed": "Tunney Jeffery",
+            "displayName": "Jeffery Tunney",
+            "votes": 83
+          },
+          {
+            "rank": 92,
+            "nameAsListed": "Wei Yuanqian",
+            "displayName": "Yuanqian Wei",
+            "votes": 78
+          },
+          {
+            "rank": 93,
+            "nameAsListed": "Ransome John",
+            "displayName": "John Ransome",
+            "votes": 75
+          },
+          {
+            "rank": 94,
+            "nameAsListed": "Toye Mitchell",
+            "displayName": "Mitchell Toye",
+            "votes": 72
+          },
+          {
+            "rank": 95,
+            "nameAsListed": "D'Cruze Phillip",
+            "displayName": "Phillip D'Cruze",
+            "votes": 68
+          },
+          {
+            "rank": 96,
+            "nameAsListed": "Rubino Walter",
+            "displayName": "Walter Rubino",
+            "votes": 67
+          },
+          {
+            "rank": 97,
+            "nameAsListed": "Letonja John",
+            "displayName": "John Letonja",
+            "votes": 45
+          },
+          {
+            "rank": 98,
+            "nameAsListed": "Igodan Sheila",
+            "displayName": "Sheila Igodan",
+            "votes": 42
+          },
+          {
+            "rank": 99,
+            "nameAsListed": "Nowwarah Jamil",
+            "displayName": "Jamil Nowwarah",
+            "votes": 38
+          },
+          {
+            "rank": 100,
+            "nameAsListed": "Sniedzins Erwin",
+            "displayName": "Erwin Sniedzins",
+            "votes": 38
+          },
+          {
+            "rank": 101,
+            "nameAsListed": "Weenen Jack",
+            "displayName": "Jack Weenen",
+            "votes": 30
+          },
+          {
+            "rank": 102,
+            "nameAsListed": "Irmya Daniel",
+            "displayName": "Daniel Irmya",
+            "votes": 27
+          }
+        ],
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Official By-Election Results",
+          "datasetUrl": "https://open.toronto.ca/dataset/elections-official-by-election-results/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/97d72233-8681-4b3d-828e-4929d40d122c/resource/868f890d-5432-432b-823c-c6a6fafa2f63/download/2023_office_of_the_mayor.xlsx",
+          "member": null,
+          "locator": "“Total” column of each candidate row, summed across all 25 ward sheets",
+          "method": "Votes = sum of the candidate's ward Totals. Share = votes ÷ all votes cast for mayor in the file. Cross-checked against the City's own ward-totals rows."
+        }
+      }
+    },
+    {
+      "id": "2026",
+      "year": 2026,
+      "kind": "general",
+      "label": "2026 General Election",
+      "turnout": null,
+      "mayor": {
+        "totalVotes": 982660,
+        "candidateCount": 53,
+        "top": [
+          {
+            "rank": 1,
+            "nameAsListed": "Chow Olivia",
+            "displayName": "Olivia Chow",
+            "votes": 532201,
+            "sharePct": 54.16
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "Bradford Brad",
+            "displayName": "Brad Bradford",
+            "votes": 404013,
+            "sharePct": 41.11
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "Chow Braeden",
+            "displayName": "Braeden Chow",
+            "votes": 8102,
+            "sharePct": 0.82
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "Alexander Chris",
+            "displayName": "Chris Alexander",
+            "votes": 3550,
+            "sharePct": 0.36
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "Gong Edward",
+            "displayName": "Edward Gong",
+            "votes": 3443,
+            "sharePct": 0.35
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "Dean Laura",
+            "displayName": "Laura Dean",
+            "votes": 2224,
+            "sharePct": 0.23
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "Brown Darrell",
+            "displayName": "Darrell Brown",
+            "votes": 2077,
+            "sharePct": 0.21
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "Abdulkadir Imad",
+            "displayName": "Imad Abdulkadir",
+            "votes": 1873,
+            "sharePct": 0.19
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "Abdulsalam Bahira",
+            "displayName": "Bahira Abdulsalam",
+            "votes": 1696,
+            "sharePct": 0.17
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "Lee Rick",
+            "displayName": "Rick Lee",
+            "votes": 1288,
+            "sharePct": 0.13
+          }
+        ],
+        "candidates": [
+          {
+            "rank": 1,
+            "nameAsListed": "Chow Olivia",
+            "displayName": "Olivia Chow",
+            "votes": 532201
+          },
+          {
+            "rank": 2,
+            "nameAsListed": "Bradford Brad",
+            "displayName": "Brad Bradford",
+            "votes": 404013
+          },
+          {
+            "rank": 3,
+            "nameAsListed": "Chow Braeden",
+            "displayName": "Braeden Chow",
+            "votes": 8102
+          },
+          {
+            "rank": 4,
+            "nameAsListed": "Alexander Chris",
+            "displayName": "Chris Alexander",
+            "votes": 3550
+          },
+          {
+            "rank": 5,
+            "nameAsListed": "Gong Edward",
+            "displayName": "Edward Gong",
+            "votes": 3443
+          },
+          {
+            "rank": 6,
+            "nameAsListed": "Dean Laura",
+            "displayName": "Laura Dean",
+            "votes": 2224
+          },
+          {
+            "rank": 7,
+            "nameAsListed": "Brown Darrell",
+            "displayName": "Darrell Brown",
+            "votes": 2077
+          },
+          {
+            "rank": 8,
+            "nameAsListed": "Abdulkadir Imad",
+            "displayName": "Imad Abdulkadir",
+            "votes": 1873
+          },
+          {
+            "rank": 9,
+            "nameAsListed": "Abdulsalam Bahira",
+            "displayName": "Bahira Abdulsalam",
+            "votes": 1696
+          },
+          {
+            "rank": 10,
+            "nameAsListed": "Lee Rick",
+            "displayName": "Rick Lee",
+            "votes": 1288
+          },
+          {
+            "rank": 11,
+            "nameAsListed": "Choy Logan",
+            "displayName": "Logan Choy",
+            "votes": 1282
+          },
+          {
+            "rank": 12,
+            "nameAsListed": "Srivastava Sandeep",
+            "displayName": "Sandeep Srivastava",
+            "votes": 1149
+          },
+          {
+            "rank": 13,
+            "nameAsListed": "Clarke Kevin",
+            "displayName": "Kevin Clarke",
+            "votes": 1089
+          },
+          {
+            "rank": 14,
+            "nameAsListed": "Kalkounis Georgios",
+            "displayName": "Georgios Kalkounis",
+            "votes": 1085
+          },
+          {
+            "rank": 15,
+            "nameAsListed": "Curto Roberto",
+            "displayName": "Roberto Curto",
+            "votes": 959
+          },
+          {
+            "rank": 16,
+            "nameAsListed": "McVie Sarah",
+            "displayName": "Sarah McVie",
+            "votes": 957
+          },
+          {
+            "rank": 17,
+            "nameAsListed": "Atkinson Jamie",
+            "displayName": "Jamie Atkinson",
+            "votes": 932
+          },
+          {
+            "rank": 18,
+            "nameAsListed": "Rosen Amy",
+            "displayName": "Amy Rosen",
+            "votes": 919
+          },
+          {
+            "rank": 19,
+            "nameAsListed": "Collins Paul",
+            "displayName": "Paul Collins",
+            "votes": 845
+          },
+          {
+            "rank": 20,
+            "nameAsListed": "Sanders Lyall",
+            "displayName": "Lyall Sanders",
+            "votes": 784
+          },
+          {
+            "rank": 21,
+            "nameAsListed": "Kaaki Mohamad",
+            "displayName": "Mohamad Kaaki",
+            "votes": 727
+          },
+          {
+            "rank": 22,
+            "nameAsListed": "Thompson Joshua",
+            "displayName": "Joshua Thompson",
+            "votes": 709
+          },
+          {
+            "rank": 23,
+            "nameAsListed": "Buffey Brian",
+            "displayName": "Brian Buffey",
+            "votes": 649
+          },
+          {
+            "rank": 24,
+            "nameAsListed": "Ellis Laura",
+            "displayName": "Laura Ellis",
+            "votes": 630
+          },
+          {
+            "rank": 25,
+            "nameAsListed": "Lamoureux Michael",
+            "displayName": "Michael Lamoureux",
+            "votes": 570
+          },
+          {
+            "rank": 26,
+            "nameAsListed": "Shusterman Robert",
+            "displayName": "Robert Shusterman",
+            "votes": 522
+          },
+          {
+            "rank": 27,
+            "nameAsListed": "Deville Cory",
+            "displayName": "Cory Deville",
+            "votes": 485
+          },
+          {
+            "rank": 28,
+            "nameAsListed": "Parker Odessa Paloma",
+            "displayName": "Parker Odessa Paloma",
+            "votes": 457
+          },
+          {
+            "rank": 29,
+            "nameAsListed": "Fraser Martin",
+            "displayName": "Martin Fraser",
+            "votes": 437
+          },
+          {
+            "rank": 30,
+            "nameAsListed": "Frederick Alton",
+            "displayName": "Alton Frederick",
+            "votes": 432
+          },
+          {
+            "rank": 31,
+            "nameAsListed": "He Heather",
+            "displayName": "Heather He",
+            "votes": 421
+          },
+          {
+            "rank": 32,
+            "nameAsListed": "Zandkarimi Mostafa",
+            "displayName": "Mostafa Zandkarimi",
+            "votes": 396
+          },
+          {
+            "rank": 33,
+            "nameAsListed": "Haider Faizan",
+            "displayName": "Faizan Haider",
+            "votes": 370
+          },
+          {
+            "rank": 34,
+            "nameAsListed": "Cruze Alex",
+            "displayName": "Alex Cruze",
+            "votes": 366
+          },
+          {
+            "rank": 35,
+            "nameAsListed": "Tong Kuo Yu",
+            "displayName": "Tong Kuo Yu",
+            "votes": 366
+          },
+          {
+            "rank": 36,
+            "nameAsListed": "Desai Habiba",
+            "displayName": "Habiba Desai",
+            "votes": 364
+          },
+          {
+            "rank": 37,
+            "nameAsListed": "Tang Weizhen",
+            "displayName": "Weizhen Tang",
+            "votes": 354
+          },
+          {
+            "rank": 38,
+            "nameAsListed": "Mercieca Francis",
+            "displayName": "Francis Mercieca",
+            "votes": 352
+          },
+          {
+            "rank": 39,
+            "nameAsListed": "Hall Thomas",
+            "displayName": "Thomas Hall",
+            "votes": 341
+          },
+          {
+            "rank": 40,
+            "nameAsListed": "Razi Faisal",
+            "displayName": "Faisal Razi",
+            "votes": 337
+          },
+          {
+            "rank": 41,
+            "nameAsListed": "Prokos Gus",
+            "displayName": "Gus Prokos",
+            "votes": 327
+          },
+          {
+            "rank": 42,
+            "nameAsListed": "Hartley Jack",
+            "displayName": "Jack Hartley",
+            "votes": 322
+          },
+          {
+            "rank": 43,
+            "nameAsListed": "Osuji Joseph",
+            "displayName": "Joseph Osuji",
+            "votes": 320
+          },
+          {
+            "rank": 44,
+            "nameAsListed": "Sayers Naomi",
+            "displayName": "Naomi Sayers",
+            "votes": 274
+          },
+          {
+            "rank": 45,
+            "nameAsListed": "Handjis Peter",
+            "displayName": "Peter Handjis",
+            "votes": 270
+          },
+          {
+            "rank": 46,
+            "nameAsListed": "Kyrlangitses Isidoros",
+            "displayName": "Isidoros Kyrlangitses",
+            "votes": 256
+          },
+          {
+            "rank": 47,
+            "nameAsListed": "Yohannes Leila",
+            "displayName": "Leila Yohannes",
+            "votes": 206
+          },
+          {
+            "rank": 48,
+            "nameAsListed": "Levermany Reagan",
+            "displayName": "Reagan Levermany",
+            "votes": 202
+          },
+          {
+            "rank": 49,
+            "nameAsListed": "Mayanja Eddie",
+            "displayName": "Eddie Mayanja",
+            "votes": 193
+          },
+          {
+            "rank": 50,
+            "nameAsListed": "Dorville Wincess",
+            "displayName": "Wincess Dorville",
+            "votes": 175
+          },
+          {
+            "rank": 51,
+            "nameAsListed": "Yohannes Henoke",
+            "displayName": "Henoke Yohannes",
+            "votes": 157
+          },
+          {
+            "rank": 52,
+            "nameAsListed": "Tunney Jeffery",
+            "displayName": "Jeffery Tunney",
+            "votes": 133
+          },
+          {
+            "rank": 53,
+            "nameAsListed": "Weenen Jack",
+            "displayName": "Jack Weenen",
+            "votes": 72
+          }
+        ],
+        "source": {
+          "publisher": "City of Toronto — Open Data",
+          "dataset": "Elections – Official Results",
+          "datasetUrl": "https://open.toronto.ca/dataset/election-results-official/",
+          "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/96d35404-44d9-49d8-95bb-fb1e5489240d/resource/8006f3bd-0a48-4e20-8cc4-4155a30cd203/download/2026-results.zip",
+          "member": "2026-results/Poll_By_Poll_Mayor.xlsx",
+          "locator": "“Total” column of each candidate row, summed across all 25 ward sheets",
+          "method": "Votes = sum of the candidate's ward Totals. Share = votes ÷ all votes cast for mayor in the file. Cross-checked against the City's own ward-totals rows."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "about": "Hand-maintained. Maps each year's rows to groups that mean the same thing in every year. scripts/extract_budget.py applies the rules in order (first match wins), aborts on any row no rule matches, checks each year's groups add up to the file's total, and checks every document figure below against the file. Each rule's basis is 'files' (the City's files show it), 'sum' (adding up lines the files keep separate), 'document' (a City document shows it) or 'judgment' (our call, stated as such).",
+  "groups": {
+    "revenue": [
+      { "id": "property-tax", "label": "Property tax", "description": "The tax levied on property in the city, as booked to the program or service the files name for it." },
+      { "id": "provincial", "label": "Provincial subsidies", "description": "Money from the Province of Ontario." },
+      { "id": "user-fees", "label": "User fees, licences and permits", "description": "Fees for City services, licences and permits, and donations." },
+      { "id": "other", "label": "Other revenue", "description": "Everything else in the files' “Sundry and Other Revenues” / “Other Revenue” category. From 2019, when the files add sub-categories, that's other taxation (outside the property tax levy), fines and penalties, interest and investment income, payments in lieu of tax and miscellaneous revenue." },
+      { "id": "reserves", "label": "Draws from reserves", "description": "Money taken from the City's reserves and reserve funds (the files: “Contribution From Reserves/Reserve Funds”)." },
+      { "id": "federal", "label": "Federal subsidies", "description": "Money from the Government of Canada." },
+      { "id": "capital", "label": "Transfers from capital", "description": "Money moved into the operating budget from the capital budget." },
+      { "id": "recoveries", "label": "Recoveries between City divisions", "description": "One City division paying another. The matching cost is under “Charges between City divisions” on the spending side." },
+      { "id": "other-subsidies", "label": "Other subsidies", "description": "Subsidies the files don't attribute to the federal or provincial government." }
+    ],
+    "expenses": [
+      { "id": "salaries-benefits", "label": "Salaries and benefits", "description": "Pay, benefits and allowances for staff (City divisions and agencies such as Police and the TTC)." },
+      { "id": "other", "label": "Other expenditures", "description": "The files' “Other Expenditures” category. From 2019, when the files add sub-categories, that's contributions and transfers, debt charges, tax write-offs and miscellaneous spending." },
+      { "id": "services-rent", "label": "Services and rent", "description": "Contracted and other services, rent, insurance, travel and similar." },
+      { "id": "to-reserves", "label": "Contributions to reserves", "description": "Money set aside in the City's reserves and reserve funds." },
+      { "id": "materials", "label": "Materials and supplies", "description": "Energy, supplies, parts, salt, chemicals and similar." },
+      { "id": "charges", "label": "Charges between City divisions", "description": "One City division paying another. The matching income is under “Recoveries between City divisions” on the revenue side." },
+      { "id": "to-capital", "label": "Contributions to capital", "description": "Money moved from the operating budget to the capital budget." },
+      { "id": "equipment", "label": "Equipment", "description": "Equipment, computers, furniture and vehicles." }
+    ]
+  },
+  "rules": [
+    {
+      "id": "property-tax-program", "side": "revenue", "group": "property-tax", "years": [2014, 2015],
+      "match": { "program": "Property Tax" }, "basis": "files",
+      "why": "The 2014 and 2015 files have a program named “Property Tax”. Its revenue includes the small “Special Levy for Scarborough Subway” line the files book to that program."
+    },
+    {
+      "id": "property-tax-service", "side": "revenue", "group": "property-tax", "years": [2016, 2017],
+      "match": { "program": "Non-Program Revenues", "service": "Property Tax" }, "basis": "files",
+      "why": "The 2016 and 2017 files have no “Property Tax” program; Non-Program Revenues has a service named “Property Tax”."
+    },
+    {
+      "id": "property-tax-levy", "side": "revenue", "group": "property-tax", "years": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026],
+      "match": { "program": "Non-Program Taxation Tax Levy" }, "basis": "document",
+      "why": "From 2018 the files have no “Property Tax” program or service; the program “Non-Program Taxation Tax Levy” appears instead. The City's Tax Levy By-law each year sets the levy raised on all rateable property in the city, and its total is within 0.1% of this program's revenue (checked for the years below).",
+      "documents": [
+        { "year": 2018, "label": "Tax Levy By-law for 2018 (By-law 166-2018)", "url": "https://www.toronto.ca/legdocs/bylaws/2018/law0166.pdf", "amount": 4244610271, "quote": "the general local municipal levy of $4,244,610,271" },
+        { "year": 2025, "label": "Tax Levy By-law for 2025 (By-law 105-2025)", "url": "https://www.toronto.ca/legdocs/bylaws/2025/law0105.pdf", "amount": 6063065743, "quote": "the general local municipal levy of $ 6,063,065,743" }
+      ]
+    },
+    {
+      "id": "recoveries", "side": "revenue", "group": "recoveries",
+      "match": { "category": "Inter-Divisional Recoveries" }, "basis": "files",
+      "why": "A category of its own in every file except 2021's."
+    },
+    {
+      "id": "recoveries-2021", "side": "revenue", "group": "recoveries", "years": [2021],
+      "match": { "category": "Other Revenue", "subCategory": "Inter-Divisional Recoveries" }, "basis": "files",
+      "why": "In the 2021 file, “Inter-Divisional Recoveries” is a sub-category of Other Revenue under the same name."
+    },
+    {
+      "id": "other-subsidies", "side": "revenue", "group": "other-subsidies",
+      "match": { "category": "Other Subsidies" }, "basis": "files",
+      "why": "A category of its own up to 2020."
+    },
+    {
+      "id": "other-subsidies-sub", "side": "revenue", "group": "other-subsidies",
+      "match": { "category": "Other Revenue", "subCategory": "Other Subsidies" }, "basis": "files",
+      "why": "From 2021, “Other Subsidies” is a sub-category of Other Revenue under the same name."
+    },
+    {
+      "id": "other-revenue", "side": "revenue", "group": "other",
+      "match": { "category": ["Sundry and Other Revenues", "Other Revenue"] }, "basis": "files",
+      "why": "“Sundry and Other Revenues” (to 2020) and “Other Revenue” (from 2021) hold the same five sub-categories in the 2019–2021 files: Taxation, Fines & Penalty, Interest & Investment Income, Miscellaneous Revenues and Pymt In Lieu Of Tax. Property tax is taken out first (rules above), so it isn't counted twice."
+    },
+    {
+      "id": "user-fees", "side": "revenue", "group": "user-fees",
+      "match": { "category": ["User Fees & Donations", "Licences & Permits Revenue"] }, "basis": "files",
+      "why": "“Licences & Permits Revenue” is a category of its own up to 2020; from 2021 it's a sub-category of User Fees & Donations under the same name. Adding them together makes every year comparable."
+    },
+    { "id": "provincial", "side": "revenue", "group": "provincial", "match": { "category": "Provincial Subsidies" }, "basis": "files", "why": "Same category name in every file." },
+    { "id": "federal", "side": "revenue", "group": "federal", "match": { "category": "Federal Subsidies" }, "basis": "files", "why": "Same category name in every file." },
+    { "id": "reserves", "side": "revenue", "group": "reserves", "match": { "category": "Contribution From Reserves/Reserve Funds" }, "basis": "files", "why": "Same category name in every file." },
+    {
+      "id": "capital", "side": "revenue", "group": "capital",
+      "match": { "category": ["Transfers From Capital", "xTransfers From Capital"] }, "basis": "judgment",
+      "why": "Named “Transfers From Capital” in every file up to 2024. The 2025 file names it “xTransfers From Capital”; we treat that as the same category because the name differs only by the leading “x”. The 2026 file has neither."
+    },
+    {
+      "id": "charges", "side": "expenses", "group": "charges",
+      "match": { "category": "Inter-Divisional Charges" }, "basis": "files",
+      "why": "A category of its own in every file except 2021's."
+    },
+    {
+      "id": "charges-2021", "side": "expenses", "group": "charges", "years": [2021],
+      "match": { "category": "Other Expenditures", "subCategory": "Inter-Divisional Charges" }, "basis": "files",
+      "why": "In the 2021 file, “Inter-Divisional Charges” is a sub-category of Other Expenditures under the same name."
+    },
+    {
+      "id": "salaries-benefits", "side": "expenses", "group": "salaries-benefits",
+      "match": { "category": ["Salaries And Benefits", "Salaries", "Benefits"] }, "basis": "sum",
+      "why": "One category, “Salaries And Benefits”, up to 2020. From 2021 the files split it into “Salaries” and “Benefits”, and the “Allowances” sub-category moves to Benefits, so only the combined total compares across years."
+    },
+    { "id": "services-rent", "side": "expenses", "group": "services-rent", "match": { "category": "Service And Rent" }, "basis": "files", "why": "Same category name in every file." },
+    { "id": "materials", "side": "expenses", "group": "materials", "match": { "category": "Materials & Supplies" }, "basis": "files", "why": "Same category name in every file." },
+    { "id": "equipment", "side": "expenses", "group": "equipment", "match": { "category": "Equipment" }, "basis": "files", "why": "Same category name in every file." },
+    { "id": "to-capital", "side": "expenses", "group": "to-capital", "match": { "category": "Contribution To Capital" }, "basis": "files", "why": "Same category name in every file." },
+    { "id": "to-reserves", "side": "expenses", "group": "to-reserves", "match": { "category": "Contribution To Reserves/Reserve Funds" }, "basis": "files", "why": "Same category name in every file." },
+    {
+      "id": "scarborough-levy", "side": "expenses", "group": "to-reserves", "years": [2014, 2015],
+      "match": { "category": ["Special Levy for Scarborough Subway (Reserve Contribution)", "Special Levy for Scarborough Subway"] }, "basis": "files",
+      "why": "In 2014 and 2015 the Property Tax program spends its Scarborough subway levy as a separate category. The files label it a reserve contribution: “Special Levy for Scarborough Subway (Reserve Contribution)” is the 2014 expense line's name and the 2015 revenue line's name."
+    },
+    { "id": "other-expenditures", "side": "expenses", "group": "other", "match": { "category": "Other Expenditures" }, "basis": "files", "why": "Same category name in every file. In 2021, Inter-Divisional Charges are taken out first (rule above)." }
+  ]
+}

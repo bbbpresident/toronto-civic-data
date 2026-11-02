@@ -1,0 +1,846 @@
+{
+  "note": "Hand-curated. Every quote must appear verbatim on its archived platform page and every vote must match the City's voting-record file; run scripts/check_promises.py after any edit.",
+  "campaigns": [
+    {
+      "id": "chow-2023",
+      "mayor": "Olivia Chow",
+      "election": "2023 Mayoral By-Election",
+      "electionYear": 2023,
+      "votingTerm": "2022-2026",
+      "platform": {
+        "publisher": "Olivia Chow for Mayor campaign (archived by the Internet Archive)",
+        "title": "Olivia's Plan for Toronto — oliviachow.ca/plan, as it stood on election day",
+        "url": "https://web.archive.org/web/20230626111840/https://www.oliviachow.ca/plan",
+        "accessed": "2026-11-01"
+      },
+      "promises": [
+        {
+          "id": "city-homes",
+          "topic": "Housing",
+          "quote": "Her City Homes Plan will allow the City to act as a developer to build 25,000 rent-controlled homes on city-owned land.",
+          "status": "in-progress",
+          "summary": "Council adopted \"Generational Transformation of Toronto's Housing System to Urgently Build More Affordable Homes\" (November 2023) and the Toronto Builds framework for City-owned land (May 2025). The City's Toronto Builds page lists 39 sites, four of them under construction, and no completed projects or unit totals.",
+          "evidence": [
+            {
+              "text": "Council adopted \"Generational Transformation of Toronto's Housing System to Urgently Build More Affordable Homes\" as amended, 24–1.",
+              "vote": {
+                "term": "2022-2026",
+                "item": "2023.EX9.3",
+                "date": "2023-11-08",
+                "motion": "Adopt Item as Amended",
+                "result": "Carried, 24-1"
+              }
+            },
+            {
+              "text": "Council adopted \"Toronto Builds - A Policy Framework to Build More Affordable Rental Homes on Public Land\" as amended, 17–1.",
+              "vote": {
+                "term": "2022-2026",
+                "item": "2025.PH21.4",
+                "date": "2025-05-22",
+                "motion": "Adopt Item as Amended",
+                "result": "Carried, 17-1"
+              }
+            },
+            {
+              "text": "Toronto Builds portfolio: 39 housing development sites; four listed as under construction.",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Toronto Builds",
+                "url": "https://www.toronto.ca/community-people/housing-shelter/building-affordable-homes/housing-initiatives/toronto-builds/",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "acquisition-fund",
+          "topic": "Housing",
+          "quote": "With an annual investment of $100 million, we can keep thousands of homes affordable and secure by taking them off the private market and giving them to not-for-profits, community land trusts, and Indigenous housing providers.",
+          "status": "partly",
+          "summary": "This is done through the City's existing Multi-Unit Residential Acquisition (MURA) program, launched in 2021. Awards reached $102 million in the 2024 round but were about $48 million in 2025, and the Mayor's 2026 budget plans $45 million — so the $100 million a year has been reached once, not annually.",
+          "evidence": [
+            {
+              "text": "MURA awards: $39.5M (2023 round), $102M (2024 round), about $48M (2025 round); launched 2021.",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Multi-Unit Residential Acquisition Program",
+                "url": "https://www.toronto.ca/community-people/housing-shelter/building-affordable-homes/housing-initiatives/multi-unit-residential-acquisition-program/",
+                "accessed": "2026-11-01"
+              }
+            },
+            {
+              "text": "\"This year, we will be investing another $45 Million in this program\" (p. 7).",
+              "source": {
+                "publisher": "City of Toronto — Office of the Mayor",
+                "title": "Delivering an affordable, caring & safe city: Mayor Olivia Chow 2026 Budget",
+                "url": "https://www.toronto.ca/legdocs/mmis/2026/mpb/bgrd/backgroundfile-284329.pdf",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "renovictions",
+          "topic": "Renters",
+          "quote": "Olivia is committed to developing a strong City of Toronto Anti-Renovictions Bylaw that will leverage the City’s authorities to deter renovictions.",
+          "status": "done",
+          "summary": "Council adopted a Rental Renovation Licence By-law in November 2024; landlords have needed a licence for renovations that require a tenant to leave since July 31, 2025.",
+          "evidence": [
+            {
+              "text": "Council adopted \"Implementing a Rental Renovation Licence By-law to Address Renovictions\" as amended, 25–1.",
+              "vote": {
+                "term": "2022-2026",
+                "item": "2024.PH16.4",
+                "date": "2024-11-14",
+                "motion": "Adopt Item as Amended",
+                "result": "Carried, 25-1"
+              }
+            },
+            {
+              "text": "\"Toronto City Council adopted the bylaw in November 2024\"; licences required starting July 31 (release dated July 25, 2025).",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "City of Toronto set to roll out new Renovictions Bylaw",
+                "url": "https://www.toronto.ca/news/city-of-toronto-set-to-roll-out-new-renovictions-bylaw/",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "crisis-service",
+          "topic": "Community safety",
+          "quote": "Olivia will make this service available to everyone in the city.",
+          "context": "The Toronto Community Crisis Service (trained crisis workers who respond to mental health calls).",
+          "status": "done",
+          "summary": "Council adopted the expansion plan in November 2023, and the City launched the Toronto Community Crisis Service city-wide in September 2024.",
+          "evidence": [
+            {
+              "text": "Council adopted \"2023 Update on the Toronto Community Crisis Service and Proposed Expansion Plan\", 23–0.",
+              "vote": {
+                "term": "2022-2026",
+                "item": "2023.EX9.10",
+                "date": "2023-11-09",
+                "motion": "Adopt Item",
+                "result": "Carried, 23-0"
+              }
+            },
+            {
+              "text": "City-wide launch, \"ahead of schedule\" (release dated September 26, 2024).",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Mayor Olivia Chow launches Toronto Community Crisis Service city-wide",
+                "url": "https://www.toronto.ca/news/mayor-olivia-chow-launches-toronto-community-crisis-service-city-wide/",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "rent-bank",
+          "topic": "Renters",
+          "quote": "Doubling the reach of Toronto’s Rent Bank to help 5,500 people each year and expand eligibility requirements to assist more tenants with grants to help cover rent.",
+          "status": "partly",
+          "summary": "Rent Bank funding has nearly doubled since 2023, to $10.8 million. The Mayor's 2026 budget says the Rent Bank and other programs are helping 4,500 people stay housed this year — short of the 5,500 the platform named for the Rent Bank alone.",
+          "evidence": [
+            {
+              "text": "\"We’ve nearly doubled funding for the Rent Bank since 2023—it’s now $10.8 million.\" \"Between the Rent Bank and other programs, we’re helping 4,500 people stay in their homes this year.\" (p. 5)",
+              "source": {
+                "publisher": "City of Toronto — Office of the Mayor",
+                "title": "Delivering an affordable, caring & safe city: Mayor Olivia Chow 2026 Budget",
+                "url": "https://www.toronto.ca/legdocs/mmis/2026/mpb/bgrd/backgroundfile-284329.pdf",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "rent-supplements",
+          "topic": "Homelessness",
+          "quote": "She has a plan to create 1,000 new rent supplements to help people secure permanent housing, open new 24/7 respite spaces so people have somewhere to go, and create a new fund for services, where community agencies, front-line workers and people with lived experience can determine how best to use it.",
+          "status": "no-action-found",
+          "summary": "We searched the City's budget documents (2024–2026) and news releases and found no program of 1,000 new rent supplements or new 24/7 respite spaces described as such. This means we didn't find a record, not that nothing was done.",
+          "evidence": []
+        },
+        {
+          "id": "ttc-service",
+          "topic": "Transit",
+          "quote": "Olivia is committed to reversing the recent service cuts and significantly improving transit service to make sure it is fast and reliable.",
+          "status": "partly",
+          "summary": "The TTC's 2024 budget raised service to 97% of pre-pandemic levels by September 2024, and the 2026 budget adds 200,000 service hours. Service has grown each year, but the records describe a return toward pre-pandemic levels rather than a full reversal.",
+          "evidence": [
+            {
+              "text": "2024 budget \"Funds a further service increase to 97 per cent by September 2024\" (release dated December 20, 2023).",
+              "source": {
+                "publisher": "Toronto Transit Commission",
+                "title": "TTC Board approves 2024 budget that freezes fares, increases service, and improves system safety",
+                "url": "https://www.ttc.ca/news/2023/December/TTC-Board-approves-2024-budget",
+                "accessed": "2026-11-01"
+              }
+            },
+            {
+              "text": "\"The 2026 TTC budget is adding 200,000 more hours of TTC service this year\" (p. 12).",
+              "source": {
+                "publisher": "City of Toronto — Office of the Mayor",
+                "title": "Delivering an affordable, caring & safe city: Mayor Olivia Chow 2026 Budget",
+                "url": "https://www.toronto.ca/legdocs/mmis/2026/mpb/bgrd/backgroundfile-284329.pdf",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "arts-council",
+          "topic": "Arts",
+          "quote": "Increase funding to the Toronto Arts Council by $10 million over 5 years.",
+          "status": "in-progress",
+          "summary": "The 2026 budget continues a multi-year commitment of an additional $2 million for the Toronto Arts Council — the pace of $10 million over five years. The five years aren't over.",
+          "evidence": [
+            {
+              "text": "\"This budget also continues our multi-year commitment to supporting the Toronto Arts Council with an additional $2 million\" (p. 13).",
+              "source": {
+                "publisher": "City of Toronto — Office of the Mayor",
+                "title": "Delivering an affordable, caring & safe city: Mayor Olivia Chow 2026 Budget",
+                "url": "https://www.toronto.ca/legdocs/mmis/2026/mpb/bgrd/backgroundfile-284329.pdf",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "libraries",
+          "topic": "Libraries",
+          "quote": "Olivia will expand weekday library hours and ensure every Toronto Public Library branch is open seven days a week - including Sundays - so families can have more access to these important community hubs.",
+          "status": "done",
+          "summary": "The 2026 budget funds seven-day service at every Toronto Public Library branch; the Mayor's budget document says every branch is open seven days a week starting in 2026.",
+          "evidence": [
+            {
+              "text": "\"For three years running we have expanded library hours, and starting this year, every Toronto Public Library branch is open seven days a week.\" (p. 4)",
+              "source": {
+                "publisher": "City of Toronto — Office of the Mayor",
+                "title": "Delivering an affordable, caring & safe city: Mayor Olivia Chow 2026 Budget",
+                "url": "https://www.toronto.ca/legdocs/mmis/2026/mpb/bgrd/backgroundfile-284329.pdf",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "busway",
+          "topic": "Transit",
+          "quote": "Olivia Chow will make sure Scarborough transit riders are treated fairly and can keep moving when the Scarborough RT closes by creating a dedicated, off-street bus rapid transit line – or busway – along the RT corridor.",
+          "status": "done",
+          "summary": "The Scarborough Busway opened on September 30, 2026, on a dedicated four-kilometre corridor between Kennedy Station and Ellesmere.",
+          "evidence": [
+            {
+              "text": "\"The dedicated four-kilometre busway runs between Kennedy Station and Ellesmere\" (release dated September 30, 2026).",
+              "source": {
+                "publisher": "Toronto Transit Commission",
+                "title": "Scarborough Busway now open, delivering faster and more reliable transit to Scarborough",
+                "url": "https://www.ttc.ca/news/2026/September/Scarborough-Busway-now-open-delivering-faster-and-more-reliable-transit-to-Scarborough",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "luxury-homes-tax",
+          "topic": "Taxes",
+          "quote": "She will raise the Municipal Land Transfer Tax on luxury homes, with new graduated rates on purchases of homes valued at over $3 million, $5 million, $20 million and so on.",
+          "status": "done",
+          "summary": "Graduated land transfer tax rates on homes over $3 million took effect January 1, 2024 (previously the top rate was 2.5% on everything over $2 million). Council raised them again in December 2025, effective April 1, 2026, to between 4.40% and 8.60%.",
+          "evidence": [
+            {
+              "text": "Rates from January 1, 2024: 3.5% ($3M–$4M) rising to 7.5% (over $20M); from March 1, 2017 to December 31, 2023 the top bracket was 2.5% over $2M.",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Municipal Land Transfer Tax Historical Rates",
+                "url": "https://www.toronto.ca/services-payments/property-taxes-utilities/municipal-land-transfer-tax-mltt/municipal-land-transfer-tax-mltt-rates-and-fees/municipal-land-transfer-tax-historical-rates/",
+                "accessed": "2026-11-01"
+              }
+            },
+            {
+              "text": "Council adopted \"Making life more affordable for families by asking luxury-home buyers to chip in more\" as amended, 17–7.",
+              "vote": {
+                "term": "2022-2026",
+                "item": "2025.EX28.1",
+                "date": "2025-12-17",
+                "motion": "Adopt Item as Amended",
+                "result": "Carried, 17-7"
+              }
+            },
+            {
+              "text": "Rates as of April 1, 2026: 4.40% ($3M–$4M) to 8.60% (over $20M).",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Municipal Land Transfer Tax & Municipal Non-Resident Speculation Tax Rates & Fees",
+                "url": "https://www.toronto.ca/services-payments/property-taxes-utilities/municipal-land-transfer-tax-mltt/municipal-land-transfer-tax-mltt-rates-and-fees/",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vacant-homes-tax",
+          "topic": "Taxes",
+          "quote": "Olivia will raise the Vacant Homes Tax from 1% to 3% to make more homes available and will use the funds from the tax for affordable housing initiatives.",
+          "status": "done",
+          "summary": "Council raised the Vacant Home Tax from 1% to 3% of a property's assessed value, effective for the 2024 taxation year.",
+          "evidence": [
+            {
+              "text": "Staff report (September 19, 2023) recommends \"increasing the tax rate from 1% to 3% of the Current Value Assessment (CVA) effective for the 2024 Taxation Year\".",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Report for Action: Vacant Home Tax: Status Update (item 2023.EX8.7)",
+                "url": "https://www.toronto.ca/legdocs/mmis/2023/ex/bgrd/backgroundfile-239435.pdf",
+                "accessed": "2026-11-01"
+              }
+            },
+            {
+              "text": "Council adopted \"Vacant Home Tax: Status Update\" as amended, 21–2.",
+              "vote": {
+                "term": "2022-2026",
+                "item": "2023.EX8.7",
+                "date": "2023-10-11",
+                "motion": "Adopt Item as Amended",
+                "result": "Carried, 21-2",
+                "description": "Adopt the balance of the Item, as amended"
+              }
+            },
+            {
+              "text": "\"For the 2024 taxation year, City Council approved an increase in the VHT rate from one per cent to three per cent.\"",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "2024 Vacant Home Tax Program (fact sheet, September 24, 2024)",
+                "url": "https://www.toronto.ca/news/2024-vacant-home-tax-program/",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "no-veto",
+          "topic": "Governance",
+          "quote": "Olivia will never veto council decisions.",
+          "status": "done",
+          "summary": "The City's list of mayoral decisions shows no veto through July 2026. Her budget-time decisions (2024, 2025, 2026) shortened the veto period on Council's budget amendments instead of using it. She has used other strong-mayor powers — preparing the budget and appointing committee chairs — which the promise didn't cover.",
+          "evidence": [
+            {
+              "text": "Mayoral Decisions 2023–2026: none vetoes a by-law or Council decision; 4-2023, 3-2024, 3-2025 and 4-2026 give notice shortening the 10-day veto period on budget amendments.",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Mayoral Decisions",
+                "url": "https://www.toronto.ca/city-government/council/mayoral-decisions/",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        }
+      ],
+      "notAssessed": [
+        {
+          "promise": "Oppose the Province's Ontario Place plan and not yield City land; oppose moving the Ontario Science Centre; secure a right of first refusal on affordable buildings",
+          "reason": "The outcome rests with the Province, not the City."
+        },
+        {
+          "promise": "Establish a Renters Action Committee",
+          "reason": "Council records point to a 2023 motion (2023.MM11.34), but the City's council website blocks automated access, so we couldn't read the decision to verify it."
+        },
+        {
+          "promise": "Triple Eviction Prevention in the Community; scale up the Tenant Support Program; more RentSafeTO enforcement",
+          "reason": "Not yet assessed."
+        },
+        {
+          "promise": "Emergency Response Transformation Team for 911 wait times; CaféTO changes; Community Benefit Agreements; climate-ready buildings; TTC cell service and station staff",
+          "reason": "Not yet assessed."
+        }
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "tory-2022",
+      "mayor": "John Tory",
+      "election": "2022 General Election",
+      "electionYear": 2022,
+      "votingTerm": "2022-2026",
+      "checked": "2026-11-01",
+      "promises": [],
+      "notAssessed": [],
+      "missingPlatform": "We couldn't find the 2022 campaign's platform in the Internet Archive: by October 2022 johntory.ca had become an unrelated site, and we found no other archived campaign domain. Rather than rebuild the promises from news coverage, none are assessed. Tory resigned in February 2023."
+    },
+    {
+      "id": "tory-2018",
+      "mayor": "John Tory",
+      "election": "2018 General Election",
+      "electionYear": 2018,
+      "votingTerm": "2018-2022",
+      "checked": "2026-11-01",
+      "platform": {
+        "publisher": "John Tory for Mayor campaign (archived by the Internet Archive)",
+        "title": "johntory.ca issue pages, last captured before election day (October 22, 2018)",
+        "url": "https://web.archive.org/web/20180924172231/http://johntory.ca/Issues/Details/Affordable-Housing",
+        "accessed": "2026-11-01"
+      },
+      "archiveNote": "Promises come from several of the campaign's issue pages; each links to its own archived copy.",
+      "promises": [
+        {
+          "id": "affordable-40000",
+          "topic": "Housing",
+          "quote": "Approve for building 40,000 affordable rental units over 12 years, roughly 3,300 annually.",
+          "status": "in-progress",
+          "summary": "The City's HousingTO 2020–2030 plan carried a 40,000-home approval target; in 2023 Council raised it to 65,000 rent-controlled homes. By September 2024 the City reported more than 23,000 approved toward the target. The 12 years aren't over.",
+          "evidence": [
+            {
+              "text": "\"The City has approved more than 23,000 new rent-controlled, affordable rental and supportive homes towards this target\"; target raised in 2023 to 65,000 (release dated September 19, 2024).",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "City of Toronto provides annual progress update on the HousingTO 2020-2030 Action Plan and the 2022-2026 Housing Action Plan",
+                "url": "https://www.toronto.ca/news/city-of-toronto-provides-annual-progress-update-on-the-housingto-2020-2030-action-plan-and-the-2022-2026-housing-action-plan/",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "housing-secretariat",
+          "topic": "Housing",
+          "quote": "Create an Affordable Housing Secretariat to coordinate the City’s activities on Affordable Housing across divisions.",
+          "status": "done",
+          "summary": "The City turned its Affordable Housing Office into a new Housing Secretariat division in 2019.",
+          "evidence": [
+            {
+              "text": "\"The Affordable Housing Office was transformed into the new Housing Secretariat in 2019, along with an expanded scope of work and responsibilities\".",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "2020 Program Summary: Housing Secretariat",
+                "url": "https://www.toronto.ca/wp-content/uploads/2020/04/87d6-Housing-Secretariat-PUBLIC-BOOK-BN.pdf",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "property-tax",
+          "topic": "Taxes",
+          "quote": "If he is re-elected, the Mayor will keep property taxes at or below the rate of inflation for the next four years.",
+          "platformUrl": "https://web.archive.org/web/20180924172310/http://johntory.ca/Issues/Details/Taxes",
+          "status": "partly",
+          "summary": "The City described each year's residential increase for the operating budget as inflationary, but Council also raised the separate City Building Fund levy — itself a property tax — on top. In 2022, for example, the residential increase was 2.9% for the operating budget plus 1.5% for the City Building Fund: 4.40% in all.",
+          "evidence": [
+            {
+              "text": "2022: \"an inflationary increase of 2.90 per cent for residential properties\" plus \"an incremental increase of 1.5 per cent to the City Building Fund Levy\"; Table 1 total for residential: 4.40%.",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Report for Action: 2022 Property Tax Rates and Related Matters",
+                "url": "https://www.toronto.ca/legdocs/mmis/2022/bu/bgrd/backgroundfile-176511.pdf",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "community-safety-25m",
+          "topic": "Community safety",
+          "quote": "The Mayor has committed to matching the recent provincial investment of $25 million towards community safety programs.",
+          "platformUrl": "https://web.archive.org/web/20180924172244/http://johntory.ca/Issues/Details/Fighting-Crime",
+          "status": "no-action-found",
+          "summary": "We searched City budget documents and news releases for a $25 million City match of provincial community-safety funding and found none. This means we didn't find a record, not that nothing was done.",
+          "evidence": []
+        }
+      ],
+      "notAssessed": [
+        {
+          "promise": "Downtown Relief Line subway, Scarborough subway, Eglinton East and West LRTs",
+          "reason": "The outcome rests with the Province, which took over these projects in 2019."
+        },
+        {
+          "promise": "Community Safety Advisory Body in 2019; fully fund Poverty Reduction 2.0",
+          "reason": "Not yet assessed."
+        }
+      ]
+    },
+    {
+      "id": "tory-2014",
+      "mayor": "John Tory",
+      "election": "2014 General Election",
+      "electionYear": 2014,
+      "votingTerm": "2014-2018",
+      "checked": "2026-11-01",
+      "platform": {
+        "publisher": "John Tory for Mayor campaign (archived by the Internet Archive)",
+        "title": "johntory.ca policy pages, last captured before election day (October 27, 2014)",
+        "url": "https://web.archive.org/web/20141023185934/http://www.johntory.ca/housing-and-social-inclusion-policy/",
+        "accessed": "2026-11-01"
+      },
+      "archiveNote": "Promises come from several of the campaign's policy pages; each links to its own archived copy. The 2014–2018 voting file records no vote dates, so votes are identified by agenda item.",
+      "promises": [
+        {
+          "id": "smarttrack",
+          "topic": "Transit",
+          "quote": "Will build a 53 km express surface rail subway with 22 new stations in seven years",
+          "platformUrl": "https://web.archive.org/web/20141023185950/http://www.johntory.ca/one-toronto-transit-plan/",
+          "status": "partly",
+          "summary": "Council adopted a SmartTrack work plan in 2015 and the SmartTrack Stations Program in 2018. What exists today is a program of five new GO/UP Express stations on existing rail lines: three in development and two deferred in December 2024. None is open.",
+          "evidence": [
+            {
+              "text": "Council adopted \"SmartTrack Work Plan (2015 - 2016)\", 42–2.",
+              "vote": {
+                "term": "2014-2018",
+                "item": "2015.EX2.2",
+                "motion": "Adopt Item",
+                "result": "Carried, 42-2"
+              }
+            },
+            {
+              "text": "Council adopted \"Implementation of the SmartTrack Stations Program and the Metrolinx Regional Express Rail Program\" as amended, 37–6.",
+              "vote": {
+                "term": "2014-2018",
+                "item": "2018.EX33.1",
+                "motion": "Adopt Item as Amended",
+                "result": "Carried, 37-6",
+                "description": "Adopt balance of the item"
+              }
+            },
+            {
+              "text": "\"five new GO/UP Express Stations on existing train lines\"; East Harbour, Junction Triangle (Bloor-Lansdowne) and Stockyards (St. Clair-Old Weston) in development; Finch-Kennedy and King-Liberty deferred (Council, December 2024).",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "SmartTrack Stations Program",
+                "url": "https://www.toronto.ca/services-payments/streets-parking-transportation/transit-in-toronto/transit-expansion/smarttrack-stations-program/",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tch-task-force",
+          "topic": "Housing",
+          "quote": "Form a task force to immediately review and recommend changes to the corporate structure of Toronto Community Housing.",
+          "status": "done",
+          "summary": "The Mayor's Task Force on Toronto Community Housing issued an interim report and a final report dated January 26, 2016 — later than the July 1, 2015 reporting deadline the platform set. Council then adopted \"Tenants First\", its response, in 2016.",
+          "evidence": [
+            {
+              "text": "\"Transformative Change for TCHC: A Report from the Mayor's Task Force on Toronto Community Housing\", January 26, 2016 (item EX16.11 appendix).",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Transformative Change for TCHC (Mayor's Task Force final report)",
+                "url": "https://www.toronto.ca/legdocs/mmis/2016/ex/bgrd/backgroundfile-94439.pdf",
+                "accessed": "2026-11-01"
+              }
+            },
+            {
+              "text": "Council adopted \"Tenants First - A Way Forward for Toronto Community Housing and Social Housing in Toronto\" as amended, 36–0.",
+              "vote": {
+                "term": "2014-2018",
+                "item": "2016.EX16.11",
+                "motion": "Adopt Item as Amended",
+                "result": "Carried, 36-0"
+              }
+            }
+          ]
+        },
+        {
+          "id": "housing-committee",
+          "topic": "Housing",
+          "quote": "Establishment of a Standing Committee on Housing and Homelessness at City Council.",
+          "status": "done",
+          "summary": "Council created a standing Housing Committee in 2018, the last year of the term.",
+          "evidence": [
+            {
+              "text": "Council adopted \"Creation of a Standing Committee on Housing\" as amended, 31–1 (two-thirds required).",
+              "vote": {
+                "term": "2014-2018",
+                "item": "2018.EX35.1",
+                "motion": "Adopt Item as Amended",
+                "result": "Carried, 31-1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "rush-hour-parking",
+          "topic": "Congestion",
+          "quote": "Parking enforcement in rush hours;",
+          "platformUrl": "https://web.archive.org/web/20141023190004/http://www.johntory.ca/fighting-gridlock-initiative/",
+          "status": "done",
+          "summary": "Council adopted a plan to increase parking enforcement on arterial roads during rush hours in 2015.",
+          "evidence": [
+            {
+              "text": "Council adopted \"Toronto Police Service - Increasing Parking Enforcement on Arterial Roads During the Rush Hours and On All Bike Lanes\", 31–0.",
+              "vote": {
+                "term": "2014-2018",
+                "item": "2015.GM1.5",
+                "motion": "Adopt Item",
+                "result": "Carried, 31-0"
+              }
+            }
+          ]
+        },
+        {
+          "id": "invest-toronto",
+          "topic": "Economy",
+          "quote": "Unifying and streamlining the operations of Invest Toronto, the City Economic Development Department and the Greater Toronto Marketing Alliance to make our city more functional;",
+          "platformUrl": "https://web.archive.org/web/20141023190018/http://www.johntory.ca/one-toronto-jobs-and-economy-plan/",
+          "status": "done",
+          "summary": "Council endorsed a regional foreign direct investment agency in 2015 and wound up Invest Toronto in 2017.",
+          "evidence": [
+            {
+              "text": "Council adopted \"Towards a Regional Development Agency (Foreign Direct Investment Agency)\", 38–1.",
+              "vote": {
+                "term": "2014-2018",
+                "item": "2015.ED1.6",
+                "motion": "Adopt Item",
+                "result": "Carried, 38-1"
+              }
+            },
+            {
+              "text": "Council adopted \"Wind-Up of Invest Toronto\", 41–0.",
+              "vote": {
+                "term": "2014-2018",
+                "item": "2017.EX26.9",
+                "motion": "Adopt Item",
+                "result": "Carried, 41-0"
+              }
+            }
+          ]
+        }
+      ],
+      "notAssessed": [
+        {
+          "promise": "Immediate construction of the Scarborough subway extension; Toronto ravines added to the Greenbelt",
+          "reason": "The outcome rests with the Province (the subway extension was taken over by Metrolinx)."
+        },
+        {
+          "promise": "Invest $864 million, the City's one-third share, in Toronto Community Housing repairs",
+          "reason": "The City's $864 million share comes from a 2013 ten-year plan that predates the campaign; we found no later Council decision tied to the promise."
+        },
+        {
+          "promise": "Environment Advocate, Sustainable City Advisory Board and annual Sustainable City Report; enhanced Rent Bank; Creative Economy Advocate",
+          "reason": "Not yet assessed."
+        }
+      ]
+    },
+    {
+      "id": "ford-2010",
+      "mayor": "Rob Ford",
+      "election": "2010 General Election",
+      "electionYear": 2010,
+      "votingTerm": "2010-2014",
+      "checked": "2026-11-01",
+      "platform": {
+        "publisher": "Rob Ford for Mayor campaign (archived by the Internet Archive)",
+        "title": "\"Rob Ford Introduces Taxpayer Protection Plan\", robfordformayor.ca, July 14, 2010",
+        "url": "https://web.archive.org/web/20100721011945/http://www.robfordformayor.ca/2010/07/14/taxpayerprotectionplan/",
+        "accessed": "2026-11-01"
+      },
+      "archiveNote": "Only part of this campaign survives in the Internet Archive: the Taxpayer Protection Plan and a few announcements. The launch-speech PDF and the later \"Saving Our City\" plan (September 27, 2010) weren't captured, so well-known pledges that appear only there can't be quoted or assessed. The 2010–2014 voting file records no vote dates.",
+      "promises": [
+        {
+          "id": "office-budgets",
+          "topic": "Spending",
+          "quote": "Cutting the Mayor’s office budget by 20 percent and decreasing Councillor expense and staffing budgets.",
+          "status": "partly",
+          "summary": "Council cut each councillor's office expense budget from $50,445 to $30,000 from January 1, 2011. We found no City record confirming the 20% cut to the Mayor's office budget.",
+          "evidence": [
+            {
+              "text": "Council adopted \"Councillor Office Expenses Budget\", 40–5.",
+              "vote": {
+                "term": "2010-2014",
+                "item": "2011.EX1.5",
+                "motion": "Adopt Item",
+                "result": "Carried, 40-5"
+              }
+            },
+            {
+              "text": "\"Executive Committee Report EX1.5, adopted by City Council on December 16, 2010, reduced the annual individual Councillor Office Expenses Budget from $50,445 to $30,000, effective January 1, 2011.\"",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Statement of Remuneration and Expenses for the year ended December 31, 2014 (Members of Council)",
+                "url": "https://www.toronto.ca/legdocs/mmis/2015/ex/bgrd/backgroundfile-78750.pdf",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "whistleblower",
+          "topic": "Accountability",
+          "quote": "Introducing Whistleblower protection for City of Toronto employees who do the right thing and speak out against waste, mismanagement and corruption at City Hall.",
+          "status": "done",
+          "summary": "Council adopted a Whistle Blower Protection Policy in 2011, unanimously.",
+          "evidence": [
+            {
+              "text": "Council adopted \"Whistle Blower Protection Policy\", 40–0.",
+              "vote": {
+                "term": "2010-2014",
+                "item": "2011.EX6.2",
+                "motion": "Adopt Item",
+                "result": "Carried, 40-0"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fair-wage",
+          "topic": "Spending",
+          "quote": "Rob Ford announced that he will remove the city’s ‘fair wage’ policy in order to get spending under control and help create jobs.",
+          "platformUrl": "https://web.archive.org/web/20100822234615/http://www.robfordformayor.ca/2010/08/18/ford-announces-he-will-remove-citys-fair-wage-rule/",
+          "status": "no-action-found",
+          "summary": "We found no Council decision removing the Fair Wage Policy; it is still part of the Municipal Code. In 2013 Council adopted an item titled \"Quality Jobs, Living Wages and Fair Wages in Toronto\" (Ford was absent).",
+          "evidence": [
+            {
+              "text": "\"This policy is Schedule A of the City of Toronto Municipal Code, Chapter 67.\"",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Fair Wage Policy",
+                "url": "https://www.toronto.ca/business-economy/doing-business-with-the-city/understanding-the-procurement-process/fair-wage-office-policy/fair-wage-policy/",
+                "accessed": "2026-11-01"
+              }
+            },
+            {
+              "text": "Council adopted \"Quality Jobs, Living Wages and Fair Wages in Toronto\" as amended, 30–2.",
+              "vote": {
+                "term": "2010-2014",
+                "item": "2013.EX33.2",
+                "motion": "Adopt Item as Amended",
+                "result": "Carried, 30-2"
+              }
+            }
+          ]
+        }
+      ],
+      "notAssessed": [
+        {
+          "promise": "Publish all City expenses online; open all major purchases to competitive tendering",
+          "reason": "Not yet assessed."
+        }
+      ]
+    },
+    {
+      "id": "miller-2006",
+      "mayor": "David Miller",
+      "election": "2006 General Election",
+      "electionYear": 2006,
+      "votingTerm": "2006-2010",
+      "checked": "2026-11-01",
+      "platform": {
+        "publisher": "David Miller for Mayor campaign (archived by the Internet Archive)",
+        "title": "millerformayor.ca \"safer city\" page, captured on election day (November 13, 2006)",
+        "url": "https://web.archive.org/web/20061113202316/http://www.millerformayor.ca/safer.php",
+        "accessed": "2026-11-01"
+      },
+      "archiveNote": "Only a few of this campaign's pages survive in the Internet Archive. The City's voting file covers 2008–2010 of this term.",
+      "promises": [
+        {
+          "id": "priority-neighbourhoods",
+          "topic": "Community safety",
+          "quote": "Invest $13 million in Toronto’s 13 priority neighbourhoods over the next four years.",
+          "status": "done",
+          "summary": "The City's Partnership Opportunities Legacy fund invested $13 million from 2007 to 2010, which staff used to draw in $32 million more for 24 social and recreational infrastructure projects.",
+          "evidence": [
+            {
+              "text": "\"In POL 1 (2007-2010), staff leveraged the City's $13M investment to raise an additional $32M to fund 24 social recreational infrastructure projects\".",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Report: Partnership Opportunities Legacy fund (2021)",
+                "url": "https://www.toronto.ca/legdocs/mmis/2021/ex/bgrd/backgroundfile-163753.pdf",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        }
+      ],
+      "notAssessed": [
+        {
+          "promise": "Eliminate recreation user fees for children and youth in at-risk communities; 2,000 youth jobs a year; complete 100% of the public spaces planned for the waterfront by 2010",
+          "reason": "Not yet assessed."
+        },
+        {
+          "promise": "No bail for gun crimes; a federal handgun ban; keep the gun registry",
+          "reason": "The outcome rests with the federal government."
+        }
+      ]
+    },
+    {
+      "id": "miller-2003",
+      "mayor": "David Miller",
+      "election": "2003 General Election",
+      "electionYear": 2003,
+      "checked": "2026-11-01",
+      "platform": {
+        "publisher": "David Miller for Mayor campaign (archived by the Internet Archive)",
+        "title": "millerformayor.ca policy pages, last captured before election day (November 10, 2003)",
+        "url": "https://web.archive.org/web/20031008120304/http://www.millerformayor.ca/policiesgovt.htm",
+        "accessed": "2026-11-01"
+      },
+      "archiveNote": "The City's Council voting file starts in 2008, so evidence for this term comes from City pages and staff reports.",
+      "promises": [
+        {
+          "id": "integrity-commissioner",
+          "topic": "Accountability",
+          "quote": "David Miller will establish an Office of the Integrity Commissioner, responsible for ensuring that emerging and problem issues are dealt with and for the establishment of new procedures and practices that meet the highest standards for open, accountable and democratic government.",
+          "status": "done",
+          "summary": "Council appointed Toronto's first Integrity Commissioner, David Mullan, in 2004 — the first such position in a Canadian municipality.",
+          "evidence": [
+            {
+              "text": "\"The first Integrity Commissioner, David Mullan, was appointed in 2004 by Council resolution.\"",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "The Office of the Integrity Commissioner",
+                "url": "https://www.toronto.ca/city-government/accountability-operations-customer-service/accountability-officers/integrity-commissioner/about-the-integrity-commissioner/",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "lobbyist-registry",
+          "topic": "Accountability",
+          "quote": "The registry will include the names of lobbyists, the clients for whom they are working, and the specific issues on which they are attempting to influence decisions.",
+          "status": "done",
+          "summary": "Council adopted the Lobbying By-law in 2007, creating Canada's first municipal lobbyist registry; it went online in February 2008 — in Miller's second term.",
+          "evidence": [
+            {
+              "text": "\"In 2007, City Council adopted the Lobbying By-law, establishing the first municipal lobbyist registry in Canada\"; \"The online Registry went live in February 2008.\"",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "About the Lobbyist Registrar",
+                "url": "https://www.toronto.ca/city-government/accountability-operations-customer-service/accountability-officers/lobbyist-registrar/about-the-lobbyist-registrar/",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "phone-line",
+          "topic": "City services",
+          "quote": "We will set up a dedicated phone line with a simple number and a Web hotline that citizens can use to contact City Hall to resolve their concerns.",
+          "platformUrl": "https://web.archive.org/web/20031017104829/http://www.millerformayor.ca/policieslitter.htm",
+          "status": "done",
+          "summary": "Council adopted a 311 customer service strategy in 2004, and 311 Toronto launched to the public on September 24, 2009 — in Miller's second term.",
+          "evidence": [
+            {
+              "text": "\"On September 24, 2009 the new 311 Toronto Contact Centre was officially launched to the public.\" (report dated January 22, 2010)",
+              "source": {
+                "publisher": "City of Toronto",
+                "title": "Staff report: Progress Report on the 311 Project and Operations",
+                "url": "https://www.toronto.ca/legdocs/mmis/2010/gm/bgrd/backgroundfile-27007.pdf",
+                "accessed": "2026-11-01"
+              }
+            }
+          ]
+        }
+      ],
+      "notAssessed": [
+        {
+          "promise": "Add 100 new buses; sit as a TTC commissioner; dedicate 10% of a hotel levy to a Clean City campaign",
+          "reason": "Not yet assessed."
+        },
+        {
+          "promise": "GST exemption for the TTC; a share of the gas tax for transit",
+          "reason": "The outcome rests with the federal or provincial government."
+        }
+      ]
+    }
+  ]
+}

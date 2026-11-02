@@ -1,0 +1,9792 @@
+{
+ "generatedOn": "2026-11-01",
+ "generator": "scripts/extract_housing.py",
+ "series": {
+  "shelterSites": {
+   "id": "shelterSites",
+   "label": "Sites",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 103.0
+    },
+    {
+     "period": "2021-02",
+     "value": 102.9
+    },
+    {
+     "period": "2021-03",
+     "value": 102.2
+    },
+    {
+     "period": "2021-04",
+     "value": 103.1
+    },
+    {
+     "period": "2021-05",
+     "value": 102.5
+    },
+    {
+     "period": "2021-06",
+     "value": 100.7
+    },
+    {
+     "period": "2021-07",
+     "value": 99.8
+    },
+    {
+     "period": "2021-08",
+     "value": 100.0
+    },
+    {
+     "period": "2021-09",
+     "value": 100.0
+    },
+    {
+     "period": "2021-10",
+     "value": 100.0
+    },
+    {
+     "period": "2021-11",
+     "value": 100.0
+    },
+    {
+     "period": "2021-12",
+     "value": 99.3
+    },
+    {
+     "period": "2022-01",
+     "value": 100.9
+    },
+    {
+     "period": "2022-02",
+     "value": 102.2
+    },
+    {
+     "period": "2022-03",
+     "value": 102.8
+    },
+    {
+     "period": "2022-04",
+     "value": 101.0
+    },
+    {
+     "period": "2022-05",
+     "value": 100.0
+    },
+    {
+     "period": "2022-06",
+     "value": 100.0
+    },
+    {
+     "period": "2022-07",
+     "value": 100.0
+    },
+    {
+     "period": "2022-08",
+     "value": 100.9
+    },
+    {
+     "period": "2022-09",
+     "value": 101.0
+    },
+    {
+     "period": "2022-10",
+     "value": 101.0
+    },
+    {
+     "period": "2022-11",
+     "value": 101.3
+    },
+    {
+     "period": "2022-12",
+     "value": 101.7
+    },
+    {
+     "period": "2023-01",
+     "value": 101.9
+    },
+    {
+     "period": "2023-02",
+     "value": 103.3
+    },
+    {
+     "period": "2023-03",
+     "value": 101.6
+    },
+    {
+     "period": "2023-04",
+     "value": 100.4
+    },
+    {
+     "period": "2023-05",
+     "value": 99.0
+    },
+    {
+     "period": "2023-06",
+     "value": 99.0
+    },
+    {
+     "period": "2023-07",
+     "value": 99.5
+    },
+    {
+     "period": "2023-08",
+     "value": 98.1
+    },
+    {
+     "period": "2023-09",
+     "value": 97.0
+    },
+    {
+     "period": "2023-10",
+     "value": 97.0
+    },
+    {
+     "period": "2023-11",
+     "value": 98.1
+    },
+    {
+     "period": "2023-12",
+     "value": 100.0
+    },
+    {
+     "period": "2024-01",
+     "value": 102.8
+    },
+    {
+     "period": "2024-02",
+     "value": 102.9
+    },
+    {
+     "period": "2024-03",
+     "value": 102.6
+    },
+    {
+     "period": "2024-04",
+     "value": 99.8
+    },
+    {
+     "period": "2024-05",
+     "value": 100.0
+    },
+    {
+     "period": "2024-06",
+     "value": 100.0
+    },
+    {
+     "period": "2024-07",
+     "value": 99.5
+    },
+    {
+     "period": "2024-08",
+     "value": 99.0
+    },
+    {
+     "period": "2024-09",
+     "value": 98.0
+    },
+    {
+     "period": "2024-10",
+     "value": 98.4
+    },
+    {
+     "period": "2024-11",
+     "value": 99.5
+    },
+    {
+     "period": "2024-12",
+     "value": 104.5
+    },
+    {
+     "period": "2025-01",
+     "value": 107.4
+    },
+    {
+     "period": "2025-02",
+     "value": 107.5
+    },
+    {
+     "period": "2025-03",
+     "value": 107.4
+    },
+    {
+     "period": "2025-04",
+     "value": 104.7
+    },
+    {
+     "period": "2025-05",
+     "value": 102.0
+    },
+    {
+     "period": "2025-06",
+     "value": 102.9
+    },
+    {
+     "period": "2025-07",
+     "value": 102.4
+    },
+    {
+     "period": "2025-08",
+     "value": 103.8
+    },
+    {
+     "period": "2025-09",
+     "value": 104.0
+    },
+    {
+     "period": "2025-10",
+     "value": 103.6
+    },
+    {
+     "period": "2025-11",
+     "value": 102.9
+    },
+    {
+     "period": "2025-12",
+     "value": 106.4
+    },
+    {
+     "period": "2026-01",
+     "value": 107.4
+    },
+    {
+     "period": "2026-02",
+     "value": 108.2
+    },
+    {
+     "period": "2026-03",
+     "value": 107.0
+    },
+    {
+     "period": "2026-04",
+     "value": 104.1
+    },
+    {
+     "period": "2026-05",
+     "value": 101.0
+    },
+    {
+     "period": "2026-06",
+     "value": 101.0
+    },
+    {
+     "period": "2026-07",
+     "value": 101.0
+    },
+    {
+     "period": "2026-08",
+     "value": 100.8
+    },
+    {
+     "period": "2026-09",
+     "value": 100.0
+    },
+    {
+     "period": "2026-10",
+     "value": 100.0,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "Distinct LOCATION_ID per OCCUPANCY_DATE",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "Every overnight service the City tracks in its shelter system (shelters, hotel programs, respite sites, warming centres and others). Capacity is actual capacity: beds or rooms usable that night.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterPrograms": {
+   "id": "shelterPrograms",
+   "label": "Programs",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 142.2
+    },
+    {
+     "period": "2021-02",
+     "value": 145.6
+    },
+    {
+     "period": "2021-03",
+     "value": 146.3
+    },
+    {
+     "period": "2021-04",
+     "value": 141.1
+    },
+    {
+     "period": "2021-05",
+     "value": 140.4
+    },
+    {
+     "period": "2021-06",
+     "value": 138.8
+    },
+    {
+     "period": "2021-07",
+     "value": 139.3
+    },
+    {
+     "period": "2021-08",
+     "value": 138.8
+    },
+    {
+     "period": "2021-09",
+     "value": 136.2
+    },
+    {
+     "period": "2021-10",
+     "value": 135.5
+    },
+    {
+     "period": "2021-11",
+     "value": 135.4
+    },
+    {
+     "period": "2021-12",
+     "value": 135.7
+    },
+    {
+     "period": "2022-01",
+     "value": 139.1
+    },
+    {
+     "period": "2022-02",
+     "value": 139.5
+    },
+    {
+     "period": "2022-03",
+     "value": 139.5
+    },
+    {
+     "period": "2022-04",
+     "value": 137.4
+    },
+    {
+     "period": "2022-05",
+     "value": 134.2
+    },
+    {
+     "period": "2022-06",
+     "value": 133.0
+    },
+    {
+     "period": "2022-07",
+     "value": 133.3
+    },
+    {
+     "period": "2022-08",
+     "value": 133.9
+    },
+    {
+     "period": "2022-09",
+     "value": 133.0
+    },
+    {
+     "period": "2022-10",
+     "value": 133.0
+    },
+    {
+     "period": "2022-11",
+     "value": 134.6
+    },
+    {
+     "period": "2022-12",
+     "value": 136.7
+    },
+    {
+     "period": "2023-01",
+     "value": 137.2
+    },
+    {
+     "period": "2023-02",
+     "value": 138.3
+    },
+    {
+     "period": "2023-03",
+     "value": 136.4
+    },
+    {
+     "period": "2023-04",
+     "value": 134.2
+    },
+    {
+     "period": "2023-05",
+     "value": 132.4
+    },
+    {
+     "period": "2023-06",
+     "value": 132.0
+    },
+    {
+     "period": "2023-07",
+     "value": 133.3
+    },
+    {
+     "period": "2023-08",
+     "value": 129.5
+    },
+    {
+     "period": "2023-09",
+     "value": 127.6
+    },
+    {
+     "period": "2023-10",
+     "value": 127.7
+    },
+    {
+     "period": "2023-11",
+     "value": 129.7
+    },
+    {
+     "period": "2023-12",
+     "value": 131.5
+    },
+    {
+     "period": "2024-01",
+     "value": 134.4
+    },
+    {
+     "period": "2024-02",
+     "value": 133.7
+    },
+    {
+     "period": "2024-03",
+     "value": 136.6
+    },
+    {
+     "period": "2024-04",
+     "value": 134.6
+    },
+    {
+     "period": "2024-05",
+     "value": 133.3
+    },
+    {
+     "period": "2024-06",
+     "value": 130.8
+    },
+    {
+     "period": "2024-07",
+     "value": 130.5
+    },
+    {
+     "period": "2024-08",
+     "value": 130.3
+    },
+    {
+     "period": "2024-09",
+     "value": 130.3
+    },
+    {
+     "period": "2024-10",
+     "value": 131.6
+    },
+    {
+     "period": "2024-11",
+     "value": 133.1
+    },
+    {
+     "period": "2024-12",
+     "value": 140.6
+    },
+    {
+     "period": "2025-01",
+     "value": 151.1
+    },
+    {
+     "period": "2025-02",
+     "value": 153.4
+    },
+    {
+     "period": "2025-03",
+     "value": 144.7
+    },
+    {
+     "period": "2025-04",
+     "value": 139.1
+    },
+    {
+     "period": "2025-05",
+     "value": 135.4
+    },
+    {
+     "period": "2025-06",
+     "value": 138.8
+    },
+    {
+     "period": "2025-07",
+     "value": 144.5
+    },
+    {
+     "period": "2025-08",
+     "value": 140.6
+    },
+    {
+     "period": "2025-09",
+     "value": 132.0
+    },
+    {
+     "period": "2025-10",
+     "value": 132.0
+    },
+    {
+     "period": "2025-11",
+     "value": 137.6
+    },
+    {
+     "period": "2025-12",
+     "value": 146.1
+    },
+    {
+     "period": "2026-01",
+     "value": 152.4
+    },
+    {
+     "period": "2026-02",
+     "value": 155.9
+    },
+    {
+     "period": "2026-03",
+     "value": 144.0
+    },
+    {
+     "period": "2026-04",
+     "value": 135.6
+    },
+    {
+     "period": "2026-05",
+     "value": 128.5
+    },
+    {
+     "period": "2026-06",
+     "value": 125.9
+    },
+    {
+     "period": "2026-07",
+     "value": 133.0
+    },
+    {
+     "period": "2026-08",
+     "value": 123.1
+    },
+    {
+     "period": "2026-09",
+     "value": 122.8
+    },
+    {
+     "period": "2026-10",
+     "value": 122.8,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "Distinct PROGRAM_ID per OCCUPANCY_DATE",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "Every overnight service the City tracks in its shelter system (shelters, hotel programs, respite sites, warming centres and others). Capacity is actual capacity: beds or rooms usable that night.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterPeople": {
+   "id": "shelterPeople",
+   "label": "People per night",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 6029.0
+    },
+    {
+     "period": "2021-02",
+     "value": 6065.6
+    },
+    {
+     "period": "2021-03",
+     "value": 5968.2
+    },
+    {
+     "period": "2021-04",
+     "value": 5800.2
+    },
+    {
+     "period": "2021-05",
+     "value": 5956.6
+    },
+    {
+     "period": "2021-06",
+     "value": 6151.7
+    },
+    {
+     "period": "2021-07",
+     "value": 6332.9
+    },
+    {
+     "period": "2021-08",
+     "value": 6440.8
+    },
+    {
+     "period": "2021-09",
+     "value": 6571.7
+    },
+    {
+     "period": "2021-10",
+     "value": 6822.9
+    },
+    {
+     "period": "2021-11",
+     "value": 7132.7
+    },
+    {
+     "period": "2021-12",
+     "value": 7288.1
+    },
+    {
+     "period": "2022-01",
+     "value": 7499.1
+    },
+    {
+     "period": "2022-02",
+     "value": 7761.3
+    },
+    {
+     "period": "2022-03",
+     "value": 7792.5
+    },
+    {
+     "period": "2022-04",
+     "value": 7858.2
+    },
+    {
+     "period": "2022-05",
+     "value": 7859.8
+    },
+    {
+     "period": "2022-06",
+     "value": 7981.2
+    },
+    {
+     "period": "2022-07",
+     "value": 7980.0
+    },
+    {
+     "period": "2022-08",
+     "value": 8085.2
+    },
+    {
+     "period": "2022-09",
+     "value": 8200.3
+    },
+    {
+     "period": "2022-10",
+     "value": 8239.7
+    },
+    {
+     "period": "2022-11",
+     "value": 8232.6
+    },
+    {
+     "period": "2022-12",
+     "value": 8631.9
+    },
+    {
+     "period": "2023-01",
+     "value": 8966.0
+    },
+    {
+     "period": "2023-02",
+     "value": 9062.4
+    },
+    {
+     "period": "2023-03",
+     "value": 8981.3
+    },
+    {
+     "period": "2023-04",
+     "value": 8868.8
+    },
+    {
+     "period": "2023-05",
+     "value": 8817.8
+    },
+    {
+     "period": "2023-06",
+     "value": 8838.2
+    },
+    {
+     "period": "2023-07",
+     "value": 8848.9
+    },
+    {
+     "period": "2023-08",
+     "value": 8835.1
+    },
+    {
+     "period": "2023-09",
+     "value": 8996.1
+    },
+    {
+     "period": "2023-10",
+     "value": 9126.8
+    },
+    {
+     "period": "2023-11",
+     "value": 9282.9
+    },
+    {
+     "period": "2023-12",
+     "value": 9494.3
+    },
+    {
+     "period": "2024-01",
+     "value": 9847.1
+    },
+    {
+     "period": "2024-02",
+     "value": 9884.7
+    },
+    {
+     "period": "2024-03",
+     "value": 9694.7
+    },
+    {
+     "period": "2024-04",
+     "value": 9733.2
+    },
+    {
+     "period": "2024-05",
+     "value": 9936.1
+    },
+    {
+     "period": "2024-06",
+     "value": 9850.3
+    },
+    {
+     "period": "2024-07",
+     "value": 9815.5
+    },
+    {
+     "period": "2024-08",
+     "value": 9712.6
+    },
+    {
+     "period": "2024-09",
+     "value": 9614.6
+    },
+    {
+     "period": "2024-10",
+     "value": 9603.6
+    },
+    {
+     "period": "2024-11",
+     "value": 9622.8
+    },
+    {
+     "period": "2024-12",
+     "value": 9879.0
+    },
+    {
+     "period": "2025-01",
+     "value": 10227.5
+    },
+    {
+     "period": "2025-02",
+     "value": 10149.9
+    },
+    {
+     "period": "2025-03",
+     "value": 9778.4
+    },
+    {
+     "period": "2025-04",
+     "value": 9447.2
+    },
+    {
+     "period": "2025-05",
+     "value": 9181.5
+    },
+    {
+     "period": "2025-06",
+     "value": 9065.2
+    },
+    {
+     "period": "2025-07",
+     "value": 8900.4
+    },
+    {
+     "period": "2025-08",
+     "value": 8764.6
+    },
+    {
+     "period": "2025-09",
+     "value": 8649.3
+    },
+    {
+     "period": "2025-10",
+     "value": 8697.6
+    },
+    {
+     "period": "2025-11",
+     "value": 8742.1
+    },
+    {
+     "period": "2025-12",
+     "value": 9035.3
+    },
+    {
+     "period": "2026-01",
+     "value": 9216.6
+    },
+    {
+     "period": "2026-02",
+     "value": 9206.1
+    },
+    {
+     "period": "2026-03",
+     "value": 8742.0
+    },
+    {
+     "period": "2026-04",
+     "value": 8391.2
+    },
+    {
+     "period": "2026-05",
+     "value": 7989.8
+    },
+    {
+     "period": "2026-06",
+     "value": 7815.7
+    },
+    {
+     "period": "2026-07",
+     "value": 7755.6
+    },
+    {
+     "period": "2026-08",
+     "value": 7640.4
+    },
+    {
+     "period": "2026-09",
+     "value": 7323.7
+    },
+    {
+     "period": "2026-10",
+     "value": 6980.3,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "Sum of SERVICE_USER_COUNT per OCCUPANCY_DATE",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "Every overnight service the City tracks in its shelter system (shelters, hotel programs, respite sites, warming centres and others). Capacity is actual capacity: beds or rooms usable that night.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterBeds": {
+   "id": "shelterBeds",
+   "label": "Beds (actual capacity)",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 2722.3
+    },
+    {
+     "period": "2021-02",
+     "value": 2683.9
+    },
+    {
+     "period": "2021-03",
+     "value": 2591.6
+    },
+    {
+     "period": "2021-04",
+     "value": 2463.4
+    },
+    {
+     "period": "2021-05",
+     "value": 2623.7
+    },
+    {
+     "period": "2021-06",
+     "value": 2740.6
+    },
+    {
+     "period": "2021-07",
+     "value": 2882.5
+    },
+    {
+     "period": "2021-08",
+     "value": 2890.0
+    },
+    {
+     "period": "2021-09",
+     "value": 2921.3
+    },
+    {
+     "period": "2021-10",
+     "value": 2976.3
+    },
+    {
+     "period": "2021-11",
+     "value": 3060.7
+    },
+    {
+     "period": "2021-12",
+     "value": 3118.8
+    },
+    {
+     "period": "2022-01",
+     "value": 3169.0
+    },
+    {
+     "period": "2022-02",
+     "value": 3301.3
+    },
+    {
+     "period": "2022-03",
+     "value": 3180.8
+    },
+    {
+     "period": "2022-04",
+     "value": 3005.0
+    },
+    {
+     "period": "2022-05",
+     "value": 2952.0
+    },
+    {
+     "period": "2022-06",
+     "value": 2972.7
+    },
+    {
+     "period": "2022-07",
+     "value": 2962.9
+    },
+    {
+     "period": "2022-08",
+     "value": 2989.0
+    },
+    {
+     "period": "2022-09",
+     "value": 2976.3
+    },
+    {
+     "period": "2022-10",
+     "value": 2999.1
+    },
+    {
+     "period": "2022-11",
+     "value": 3108.0
+    },
+    {
+     "period": "2022-12",
+     "value": 3507.3
+    },
+    {
+     "period": "2023-01",
+     "value": 3717.7
+    },
+    {
+     "period": "2023-02",
+     "value": 3875.5
+    },
+    {
+     "period": "2023-03",
+     "value": 3831.8
+    },
+    {
+     "period": "2023-04",
+     "value": 3800.1
+    },
+    {
+     "period": "2023-05",
+     "value": 3760.2
+    },
+    {
+     "period": "2023-06",
+     "value": 3777.5
+    },
+    {
+     "period": "2023-07",
+     "value": 3814.0
+    },
+    {
+     "period": "2023-08",
+     "value": 3950.4
+    },
+    {
+     "period": "2023-09",
+     "value": 4121.7
+    },
+    {
+     "period": "2023-10",
+     "value": 4244.9
+    },
+    {
+     "period": "2023-11",
+     "value": 4400.1
+    },
+    {
+     "period": "2023-12",
+     "value": 4632.3
+    },
+    {
+     "period": "2024-01",
+     "value": 4937.2
+    },
+    {
+     "period": "2024-02",
+     "value": 4964.0
+    },
+    {
+     "period": "2024-03",
+     "value": 4746.7
+    },
+    {
+     "period": "2024-04",
+     "value": 4567.9
+    },
+    {
+     "period": "2024-05",
+     "value": 4461.5
+    },
+    {
+     "period": "2024-06",
+     "value": 4414.4
+    },
+    {
+     "period": "2024-07",
+     "value": 4395.6
+    },
+    {
+     "period": "2024-08",
+     "value": 4377.8
+    },
+    {
+     "period": "2024-09",
+     "value": 4326.1
+    },
+    {
+     "period": "2024-10",
+     "value": 4334.5
+    },
+    {
+     "period": "2024-11",
+     "value": 4412.7
+    },
+    {
+     "period": "2024-12",
+     "value": 4834.6
+    },
+    {
+     "period": "2025-01",
+     "value": 5212.7
+    },
+    {
+     "period": "2025-02",
+     "value": 5279.3
+    },
+    {
+     "period": "2025-03",
+     "value": 5051.2
+    },
+    {
+     "period": "2025-04",
+     "value": 4714.1
+    },
+    {
+     "period": "2025-05",
+     "value": 4561.5
+    },
+    {
+     "period": "2025-06",
+     "value": 4569.3
+    },
+    {
+     "period": "2025-07",
+     "value": 4533.3
+    },
+    {
+     "period": "2025-08",
+     "value": 4412.5
+    },
+    {
+     "period": "2025-09",
+     "value": 4308.6
+    },
+    {
+     "period": "2025-10",
+     "value": 4287.8
+    },
+    {
+     "period": "2025-11",
+     "value": 4429.1
+    },
+    {
+     "period": "2025-12",
+     "value": 4832.7
+    },
+    {
+     "period": "2026-01",
+     "value": 5056.7
+    },
+    {
+     "period": "2026-02",
+     "value": 5069.6
+    },
+    {
+     "period": "2026-03",
+     "value": 4714.5
+    },
+    {
+     "period": "2026-04",
+     "value": 4390.0
+    },
+    {
+     "period": "2026-05",
+     "value": 4061.9
+    },
+    {
+     "period": "2026-06",
+     "value": 3971.7
+    },
+    {
+     "period": "2026-07",
+     "value": 3957.4
+    },
+    {
+     "period": "2026-08",
+     "value": 3851.5
+    },
+    {
+     "period": "2026-09",
+     "value": 3793.1
+    },
+    {
+     "period": "2026-10",
+     "value": 3756.0,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "Sum of CAPACITY_ACTUAL_BED per OCCUPANCY_DATE (bed-based programs)",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "Every overnight service the City tracks in its shelter system (shelters, hotel programs, respite sites, warming centres and others). Capacity is actual capacity: beds or rooms usable that night.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterRooms": {
+   "id": "shelterRooms",
+   "label": "Rooms (actual capacity)",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 2577.3
+    },
+    {
+     "period": "2021-02",
+     "value": 2608.5
+    },
+    {
+     "period": "2021-03",
+     "value": 2677.5
+    },
+    {
+     "period": "2021-04",
+     "value": 2720.5
+    },
+    {
+     "period": "2021-05",
+     "value": 2817.3
+    },
+    {
+     "period": "2021-06",
+     "value": 2921.3
+    },
+    {
+     "period": "2021-07",
+     "value": 2874.9
+    },
+    {
+     "period": "2021-08",
+     "value": 2850.5
+    },
+    {
+     "period": "2021-09",
+     "value": 2829.9
+    },
+    {
+     "period": "2021-10",
+     "value": 2906.0
+    },
+    {
+     "period": "2021-11",
+     "value": 3007.0
+    },
+    {
+     "period": "2021-12",
+     "value": 3062.9
+    },
+    {
+     "period": "2022-01",
+     "value": 3145.5
+    },
+    {
+     "period": "2022-02",
+     "value": 3220.6
+    },
+    {
+     "period": "2022-03",
+     "value": 3260.6
+    },
+    {
+     "period": "2022-04",
+     "value": 3355.0
+    },
+    {
+     "period": "2022-05",
+     "value": 3354.4
+    },
+    {
+     "period": "2022-06",
+     "value": 3377.5
+    },
+    {
+     "period": "2022-07",
+     "value": 3370.0
+    },
+    {
+     "period": "2022-08",
+     "value": 3379.7
+    },
+    {
+     "period": "2022-09",
+     "value": 3408.9
+    },
+    {
+     "period": "2022-10",
+     "value": 3411.3
+    },
+    {
+     "period": "2022-11",
+     "value": 3309.3
+    },
+    {
+     "period": "2022-12",
+     "value": 3230.2
+    },
+    {
+     "period": "2023-01",
+     "value": 3196.1
+    },
+    {
+     "period": "2023-02",
+     "value": 3165.1
+    },
+    {
+     "period": "2023-03",
+     "value": 3125.2
+    },
+    {
+     "period": "2023-04",
+     "value": 3061.6
+    },
+    {
+     "period": "2023-05",
+     "value": 3017.8
+    },
+    {
+     "period": "2023-06",
+     "value": 3001.7
+    },
+    {
+     "period": "2023-07",
+     "value": 2934.7
+    },
+    {
+     "period": "2023-08",
+     "value": 2796.4
+    },
+    {
+     "period": "2023-09",
+     "value": 2782.8
+    },
+    {
+     "period": "2023-10",
+     "value": 2803.5
+    },
+    {
+     "period": "2023-11",
+     "value": 2793.6
+    },
+    {
+     "period": "2023-12",
+     "value": 2787.1
+    },
+    {
+     "period": "2024-01",
+     "value": 2794.0
+    },
+    {
+     "period": "2024-02",
+     "value": 2791.7
+    },
+    {
+     "period": "2024-03",
+     "value": 2783.7
+    },
+    {
+     "period": "2024-04",
+     "value": 2882.6
+    },
+    {
+     "period": "2024-05",
+     "value": 3010.2
+    },
+    {
+     "period": "2024-06",
+     "value": 3003.8
+    },
+    {
+     "period": "2024-07",
+     "value": 2967.6
+    },
+    {
+     "period": "2024-08",
+     "value": 2907.5
+    },
+    {
+     "period": "2024-09",
+     "value": 2871.5
+    },
+    {
+     "period": "2024-10",
+     "value": 2853.7
+    },
+    {
+     "period": "2024-11",
+     "value": 2810.8
+    },
+    {
+     "period": "2024-12",
+     "value": 2752.8
+    },
+    {
+     "period": "2025-01",
+     "value": 2739.5
+    },
+    {
+     "period": "2025-02",
+     "value": 2679.9
+    },
+    {
+     "period": "2025-03",
+     "value": 2602.7
+    },
+    {
+     "period": "2025-04",
+     "value": 2566.1
+    },
+    {
+     "period": "2025-05",
+     "value": 2489.5
+    },
+    {
+     "period": "2025-06",
+     "value": 2458.0
+    },
+    {
+     "period": "2025-07",
+     "value": 2400.9
+    },
+    {
+     "period": "2025-08",
+     "value": 2378.6
+    },
+    {
+     "period": "2025-09",
+     "value": 2360.9
+    },
+    {
+     "period": "2025-10",
+     "value": 2368.8
+    },
+    {
+     "period": "2025-11",
+     "value": 2364.4
+    },
+    {
+     "period": "2025-12",
+     "value": 2346.4
+    },
+    {
+     "period": "2026-01",
+     "value": 2343.0
+    },
+    {
+     "period": "2026-02",
+     "value": 2330.7
+    },
+    {
+     "period": "2026-03",
+     "value": 2291.7
+    },
+    {
+     "period": "2026-04",
+     "value": 2285.3
+    },
+    {
+     "period": "2026-05",
+     "value": 2212.1
+    },
+    {
+     "period": "2026-06",
+     "value": 2197.5
+    },
+    {
+     "period": "2026-07",
+     "value": 2225.8
+    },
+    {
+     "period": "2026-08",
+     "value": 2203.1
+    },
+    {
+     "period": "2026-09",
+     "value": 2100.9
+    },
+    {
+     "period": "2026-10",
+     "value": 1957.9,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "Sum of CAPACITY_ACTUAL_ROOM per OCCUPANCY_DATE (room-based programs)",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "Every overnight service the City tracks in its shelter system (shelters, hotel programs, respite sites, warming centres and others). Capacity is actual capacity: beds or rooms usable that night.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterOccBeds": {
+   "id": "shelterOccBeds",
+   "label": "Beds occupied",
+   "unit": "percent",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 94.0
+    },
+    {
+     "period": "2021-02",
+     "value": 95.5
+    },
+    {
+     "period": "2021-03",
+     "value": 95.2
+    },
+    {
+     "period": "2021-04",
+     "value": 93.8
+    },
+    {
+     "period": "2021-05",
+     "value": 92.2
+    },
+    {
+     "period": "2021-06",
+     "value": 92.8
+    },
+    {
+     "period": "2021-07",
+     "value": 91.8
+    },
+    {
+     "period": "2021-08",
+     "value": 93.9
+    },
+    {
+     "period": "2021-09",
+     "value": 94.5
+    },
+    {
+     "period": "2021-10",
+     "value": 95.5
+    },
+    {
+     "period": "2021-11",
+     "value": 95.6
+    },
+    {
+     "period": "2021-12",
+     "value": 95.0
+    },
+    {
+     "period": "2022-01",
+     "value": 96.1
+    },
+    {
+     "period": "2022-02",
+     "value": 97.8
+    },
+    {
+     "period": "2022-03",
+     "value": 98.1
+    },
+    {
+     "period": "2022-04",
+     "value": 98.0
+    },
+    {
+     "period": "2022-05",
+     "value": 98.3
+    },
+    {
+     "period": "2022-06",
+     "value": 98.6
+    },
+    {
+     "period": "2022-07",
+     "value": 98.1
+    },
+    {
+     "period": "2022-08",
+     "value": 98.5
+    },
+    {
+     "period": "2022-09",
+     "value": 98.9
+    },
+    {
+     "period": "2022-10",
+     "value": 98.8
+    },
+    {
+     "period": "2022-11",
+     "value": 98.3
+    },
+    {
+     "period": "2022-12",
+     "value": 98.4
+    },
+    {
+     "period": "2023-01",
+     "value": 98.7
+    },
+    {
+     "period": "2023-02",
+     "value": 98.5
+    },
+    {
+     "period": "2023-03",
+     "value": 98.7
+    },
+    {
+     "period": "2023-04",
+     "value": 99.0
+    },
+    {
+     "period": "2023-05",
+     "value": 99.0
+    },
+    {
+     "period": "2023-06",
+     "value": 99.0
+    },
+    {
+     "period": "2023-07",
+     "value": 99.1
+    },
+    {
+     "period": "2023-08",
+     "value": 99.2
+    },
+    {
+     "period": "2023-09",
+     "value": 98.9
+    },
+    {
+     "period": "2023-10",
+     "value": 98.8
+    },
+    {
+     "period": "2023-11",
+     "value": 99.0
+    },
+    {
+     "period": "2023-12",
+     "value": 98.4
+    },
+    {
+     "period": "2024-01",
+     "value": 98.9
+    },
+    {
+     "period": "2024-02",
+     "value": 99.0
+    },
+    {
+     "period": "2024-03",
+     "value": 99.0
+    },
+    {
+     "period": "2024-04",
+     "value": 99.2
+    },
+    {
+     "period": "2024-05",
+     "value": 99.4
+    },
+    {
+     "period": "2024-06",
+     "value": 99.3
+    },
+    {
+     "period": "2024-07",
+     "value": 99.4
+    },
+    {
+     "period": "2024-08",
+     "value": 99.6
+    },
+    {
+     "period": "2024-09",
+     "value": 99.5
+    },
+    {
+     "period": "2024-10",
+     "value": 99.4
+    },
+    {
+     "period": "2024-11",
+     "value": 99.0
+    },
+    {
+     "period": "2024-12",
+     "value": 97.5
+    },
+    {
+     "period": "2025-01",
+     "value": 97.7
+    },
+    {
+     "period": "2025-02",
+     "value": 97.5
+    },
+    {
+     "period": "2025-03",
+     "value": 97.4
+    },
+    {
+     "period": "2025-04",
+     "value": 98.1
+    },
+    {
+     "period": "2025-05",
+     "value": 98.3
+    },
+    {
+     "period": "2025-06",
+     "value": 97.3
+    },
+    {
+     "period": "2025-07",
+     "value": 96.7
+    },
+    {
+     "period": "2025-08",
+     "value": 97.5
+    },
+    {
+     "period": "2025-09",
+     "value": 98.1
+    },
+    {
+     "period": "2025-10",
+     "value": 98.0
+    },
+    {
+     "period": "2025-11",
+     "value": 96.3
+    },
+    {
+     "period": "2025-12",
+     "value": 96.3
+    },
+    {
+     "period": "2026-01",
+     "value": 96.5
+    },
+    {
+     "period": "2026-02",
+     "value": 96.6
+    },
+    {
+     "period": "2026-03",
+     "value": 96.1
+    },
+    {
+     "period": "2026-04",
+     "value": 96.4
+    },
+    {
+     "period": "2026-05",
+     "value": 96.9
+    },
+    {
+     "period": "2026-06",
+     "value": 96.7
+    },
+    {
+     "period": "2026-07",
+     "value": 96.1
+    },
+    {
+     "period": "2026-08",
+     "value": 96.5
+    },
+    {
+     "period": "2026-09",
+     "value": 96.5
+    },
+    {
+     "period": "2026-10",
+     "value": 96.2,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "OCCUPIED_BEDS and CAPACITY_ACTUAL_BED",
+    "method": "Sum of occupied beds ÷ sum of actual bed capacity over every night of the month."
+   },
+   "note": "Every overnight service the City tracks in its shelter system (shelters, hotel programs, respite sites, warming centres and others). Capacity is actual capacity: beds or rooms usable that night.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterOccRooms": {
+   "id": "shelterOccRooms",
+   "label": "Rooms occupied",
+   "unit": "percent",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 95.1
+    },
+    {
+     "period": "2021-02",
+     "value": 95.8
+    },
+    {
+     "period": "2021-03",
+     "value": 94.5
+    },
+    {
+     "period": "2021-04",
+     "value": 93.4
+    },
+    {
+     "period": "2021-05",
+     "value": 92.6
+    },
+    {
+     "period": "2021-06",
+     "value": 91.9
+    },
+    {
+     "period": "2021-07",
+     "value": 94.1
+    },
+    {
+     "period": "2021-08",
+     "value": 94.9
+    },
+    {
+     "period": "2021-09",
+     "value": 96.5
+    },
+    {
+     "period": "2021-10",
+     "value": 96.6
+    },
+    {
+     "period": "2021-11",
+     "value": 97.3
+    },
+    {
+     "period": "2021-12",
+     "value": 97.5
+    },
+    {
+     "period": "2022-01",
+     "value": 98.0
+    },
+    {
+     "period": "2022-02",
+     "value": 97.5
+    },
+    {
+     "period": "2022-03",
+     "value": 97.5
+    },
+    {
+     "period": "2022-04",
+     "value": 97.3
+    },
+    {
+     "period": "2022-05",
+     "value": 98.3
+    },
+    {
+     "period": "2022-06",
+     "value": 98.4
+    },
+    {
+     "period": "2022-07",
+     "value": 99.0
+    },
+    {
+     "period": "2022-08",
+     "value": 99.1
+    },
+    {
+     "period": "2022-09",
+     "value": 99.6
+    },
+    {
+     "period": "2022-10",
+     "value": 99.4
+    },
+    {
+     "period": "2022-11",
+     "value": 99.0
+    },
+    {
+     "period": "2022-12",
+     "value": 98.9
+    },
+    {
+     "period": "2023-01",
+     "value": 99.1
+    },
+    {
+     "period": "2023-02",
+     "value": 99.0
+    },
+    {
+     "period": "2023-03",
+     "value": 99.1
+    },
+    {
+     "period": "2023-04",
+     "value": 98.9
+    },
+    {
+     "period": "2023-05",
+     "value": 99.2
+    },
+    {
+     "period": "2023-06",
+     "value": 99.1
+    },
+    {
+     "period": "2023-07",
+     "value": 99.8
+    },
+    {
+     "period": "2023-08",
+     "value": 99.7
+    },
+    {
+     "period": "2023-09",
+     "value": 99.8
+    },
+    {
+     "period": "2023-10",
+     "value": 99.7
+    },
+    {
+     "period": "2023-11",
+     "value": 99.6
+    },
+    {
+     "period": "2023-12",
+     "value": 99.7
+    },
+    {
+     "period": "2024-01",
+     "value": 99.6
+    },
+    {
+     "period": "2024-02",
+     "value": 99.7
+    },
+    {
+     "period": "2024-03",
+     "value": 99.7
+    },
+    {
+     "period": "2024-04",
+     "value": 99.7
+    },
+    {
+     "period": "2024-05",
+     "value": 99.7
+    },
+    {
+     "period": "2024-06",
+     "value": 99.6
+    },
+    {
+     "period": "2024-07",
+     "value": 99.7
+    },
+    {
+     "period": "2024-08",
+     "value": 99.6
+    },
+    {
+     "period": "2024-09",
+     "value": 99.7
+    },
+    {
+     "period": "2024-10",
+     "value": 99.5
+    },
+    {
+     "period": "2024-11",
+     "value": 99.4
+    },
+    {
+     "period": "2024-12",
+     "value": 99.4
+    },
+    {
+     "period": "2025-01",
+     "value": 99.2
+    },
+    {
+     "period": "2025-02",
+     "value": 98.9
+    },
+    {
+     "period": "2025-03",
+     "value": 98.8
+    },
+    {
+     "period": "2025-04",
+     "value": 99.2
+    },
+    {
+     "period": "2025-05",
+     "value": 99.2
+    },
+    {
+     "period": "2025-06",
+     "value": 99.4
+    },
+    {
+     "period": "2025-07",
+     "value": 99.6
+    },
+    {
+     "period": "2025-08",
+     "value": 99.5
+    },
+    {
+     "period": "2025-09",
+     "value": 99.2
+    },
+    {
+     "period": "2025-10",
+     "value": 99.6
+    },
+    {
+     "period": "2025-11",
+     "value": 99.6
+    },
+    {
+     "period": "2025-12",
+     "value": 99.1
+    },
+    {
+     "period": "2026-01",
+     "value": 98.5
+    },
+    {
+     "period": "2026-02",
+     "value": 98.4
+    },
+    {
+     "period": "2026-03",
+     "value": 97.8
+    },
+    {
+     "period": "2026-04",
+     "value": 97.4
+    },
+    {
+     "period": "2026-05",
+     "value": 99.5
+    },
+    {
+     "period": "2026-06",
+     "value": 99.5
+    },
+    {
+     "period": "2026-07",
+     "value": 99.3
+    },
+    {
+     "period": "2026-08",
+     "value": 99.5
+    },
+    {
+     "period": "2026-09",
+     "value": 99.4
+    },
+    {
+     "period": "2026-10",
+     "value": 99.2,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "OCCUPIED_ROOMS and CAPACITY_ACTUAL_ROOM",
+    "method": "Sum of occupied rooms ÷ sum of actual room capacity over every night of the month."
+   },
+   "note": "Every overnight service the City tracks in its shelter system (shelters, hotel programs, respite sites, warming centres and others). Capacity is actual capacity: beds or rooms usable that night.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterSectorMen": {
+   "id": "shelterSectorMen",
+   "label": "Men",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 1399.4
+    },
+    {
+     "period": "2021-02",
+     "value": 1329.4
+    },
+    {
+     "period": "2021-03",
+     "value": 1263.3
+    },
+    {
+     "period": "2021-04",
+     "value": 1233.7
+    },
+    {
+     "period": "2021-05",
+     "value": 1260.9
+    },
+    {
+     "period": "2021-06",
+     "value": 1302.6
+    },
+    {
+     "period": "2021-07",
+     "value": 1340.5
+    },
+    {
+     "period": "2021-08",
+     "value": 1333.5
+    },
+    {
+     "period": "2021-09",
+     "value": 1351.0
+    },
+    {
+     "period": "2021-10",
+     "value": 1395.0
+    },
+    {
+     "period": "2021-11",
+     "value": 1407.0
+    },
+    {
+     "period": "2021-12",
+     "value": 1426.4
+    },
+    {
+     "period": "2022-01",
+     "value": 1395.0
+    },
+    {
+     "period": "2022-02",
+     "value": 1437.3
+    },
+    {
+     "period": "2022-03",
+     "value": 1460.0
+    },
+    {
+     "period": "2022-04",
+     "value": 1459.4
+    },
+    {
+     "period": "2022-05",
+     "value": 1438.5
+    },
+    {
+     "period": "2022-06",
+     "value": 1453.5
+    },
+    {
+     "period": "2022-07",
+     "value": 1442.0
+    },
+    {
+     "period": "2022-08",
+     "value": 1455.4
+    },
+    {
+     "period": "2022-09",
+     "value": 1459.8
+    },
+    {
+     "period": "2022-10",
+     "value": 1468.6
+    },
+    {
+     "period": "2022-11",
+     "value": 1552.8
+    },
+    {
+     "period": "2022-12",
+     "value": 1689.8
+    },
+    {
+     "period": "2023-01",
+     "value": 1768.3
+    },
+    {
+     "period": "2023-02",
+     "value": 1805.6
+    },
+    {
+     "period": "2023-03",
+     "value": 1803.0
+    },
+    {
+     "period": "2023-04",
+     "value": 1806.1
+    },
+    {
+     "period": "2023-05",
+     "value": 1803.6
+    },
+    {
+     "period": "2023-06",
+     "value": 1801.5
+    },
+    {
+     "period": "2023-07",
+     "value": 1822.8
+    },
+    {
+     "period": "2023-08",
+     "value": 1880.5
+    },
+    {
+     "period": "2023-09",
+     "value": 1978.2
+    },
+    {
+     "period": "2023-10",
+     "value": 2065.9
+    },
+    {
+     "period": "2023-11",
+     "value": 2132.7
+    },
+    {
+     "period": "2023-12",
+     "value": 2226.3
+    },
+    {
+     "period": "2024-01",
+     "value": 2235.8
+    },
+    {
+     "period": "2024-02",
+     "value": 2234.7
+    },
+    {
+     "period": "2024-03",
+     "value": 2263.9
+    },
+    {
+     "period": "2024-04",
+     "value": 2265.6
+    },
+    {
+     "period": "2024-05",
+     "value": 2243.9
+    },
+    {
+     "period": "2024-06",
+     "value": 2213.8
+    },
+    {
+     "period": "2024-07",
+     "value": 2196.5
+    },
+    {
+     "period": "2024-08",
+     "value": 2180.6
+    },
+    {
+     "period": "2024-09",
+     "value": 2126.0
+    },
+    {
+     "period": "2024-10",
+     "value": 2122.2
+    },
+    {
+     "period": "2024-11",
+     "value": 2168.3
+    },
+    {
+     "period": "2024-12",
+     "value": 2258.5
+    },
+    {
+     "period": "2025-01",
+     "value": 2275.8
+    },
+    {
+     "period": "2025-02",
+     "value": 2271.4
+    },
+    {
+     "period": "2025-03",
+     "value": 2248.8
+    },
+    {
+     "period": "2025-04",
+     "value": 2249.0
+    },
+    {
+     "period": "2025-05",
+     "value": 2211.0
+    },
+    {
+     "period": "2025-06",
+     "value": 2164.8
+    },
+    {
+     "period": "2025-07",
+     "value": 2074.7
+    },
+    {
+     "period": "2025-08",
+     "value": 1957.9
+    },
+    {
+     "period": "2025-09",
+     "value": 1908.3
+    },
+    {
+     "period": "2025-10",
+     "value": 1899.8
+    },
+    {
+     "period": "2025-11",
+     "value": 1918.7
+    },
+    {
+     "period": "2025-12",
+     "value": 2014.2
+    },
+    {
+     "period": "2026-01",
+     "value": 2058.4
+    },
+    {
+     "period": "2026-02",
+     "value": 2129.6
+    },
+    {
+     "period": "2026-03",
+     "value": 2076.5
+    },
+    {
+     "period": "2026-04",
+     "value": 1927.6
+    },
+    {
+     "period": "2026-05",
+     "value": 1746.8
+    },
+    {
+     "period": "2026-06",
+     "value": 1677.8
+    },
+    {
+     "period": "2026-07",
+     "value": 1629.4
+    },
+    {
+     "period": "2026-08",
+     "value": 1577.6
+    },
+    {
+     "period": "2026-09",
+     "value": 1534.5
+    },
+    {
+     "period": "2026-10",
+     "value": 1472.5,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "SECTOR = \"Men\"; sum of SERVICE_USER_COUNT per OCCUPANCY_DATE",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "Every overnight service the City tracks in its shelter system (shelters, hotel programs, respite sites, warming centres and others). Capacity is actual capacity: beds or rooms usable that night.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterSectorWomen": {
+   "id": "shelterSectorWomen",
+   "label": "Women",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 689.2
+    },
+    {
+     "period": "2021-02",
+     "value": 689.1
+    },
+    {
+     "period": "2021-03",
+     "value": 684.1
+    },
+    {
+     "period": "2021-04",
+     "value": 693.2
+    },
+    {
+     "period": "2021-05",
+     "value": 699.8
+    },
+    {
+     "period": "2021-06",
+     "value": 723.3
+    },
+    {
+     "period": "2021-07",
+     "value": 745.0
+    },
+    {
+     "period": "2021-08",
+     "value": 750.8
+    },
+    {
+     "period": "2021-09",
+     "value": 740.1
+    },
+    {
+     "period": "2021-10",
+     "value": 746.4
+    },
+    {
+     "period": "2021-11",
+     "value": 767.1
+    },
+    {
+     "period": "2021-12",
+     "value": 790.9
+    },
+    {
+     "period": "2022-01",
+     "value": 774.2
+    },
+    {
+     "period": "2022-02",
+     "value": 791.3
+    },
+    {
+     "period": "2022-03",
+     "value": 803.2
+    },
+    {
+     "period": "2022-04",
+     "value": 801.9
+    },
+    {
+     "period": "2022-05",
+     "value": 792.6
+    },
+    {
+     "period": "2022-06",
+     "value": 795.3
+    },
+    {
+     "period": "2022-07",
+     "value": 791.6
+    },
+    {
+     "period": "2022-08",
+     "value": 797.4
+    },
+    {
+     "period": "2022-09",
+     "value": 788.7
+    },
+    {
+     "period": "2022-10",
+     "value": 790.8
+    },
+    {
+     "period": "2022-11",
+     "value": 801.1
+    },
+    {
+     "period": "2022-12",
+     "value": 820.6
+    },
+    {
+     "period": "2023-01",
+     "value": 850.2
+    },
+    {
+     "period": "2023-02",
+     "value": 885.1
+    },
+    {
+     "period": "2023-03",
+     "value": 889.1
+    },
+    {
+     "period": "2023-04",
+     "value": 901.5
+    },
+    {
+     "period": "2023-05",
+     "value": 890.9
+    },
+    {
+     "period": "2023-06",
+     "value": 896.4
+    },
+    {
+     "period": "2023-07",
+     "value": 920.2
+    },
+    {
+     "period": "2023-08",
+     "value": 955.1
+    },
+    {
+     "period": "2023-09",
+     "value": 1028.3
+    },
+    {
+     "period": "2023-10",
+     "value": 1092.0
+    },
+    {
+     "period": "2023-11",
+     "value": 1093.6
+    },
+    {
+     "period": "2023-12",
+     "value": 1098.8
+    },
+    {
+     "period": "2024-01",
+     "value": 1103.9
+    },
+    {
+     "period": "2024-02",
+     "value": 1115.1
+    },
+    {
+     "period": "2024-03",
+     "value": 1122.9
+    },
+    {
+     "period": "2024-04",
+     "value": 1122.4
+    },
+    {
+     "period": "2024-05",
+     "value": 1122.3
+    },
+    {
+     "period": "2024-06",
+     "value": 1119.0
+    },
+    {
+     "period": "2024-07",
+     "value": 1122.5
+    },
+    {
+     "period": "2024-08",
+     "value": 1122.9
+    },
+    {
+     "period": "2024-09",
+     "value": 1123.1
+    },
+    {
+     "period": "2024-10",
+     "value": 1121.4
+    },
+    {
+     "period": "2024-11",
+     "value": 1118.7
+    },
+    {
+     "period": "2024-12",
+     "value": 1116.1
+    },
+    {
+     "period": "2025-01",
+     "value": 1116.5
+    },
+    {
+     "period": "2025-02",
+     "value": 1117.2
+    },
+    {
+     "period": "2025-03",
+     "value": 1112.6
+    },
+    {
+     "period": "2025-04",
+     "value": 1098.6
+    },
+    {
+     "period": "2025-05",
+     "value": 1099.3
+    },
+    {
+     "period": "2025-06",
+     "value": 1088.8
+    },
+    {
+     "period": "2025-07",
+     "value": 1075.3
+    },
+    {
+     "period": "2025-08",
+     "value": 1057.4
+    },
+    {
+     "period": "2025-09",
+     "value": 1048.6
+    },
+    {
+     "period": "2025-10",
+     "value": 1041.7
+    },
+    {
+     "period": "2025-11",
+     "value": 1055.8
+    },
+    {
+     "period": "2025-12",
+     "value": 1079.4
+    },
+    {
+     "period": "2026-01",
+     "value": 1080.6
+    },
+    {
+     "period": "2026-02",
+     "value": 1067.9
+    },
+    {
+     "period": "2026-03",
+     "value": 1012.5
+    },
+    {
+     "period": "2026-04",
+     "value": 982.5
+    },
+    {
+     "period": "2026-05",
+     "value": 936.5
+    },
+    {
+     "period": "2026-06",
+     "value": 912.8
+    },
+    {
+     "period": "2026-07",
+     "value": 899.6
+    },
+    {
+     "period": "2026-08",
+     "value": 886.7
+    },
+    {
+     "period": "2026-09",
+     "value": 856.5
+    },
+    {
+     "period": "2026-10",
+     "value": 825.1,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "SECTOR = \"Women\"; sum of SERVICE_USER_COUNT per OCCUPANCY_DATE",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "Every overnight service the City tracks in its shelter system (shelters, hotel programs, respite sites, warming centres and others). Capacity is actual capacity: beds or rooms usable that night.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterSectorMixedAdult": {
+   "id": "shelterSectorMixedAdult",
+   "label": "Mixed adult",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 2413.1
+    },
+    {
+     "period": "2021-02",
+     "value": 2523.8
+    },
+    {
+     "period": "2021-03",
+     "value": 2581.1
+    },
+    {
+     "period": "2021-04",
+     "value": 2422.4
+    },
+    {
+     "period": "2021-05",
+     "value": 2524.7
+    },
+    {
+     "period": "2021-06",
+     "value": 2598.3
+    },
+    {
+     "period": "2021-07",
+     "value": 2629.7
+    },
+    {
+     "period": "2021-08",
+     "value": 2696.9
+    },
+    {
+     "period": "2021-09",
+     "value": 2726.5
+    },
+    {
+     "period": "2021-10",
+     "value": 2755.6
+    },
+    {
+     "period": "2021-11",
+     "value": 2901.0
+    },
+    {
+     "period": "2021-12",
+     "value": 2937.3
+    },
+    {
+     "period": "2022-01",
+     "value": 3114.8
+    },
+    {
+     "period": "2022-02",
+     "value": 3255.1
+    },
+    {
+     "period": "2022-03",
+     "value": 3123.0
+    },
+    {
+     "period": "2022-04",
+     "value": 2996.0
+    },
+    {
+     "period": "2022-05",
+     "value": 3007.4
+    },
+    {
+     "period": "2022-06",
+     "value": 3079.3
+    },
+    {
+     "period": "2022-07",
+     "value": 3123.5
+    },
+    {
+     "period": "2022-08",
+     "value": 3169.0
+    },
+    {
+     "period": "2022-09",
+     "value": 3304.2
+    },
+    {
+     "period": "2022-10",
+     "value": 3326.0
+    },
+    {
+     "period": "2022-11",
+     "value": 3184.9
+    },
+    {
+     "period": "2022-12",
+     "value": 3304.5
+    },
+    {
+     "period": "2023-01",
+     "value": 3367.8
+    },
+    {
+     "period": "2023-02",
+     "value": 3415.4
+    },
+    {
+     "period": "2023-03",
+     "value": 3325.6
+    },
+    {
+     "period": "2023-04",
+     "value": 3241.2
+    },
+    {
+     "period": "2023-05",
+     "value": 3188.1
+    },
+    {
+     "period": "2023-06",
+     "value": 3153.6
+    },
+    {
+     "period": "2023-07",
+     "value": 3079.3
+    },
+    {
+     "period": "2023-08",
+     "value": 2943.3
+    },
+    {
+     "period": "2023-09",
+     "value": 2926.4
+    },
+    {
+     "period": "2023-10",
+     "value": 2914.5
+    },
+    {
+     "period": "2023-11",
+     "value": 2972.8
+    },
+    {
+     "period": "2023-12",
+     "value": 3053.7
+    },
+    {
+     "period": "2024-01",
+     "value": 3379.3
+    },
+    {
+     "period": "2024-02",
+     "value": 3392.9
+    },
+    {
+     "period": "2024-03",
+     "value": 3147.9
+    },
+    {
+     "period": "2024-04",
+     "value": 3113.6
+    },
+    {
+     "period": "2024-05",
+     "value": 3177.1
+    },
+    {
+     "period": "2024-06",
+     "value": 3149.4
+    },
+    {
+     "period": "2024-07",
+     "value": 3120.5
+    },
+    {
+     "period": "2024-08",
+     "value": 3063.2
+    },
+    {
+     "period": "2024-09",
+     "value": 3004.0
+    },
+    {
+     "period": "2024-10",
+     "value": 2963.3
+    },
+    {
+     "period": "2024-11",
+     "value": 2929.7
+    },
+    {
+     "period": "2024-12",
+     "value": 3100.8
+    },
+    {
+     "period": "2025-01",
+     "value": 3413.3
+    },
+    {
+     "period": "2025-02",
+     "value": 3400.4
+    },
+    {
+     "period": "2025-03",
+     "value": 3120.5
+    },
+    {
+     "period": "2025-04",
+     "value": 2793.0
+    },
+    {
+     "period": "2025-05",
+     "value": 2617.1
+    },
+    {
+     "period": "2025-06",
+     "value": 2634.6
+    },
+    {
+     "period": "2025-07",
+     "value": 2644.6
+    },
+    {
+     "period": "2025-08",
+     "value": 2657.2
+    },
+    {
+     "period": "2025-09",
+     "value": 2622.4
+    },
+    {
+     "period": "2025-10",
+     "value": 2620.7
+    },
+    {
+     "period": "2025-11",
+     "value": 2623.2
+    },
+    {
+     "period": "2025-12",
+     "value": 2856.7
+    },
+    {
+     "period": "2026-01",
+     "value": 3041.8
+    },
+    {
+     "period": "2026-02",
+     "value": 3025.9
+    },
+    {
+     "period": "2026-03",
+     "value": 2763.7
+    },
+    {
+     "period": "2026-04",
+     "value": 2636.9
+    },
+    {
+     "period": "2026-05",
+     "value": 2536.6
+    },
+    {
+     "period": "2026-06",
+     "value": 2502.8
+    },
+    {
+     "period": "2026-07",
+     "value": 2489.7
+    },
+    {
+     "period": "2026-08",
+     "value": 2443.5
+    },
+    {
+     "period": "2026-09",
+     "value": 2337.2
+    },
+    {
+     "period": "2026-10",
+     "value": 2179.5,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "SECTOR = \"Mixed Adult\"; sum of SERVICE_USER_COUNT per OCCUPANCY_DATE",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "Every overnight service the City tracks in its shelter system (shelters, hotel programs, respite sites, warming centres and others). Capacity is actual capacity: beds or rooms usable that night.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterSectorYouth": {
+   "id": "shelterSectorYouth",
+   "label": "Youth",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 396.7
+    },
+    {
+     "period": "2021-02",
+     "value": 424.2
+    },
+    {
+     "period": "2021-03",
+     "value": 417.5
+    },
+    {
+     "period": "2021-04",
+     "value": 427.7
+    },
+    {
+     "period": "2021-05",
+     "value": 440.8
+    },
+    {
+     "period": "2021-06",
+     "value": 443.2
+    },
+    {
+     "period": "2021-07",
+     "value": 448.0
+    },
+    {
+     "period": "2021-08",
+     "value": 449.2
+    },
+    {
+     "period": "2021-09",
+     "value": 455.8
+    },
+    {
+     "period": "2021-10",
+     "value": 469.1
+    },
+    {
+     "period": "2021-11",
+     "value": 471.8
+    },
+    {
+     "period": "2021-12",
+     "value": 462.4
+    },
+    {
+     "period": "2022-01",
+     "value": 506.7
+    },
+    {
+     "period": "2022-02",
+     "value": 533.9
+    },
+    {
+     "period": "2022-03",
+     "value": 549.4
+    },
+    {
+     "period": "2022-04",
+     "value": 558.3
+    },
+    {
+     "period": "2022-05",
+     "value": 562.4
+    },
+    {
+     "period": "2022-06",
+     "value": 555.6
+    },
+    {
+     "period": "2022-07",
+     "value": 538.2
+    },
+    {
+     "period": "2022-08",
+     "value": 530.9
+    },
+    {
+     "period": "2022-09",
+     "value": 537.3
+    },
+    {
+     "period": "2022-10",
+     "value": 540.9
+    },
+    {
+     "period": "2022-11",
+     "value": 545.9
+    },
+    {
+     "period": "2022-12",
+     "value": 572.2
+    },
+    {
+     "period": "2023-01",
+     "value": 575.5
+    },
+    {
+     "period": "2023-02",
+     "value": 577.7
+    },
+    {
+     "period": "2023-03",
+     "value": 580.9
+    },
+    {
+     "period": "2023-04",
+     "value": 575.6
+    },
+    {
+     "period": "2023-05",
+     "value": 569.9
+    },
+    {
+     "period": "2023-06",
+     "value": 565.7
+    },
+    {
+     "period": "2023-07",
+     "value": 559.2
+    },
+    {
+     "period": "2023-08",
+     "value": 588.1
+    },
+    {
+     "period": "2023-09",
+     "value": 600.1
+    },
+    {
+     "period": "2023-10",
+     "value": 622.8
+    },
+    {
+     "period": "2023-11",
+     "value": 646.6
+    },
+    {
+     "period": "2023-12",
+     "value": 665.4
+    },
+    {
+     "period": "2024-01",
+     "value": 667.6
+    },
+    {
+     "period": "2024-02",
+     "value": 666.6
+    },
+    {
+     "period": "2024-03",
+     "value": 664.6
+    },
+    {
+     "period": "2024-04",
+     "value": 647.1
+    },
+    {
+     "period": "2024-05",
+     "value": 632.7
+    },
+    {
+     "period": "2024-06",
+     "value": 627.7
+    },
+    {
+     "period": "2024-07",
+     "value": 634.2
+    },
+    {
+     "period": "2024-08",
+     "value": 637.5
+    },
+    {
+     "period": "2024-09",
+     "value": 636.1
+    },
+    {
+     "period": "2024-10",
+     "value": 649.9
+    },
+    {
+     "period": "2024-11",
+     "value": 652.4
+    },
+    {
+     "period": "2024-12",
+     "value": 672.5
+    },
+    {
+     "period": "2025-01",
+     "value": 708.4
+    },
+    {
+     "period": "2025-02",
+     "value": 725.3
+    },
+    {
+     "period": "2025-03",
+     "value": 730.3
+    },
+    {
+     "period": "2025-04",
+     "value": 717.7
+    },
+    {
+     "period": "2025-05",
+     "value": 708.8
+    },
+    {
+     "period": "2025-06",
+     "value": 708.1
+    },
+    {
+     "period": "2025-07",
+     "value": 710.4
+    },
+    {
+     "period": "2025-08",
+     "value": 720.3
+    },
+    {
+     "period": "2025-09",
+     "value": 716.4
+    },
+    {
+     "period": "2025-10",
+     "value": 714.8
+    },
+    {
+     "period": "2025-11",
+     "value": 725.1
+    },
+    {
+     "period": "2025-12",
+     "value": 739.3
+    },
+    {
+     "period": "2026-01",
+     "value": 741.1
+    },
+    {
+     "period": "2026-02",
+     "value": 740.9
+    },
+    {
+     "period": "2026-03",
+     "value": 732.2
+    },
+    {
+     "period": "2026-04",
+     "value": 723.5
+    },
+    {
+     "period": "2026-05",
+     "value": 714.4
+    },
+    {
+     "period": "2026-06",
+     "value": 715.1
+    },
+    {
+     "period": "2026-07",
+     "value": 718.3
+    },
+    {
+     "period": "2026-08",
+     "value": 705.4
+    },
+    {
+     "period": "2026-09",
+     "value": 692.2
+    },
+    {
+     "period": "2026-10",
+     "value": 686.2,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "SECTOR = \"Youth\"; sum of SERVICE_USER_COUNT per OCCUPANCY_DATE",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "Every overnight service the City tracks in its shelter system (shelters, hotel programs, respite sites, warming centres and others). Capacity is actual capacity: beds or rooms usable that night.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterSectorFamilies": {
+   "id": "shelterSectorFamilies",
+   "label": "Families",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 1130.7
+    },
+    {
+     "period": "2021-02",
+     "value": 1099.0
+    },
+    {
+     "period": "2021-03",
+     "value": 1022.3
+    },
+    {
+     "period": "2021-04",
+     "value": 1023.1
+    },
+    {
+     "period": "2021-05",
+     "value": 1030.5
+    },
+    {
+     "period": "2021-06",
+     "value": 1084.4
+    },
+    {
+     "period": "2021-07",
+     "value": 1169.7
+    },
+    {
+     "period": "2021-08",
+     "value": 1210.4
+    },
+    {
+     "period": "2021-09",
+     "value": 1298.2
+    },
+    {
+     "period": "2021-10",
+     "value": 1456.8
+    },
+    {
+     "period": "2021-11",
+     "value": 1585.8
+    },
+    {
+     "period": "2021-12",
+     "value": 1671.1
+    },
+    {
+     "period": "2022-01",
+     "value": 1708.5
+    },
+    {
+     "period": "2022-02",
+     "value": 1743.6
+    },
+    {
+     "period": "2022-03",
+     "value": 1857.0
+    },
+    {
+     "period": "2022-04",
+     "value": 2042.5
+    },
+    {
+     "period": "2022-05",
+     "value": 2058.9
+    },
+    {
+     "period": "2022-06",
+     "value": 2097.5
+    },
+    {
+     "period": "2022-07",
+     "value": 2084.7
+    },
+    {
+     "period": "2022-08",
+     "value": 2132.4
+    },
+    {
+     "period": "2022-09",
+     "value": 2110.2
+    },
+    {
+     "period": "2022-10",
+     "value": 2113.4
+    },
+    {
+     "period": "2022-11",
+     "value": 2147.9
+    },
+    {
+     "period": "2022-12",
+     "value": 2244.7
+    },
+    {
+     "period": "2023-01",
+     "value": 2404.2
+    },
+    {
+     "period": "2023-02",
+     "value": 2378.7
+    },
+    {
+     "period": "2023-03",
+     "value": 2382.6
+    },
+    {
+     "period": "2023-04",
+     "value": 2344.4
+    },
+    {
+     "period": "2023-05",
+     "value": 2365.3
+    },
+    {
+     "period": "2023-06",
+     "value": 2421.1
+    },
+    {
+     "period": "2023-07",
+     "value": 2467.4
+    },
+    {
+     "period": "2023-08",
+     "value": 2468.1
+    },
+    {
+     "period": "2023-09",
+     "value": 2463.1
+    },
+    {
+     "period": "2023-10",
+     "value": 2431.6
+    },
+    {
+     "period": "2023-11",
+     "value": 2437.3
+    },
+    {
+     "period": "2023-12",
+     "value": 2450.1
+    },
+    {
+     "period": "2024-01",
+     "value": 2460.5
+    },
+    {
+     "period": "2024-02",
+     "value": 2475.3
+    },
+    {
+     "period": "2024-03",
+     "value": 2495.5
+    },
+    {
+     "period": "2024-04",
+     "value": 2584.5
+    },
+    {
+     "period": "2024-05",
+     "value": 2760.1
+    },
+    {
+     "period": "2024-06",
+     "value": 2740.4
+    },
+    {
+     "period": "2024-07",
+     "value": 2741.8
+    },
+    {
+     "period": "2024-08",
+     "value": 2708.4
+    },
+    {
+     "period": "2024-09",
+     "value": 2725.5
+    },
+    {
+     "period": "2024-10",
+     "value": 2746.8
+    },
+    {
+     "period": "2024-11",
+     "value": 2753.7
+    },
+    {
+     "period": "2024-12",
+     "value": 2731.1
+    },
+    {
+     "period": "2025-01",
+     "value": 2713.5
+    },
+    {
+     "period": "2025-02",
+     "value": 2635.6
+    },
+    {
+     "period": "2025-03",
+     "value": 2566.1
+    },
+    {
+     "period": "2025-04",
+     "value": 2588.8
+    },
+    {
+     "period": "2025-05",
+     "value": 2545.3
+    },
+    {
+     "period": "2025-06",
+     "value": 2468.9
+    },
+    {
+     "period": "2025-07",
+     "value": 2395.4
+    },
+    {
+     "period": "2025-08",
+     "value": 2371.8
+    },
+    {
+     "period": "2025-09",
+     "value": 2353.5
+    },
+    {
+     "period": "2025-10",
+     "value": 2420.5
+    },
+    {
+     "period": "2025-11",
+     "value": 2419.3
+    },
+    {
+     "period": "2025-12",
+     "value": 2345.6
+    },
+    {
+     "period": "2026-01",
+     "value": 2294.7
+    },
+    {
+     "period": "2026-02",
+     "value": 2241.8
+    },
+    {
+     "period": "2026-03",
+     "value": 2156.9
+    },
+    {
+     "period": "2026-04",
+     "value": 2120.8
+    },
+    {
+     "period": "2026-05",
+     "value": 2055.5
+    },
+    {
+     "period": "2026-06",
+     "value": 2007.3
+    },
+    {
+     "period": "2026-07",
+     "value": 2018.5
+    },
+    {
+     "period": "2026-08",
+     "value": 2027.3
+    },
+    {
+     "period": "2026-09",
+     "value": 1903.4
+    },
+    {
+     "period": "2026-10",
+     "value": 1817.1,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "SECTOR = \"Families\"; sum of SERVICE_USER_COUNT per OCCUPANCY_DATE",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "Every overnight service the City tracks in its shelter system (shelters, hotel programs, respite sites, warming centres and others). Capacity is actual capacity: beds or rooms usable that night.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterTypeShelter": {
+   "id": "shelterTypeShelter",
+   "label": "Shelter",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 66.2
+    },
+    {
+     "period": "2021-02",
+     "value": 66.9
+    },
+    {
+     "period": "2021-03",
+     "value": 66.6
+    },
+    {
+     "period": "2021-04",
+     "value": 65.6
+    },
+    {
+     "period": "2021-05",
+     "value": 64.7
+    },
+    {
+     "period": "2021-06",
+     "value": 64.5
+    },
+    {
+     "period": "2021-07",
+     "value": 64.8
+    },
+    {
+     "period": "2021-08",
+     "value": 65.0
+    },
+    {
+     "period": "2021-09",
+     "value": 65.0
+    },
+    {
+     "period": "2021-10",
+     "value": 65.0
+    },
+    {
+     "period": "2021-11",
+     "value": 65.0
+    },
+    {
+     "period": "2021-12",
+     "value": 64.5
+    },
+    {
+     "period": "2022-01",
+     "value": 64.7
+    },
+    {
+     "period": "2022-02",
+     "value": 64.2
+    },
+    {
+     "period": "2022-03",
+     "value": 65.0
+    },
+    {
+     "period": "2022-04",
+     "value": 65.0
+    },
+    {
+     "period": "2022-05",
+     "value": 65.0
+    },
+    {
+     "period": "2022-06",
+     "value": 65.0
+    },
+    {
+     "period": "2022-07",
+     "value": 65.0
+    },
+    {
+     "period": "2022-08",
+     "value": 65.9
+    },
+    {
+     "period": "2022-09",
+     "value": 66.0
+    },
+    {
+     "period": "2022-10",
+     "value": 66.0
+    },
+    {
+     "period": "2022-11",
+     "value": 66.3
+    },
+    {
+     "period": "2022-12",
+     "value": 67.0
+    },
+    {
+     "period": "2023-01",
+     "value": 67.0
+    },
+    {
+     "period": "2023-02",
+     "value": 67.0
+    },
+    {
+     "period": "2023-03",
+     "value": 67.0
+    },
+    {
+     "period": "2023-04",
+     "value": 67.1
+    },
+    {
+     "period": "2023-05",
+     "value": 68.0
+    },
+    {
+     "period": "2023-06",
+     "value": 68.0
+    },
+    {
+     "period": "2023-07",
+     "value": 68.0
+    },
+    {
+     "period": "2023-08",
+     "value": 68.0
+    },
+    {
+     "period": "2023-09",
+     "value": 68.0
+    },
+    {
+     "period": "2023-10",
+     "value": 68.0
+    },
+    {
+     "period": "2023-11",
+     "value": 68.0
+    },
+    {
+     "period": "2023-12",
+     "value": 68.0
+    },
+    {
+     "period": "2024-01",
+     "value": 68.0
+    },
+    {
+     "period": "2024-02",
+     "value": 68.0
+    },
+    {
+     "period": "2024-03",
+     "value": 68.0
+    },
+    {
+     "period": "2024-04",
+     "value": 68.0
+    },
+    {
+     "period": "2024-05",
+     "value": 68.0
+    },
+    {
+     "period": "2024-06",
+     "value": 68.0
+    },
+    {
+     "period": "2024-07",
+     "value": 68.0
+    },
+    {
+     "period": "2024-08",
+     "value": 68.0
+    },
+    {
+     "period": "2024-09",
+     "value": 67.0
+    },
+    {
+     "period": "2024-10",
+     "value": 68.4
+    },
+    {
+     "period": "2024-11",
+     "value": 69.5
+    },
+    {
+     "period": "2024-12",
+     "value": 70.8
+    },
+    {
+     "period": "2025-01",
+     "value": 71.0
+    },
+    {
+     "period": "2025-02",
+     "value": 71.2
+    },
+    {
+     "period": "2025-03",
+     "value": 72.0
+    },
+    {
+     "period": "2025-04",
+     "value": 72.0
+    },
+    {
+     "period": "2025-05",
+     "value": 73.8
+    },
+    {
+     "period": "2025-06",
+     "value": 74.7
+    },
+    {
+     "period": "2025-07",
+     "value": 75.4
+    },
+    {
+     "period": "2025-08",
+     "value": 76.8
+    },
+    {
+     "period": "2025-09",
+     "value": 77.0
+    },
+    {
+     "period": "2025-10",
+     "value": 76.9
+    },
+    {
+     "period": "2025-11",
+     "value": 75.7
+    },
+    {
+     "period": "2025-12",
+     "value": 74.9
+    },
+    {
+     "period": "2026-01",
+     "value": 75.4
+    },
+    {
+     "period": "2026-02",
+     "value": 76.0
+    },
+    {
+     "period": "2026-03",
+     "value": 76.6
+    },
+    {
+     "period": "2026-04",
+     "value": 76.9
+    },
+    {
+     "period": "2026-05",
+     "value": 76.0
+    },
+    {
+     "period": "2026-06",
+     "value": 76.0
+    },
+    {
+     "period": "2026-07",
+     "value": 76.0
+    },
+    {
+     "period": "2026-08",
+     "value": 75.8
+    },
+    {
+     "period": "2026-09",
+     "value": 75.0
+    },
+    {
+     "period": "2026-10",
+     "value": 75.0,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "OVERNIGHT_SERVICE_TYPE = \"Shelter\"; distinct LOCATION_ID per OCCUPANCY_DATE",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "A site running more than one type of program counts once under each type.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterTypeHotelshelter": {
+   "id": "shelterTypeHotelshelter",
+   "label": "Hotel shelter",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 23.0
+    },
+    {
+     "period": "2021-02",
+     "value": 23.2
+    },
+    {
+     "period": "2021-03",
+     "value": 24.0
+    },
+    {
+     "period": "2021-04",
+     "value": 24.5
+    },
+    {
+     "period": "2021-05",
+     "value": 23.8
+    },
+    {
+     "period": "2021-06",
+     "value": 24.3
+    },
+    {
+     "period": "2021-07",
+     "value": 24.7
+    },
+    {
+     "period": "2021-08",
+     "value": 25.0
+    },
+    {
+     "period": "2021-09",
+     "value": 25.0
+    },
+    {
+     "period": "2021-10",
+     "value": 25.0
+    },
+    {
+     "period": "2021-11",
+     "value": 25.0
+    },
+    {
+     "period": "2021-12",
+     "value": 24.6
+    },
+    {
+     "period": "2022-01",
+     "value": 24.9
+    },
+    {
+     "period": "2022-02",
+     "value": 25.0
+    },
+    {
+     "period": "2022-03",
+     "value": 25.8
+    },
+    {
+     "period": "2022-04",
+     "value": 26.1
+    },
+    {
+     "period": "2022-05",
+     "value": 26.0
+    },
+    {
+     "period": "2022-06",
+     "value": 26.0
+    },
+    {
+     "period": "2022-07",
+     "value": 26.0
+    },
+    {
+     "period": "2022-08",
+     "value": 26.0
+    },
+    {
+     "period": "2022-09",
+     "value": 26.0
+    },
+    {
+     "period": "2022-10",
+     "value": 26.0
+    },
+    {
+     "period": "2022-11",
+     "value": 26.0
+    },
+    {
+     "period": "2022-12",
+     "value": 25.2
+    },
+    {
+     "period": "2023-01",
+     "value": 25.0
+    },
+    {
+     "period": "2023-02",
+     "value": 24.8
+    },
+    {
+     "period": "2023-03",
+     "value": 24.0
+    },
+    {
+     "period": "2023-04",
+     "value": 23.9
+    },
+    {
+     "period": "2023-05",
+     "value": 23.0
+    },
+    {
+     "period": "2023-06",
+     "value": 23.0
+    },
+    {
+     "period": "2023-07",
+     "value": 23.0
+    },
+    {
+     "period": "2023-08",
+     "value": 22.0
+    },
+    {
+     "period": "2023-09",
+     "value": 21.0
+    },
+    {
+     "period": "2023-10",
+     "value": 21.0
+    },
+    {
+     "period": "2023-11",
+     "value": 21.0
+    },
+    {
+     "period": "2023-12",
+     "value": 21.0
+    },
+    {
+     "period": "2024-01",
+     "value": 21.0
+    },
+    {
+     "period": "2024-02",
+     "value": 21.0
+    },
+    {
+     "period": "2024-03",
+     "value": 21.0
+    },
+    {
+     "period": "2024-04",
+     "value": 21.9
+    },
+    {
+     "period": "2024-05",
+     "value": 23.0
+    },
+    {
+     "period": "2024-06",
+     "value": 23.0
+    },
+    {
+     "period": "2024-07",
+     "value": 22.5
+    },
+    {
+     "period": "2024-08",
+     "value": 22.0
+    },
+    {
+     "period": "2024-09",
+     "value": 22.0
+    },
+    {
+     "period": "2024-10",
+     "value": 21.0
+    },
+    {
+     "period": "2024-11",
+     "value": 21.0
+    },
+    {
+     "period": "2024-12",
+     "value": 21.0
+    },
+    {
+     "period": "2025-01",
+     "value": 21.0
+    },
+    {
+     "period": "2025-02",
+     "value": 21.0
+    },
+    {
+     "period": "2025-03",
+     "value": 21.0
+    },
+    {
+     "period": "2025-04",
+     "value": 20.0
+    },
+    {
+     "period": "2025-05",
+     "value": 19.0
+    },
+    {
+     "period": "2025-06",
+     "value": 19.3
+    },
+    {
+     "period": "2025-07",
+     "value": 19.0
+    },
+    {
+     "period": "2025-08",
+     "value": 19.0
+    },
+    {
+     "period": "2025-09",
+     "value": 19.0
+    },
+    {
+     "period": "2025-10",
+     "value": 18.7
+    },
+    {
+     "period": "2025-11",
+     "value": 18.0
+    },
+    {
+     "period": "2025-12",
+     "value": 18.0
+    },
+    {
+     "period": "2026-01",
+     "value": 17.0
+    },
+    {
+     "period": "2026-02",
+     "value": 17.0
+    },
+    {
+     "period": "2026-03",
+     "value": 17.0
+    },
+    {
+     "period": "2026-04",
+     "value": 17.0
+    },
+    {
+     "period": "2026-05",
+     "value": 17.0
+    },
+    {
+     "period": "2026-06",
+     "value": 17.0
+    },
+    {
+     "period": "2026-07",
+     "value": 17.0
+    },
+    {
+     "period": "2026-08",
+     "value": 17.0
+    },
+    {
+     "period": "2026-09",
+     "value": 17.0
+    },
+    {
+     "period": "2026-10",
+     "value": 17.0,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "OVERNIGHT_SERVICE_TYPE = \"Motel/Hotel Shelter\"; distinct LOCATION_ID per OCCUPANCY_DATE",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "A site running more than one type of program counts once under each type.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "shelterType24hourrespite": {
+   "id": "shelterType24hourrespite",
+   "label": "24-hour respite",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 9.0
+    },
+    {
+     "period": "2021-02",
+     "value": 9.0
+    },
+    {
+     "period": "2021-03",
+     "value": 8.6
+    },
+    {
+     "period": "2021-04",
+     "value": 8.0
+    },
+    {
+     "period": "2021-05",
+     "value": 8.0
+    },
+    {
+     "period": "2021-06",
+     "value": 8.0
+    },
+    {
+     "period": "2021-07",
+     "value": 8.0
+    },
+    {
+     "period": "2021-08",
+     "value": 8.0
+    },
+    {
+     "period": "2021-09",
+     "value": 8.0
+    },
+    {
+     "period": "2021-10",
+     "value": 8.0
+    },
+    {
+     "period": "2021-11",
+     "value": 8.0
+    },
+    {
+     "period": "2021-12",
+     "value": 8.0
+    },
+    {
+     "period": "2022-01",
+     "value": 9.1
+    },
+    {
+     "period": "2022-02",
+     "value": 10.0
+    },
+    {
+     "period": "2022-03",
+     "value": 9.0
+    },
+    {
+     "period": "2022-04",
+     "value": 7.7
+    },
+    {
+     "period": "2022-05",
+     "value": 7.0
+    },
+    {
+     "period": "2022-06",
+     "value": 7.0
+    },
+    {
+     "period": "2022-07",
+     "value": 7.0
+    },
+    {
+     "period": "2022-08",
+     "value": 7.0
+    },
+    {
+     "period": "2022-09",
+     "value": 7.0
+    },
+    {
+     "period": "2022-10",
+     "value": 7.0
+    },
+    {
+     "period": "2022-11",
+     "value": 7.0
+    },
+    {
+     "period": "2022-12",
+     "value": 7.0
+    },
+    {
+     "period": "2023-01",
+     "value": 8.0
+    },
+    {
+     "period": "2023-02",
+     "value": 8.0
+    },
+    {
+     "period": "2023-03",
+     "value": 8.0
+    },
+    {
+     "period": "2023-04",
+     "value": 8.0
+    },
+    {
+     "period": "2023-05",
+     "value": 8.0
+    },
+    {
+     "period": "2023-06",
+     "value": 8.0
+    },
+    {
+     "period": "2023-07",
+     "value": 8.0
+    },
+    {
+     "period": "2023-08",
+     "value": 7.0
+    },
+    {
+     "period": "2023-09",
+     "value": 7.0
+    },
+    {
+     "period": "2023-10",
+     "value": 7.0
+    },
+    {
+     "period": "2023-11",
+     "value": 8.6
+    },
+    {
+     "period": "2023-12",
+     "value": 10.4
+    },
+    {
+     "period": "2024-01",
+     "value": 11.0
+    },
+    {
+     "period": "2024-02",
+     "value": 11.0
+    },
+    {
+     "period": "2024-03",
+     "value": 10.5
+    },
+    {
+     "period": "2024-04",
+     "value": 9.9
+    },
+    {
+     "period": "2024-05",
+     "value": 8.3
+    },
+    {
+     "period": "2024-06",
+     "value": 8.0
+    },
+    {
+     "period": "2024-07",
+     "value": 8.0
+    },
+    {
+     "period": "2024-08",
+     "value": 8.0
+    },
+    {
+     "period": "2024-09",
+     "value": 8.0
+    },
+    {
+     "period": "2024-10",
+     "value": 8.0
+    },
+    {
+     "period": "2024-11",
+     "value": 9.1
+    },
+    {
+     "period": "2024-12",
+     "value": 10.5
+    },
+    {
+     "period": "2025-01",
+     "value": 10.0
+    },
+    {
+     "period": "2025-02",
+     "value": 10.0
+    },
+    {
+     "period": "2025-03",
+     "value": 10.0
+    },
+    {
+     "period": "2025-04",
+     "value": 8.7
+    },
+    {
+     "period": "2025-05",
+     "value": 7.5
+    },
+    {
+     "period": "2025-06",
+     "value": 6.8
+    },
+    {
+     "period": "2025-07",
+     "value": 6.0
+    },
+    {
+     "period": "2025-08",
+     "value": 6.0
+    },
+    {
+     "period": "2025-09",
+     "value": 6.0
+    },
+    {
+     "period": "2025-10",
+     "value": 6.0
+    },
+    {
+     "period": "2025-11",
+     "value": 7.0
+    },
+    {
+     "period": "2025-12",
+     "value": 8.5
+    },
+    {
+     "period": "2026-01",
+     "value": 9.3
+    },
+    {
+     "period": "2026-02",
+     "value": 10.9
+    },
+    {
+     "period": "2026-03",
+     "value": 11.0
+    },
+    {
+     "period": "2026-04",
+     "value": 9.0
+    },
+    {
+     "period": "2026-05",
+     "value": 6.5
+    },
+    {
+     "period": "2026-06",
+     "value": 6.0
+    },
+    {
+     "period": "2026-07",
+     "value": 6.0
+    },
+    {
+     "period": "2026-08",
+     "value": 6.0
+    },
+    {
+     "period": "2026-09",
+     "value": 6.0
+    },
+    {
+     "period": "2026-10",
+     "value": 6.0,
+     "note": "Partial month: through 2026-10-30"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Daily Shelter & Overnight Service Occupancy & Capacity — 2026 file (and earlier years, listed)",
+    "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/42714176-4f05-44e6-b157-2b57f29b856a",
+    "member": null,
+    "locator": "OVERNIGHT_SERVICE_TYPE = \"24-Hour Respite Site\"; distinct LOCATION_ID per OCCUPANCY_DATE",
+    "method": "For each night, the value across all programs listed that night; then the average over the month's nights."
+   },
+   "note": "A site running more than one type of program counts once under each type.",
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2021 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/da8854b8-e570-4de2-b051-a906b62fe7f8",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2022 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/1cc46acb-c6d3-4537-93ef-3ebad039275c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2023 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/62786156-b463-4c04-b286-c23f32c726ab",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2024 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/fc409fd7-0348-49d7-bba9-70ac1a8c727c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "2025 file",
+     "datasetUrl": "https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5dc4fbfc-0951-45e8-ae30-962af9dcaf7c",
+     "member": null,
+     "locator": "All rows",
+     "method": "Combined with the other years' files as described in the main citation."
+    }
+   ]
+  },
+  "rentBachelor": {
+   "id": "rentBachelor",
+   "label": "Bachelor",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "1992",
+     "value": 493.0
+    },
+    {
+     "period": "1993",
+     "value": 510.0
+    },
+    {
+     "period": "1994",
+     "value": 516.0
+    },
+    {
+     "period": "1995",
+     "value": 531.0
+    },
+    {
+     "period": "1996",
+     "value": 541.0
+    },
+    {
+     "period": "1997",
+     "value": 555.0
+    },
+    {
+     "period": "1998",
+     "value": 589.0
+    },
+    {
+     "period": "1999",
+     "value": 628.0
+    },
+    {
+     "period": "2000",
+     "value": 683.0
+    },
+    {
+     "period": "2001",
+     "value": 695.0
+    },
+    {
+     "period": "2002",
+     "value": 729.0
+    },
+    {
+     "period": "2003",
+     "value": 731.0
+    },
+    {
+     "period": "2004",
+     "value": 727.0
+    },
+    {
+     "period": "2005",
+     "value": 724.0
+    },
+    {
+     "period": "2006",
+     "value": 740.0
+    },
+    {
+     "period": "2007",
+     "value": 740.0
+    },
+    {
+     "period": "2008",
+     "value": 764.0
+    },
+    {
+     "period": "2009",
+     "value": 758.0
+    },
+    {
+     "period": "2010",
+     "value": 777.0
+    },
+    {
+     "period": "2011",
+     "value": 819.0
+    },
+    {
+     "period": "2012",
+     "value": 837.0
+    },
+    {
+     "period": "2013",
+     "value": 873.0
+    },
+    {
+     "period": "2014",
+     "value": 896.0
+    },
+    {
+     "period": "2015",
+     "value": 937.0
+    },
+    {
+     "period": "2016",
+     "value": 957.0
+    },
+    {
+     "period": "2017",
+     "value": 1013.0
+    },
+    {
+     "period": "2018",
+     "value": 1081.0
+    },
+    {
+     "period": "2019",
+     "value": 1142.0
+    },
+    {
+     "period": "2020",
+     "value": 1204.0
+    },
+    {
+     "period": "2021",
+     "value": 1217.0
+    },
+    {
+     "period": "2022",
+     "value": 1305.0
+    },
+    {
+     "period": "2023",
+     "value": 1414.0
+    },
+    {
+     "period": "2024",
+     "value": 1448.0
+    },
+    {
+     "period": "2025",
+     "value": 1491.0
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Canada Mortgage and Housing Corporation, average rents for areas with a population of 10,000 and over (table 34-10-0133-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410013301",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/34100133-eng.zip",
+    "member": "34100133.csv",
+    "locator": "GEO = \"Toronto, Ontario\"; Type of structure = \"Row and apartment structures of three units and over\"; Type of unit = \"Bachelor units\"",
+    "method": "Average monthly rent as published, one value per year."
+   },
+   "geography": "Toronto region (CMA)"
+  },
+  "rent1br": {
+   "id": "rent1br",
+   "label": "1 bedroom",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "1992",
+     "value": 610.0
+    },
+    {
+     "period": "1993",
+     "value": 627.0
+    },
+    {
+     "period": "1994",
+     "value": 641.0
+    },
+    {
+     "period": "1995",
+     "value": 661.0
+    },
+    {
+     "period": "1996",
+     "value": 675.0
+    },
+    {
+     "period": "1997",
+     "value": 685.0
+    },
+    {
+     "period": "1998",
+     "value": 729.0
+    },
+    {
+     "period": "1999",
+     "value": 770.0
+    },
+    {
+     "period": "2000",
+     "value": 830.0
+    },
+    {
+     "period": "2001",
+     "value": 866.0
+    },
+    {
+     "period": "2002",
+     "value": 891.0
+    },
+    {
+     "period": "2003",
+     "value": 884.0
+    },
+    {
+     "period": "2004",
+     "value": 886.0
+    },
+    {
+     "period": "2005",
+     "value": 888.0
+    },
+    {
+     "period": "2006",
+     "value": 896.0
+    },
+    {
+     "period": "2007",
+     "value": 900.0
+    },
+    {
+     "period": "2008",
+     "value": 927.0
+    },
+    {
+     "period": "2009",
+     "value": 926.0
+    },
+    {
+     "period": "2010",
+     "value": 949.0
+    },
+    {
+     "period": "2011",
+     "value": 977.0
+    },
+    {
+     "period": "2012",
+     "value": 1007.0
+    },
+    {
+     "period": "2013",
+     "value": 1032.0
+    },
+    {
+     "period": "2014",
+     "value": 1067.0
+    },
+    {
+     "period": "2015",
+     "value": 1103.0
+    },
+    {
+     "period": "2016",
+     "value": 1132.0
+    },
+    {
+     "period": "2017",
+     "value": 1194.0
+    },
+    {
+     "period": "2018",
+     "value": 1261.0
+    },
+    {
+     "period": "2019",
+     "value": 1361.0
+    },
+    {
+     "period": "2020",
+     "value": 1421.0
+    },
+    {
+     "period": "2021",
+     "value": 1439.0
+    },
+    {
+     "period": "2022",
+     "value": 1526.0
+    },
+    {
+     "period": "2023",
+     "value": 1691.0
+    },
+    {
+     "period": "2024",
+     "value": 1715.0
+    },
+    {
+     "period": "2025",
+     "value": 1761.0
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Canada Mortgage and Housing Corporation, average rents for areas with a population of 10,000 and over (table 34-10-0133-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410013301",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/34100133-eng.zip",
+    "member": "34100133.csv",
+    "locator": "GEO = \"Toronto, Ontario\"; Type of structure = \"Row and apartment structures of three units and over\"; Type of unit = \"One bedroom units\"",
+    "method": "Average monthly rent as published, one value per year."
+   },
+   "geography": "Toronto region (CMA)"
+  },
+  "rent2br": {
+   "id": "rent2br",
+   "label": "2 bedroom",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "1992",
+     "value": 755.0
+    },
+    {
+     "period": "1993",
+     "value": 773.0
+    },
+    {
+     "period": "1994",
+     "value": 785.0
+    },
+    {
+     "period": "1995",
+     "value": 805.0
+    },
+    {
+     "period": "1996",
+     "value": 819.0
+    },
+    {
+     "period": "1997",
+     "value": 822.0
+    },
+    {
+     "period": "1998",
+     "value": 881.0
+    },
+    {
+     "period": "1999",
+     "value": 916.0
+    },
+    {
+     "period": "2000",
+     "value": 979.0
+    },
+    {
+     "period": "2001",
+     "value": 1027.0
+    },
+    {
+     "period": "2002",
+     "value": 1047.0
+    },
+    {
+     "period": "2003",
+     "value": 1040.0
+    },
+    {
+     "period": "2004",
+     "value": 1052.0
+    },
+    {
+     "period": "2005",
+     "value": 1052.0
+    },
+    {
+     "period": "2006",
+     "value": 1067.0
+    },
+    {
+     "period": "2007",
+     "value": 1061.0
+    },
+    {
+     "period": "2008",
+     "value": 1095.0
+    },
+    {
+     "period": "2009",
+     "value": 1096.0
+    },
+    {
+     "period": "2010",
+     "value": 1123.0
+    },
+    {
+     "period": "2011",
+     "value": 1148.0
+    },
+    {
+     "period": "2012",
+     "value": 1183.0
+    },
+    {
+     "period": "2013",
+     "value": 1211.0
+    },
+    {
+     "period": "2014",
+     "value": 1251.0
+    },
+    {
+     "period": "2015",
+     "value": 1286.0
+    },
+    {
+     "period": "2016",
+     "value": 1326.0
+    },
+    {
+     "period": "2017",
+     "value": 1403.0
+    },
+    {
+     "period": "2018",
+     "value": 1468.0
+    },
+    {
+     "period": "2019",
+     "value": 1563.0
+    },
+    {
+     "period": "2020",
+     "value": 1637.0
+    },
+    {
+     "period": "2021",
+     "value": 1680.0
+    },
+    {
+     "period": "2022",
+     "value": 1779.0
+    },
+    {
+     "period": "2023",
+     "value": 1958.0
+    },
+    {
+     "period": "2024",
+     "value": 1972.0
+    },
+    {
+     "period": "2025",
+     "value": 2045.0
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Canada Mortgage and Housing Corporation, average rents for areas with a population of 10,000 and over (table 34-10-0133-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410013301",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/34100133-eng.zip",
+    "member": "34100133.csv",
+    "locator": "GEO = \"Toronto, Ontario\"; Type of structure = \"Row and apartment structures of three units and over\"; Type of unit = \"Two bedroom units\"",
+    "method": "Average monthly rent as published, one value per year."
+   },
+   "geography": "Toronto region (CMA)"
+  },
+  "rent3br": {
+   "id": "rent3br",
+   "label": "3 bedroom",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "1992",
+     "value": 905.0
+    },
+    {
+     "period": "1993",
+     "value": 930.0
+    },
+    {
+     "period": "1994",
+     "value": 946.0
+    },
+    {
+     "period": "1995",
+     "value": 965.0
+    },
+    {
+     "period": "1996",
+     "value": 988.0
+    },
+    {
+     "period": "1997",
+     "value": 989.0
+    },
+    {
+     "period": "1998",
+     "value": 1053.0
+    },
+    {
+     "period": "1999",
+     "value": 1086.0
+    },
+    {
+     "period": "2000",
+     "value": 1170.0
+    },
+    {
+     "period": "2001",
+     "value": 1218.0
+    },
+    {
+     "period": "2002",
+     "value": 1257.0
+    },
+    {
+     "period": "2003",
+     "value": 1223.0
+    },
+    {
+     "period": "2004",
+     "value": 1245.0
+    },
+    {
+     "period": "2005",
+     "value": 1248.0
+    },
+    {
+     "period": "2006",
+     "value": 1271.0
+    },
+    {
+     "period": "2007",
+     "value": 1261.0
+    },
+    {
+     "period": "2008",
+     "value": 1293.0
+    },
+    {
+     "period": "2009",
+     "value": 1299.0
+    },
+    {
+     "period": "2010",
+     "value": 1329.0
+    },
+    {
+     "period": "2011",
+     "value": 1356.0
+    },
+    {
+     "period": "2012",
+     "value": 1411.0
+    },
+    {
+     "period": "2013",
+     "value": 1461.0
+    },
+    {
+     "period": "2014",
+     "value": 1466.0
+    },
+    {
+     "period": "2015",
+     "value": 1516.0
+    },
+    {
+     "period": "2016",
+     "value": 1525.0
+    },
+    {
+     "period": "2017",
+     "value": 1589.0
+    },
+    {
+     "period": "2018",
+     "value": 1647.0
+    },
+    {
+     "period": "2019",
+     "value": 1730.0
+    },
+    {
+     "period": "2020",
+     "value": 1854.0
+    },
+    {
+     "period": "2021",
+     "value": 1918.0
+    },
+    {
+     "period": "2022",
+     "value": 2015.0
+    },
+    {
+     "period": "2023",
+     "value": 2168.0
+    },
+    {
+     "period": "2024",
+     "value": 2185.0
+    },
+    {
+     "period": "2025",
+     "value": 2294.0
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Canada Mortgage and Housing Corporation, average rents for areas with a population of 10,000 and over (table 34-10-0133-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410013301",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/34100133-eng.zip",
+    "member": "34100133.csv",
+    "locator": "GEO = \"Toronto, Ontario\"; Type of structure = \"Row and apartment structures of three units and over\"; Type of unit = \"Three bedroom units\"",
+    "method": "Average monthly rent as published, one value per year."
+   },
+   "geography": "Toronto region (CMA)"
+  },
+  "starts": {
+   "id": "starts",
+   "label": "Starts",
+   "unit": "count",
+   "points": [
+    {
+     "period": "1972",
+     "value": 38695
+    },
+    {
+     "period": "1973",
+     "value": 37697
+    },
+    {
+     "period": "1974",
+     "value": 29580
+    },
+    {
+     "period": "1975",
+     "value": 26457
+    },
+    {
+     "period": "1976",
+     "value": 26555
+    },
+    {
+     "period": "1977",
+     "value": 27918
+    },
+    {
+     "period": "1978",
+     "value": 26051
+    },
+    {
+     "period": "1979",
+     "value": 21379
+    },
+    {
+     "period": "1980",
+     "value": 20204
+    },
+    {
+     "period": "1981",
+     "value": 26133
+    },
+    {
+     "period": "1982",
+     "value": 19064
+    },
+    {
+     "period": "1983",
+     "value": 25271
+    },
+    {
+     "period": "1984",
+     "value": 19220
+    },
+    {
+     "period": "1985",
+     "value": 27278
+    },
+    {
+     "period": "1986",
+     "value": 33631
+    },
+    {
+     "period": "1987",
+     "value": 46518
+    },
+    {
+     "period": "1988",
+     "value": 38801
+    },
+    {
+     "period": "1989",
+     "value": 35184
+    },
+    {
+     "period": "1990",
+     "value": 18723
+    },
+    {
+     "period": "1991",
+     "value": 18814
+    },
+    {
+     "period": "1992",
+     "value": 20770
+    },
+    {
+     "period": "1993",
+     "value": 15637
+    },
+    {
+     "period": "1994",
+     "value": 18443
+    },
+    {
+     "period": "1995",
+     "value": 16325
+    },
+    {
+     "period": "1996",
+     "value": 18998
+    },
+    {
+     "period": "1997",
+     "value": 25574
+    },
+    {
+     "period": "1998",
+     "value": 25910
+    },
+    {
+     "period": "1999",
+     "value": 34904
+    },
+    {
+     "period": "2000",
+     "value": 38982
+    },
+    {
+     "period": "2001",
+     "value": 41017
+    },
+    {
+     "period": "2002",
+     "value": 43805
+    },
+    {
+     "period": "2003",
+     "value": 45475
+    },
+    {
+     "period": "2004",
+     "value": 42115
+    },
+    {
+     "period": "2005",
+     "value": 41596
+    },
+    {
+     "period": "2006",
+     "value": 37080
+    },
+    {
+     "period": "2007",
+     "value": 33293
+    },
+    {
+     "period": "2008",
+     "value": 42212
+    },
+    {
+     "period": "2009",
+     "value": 25949
+    },
+    {
+     "period": "2010",
+     "value": 29195
+    },
+    {
+     "period": "2011",
+     "value": 39745
+    },
+    {
+     "period": "2012",
+     "value": 48105
+    },
+    {
+     "period": "2013",
+     "value": 33547
+    },
+    {
+     "period": "2014",
+     "value": 28929
+    },
+    {
+     "period": "2015",
+     "value": 42287
+    },
+    {
+     "period": "2016",
+     "value": 39027
+    },
+    {
+     "period": "2017",
+     "value": 38738
+    },
+    {
+     "period": "2018",
+     "value": 41107
+    },
+    {
+     "period": "2019",
+     "value": 30462
+    },
+    {
+     "period": "2020",
+     "value": 38587
+    },
+    {
+     "period": "2021",
+     "value": 41898
+    },
+    {
+     "period": "2022",
+     "value": 45109
+    },
+    {
+     "period": "2023",
+     "value": 47428
+    },
+    {
+     "period": "2024",
+     "value": 37718
+    },
+    {
+     "period": "2025",
+     "value": 26087
+    },
+    {
+     "period": "2026",
+     "value": 17397,
+     "note": "Year to date (through September)"
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Canada Mortgage and Housing Corporation, housing starts, under construction and completions in selected census metropolitan areas, monthly (table 34-10-0154-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410015401",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/34100154-eng.zip",
+    "member": "34100154.csv",
+    "locator": "GEO = \"Toronto, Ontario\"; Housing estimates = \"Housing starts\"; Type of unit = \"Total units\"",
+    "method": "Sum of the monthly values for each calendar year."
+   },
+   "geography": "Toronto region (CMA)"
+  },
+  "completions": {
+   "id": "completions",
+   "label": "Completions",
+   "unit": "count",
+   "points": [
+    {
+     "period": "1972",
+     "value": 41156
+    },
+    {
+     "period": "1973",
+     "value": 34701
+    },
+    {
+     "period": "1974",
+     "value": 39448
+    },
+    {
+     "period": "1975",
+     "value": 26055
+    },
+    {
+     "period": "1976",
+     "value": 29521
+    },
+    {
+     "period": "1977",
+     "value": 26691
+    },
+    {
+     "period": "1978",
+     "value": 25866
+    },
+    {
+     "period": "1979",
+     "value": 30963
+    },
+    {
+     "period": "1980",
+     "value": 26602
+    },
+    {
+     "period": "1981",
+     "value": 24561
+    },
+    {
+     "period": "1982",
+     "value": 21457
+    },
+    {
+     "period": "1983",
+     "value": 26182
+    },
+    {
+     "period": "1984",
+     "value": 24183
+    },
+    {
+     "period": "1985",
+     "value": 19877
+    },
+    {
+     "period": "1986",
+     "value": 27061
+    },
+    {
+     "period": "1987",
+     "value": 36525
+    },
+    {
+     "period": "1988",
+     "value": 34242
+    },
+    {
+     "period": "1989",
+     "value": 39397
+    },
+    {
+     "period": "1990",
+     "value": 27936
+    },
+    {
+     "period": "1991",
+     "value": 26007
+    },
+    {
+     "period": "1992",
+     "value": 22402
+    },
+    {
+     "period": "1993",
+     "value": 19827
+    },
+    {
+     "period": "1994",
+     "value": 17375
+    },
+    {
+     "period": "1995",
+     "value": 15835
+    },
+    {
+     "period": "1996",
+     "value": 18422
+    },
+    {
+     "period": "1997",
+     "value": 23342
+    },
+    {
+     "period": "1998",
+     "value": 21482
+    },
+    {
+     "period": "1999",
+     "value": 29847
+    },
+    {
+     "period": "2000",
+     "value": 33740
+    },
+    {
+     "period": "2001",
+     "value": 37138
+    },
+    {
+     "period": "2002",
+     "value": 45170
+    },
+    {
+     "period": "2003",
+     "value": 38644
+    },
+    {
+     "period": "2004",
+     "value": 39620
+    },
+    {
+     "period": "2005",
+     "value": 39296
+    },
+    {
+     "period": "2006",
+     "value": 38121
+    },
+    {
+     "period": "2007",
+     "value": 30357
+    },
+    {
+     "period": "2008",
+     "value": 36258
+    },
+    {
+     "period": "2009",
+     "value": 28356
+    },
+    {
+     "period": "2010",
+     "value": 31393
+    },
+    {
+     "period": "2011",
+     "value": 33831
+    },
+    {
+     "period": "2012",
+     "value": 31907
+    },
+    {
+     "period": "2013",
+     "value": 33708
+    },
+    {
+     "period": "2014",
+     "value": 29213
+    },
+    {
+     "period": "2015",
+     "value": 46384
+    },
+    {
+     "period": "2016",
+     "value": 34613
+    },
+    {
+     "period": "2017",
+     "value": 37132
+    },
+    {
+     "period": "2018",
+     "value": 37750
+    },
+    {
+     "period": "2019",
+     "value": 27410
+    },
+    {
+     "period": "2020",
+     "value": 30841
+    },
+    {
+     "period": "2021",
+     "value": 36723
+    },
+    {
+     "period": "2022",
+     "value": 28955
+    },
+    {
+     "period": "2023",
+     "value": 43139
+    },
+    {
+     "period": "2024",
+     "value": 42442
+    },
+    {
+     "period": "2025",
+     "value": 36063
+    },
+    {
+     "period": "2026",
+     "value": 19342,
+     "note": "Year to date (through September)"
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Canada Mortgage and Housing Corporation, housing starts, under construction and completions in selected census metropolitan areas, monthly (table 34-10-0154-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410015401",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/34100154-eng.zip",
+    "member": "34100154.csv",
+    "locator": "GEO = \"Toronto, Ontario\"; Housing estimates = \"Housing completions\"; Type of unit = \"Total units\"",
+    "method": "Sum of the monthly values for each calendar year."
+   },
+   "geography": "Toronto region (CMA)"
+  },
+  "startsSingle": {
+   "id": "startsSingle",
+   "label": "Single-detached",
+   "unit": "count",
+   "points": [
+    {
+     "period": "1972",
+     "value": 9101
+    },
+    {
+     "period": "1973",
+     "value": 8039
+    },
+    {
+     "period": "1974",
+     "value": 6110
+    },
+    {
+     "period": "1975",
+     "value": 7338
+    },
+    {
+     "period": "1976",
+     "value": 6216
+    },
+    {
+     "period": "1977",
+     "value": 5472
+    },
+    {
+     "period": "1978",
+     "value": 6257
+    },
+    {
+     "period": "1979",
+     "value": 7420
+    },
+    {
+     "period": "1980",
+     "value": 7547
+    },
+    {
+     "period": "1981",
+     "value": 12543
+    },
+    {
+     "period": "1982",
+     "value": 8762
+    },
+    {
+     "period": "1983",
+     "value": 15153
+    },
+    {
+     "period": "1984",
+     "value": 13910
+    },
+    {
+     "period": "1985",
+     "value": 18777
+    },
+    {
+     "period": "1986",
+     "value": 24365
+    },
+    {
+     "period": "1987",
+     "value": 27825
+    },
+    {
+     "period": "1988",
+     "value": 19152
+    },
+    {
+     "period": "1989",
+     "value": 16529
+    },
+    {
+     "period": "1990",
+     "value": 7067
+    },
+    {
+     "period": "1991",
+     "value": 9459
+    },
+    {
+     "period": "1992",
+     "value": 9027
+    },
+    {
+     "period": "1993",
+     "value": 8037
+    },
+    {
+     "period": "1994",
+     "value": 10811
+    },
+    {
+     "period": "1995",
+     "value": 6879
+    },
+    {
+     "period": "1996",
+     "value": 10152
+    },
+    {
+     "period": "1997",
+     "value": 14203
+    },
+    {
+     "period": "1998",
+     "value": 12696
+    },
+    {
+     "period": "1999",
+     "value": 15535
+    },
+    {
+     "period": "2000",
+     "value": 17119
+    },
+    {
+     "period": "2001",
+     "value": 16844
+    },
+    {
+     "period": "2002",
+     "value": 22115
+    },
+    {
+     "period": "2003",
+     "value": 19626
+    },
+    {
+     "period": "2004",
+     "value": 19076
+    },
+    {
+     "period": "2005",
+     "value": 15797
+    },
+    {
+     "period": "2006",
+     "value": 14120
+    },
+    {
+     "period": "2007",
+     "value": 14769
+    },
+    {
+     "period": "2008",
+     "value": 11308
+    },
+    {
+     "period": "2009",
+     "value": 8130
+    },
+    {
+     "period": "2010",
+     "value": 9936
+    },
+    {
+     "period": "2011",
+     "value": 11247
+    },
+    {
+     "period": "2012",
+     "value": 10699
+    },
+    {
+     "period": "2013",
+     "value": 9421
+    },
+    {
+     "period": "2014",
+     "value": 8830
+    },
+    {
+     "period": "2015",
+     "value": 10223
+    },
+    {
+     "period": "2016",
+     "value": 11884
+    },
+    {
+     "period": "2017",
+     "value": 10172
+    },
+    {
+     "period": "2018",
+     "value": 6405
+    },
+    {
+     "period": "2019",
+     "value": 4209
+    },
+    {
+     "period": "2020",
+     "value": 5848
+    },
+    {
+     "period": "2021",
+     "value": 6920
+    },
+    {
+     "period": "2022",
+     "value": 6329
+    },
+    {
+     "period": "2023",
+     "value": 4721
+    },
+    {
+     "period": "2024",
+     "value": 4723
+    },
+    {
+     "period": "2025",
+     "value": 3257
+    },
+    {
+     "period": "2026",
+     "value": 1811,
+     "note": "Year to date (through September)"
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Canada Mortgage and Housing Corporation, housing starts, under construction and completions in selected census metropolitan areas, monthly (table 34-10-0154-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410015401",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/34100154-eng.zip",
+    "member": "34100154.csv",
+    "locator": "GEO = \"Toronto, Ontario\"; Housing estimates = \"Housing starts\"; Type of unit = \"Single-detached units\"",
+    "method": "Sum of the monthly values for each calendar year."
+   },
+   "geography": "Toronto region (CMA)"
+  },
+  "startsSemi": {
+   "id": "startsSemi",
+   "label": "Semi-detached",
+   "unit": "count",
+   "points": [
+    {
+     "period": "1972",
+     "value": 5484
+    },
+    {
+     "period": "1973",
+     "value": 3857
+    },
+    {
+     "period": "1974",
+     "value": 2552
+    },
+    {
+     "period": "1975",
+     "value": 3598
+    },
+    {
+     "period": "1976",
+     "value": 3205
+    },
+    {
+     "period": "1977",
+     "value": 4086
+    },
+    {
+     "period": "1978",
+     "value": 2900
+    },
+    {
+     "period": "1979",
+     "value": 4867
+    },
+    {
+     "period": "1980",
+     "value": 3194
+    },
+    {
+     "period": "1981",
+     "value": 3398
+    },
+    {
+     "period": "1982",
+     "value": 798
+    },
+    {
+     "period": "1983",
+     "value": 294
+    },
+    {
+     "period": "1984",
+     "value": 242
+    },
+    {
+     "period": "1985",
+     "value": 446
+    },
+    {
+     "period": "1986",
+     "value": 400
+    },
+    {
+     "period": "1987",
+     "value": 738
+    },
+    {
+     "period": "1988",
+     "value": 265
+    },
+    {
+     "period": "1989",
+     "value": 172
+    },
+    {
+     "period": "1990",
+     "value": 180
+    },
+    {
+     "period": "1991",
+     "value": 206
+    },
+    {
+     "period": "1992",
+     "value": 836
+    },
+    {
+     "period": "1993",
+     "value": 878
+    },
+    {
+     "period": "1994",
+     "value": 1409
+    },
+    {
+     "period": "1995",
+     "value": 896
+    },
+    {
+     "period": "1996",
+     "value": 1612
+    },
+    {
+     "period": "1997",
+     "value": 2619
+    },
+    {
+     "period": "1998",
+     "value": 3232
+    },
+    {
+     "period": "1999",
+     "value": 4933
+    },
+    {
+     "period": "2000",
+     "value": 5586
+    },
+    {
+     "period": "2001",
+     "value": 5616
+    },
+    {
+     "period": "2002",
+     "value": 5208
+    },
+    {
+     "period": "2003",
+     "value": 4786
+    },
+    {
+     "period": "2004",
+     "value": 3526
+    },
+    {
+     "period": "2005",
+     "value": 3375
+    },
+    {
+     "period": "2006",
+     "value": 2892
+    },
+    {
+     "period": "2007",
+     "value": 2864
+    },
+    {
+     "period": "2008",
+     "value": 2362
+    },
+    {
+     "period": "2009",
+     "value": 2032
+    },
+    {
+     "period": "2010",
+     "value": 1654
+    },
+    {
+     "period": "2011",
+     "value": 2010
+    },
+    {
+     "period": "2012",
+     "value": 2253
+    },
+    {
+     "period": "2013",
+     "value": 1874
+    },
+    {
+     "period": "2014",
+     "value": 1530
+    },
+    {
+     "period": "2015",
+     "value": 1106
+    },
+    {
+     "period": "2016",
+     "value": 898
+    },
+    {
+     "period": "2017",
+     "value": 1410
+    },
+    {
+     "period": "2018",
+     "value": 926
+    },
+    {
+     "period": "2019",
+     "value": 459
+    },
+    {
+     "period": "2020",
+     "value": 803
+    },
+    {
+     "period": "2021",
+     "value": 786
+    },
+    {
+     "period": "2022",
+     "value": 514
+    },
+    {
+     "period": "2023",
+     "value": 328
+    },
+    {
+     "period": "2024",
+     "value": 301
+    },
+    {
+     "period": "2025",
+     "value": 128
+    },
+    {
+     "period": "2026",
+     "value": 120,
+     "note": "Year to date (through September)"
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Canada Mortgage and Housing Corporation, housing starts, under construction and completions in selected census metropolitan areas, monthly (table 34-10-0154-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410015401",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/34100154-eng.zip",
+    "member": "34100154.csv",
+    "locator": "GEO = \"Toronto, Ontario\"; Housing estimates = \"Housing starts\"; Type of unit = \"Semi-detached units\"",
+    "method": "Sum of the monthly values for each calendar year."
+   },
+   "geography": "Toronto region (CMA)"
+  },
+  "startsRow": {
+   "id": "startsRow",
+   "label": "Row",
+   "unit": "count",
+   "points": [
+    {
+     "period": "1972",
+     "value": 3537
+    },
+    {
+     "period": "1973",
+     "value": 5927
+    },
+    {
+     "period": "1974",
+     "value": 4071
+    },
+    {
+     "period": "1975",
+     "value": 4744
+    },
+    {
+     "period": "1976",
+     "value": 7462
+    },
+    {
+     "period": "1977",
+     "value": 6081
+    },
+    {
+     "period": "1978",
+     "value": 4401
+    },
+    {
+     "period": "1979",
+     "value": 3070
+    },
+    {
+     "period": "1980",
+     "value": 2279
+    },
+    {
+     "period": "1981",
+     "value": 2455
+    },
+    {
+     "period": "1982",
+     "value": 1531
+    },
+    {
+     "period": "1983",
+     "value": 1054
+    },
+    {
+     "period": "1984",
+     "value": 1039
+    },
+    {
+     "period": "1985",
+     "value": 924
+    },
+    {
+     "period": "1986",
+     "value": 1479
+    },
+    {
+     "period": "1987",
+     "value": 2599
+    },
+    {
+     "period": "1988",
+     "value": 2711
+    },
+    {
+     "period": "1989",
+     "value": 2283
+    },
+    {
+     "period": "1990",
+     "value": 1867
+    },
+    {
+     "period": "1991",
+     "value": 3030
+    },
+    {
+     "period": "1992",
+     "value": 2325
+    },
+    {
+     "period": "1993",
+     "value": 2038
+    },
+    {
+     "period": "1994",
+     "value": 2592
+    },
+    {
+     "period": "1995",
+     "value": 3323
+    },
+    {
+     "period": "1996",
+     "value": 4056
+    },
+    {
+     "period": "1997",
+     "value": 5569
+    },
+    {
+     "period": "1998",
+     "value": 5361
+    },
+    {
+     "period": "1999",
+     "value": 5773
+    },
+    {
+     "period": "2000",
+     "value": 6163
+    },
+    {
+     "period": "2001",
+     "value": 5059
+    },
+    {
+     "period": "2002",
+     "value": 6194
+    },
+    {
+     "period": "2003",
+     "value": 5749
+    },
+    {
+     "period": "2004",
+     "value": 5873
+    },
+    {
+     "period": "2005",
+     "value": 6516
+    },
+    {
+     "period": "2006",
+     "value": 5177
+    },
+    {
+     "period": "2007",
+     "value": 5280
+    },
+    {
+     "period": "2008",
+     "value": 4612
+    },
+    {
+     "period": "2009",
+     "value": 2918
+    },
+    {
+     "period": "2010",
+     "value": 4365
+    },
+    {
+     "period": "2011",
+     "value": 4231
+    },
+    {
+     "period": "2012",
+     "value": 5536
+    },
+    {
+     "period": "2013",
+     "value": 4103
+    },
+    {
+     "period": "2014",
+     "value": 3861
+    },
+    {
+     "period": "2015",
+     "value": 5133
+    },
+    {
+     "period": "2016",
+     "value": 4925
+    },
+    {
+     "period": "2017",
+     "value": 6982
+    },
+    {
+     "period": "2018",
+     "value": 4137
+    },
+    {
+     "period": "2019",
+     "value": 3951
+    },
+    {
+     "period": "2020",
+     "value": 3873
+    },
+    {
+     "period": "2021",
+     "value": 3955
+    },
+    {
+     "period": "2022",
+     "value": 5648
+    },
+    {
+     "period": "2023",
+     "value": 4860
+    },
+    {
+     "period": "2024",
+     "value": 4532
+    },
+    {
+     "period": "2025",
+     "value": 3716
+    },
+    {
+     "period": "2026",
+     "value": 2213,
+     "note": "Year to date (through September)"
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Canada Mortgage and Housing Corporation, housing starts, under construction and completions in selected census metropolitan areas, monthly (table 34-10-0154-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410015401",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/34100154-eng.zip",
+    "member": "34100154.csv",
+    "locator": "GEO = \"Toronto, Ontario\"; Housing estimates = \"Housing starts\"; Type of unit = \"Row units\"",
+    "method": "Sum of the monthly values for each calendar year."
+   },
+   "geography": "Toronto region (CMA)"
+  },
+  "startsApartment": {
+   "id": "startsApartment",
+   "label": "Apartment and other",
+   "unit": "count",
+   "points": [
+    {
+     "period": "1972",
+     "value": 20573
+    },
+    {
+     "period": "1973",
+     "value": 19874
+    },
+    {
+     "period": "1974",
+     "value": 16847
+    },
+    {
+     "period": "1975",
+     "value": 10777
+    },
+    {
+     "period": "1976",
+     "value": 9672
+    },
+    {
+     "period": "1977",
+     "value": 12279
+    },
+    {
+     "period": "1978",
+     "value": 12493
+    },
+    {
+     "period": "1979",
+     "value": 6022
+    },
+    {
+     "period": "1980",
+     "value": 7184
+    },
+    {
+     "period": "1981",
+     "value": 7737
+    },
+    {
+     "period": "1982",
+     "value": 7973
+    },
+    {
+     "period": "1983",
+     "value": 8770
+    },
+    {
+     "period": "1984",
+     "value": 4029
+    },
+    {
+     "period": "1985",
+     "value": 7131
+    },
+    {
+     "period": "1986",
+     "value": 7387
+    },
+    {
+     "period": "1987",
+     "value": 15356
+    },
+    {
+     "period": "1988",
+     "value": 16673
+    },
+    {
+     "period": "1989",
+     "value": 16200
+    },
+    {
+     "period": "1990",
+     "value": 9609
+    },
+    {
+     "period": "1991",
+     "value": 6119
+    },
+    {
+     "period": "1992",
+     "value": 8582
+    },
+    {
+     "period": "1993",
+     "value": 4684
+    },
+    {
+     "period": "1994",
+     "value": 3631
+    },
+    {
+     "period": "1995",
+     "value": 5227
+    },
+    {
+     "period": "1996",
+     "value": 3178
+    },
+    {
+     "period": "1997",
+     "value": 3183
+    },
+    {
+     "period": "1998",
+     "value": 4621
+    },
+    {
+     "period": "1999",
+     "value": 8663
+    },
+    {
+     "period": "2000",
+     "value": 10114
+    },
+    {
+     "period": "2001",
+     "value": 13498
+    },
+    {
+     "period": "2002",
+     "value": 10288
+    },
+    {
+     "period": "2003",
+     "value": 15314
+    },
+    {
+     "period": "2004",
+     "value": 13640
+    },
+    {
+     "period": "2005",
+     "value": 15908
+    },
+    {
+     "period": "2006",
+     "value": 14891
+    },
+    {
+     "period": "2007",
+     "value": 10380
+    },
+    {
+     "period": "2008",
+     "value": 23930
+    },
+    {
+     "period": "2009",
+     "value": 12869
+    },
+    {
+     "period": "2010",
+     "value": 13240
+    },
+    {
+     "period": "2011",
+     "value": 22257
+    },
+    {
+     "period": "2012",
+     "value": 29617
+    },
+    {
+     "period": "2013",
+     "value": 18149
+    },
+    {
+     "period": "2014",
+     "value": 14708
+    },
+    {
+     "period": "2015",
+     "value": 25825
+    },
+    {
+     "period": "2016",
+     "value": 21320
+    },
+    {
+     "period": "2017",
+     "value": 20174
+    },
+    {
+     "period": "2018",
+     "value": 29639
+    },
+    {
+     "period": "2019",
+     "value": 21843
+    },
+    {
+     "period": "2020",
+     "value": 28063
+    },
+    {
+     "period": "2021",
+     "value": 30237
+    },
+    {
+     "period": "2022",
+     "value": 32618
+    },
+    {
+     "period": "2023",
+     "value": 37519
+    },
+    {
+     "period": "2024",
+     "value": 28162
+    },
+    {
+     "period": "2025",
+     "value": 18986
+    },
+    {
+     "period": "2026",
+     "value": 13253,
+     "note": "Year to date (through September)"
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Canada Mortgage and Housing Corporation, housing starts, under construction and completions in selected census metropolitan areas, monthly (table 34-10-0154-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410015401",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/34100154-eng.zip",
+    "member": "34100154.csv",
+    "locator": "GEO = \"Toronto, Ontario\"; Housing estimates = \"Housing starts\"; Type of unit = \"Apartment and other unit types\"",
+    "method": "Sum of the monthly values for each calendar year."
+   },
+   "geography": "Toronto region (CMA)"
+  },
+  "underConstruction": {
+   "id": "underConstruction",
+   "label": "Under construction",
+   "unit": "count",
+   "points": [
+    {
+     "period": "1972",
+     "value": 42811
+    },
+    {
+     "period": "1973",
+     "value": 45556
+    },
+    {
+     "period": "1974",
+     "value": 35733
+    },
+    {
+     "period": "1975",
+     "value": 36093
+    },
+    {
+     "period": "1976",
+     "value": 32967
+    },
+    {
+     "period": "1977",
+     "value": 33848
+    },
+    {
+     "period": "1978",
+     "value": 33859
+    },
+    {
+     "period": "1979",
+     "value": 24279
+    },
+    {
+     "period": "1980",
+     "value": 17861
+    },
+    {
+     "period": "1981",
+     "value": 19241
+    },
+    {
+     "period": "1982",
+     "value": 16346
+    },
+    {
+     "period": "1983",
+     "value": 15375
+    },
+    {
+     "period": "1984",
+     "value": 10382
+    },
+    {
+     "period": "1985",
+     "value": 17565
+    },
+    {
+     "period": "1986",
+     "value": 24057
+    },
+    {
+     "period": "1987",
+     "value": 34442
+    },
+    {
+     "period": "1988",
+     "value": 38666
+    },
+    {
+     "period": "1989",
+     "value": 33770
+    },
+    {
+     "period": "1990",
+     "value": 24374
+    },
+    {
+     "period": "1991",
+     "value": 17209
+    },
+    {
+     "period": "1992",
+     "value": 15111
+    },
+    {
+     "period": "1993",
+     "value": 11076
+    },
+    {
+     "period": "1994",
+     "value": 12143
+    },
+    {
+     "period": "1995",
+     "value": 12629
+    },
+    {
+     "period": "1996",
+     "value": 13206
+    },
+    {
+     "period": "1997",
+     "value": 15457
+    },
+    {
+     "period": "1998",
+     "value": 20009
+    },
+    {
+     "period": "1999",
+     "value": 25008
+    },
+    {
+     "period": "2000",
+     "value": 30273
+    },
+    {
+     "period": "2001",
+     "value": 34305
+    },
+    {
+     "period": "2002",
+     "value": 33094
+    },
+    {
+     "period": "2003",
+     "value": 39907
+    },
+    {
+     "period": "2004",
+     "value": 42148
+    },
+    {
+     "period": "2005",
+     "value": 44305
+    },
+    {
+     "period": "2006",
+     "value": 42654
+    },
+    {
+     "period": "2007",
+     "value": 45470
+    },
+    {
+     "period": "2008",
+     "value": 50823
+    },
+    {
+     "period": "2009",
+     "value": 48361
+    },
+    {
+     "period": "2010",
+     "value": 46552
+    },
+    {
+     "period": "2011",
+     "value": 52589
+    },
+    {
+     "period": "2012",
+     "value": 68812
+    },
+    {
+     "period": "2013",
+     "value": 69062
+    },
+    {
+     "period": "2014",
+     "value": 68948
+    },
+    {
+     "period": "2015",
+     "value": 64798
+    },
+    {
+     "period": "2016",
+     "value": 68918
+    },
+    {
+     "period": "2017",
+     "value": 70349
+    },
+    {
+     "period": "2018",
+     "value": 72175
+    },
+    {
+     "period": "2019",
+     "value": 74451
+    },
+    {
+     "period": "2020",
+     "value": 81942
+    },
+    {
+     "period": "2021",
+     "value": 86163
+    },
+    {
+     "period": "2022",
+     "value": 101434
+    },
+    {
+     "period": "2023",
+     "value": 105126
+    },
+    {
+     "period": "2024",
+     "value": 99806
+    },
+    {
+     "period": "2025",
+     "value": 90568
+    },
+    {
+     "period": "2026",
+     "value": 88108,
+     "note": "As of 2026-09"
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Canada Mortgage and Housing Corporation, housing starts, under construction and completions in selected census metropolitan areas, monthly (table 34-10-0154-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410015401",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/34100154-eng.zip",
+    "member": "34100154.csv",
+    "locator": "GEO = \"Toronto, Ontario\"; Housing estimates = \"Housing under construction\"; Type of unit = \"Total units\"",
+    "method": "The December value for each year (units under construction at year end); the current year shows its latest month."
+   },
+   "geography": "Toronto region (CMA)"
+  },
+  "homePrice": {
+   "id": "homePrice",
+   "label": "Average home price",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2009-01",
+     "value": 364416.0
+    },
+    {
+     "period": "2009-02",
+     "value": 392919.0
+    },
+    {
+     "period": "2009-03",
+     "value": 387793.0
+    },
+    {
+     "period": "2009-04",
+     "value": 421470.0
+    },
+    {
+     "period": "2009-05",
+     "value": 432478.0
+    },
+    {
+     "period": "2009-06",
+     "value": 441703.0
+    },
+    {
+     "period": "2009-07",
+     "value": 421110.0
+    },
+    {
+     "period": "2009-08",
+     "value": 402246.0
+    },
+    {
+     "period": "2009-09",
+     "value": 437182.0
+    },
+    {
+     "period": "2009-10",
+     "value": 464212.0
+    },
+    {
+     "period": "2009-11",
+     "value": 450079.0
+    },
+    {
+     "period": "2009-12",
+     "value": 441607.0
+    },
+    {
+     "period": "2010-01",
+     "value": 428151.0
+    },
+    {
+     "period": "2010-02",
+     "value": 475579.0
+    },
+    {
+     "period": "2010-03",
+     "value": 477263.0
+    },
+    {
+     "period": "2010-04",
+     "value": 479340.0
+    },
+    {
+     "period": "2010-05",
+     "value": 493265.0
+    },
+    {
+     "period": "2010-06",
+     "value": 466220.0
+    },
+    {
+     "period": "2010-07",
+     "value": 444459.0
+    },
+    {
+     "period": "2010-08",
+     "value": 421407.0
+    },
+    {
+     "period": "2010-09",
+     "value": 465890.0
+    },
+    {
+     "period": "2010-10",
+     "value": 491157.0
+    },
+    {
+     "period": "2010-11",
+     "value": 476844.0
+    },
+    {
+     "period": "2010-12",
+     "value": 463416.0
+    },
+    {
+     "period": "2011-01",
+     "value": 447644.0
+    },
+    {
+     "period": "2011-02",
+     "value": 497481.0
+    },
+    {
+     "period": "2011-03",
+     "value": 497276.0
+    },
+    {
+     "period": "2011-04",
+     "value": 528472.0
+    },
+    {
+     "period": "2011-05",
+     "value": 535807.0
+    },
+    {
+     "period": "2011-06",
+     "value": 512879.0
+    },
+    {
+     "period": "2011-07",
+     "value": 475717.0
+    },
+    {
+     "period": "2011-08",
+     "value": 464863.0
+    },
+    {
+     "period": "2011-09",
+     "value": 495686.0
+    },
+    {
+     "period": "2011-10",
+     "value": 522606.0
+    },
+    {
+     "period": "2011-11",
+     "value": 524686.0
+    },
+    {
+     "period": "2011-12",
+     "value": 474270.0
+    },
+    {
+     "period": "2012-01",
+     "value": 499045.0
+    },
+    {
+     "period": "2012-02",
+     "value": 553519.0
+    },
+    {
+     "period": "2012-03",
+     "value": 548354.0
+    },
+    {
+     "period": "2012-04",
+     "value": 568436.0
+    },
+    {
+     "period": "2012-05",
+     "value": 568768.0
+    },
+    {
+     "period": "2012-06",
+     "value": 554077.0
+    },
+    {
+     "period": "2012-07",
+     "value": 500934.0
+    },
+    {
+     "period": "2012-08",
+     "value": 497769.0
+    },
+    {
+     "period": "2012-09",
+     "value": 547901.0
+    },
+    {
+     "period": "2012-10",
+     "value": 539188.0
+    },
+    {
+     "period": "2012-11",
+     "value": 517866.0
+    },
+    {
+     "period": "2012-12",
+     "value": 494127.0
+    },
+    {
+     "period": "2013-01",
+     "value": 507859.0
+    },
+    {
+     "period": "2013-02",
+     "value": 552014.0
+    },
+    {
+     "period": "2013-03",
+     "value": 564793.0
+    },
+    {
+     "period": "2013-04",
+     "value": 576315.0
+    },
+    {
+     "period": "2013-05",
+     "value": 600791.0
+    },
+    {
+     "period": "2013-06",
+     "value": 578575.0
+    },
+    {
+     "period": "2013-07",
+     "value": 536181.0
+    },
+    {
+     "period": "2013-08",
+     "value": 518145.0
+    },
+    {
+     "period": "2013-09",
+     "value": 571410.0
+    },
+    {
+     "period": "2013-10",
+     "value": 593807.0
+    },
+    {
+     "period": "2013-11",
+     "value": 590366.0
+    },
+    {
+     "period": "2013-12",
+     "value": 541771.0
+    },
+    {
+     "period": "2014-01",
+     "value": 552395.0
+    },
+    {
+     "period": "2014-02",
+     "value": 599414.0
+    },
+    {
+     "period": "2014-03",
+     "value": 597401.0
+    },
+    {
+     "period": "2014-04",
+     "value": 641666.0
+    },
+    {
+     "period": "2014-05",
+     "value": 652681.0
+    },
+    {
+     "period": "2014-06",
+     "value": 617854.0
+    },
+    {
+     "period": "2014-07",
+     "value": 576552.0
+    },
+    {
+     "period": "2014-08",
+     "value": 564359.0
+    },
+    {
+     "period": "2014-09",
+     "value": 624851.0
+    },
+    {
+     "period": "2014-10",
+     "value": 633078.0
+    },
+    {
+     "period": "2014-11",
+     "value": 616130.0
+    },
+    {
+     "period": "2014-12",
+     "value": 574539.0
+    },
+    {
+     "period": "2015-01",
+     "value": 581477.0
+    },
+    {
+     "period": "2015-02",
+     "value": 630858.0
+    },
+    {
+     "period": "2015-03",
+     "value": 655067.0
+    },
+    {
+     "period": "2015-04",
+     "value": 690261.0
+    },
+    {
+     "period": "2015-05",
+     "value": 718350.0
+    },
+    {
+     "period": "2015-06",
+     "value": 682264.0
+    },
+    {
+     "period": "2015-07",
+     "value": 618202.0
+    },
+    {
+     "period": "2015-08",
+     "value": 605817.0
+    },
+    {
+     "period": "2015-09",
+     "value": 674922.0
+    },
+    {
+     "period": "2015-10",
+     "value": 661831.0
+    },
+    {
+     "period": "2015-11",
+     "value": 654221.0
+    },
+    {
+     "period": "2015-12",
+     "value": 626942.0
+    },
+    {
+     "period": "2016-01",
+     "value": 636728.0
+    },
+    {
+     "period": "2016-02",
+     "value": 719843.0
+    },
+    {
+     "period": "2016-03",
+     "value": 699745.0
+    },
+    {
+     "period": "2016-04",
+     "value": 766472.0
+    },
+    {
+     "period": "2016-05",
+     "value": 782051.0
+    },
+    {
+     "period": "2016-06",
+     "value": 775400.0
+    },
+    {
+     "period": "2016-07",
+     "value": 690103.0
+    },
+    {
+     "period": "2016-08",
+     "value": 677241.0
+    },
+    {
+     "period": "2016-09",
+     "value": 764872.0
+    },
+    {
+     "period": "2016-10",
+     "value": 770480.0
+    },
+    {
+     "period": "2016-11",
+     "value": 790457.0
+    },
+    {
+     "period": "2016-12",
+     "value": 710307.0
+    },
+    {
+     "period": "2017-01",
+     "value": 727928.0
+    },
+    {
+     "period": "2017-02",
+     "value": 859186.0
+    },
+    {
+     "period": "2017-03",
+     "value": 899452.0
+    },
+    {
+     "period": "2017-04",
+     "value": 943947.0
+    },
+    {
+     "period": "2017-05",
+     "value": 899728.0
+    },
+    {
+     "period": "2017-06",
+     "value": 829479.0
+    },
+    {
+     "period": "2017-07",
+     "value": 759441.0
+    },
+    {
+     "period": "2017-08",
+     "value": 726712.0
+    },
+    {
+     "period": "2017-09",
+     "value": 809591.0
+    },
+    {
+     "period": "2017-10",
+     "value": 818201.0
+    },
+    {
+     "period": "2017-11",
+     "value": 802220.0
+    },
+    {
+     "period": "2017-12",
+     "value": 741684.0
+    },
+    {
+     "period": "2018-01",
+     "value": 766616.0
+    },
+    {
+     "period": "2018-02",
+     "value": 806494.0
+    },
+    {
+     "period": "2018-03",
+     "value": 817642.0
+    },
+    {
+     "period": "2018-04",
+     "value": 856817.0
+    },
+    {
+     "period": "2018-05",
+     "value": 861970.0
+    },
+    {
+     "period": "2018-06",
+     "value": 870559.0
+    },
+    {
+     "period": "2018-07",
+     "value": 824336.0
+    },
+    {
+     "period": "2018-08",
+     "value": 785223.0
+    },
+    {
+     "period": "2018-09",
+     "value": 864275.0
+    },
+    {
+     "period": "2018-10",
+     "value": 869870.0
+    },
+    {
+     "period": "2018-11",
+     "value": 842483.0
+    },
+    {
+     "period": "2018-12",
+     "value": 762627.0
+    },
+    {
+     "period": "2019-01",
+     "value": 777674.0
+    },
+    {
+     "period": "2019-02",
+     "value": 840211.0
+    },
+    {
+     "period": "2019-03",
+     "value": 915213.0
+    },
+    {
+     "period": "2019-04",
+     "value": 903992.0
+    },
+    {
+     "period": "2019-05",
+     "value": 937804.0
+    },
+    {
+     "period": "2019-06",
+     "value": 915481.0
+    },
+    {
+     "period": "2019-07",
+     "value": 839943.0
+    },
+    {
+     "period": "2019-08",
+     "value": 818715.0
+    },
+    {
+     "period": "2019-09",
+     "value": 913096.0
+    },
+    {
+     "period": "2019-10",
+     "value": 925498.0
+    },
+    {
+     "period": "2019-11",
+     "value": 910419.0
+    },
+    {
+     "period": "2019-12",
+     "value": 885132.0
+    },
+    {
+     "period": "2020-01",
+     "value": 884385.0
+    },
+    {
+     "period": "2020-02",
+     "value": 989218.0
+    },
+    {
+     "period": "2020-03",
+     "value": 987787.0
+    },
+    {
+     "period": "2020-04",
+     "value": 881424.0
+    },
+    {
+     "period": "2020-05",
+     "value": 955273.0
+    },
+    {
+     "period": "2020-06",
+     "value": 1022138.0
+    },
+    {
+     "period": "2020-07",
+     "value": 1017320.0
+    },
+    {
+     "period": "2020-08",
+     "value": 1012506.0
+    },
+    {
+     "period": "2020-09",
+     "value": 1022051.0
+    },
+    {
+     "period": "2020-10",
+     "value": 1025925.0
+    },
+    {
+     "period": "2020-11",
+     "value": 979224.0
+    },
+    {
+     "period": "2020-12",
+     "value": 894576.0
+    },
+    {
+     "period": "2021-01",
+     "value": 866331.0
+    },
+    {
+     "period": "2021-02",
+     "value": 995201.0
+    },
+    {
+     "period": "2021-03",
+     "value": 1083322.0
+    },
+    {
+     "period": "2021-04",
+     "value": 1088021.0
+    },
+    {
+     "period": "2021-05",
+     "value": 1116736.0
+    },
+    {
+     "period": "2021-06",
+     "value": 1079749.0
+    },
+    {
+     "period": "2021-07",
+     "value": 1016850.0
+    },
+    {
+     "period": "2021-08",
+     "value": 1000008.0
+    },
+    {
+     "period": "2021-09",
+     "value": 1090196.0
+    },
+    {
+     "period": "2021-10",
+     "value": 1122463.0
+    },
+    {
+     "period": "2021-11",
+     "value": 1096736.0
+    },
+    {
+     "period": "2021-12",
+     "value": 1023029.0
+    },
+    {
+     "period": "2022-01",
+     "value": 1073111.0
+    },
+    {
+     "period": "2022-02",
+     "value": 1210889.0
+    },
+    {
+     "period": "2022-03",
+     "value": 1218546.0
+    },
+    {
+     "period": "2022-04",
+     "value": 1243070.0
+    },
+    {
+     "period": "2022-05",
+     "value": 1233748.0
+    },
+    {
+     "period": "2022-06",
+     "value": 1152175.0
+    },
+    {
+     "period": "2022-07",
+     "value": 1019100.0
+    },
+    {
+     "period": "2022-08",
+     "value": 1031979.0
+    },
+    {
+     "period": "2022-09",
+     "value": 1061876.0
+    },
+    {
+     "period": "2022-10",
+     "value": 1093097.0
+    },
+    {
+     "period": "2022-11",
+     "value": 1050788.0
+    },
+    {
+     "period": "2022-12",
+     "value": 1017989.0
+    },
+    {
+     "period": "2023-01",
+     "value": 987842.0
+    },
+    {
+     "period": "2023-02",
+     "value": 1071043.0
+    },
+    {
+     "period": "2023-03",
+     "value": 1054563.0
+    },
+    {
+     "period": "2023-04",
+     "value": 1120352.0
+    },
+    {
+     "period": "2023-05",
+     "value": 1197021.0
+    },
+    {
+     "period": "2023-06",
+     "value": 1152424.0
+    },
+    {
+     "period": "2023-07",
+     "value": 1066184.0
+    },
+    {
+     "period": "2023-08",
+     "value": 1005945.0
+    },
+    {
+     "period": "2023-09",
+     "value": 1119452.0
+    },
+    {
+     "period": "2023-10",
+     "value": 1127635.0
+    },
+    {
+     "period": "2023-11",
+     "value": 1051180.0
+    },
+    {
+     "period": "2023-12",
+     "value": 1062914.0
+    },
+    {
+     "period": "2024-01",
+     "value": 959915.0
+    },
+    {
+     "period": "2024-02",
+     "value": 1072528.0
+    },
+    {
+     "period": "2024-03",
+     "value": 1087017.0
+    },
+    {
+     "period": "2024-04",
+     "value": 1152200.0
+    },
+    {
+     "period": "2024-05",
+     "value": 1193202.0
+    },
+    {
+     "period": "2024-06",
+     "value": 1173781.0
+    },
+    {
+     "period": "2024-07",
+     "value": 1087436.0
+    },
+    {
+     "period": "2024-08",
+     "value": 1029069.0
+    },
+    {
+     "period": "2024-09",
+     "value": 1113671.0
+    },
+    {
+     "period": "2024-10",
+     "value": 1165660.0
+    },
+    {
+     "period": "2024-11",
+     "value": 1080167.0
+    },
+    {
+     "period": "2024-12",
+     "value": 1033742.0
+    },
+    {
+     "period": "2025-01",
+     "value": 985653.0
+    },
+    {
+     "period": "2025-02",
+     "value": 1087077.0
+    },
+    {
+     "period": "2025-03",
+     "value": 1110924.0
+    },
+    {
+     "period": "2025-04",
+     "value": 1144977.0
+    },
+    {
+     "period": "2025-05",
+     "value": 1155616.0
+    },
+    {
+     "period": "2025-06",
+     "value": 1132709.0
+    },
+    {
+     "period": "2025-07",
+     "value": 1044576.0
+    },
+    {
+     "period": "2025-08",
+     "value": 992085.0
+    },
+    {
+     "period": "2025-09",
+     "value": 1089918.0
+    },
+    {
+     "period": "2025-10",
+     "value": 1069807.0
+    },
+    {
+     "period": "2025-11",
+     "value": 1036362.0
+    },
+    {
+     "period": "2025-12",
+     "value": 986542.0
+    },
+    {
+     "period": "2026-01",
+     "value": 948698.0
+    },
+    {
+     "period": "2026-02",
+     "value": 1019144.0
+    },
+    {
+     "period": "2026-03",
+     "value": 1022874.0
+    },
+    {
+     "period": "2026-04",
+     "value": 1091761.0
+    },
+    {
+     "period": "2026-05",
+     "value": 1108292.0
+    },
+    {
+     "period": "2026-06",
+     "value": 1081375.0
+    },
+    {
+     "period": "2026-07",
+     "value": 1010836.0
+    },
+    {
+     "period": "2026-08",
+     "value": 993410.0
+    },
+    {
+     "period": "2026-09",
+     "value": 1006409.0
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto's Dashboard Key Indicators",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-s-dashboard-key-indicators/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/2350d71a-31d1-4387-9e29-4c1cfc866894",
+    "member": null,
+    "locator": "measure_name = \"Average Home Price (City of Toronto)\"; origin as stated in the file: Source: Toronto Real Estate Board",
+    "method": "Values as published, one per period."
+   }
+  },
+  "homeSales": {
+   "id": "homeSales",
+   "label": "Home sales",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2009",
+     "value": 36017.0
+    },
+    {
+     "period": "2010",
+     "value": 35368.0
+    },
+    {
+     "period": "2011",
+     "value": 36771.0
+    },
+    {
+     "period": "2012",
+     "value": 33414.0
+    },
+    {
+     "period": "2013",
+     "value": 33143.0
+    },
+    {
+     "period": "2014",
+     "value": 35054.0
+    },
+    {
+     "period": "2015",
+     "value": 37510.0
+    },
+    {
+     "period": "2016",
+     "value": 41310.0
+    },
+    {
+     "period": "2017",
+     "value": 35417.0
+    },
+    {
+     "period": "2018",
+     "value": 30011.0
+    },
+    {
+     "period": "2019",
+     "value": 32340.0
+    },
+    {
+     "period": "2020",
+     "value": 31964.0
+    },
+    {
+     "period": "2021",
+     "value": 43643.0
+    },
+    {
+     "period": "2022",
+     "value": 27916.0
+    },
+    {
+     "period": "2023",
+     "value": 24457.0
+    },
+    {
+     "period": "2024",
+     "value": 24701.0
+    },
+    {
+     "period": "2025",
+     "value": 23270.0
+    },
+    {
+     "period": "2026",
+     "value": 17535.0,
+     "note": "Partial year: 9 of 12 months"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto's Dashboard Key Indicators",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-s-dashboard-key-indicators/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/2350d71a-31d1-4387-9e29-4c1cfc866894",
+    "member": null,
+    "locator": "measure_name = \"Number of Home Sales (City of Toronto)\"; origin as stated in the file: Source: Toronto Real Estate Board",
+    "method": "Sum of the monthly values for each calendar year. Past years missing any period are left out."
+   }
+  },
+  "permitValue": {
+   "id": "permitValue",
+   "label": "All permits",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2007",
+     "value": 4201600000.0
+    },
+    {
+     "period": "2008",
+     "value": 6371700000.0
+    },
+    {
+     "period": "2009",
+     "value": 5431500000.0
+    },
+    {
+     "period": "2010",
+     "value": 6948241000.0
+    },
+    {
+     "period": "2011",
+     "value": 7649542000.0
+    },
+    {
+     "period": "2012",
+     "value": 6512400000.0
+    },
+    {
+     "period": "2013",
+     "value": 8689500000.0
+    },
+    {
+     "period": "2014",
+     "value": 7466800000.0
+    },
+    {
+     "period": "2015",
+     "value": 8033300000.0
+    },
+    {
+     "period": "2016",
+     "value": 7031400000.0
+    },
+    {
+     "period": "2017",
+     "value": 10581006278.0
+    },
+    {
+     "period": "2018",
+     "value": 11838144658.2
+    },
+    {
+     "period": "2019",
+     "value": 10853581145.0
+    },
+    {
+     "period": "2020",
+     "value": 12768526509.0
+    },
+    {
+     "period": "2021",
+     "value": 12910708787.8
+    },
+    {
+     "period": "2022",
+     "value": 12620328382.9
+    },
+    {
+     "period": "2023",
+     "value": 14714550641.8
+    },
+    {
+     "period": "2024",
+     "value": 17078878877.0
+    },
+    {
+     "period": "2025",
+     "value": 15703235668.1
+    },
+    {
+     "period": "2026",
+     "value": 10588233357.0,
+     "note": "Partial year: 8 of 12 months"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto's Dashboard Key Indicators",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-s-dashboard-key-indicators/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/2350d71a-31d1-4387-9e29-4c1cfc866894",
+    "member": null,
+    "locator": "measure_name = \"Construction Value of Building Permits Issued (All Types)\"; origin as stated in the file: Source: City of Toronto, Toronto Building",
+    "method": "Sum of the monthly values for each calendar year. Past years missing any period are left out."
+   }
+  },
+  "permitValueResidential": {
+   "id": "permitValueResidential",
+   "label": "Residential",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2007",
+     "value": 1826800000.0
+    },
+    {
+     "period": "2008",
+     "value": 2470600000.0
+    },
+    {
+     "period": "2009",
+     "value": 2160700000.0
+    },
+    {
+     "period": "2010",
+     "value": 2952188000.0
+    },
+    {
+     "period": "2011",
+     "value": 3915888000.0
+    },
+    {
+     "period": "2012",
+     "value": 3123400000.0
+    },
+    {
+     "period": "2013",
+     "value": 4978700000.0
+    },
+    {
+     "period": "2014",
+     "value": 5162500000.0
+    },
+    {
+     "period": "2015",
+     "value": 4302090000.0
+    },
+    {
+     "period": "2016",
+     "value": 4225200000.0
+    },
+    {
+     "period": "2017",
+     "value": 6247188418.0
+    },
+    {
+     "period": "2018",
+     "value": 7666536532.5
+    },
+    {
+     "period": "2019",
+     "value": 6859881427.0
+    },
+    {
+     "period": "2020",
+     "value": 8306776108.0
+    },
+    {
+     "period": "2021",
+     "value": 8461324364.1
+    },
+    {
+     "period": "2022",
+     "value": 7218066040.3
+    },
+    {
+     "period": "2023",
+     "value": 7305423135.3
+    },
+    {
+     "period": "2024",
+     "value": 10102287174.7
+    },
+    {
+     "period": "2025",
+     "value": 9631522285.3
+    },
+    {
+     "period": "2026",
+     "value": 6056147337.6,
+     "note": "Partial year: 8 of 12 months"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto's Dashboard Key Indicators",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-s-dashboard-key-indicators/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/2350d71a-31d1-4387-9e29-4c1cfc866894",
+    "member": null,
+    "locator": "measure_name = \"Construction Value of Building Permits Issued (Residential)\"; origin as stated in the file: Source: City of Toronto, Toronto Building",
+    "method": "Sum of the monthly values for each calendar year. Past years missing any period are left out."
+   }
+  },
+  "planningApps": {
+   "id": "planningApps",
+   "label": "Community Planning applications",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2007",
+     "value": 640.0
+    },
+    {
+     "period": "2008",
+     "value": 634.0
+    },
+    {
+     "period": "2009",
+     "value": 545.0
+    },
+    {
+     "period": "2010",
+     "value": 657.0
+    },
+    {
+     "period": "2011",
+     "value": 716.0
+    },
+    {
+     "period": "2012",
+     "value": 617.0
+    },
+    {
+     "period": "2013",
+     "value": 608.0
+    },
+    {
+     "period": "2014",
+     "value": 522.0
+    },
+    {
+     "period": "2015",
+     "value": 542.0
+    },
+    {
+     "period": "2016",
+     "value": 596.0
+    },
+    {
+     "period": "2017",
+     "value": 475.0
+    },
+    {
+     "period": "2018",
+     "value": 478.0
+    },
+    {
+     "period": "2019",
+     "value": 555.0
+    },
+    {
+     "period": "2020",
+     "value": 542.0
+    },
+    {
+     "period": "2021",
+     "value": 1006.0
+    },
+    {
+     "period": "2022",
+     "value": 792.0
+    },
+    {
+     "period": "2023",
+     "value": 434.0
+    },
+    {
+     "period": "2024",
+     "value": 438.0
+    },
+    {
+     "period": "2025",
+     "value": 480.0
+    },
+    {
+     "period": "2026",
+     "value": 214.0,
+     "note": "Partial year: 2 of 4 quarters"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto's Dashboard Key Indicators",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-s-dashboard-key-indicators/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/2350d71a-31d1-4387-9e29-4c1cfc866894",
+    "member": null,
+    "locator": "measure_name = \"Community Planning Number of Applications\"; origin as stated in the file: Source: City of Toronto, City Planning",
+    "method": "Sum of the quarterly values for each calendar year. Past years missing any period are left out."
+   }
+  },
+  "adjustmentApps": {
+   "id": "adjustmentApps",
+   "label": "Committee of Adjustment applications",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2007",
+     "value": 3287.0
+    },
+    {
+     "period": "2008",
+     "value": 2955.0
+    },
+    {
+     "period": "2009",
+     "value": 2341.0
+    },
+    {
+     "period": "2010",
+     "value": 2909.0
+    },
+    {
+     "period": "2011",
+     "value": 3321.0
+    },
+    {
+     "period": "2012",
+     "value": 3260.0
+    },
+    {
+     "period": "2013",
+     "value": 3159.0
+    },
+    {
+     "period": "2014",
+     "value": 3786.0
+    },
+    {
+     "period": "2015",
+     "value": 3980.0
+    },
+    {
+     "period": "2016",
+     "value": 4193.0
+    },
+    {
+     "period": "2017",
+     "value": 4575.0
+    },
+    {
+     "period": "2018",
+     "value": 3790.0
+    },
+    {
+     "period": "2019",
+     "value": 3548.0
+    },
+    {
+     "period": "2020",
+     "value": 3134.0
+    },
+    {
+     "period": "2021",
+     "value": 3862.0
+    },
+    {
+     "period": "2022",
+     "value": 3401.0
+    },
+    {
+     "period": "2023",
+     "value": 2795.0
+    },
+    {
+     "period": "2024",
+     "value": 2845.0
+    },
+    {
+     "period": "2025",
+     "value": 2482.0
+    },
+    {
+     "period": "2026",
+     "value": 1151.0,
+     "note": "Partial year: 2 of 4 quarters"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto's Dashboard Key Indicators",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-s-dashboard-key-indicators/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/2350d71a-31d1-4387-9e29-4c1cfc866894",
+    "member": null,
+    "locator": "measure_name = \"Committee of Adjustment Number of Applications\"; origin as stated in the file: Source: City of Toronto, City Planning",
+    "method": "Sum of the quarterly values for each calendar year. Past years missing any period are left out."
+   }
+  },
+  "socialHousingWaitlist": {
+   "id": "socialHousingWaitlist",
+   "label": "On the wait list",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2007 Q1",
+     "value": 64828.0
+    },
+    {
+     "period": "2007 Q2",
+     "value": 65586.0
+    },
+    {
+     "period": "2007 Q3",
+     "value": 65924.0
+    },
+    {
+     "period": "2007 Q4",
+     "value": 66186.0
+    },
+    {
+     "period": "2008 Q1",
+     "value": 66703.0
+    },
+    {
+     "period": "2008 Q2",
+     "value": 66675.0
+    },
+    {
+     "period": "2008 Q3",
+     "value": 66828.0
+    },
+    {
+     "period": "2008 Q4",
+     "value": 66600.0
+    },
+    {
+     "period": "2009 Q1",
+     "value": 67863.0
+    },
+    {
+     "period": "2009 Q2",
+     "value": 69216.0
+    },
+    {
+     "period": "2009 Q3",
+     "value": 70533.0
+    },
+    {
+     "period": "2009 Q4",
+     "value": 71498.0
+    },
+    {
+     "period": "2010 Q1",
+     "value": 72876.0
+    },
+    {
+     "period": "2010 Q2",
+     "value": 73920.0
+    },
+    {
+     "period": "2010 Q3",
+     "value": 75476.0
+    },
+    {
+     "period": "2010 Q4",
+     "value": 76549.0
+    },
+    {
+     "period": "2011 Q1",
+     "value": 78187.0
+    },
+    {
+     "period": "2011 Q2",
+     "value": 79218.0
+    },
+    {
+     "period": "2011 Q3",
+     "value": 80955.0
+    },
+    {
+     "period": "2011 Q4",
+     "value": 82138.0
+    },
+    {
+     "period": "2012 Q1",
+     "value": 83681.0
+    },
+    {
+     "period": "2012 Q2",
+     "value": 85578.0
+    },
+    {
+     "period": "2012 Q3",
+     "value": 86892.0
+    },
+    {
+     "period": "2012 Q4",
+     "value": 87486.0
+    },
+    {
+     "period": "2013 Q1",
+     "value": 87892.0
+    },
+    {
+     "period": "2013 Q2",
+     "value": 88891.0
+    },
+    {
+     "period": "2013 Q3",
+     "value": 90157.0
+    },
+    {
+     "period": "2013 Q4",
+     "value": 90990.0
+    },
+    {
+     "period": "2014 Q1",
+     "value": 91933.0
+    },
+    {
+     "period": "2014 Q2",
+     "value": 92214.0
+    },
+    {
+     "period": "2014 Q3",
+     "value": 91750.0
+    },
+    {
+     "period": "2014 Q4",
+     "value": 91032.0
+    },
+    {
+     "period": "2015 Q1",
+     "value": 91950.0
+    },
+    {
+     "period": "2015 Q2",
+     "value": 93515.0
+    },
+    {
+     "period": "2015 Q3",
+     "value": 95381.0
+    },
+    {
+     "period": "2015 Q4",
+     "value": 95280.0
+    },
+    {
+     "period": "2016 Q1",
+     "value": 97433.0
+    },
+    {
+     "period": "2016 Q2",
+     "value": 98323.0
+    },
+    {
+     "period": "2016 Q3",
+     "value": 98382.0
+    },
+    {
+     "period": "2016 Q4",
+     "value": 98928.0
+    },
+    {
+     "period": "2017 Q1",
+     "value": 91542.0
+    },
+    {
+     "period": "2017 Q2",
+     "value": 88115.0
+    },
+    {
+     "period": "2017 Q3",
+     "value": 89822.0
+    },
+    {
+     "period": "2017 Q4",
+     "value": 92058.0
+    },
+    {
+     "period": "2018 Q1",
+     "value": 94072.0
+    },
+    {
+     "period": "2018 Q2",
+     "value": 96828.0
+    },
+    {
+     "period": "2018 Q3",
+     "value": 98744.0
+    },
+    {
+     "period": "2018 Q4",
+     "value": 100515.0
+    },
+    {
+     "period": "2019 Q1",
+     "value": 102049.0
+    },
+    {
+     "period": "2019 Q2",
+     "value": 78796.0
+    },
+    {
+     "period": "2019 Q3",
+     "value": 77024.0
+    },
+    {
+     "period": "2019 Q4",
+     "value": 75191.0
+    },
+    {
+     "period": "2020 Q1",
+     "value": 78500.0
+    },
+    {
+     "period": "2020 Q2",
+     "value": 78683.0
+    },
+    {
+     "period": "2020 Q3",
+     "value": 79768.0
+    },
+    {
+     "period": "2020 Q4",
+     "value": 81664.0
+    },
+    {
+     "period": "2021 Q1",
+     "value": 79332.0
+    },
+    {
+     "period": "2021 Q2",
+     "value": 78117.0
+    },
+    {
+     "period": "2021 Q3",
+     "value": 78791.0
+    },
+    {
+     "period": "2021 Q4",
+     "value": 78879.0
+    },
+    {
+     "period": "2022 Q1",
+     "value": 79572.0
+    },
+    {
+     "period": "2022 Q2",
+     "value": 80532.0
+    },
+    {
+     "period": "2022 Q3",
+     "value": 81042.0
+    },
+    {
+     "period": "2022 Q4",
+     "value": 84282.0
+    },
+    {
+     "period": "2023 Q1",
+     "value": 84583.0
+    },
+    {
+     "period": "2023 Q2",
+     "value": 84749.0
+    },
+    {
+     "period": "2023 Q3",
+     "value": 85464.0
+    },
+    {
+     "period": "2023 Q4",
+     "value": 85097.0
+    },
+    {
+     "period": "2024 Q1",
+     "value": 86959.0
+    },
+    {
+     "period": "2024 Q2",
+     "value": 89838.0
+    },
+    {
+     "period": "2024 Q3",
+     "value": 92965.0
+    },
+    {
+     "period": "2024 Q4",
+     "value": 100361.0
+    },
+    {
+     "period": "2025 Q1",
+     "value": 104239.0
+    },
+    {
+     "period": "2025 Q2",
+     "value": 104585.0
+    },
+    {
+     "period": "2025 Q3",
+     "value": 104904.0
+    },
+    {
+     "period": "2025 Q4",
+     "value": 105115.0
+    },
+    {
+     "period": "2026 Q1",
+     "value": 104851.0
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto's Dashboard Key Indicators",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-s-dashboard-key-indicators/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/2350d71a-31d1-4387-9e29-4c1cfc866894",
+    "member": null,
+    "locator": "measure_name = \"Size of Waiting List for Social Housing (Total Number)\"; origin as stated in the file: Source: City of Toronto, Housing Secretariat.  For current data on the waiting list for social housing, please visit: https://www.toronto.ca/city-government/data-research-maps/research-reports/housing-and-homelessness-research-and-reports/social-housing-waiting-list-reports/",
+    "method": "Values as published, one per period."
+   }
+  },
+  "shelterSingles": {
+   "id": "shelterSingles",
+   "label": "Single adults",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2007 Q1",
+     "value": 3070.0
+    },
+    {
+     "period": "2007 Q2",
+     "value": 2835.0
+    },
+    {
+     "period": "2007 Q3",
+     "value": 2682.0
+    },
+    {
+     "period": "2007 Q4",
+     "value": 2765.0
+    },
+    {
+     "period": "2008 Q1",
+     "value": 2897.0
+    },
+    {
+     "period": "2008 Q2",
+     "value": 2784.0
+    },
+    {
+     "period": "2008 Q3",
+     "value": 2704.0
+    },
+    {
+     "period": "2008 Q4",
+     "value": 2782.0
+    },
+    {
+     "period": "2009 Q1",
+     "value": 2913.0
+    },
+    {
+     "period": "2009 Q2",
+     "value": 2805.0
+    },
+    {
+     "period": "2009 Q3",
+     "value": 2797.0
+    },
+    {
+     "period": "2009 Q4",
+     "value": 2853.0
+    },
+    {
+     "period": "2010 Q1",
+     "value": 2908.0
+    },
+    {
+     "period": "2010 Q2",
+     "value": 2803.0
+    },
+    {
+     "period": "2010 Q3",
+     "value": 2747.0
+    },
+    {
+     "period": "2010 Q4",
+     "value": 2829.0
+    },
+    {
+     "period": "2011 Q1",
+     "value": 2841.0
+    },
+    {
+     "period": "2011 Q2",
+     "value": 2804.0
+    },
+    {
+     "period": "2011 Q3",
+     "value": 2810.0
+    },
+    {
+     "period": "2011 Q4",
+     "value": 2885.0
+    },
+    {
+     "period": "2012 Q1",
+     "value": 2939.0
+    },
+    {
+     "period": "2012 Q2",
+     "value": 2904.0
+    },
+    {
+     "period": "2012 Q3",
+     "value": 2902.0
+    },
+    {
+     "period": "2012 Q4",
+     "value": 2921.0
+    },
+    {
+     "period": "2013 Q1",
+     "value": 2929.0
+    },
+    {
+     "period": "2013 Q2",
+     "value": 3002.0
+    },
+    {
+     "period": "2013 Q3",
+     "value": 2977.0
+    },
+    {
+     "period": "2013 Q4",
+     "value": 2990.0
+    },
+    {
+     "period": "2014 Q1",
+     "value": 3074.0
+    },
+    {
+     "period": "2014 Q2",
+     "value": 3032.0
+    },
+    {
+     "period": "2014 Q3",
+     "value": 2985.0
+    },
+    {
+     "period": "2014 Q4",
+     "value": 3062.0
+    },
+    {
+     "period": "2015 Q1",
+     "value": 3105.0
+    },
+    {
+     "period": "2015 Q2",
+     "value": 3072.0
+    },
+    {
+     "period": "2015 Q3",
+     "value": 3022.0
+    },
+    {
+     "period": "2015 Q4",
+     "value": 3077.0
+    },
+    {
+     "period": "2016 Q1",
+     "value": 3128.0
+    },
+    {
+     "period": "2016 Q2",
+     "value": 3145.0
+    },
+    {
+     "period": "2016 Q3",
+     "value": 3133.0
+    },
+    {
+     "period": "2016 Q4",
+     "value": 3150.0
+    },
+    {
+     "period": "2017 Q1",
+     "value": 3255.0
+    },
+    {
+     "period": "2017 Q2",
+     "value": 3321.0
+    },
+    {
+     "period": "2017 Q3",
+     "value": 3273.0
+    },
+    {
+     "period": "2017 Q4",
+     "value": 3456.0
+    },
+    {
+     "period": "2018 Q1",
+     "value": 3584.0
+    },
+    {
+     "period": "2018 Q2",
+     "value": 3645.0
+    },
+    {
+     "period": "2018 Q3",
+     "value": 3595.0
+    },
+    {
+     "period": "2018 Q4",
+     "value": 3631.0
+    },
+    {
+     "period": "2019 Q1",
+     "value": 4801.0
+    },
+    {
+     "period": "2019 Q2",
+     "value": 4876.0
+    },
+    {
+     "period": "2019 Q3",
+     "value": 4948.0
+    },
+    {
+     "period": "2019 Q4",
+     "value": 5097.0
+    },
+    {
+     "period": "2020 Q1",
+     "value": 5052.0
+    },
+    {
+     "period": "2020 Q2",
+     "value": 4493.0
+    },
+    {
+     "period": "2020 Q3",
+     "value": 4380.0
+    },
+    {
+     "period": "2020 Q4",
+     "value": 4739.0
+    },
+    {
+     "period": "2021 Q1",
+     "value": 4958.0
+    },
+    {
+     "period": "2021 Q2",
+     "value": 4945.0
+    },
+    {
+     "period": "2021 Q3",
+     "value": 5288.0
+    },
+    {
+     "period": "2021 Q4",
+     "value": 5539.0
+    },
+    {
+     "period": "2022 Q1",
+     "value": 5911.0
+    },
+    {
+     "period": "2022 Q2",
+     "value": 5833.0
+    },
+    {
+     "period": "2022 Q3",
+     "value": 5979.0
+    },
+    {
+     "period": "2022 Q4",
+     "value": 6202.0
+    },
+    {
+     "period": "2023 Q1",
+     "value": 6612.0
+    },
+    {
+     "period": "2023 Q2",
+     "value": 6465.0
+    },
+    {
+     "period": "2023 Q3",
+     "value": 6426.0
+    },
+    {
+     "period": "2023 Q4",
+     "value": 6862.0
+    },
+    {
+     "period": "2024 Q1",
+     "value": 7330.0
+    },
+    {
+     "period": "2024 Q2",
+     "value": 7145.0
+    },
+    {
+     "period": "2024 Q3",
+     "value": 6990.0
+    },
+    {
+     "period": "2024 Q4",
+     "value": 6959.0
+    },
+    {
+     "period": "2025 Q1",
+     "value": 7410.0
+    },
+    {
+     "period": "2025 Q2",
+     "value": 6696.0
+    },
+    {
+     "period": "2025 Q3",
+     "value": 6399.0
+    },
+    {
+     "period": "2025 Q4",
+     "value": 6431.0
+    },
+    {
+     "period": "2026 Q1",
+     "value": 6819.0
+    },
+    {
+     "period": "2026 Q2",
+     "value": 6004.0
+    },
+    {
+     "period": "2026 Q3",
+     "value": 5592.0
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto's Dashboard Key Indicators",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-s-dashboard-key-indicators/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/2350d71a-31d1-4387-9e29-4c1cfc866894",
+    "member": null,
+    "locator": "measure_name = \"Shelter & Overnight Services Use - Singles (Average Individuals Per Night)\"; origin as stated in the file: Source: City of Toronto, Shelter and Support Services. For current occupancy data, please visit: https://www.toronto.ca/city-government/data-research-maps/research-reports/housing-and-homelessness-research-and-reports/shelter-census/",
+    "method": "Values as published, one per period."
+   }
+  },
+  "shelterFamilies": {
+   "id": "shelterFamilies",
+   "label": "People in families",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2007 Q1",
+     "value": 745.0
+    },
+    {
+     "period": "2007 Q2",
+     "value": 714.0
+    },
+    {
+     "period": "2007 Q3",
+     "value": 1002.0
+    },
+    {
+     "period": "2007 Q4",
+     "value": 1147.0
+    },
+    {
+     "period": "2008 Q1",
+     "value": 1001.0
+    },
+    {
+     "period": "2008 Q2",
+     "value": 1023.0
+    },
+    {
+     "period": "2008 Q3",
+     "value": 1106.0
+    },
+    {
+     "period": "2008 Q4",
+     "value": 1082.0
+    },
+    {
+     "period": "2009 Q1",
+     "value": 1040.0
+    },
+    {
+     "period": "2009 Q2",
+     "value": 1166.0
+    },
+    {
+     "period": "2009 Q3",
+     "value": 1279.0
+    },
+    {
+     "period": "2009 Q4",
+     "value": 994.0
+    },
+    {
+     "period": "2010 Q1",
+     "value": 921.0
+    },
+    {
+     "period": "2010 Q2",
+     "value": 827.0
+    },
+    {
+     "period": "2010 Q3",
+     "value": 866.0
+    },
+    {
+     "period": "2010 Q4",
+     "value": 865.0
+    },
+    {
+     "period": "2011 Q1",
+     "value": 870.0
+    },
+    {
+     "period": "2011 Q2",
+     "value": 800.0
+    },
+    {
+     "period": "2011 Q3",
+     "value": 907.0
+    },
+    {
+     "period": "2011 Q4",
+     "value": 949.0
+    },
+    {
+     "period": "2012 Q1",
+     "value": 835.6
+    },
+    {
+     "period": "2012 Q2",
+     "value": 919.2308
+    },
+    {
+     "period": "2012 Q3",
+     "value": 1008.2283
+    },
+    {
+     "period": "2012 Q4",
+     "value": 947.1957
+    },
+    {
+     "period": "2013 Q1",
+     "value": 864.0
+    },
+    {
+     "period": "2013 Q2",
+     "value": 952.0
+    },
+    {
+     "period": "2013 Q3",
+     "value": 993.0
+    },
+    {
+     "period": "2013 Q4",
+     "value": 977.0
+    },
+    {
+     "period": "2014 Q1",
+     "value": 970.0
+    },
+    {
+     "period": "2014 Q2",
+     "value": 980.0
+    },
+    {
+     "period": "2014 Q3",
+     "value": 1083.0
+    },
+    {
+     "period": "2014 Q4",
+     "value": 1055.0
+    },
+    {
+     "period": "2015 Q1",
+     "value": 1028.0
+    },
+    {
+     "period": "2015 Q2",
+     "value": 1019.0
+    },
+    {
+     "period": "2015 Q3",
+     "value": 1001.0
+    },
+    {
+     "period": "2015 Q4",
+     "value": 964.0
+    },
+    {
+     "period": "2016 Q1",
+     "value": 942.0
+    },
+    {
+     "period": "2016 Q2",
+     "value": 976.0
+    },
+    {
+     "period": "2016 Q3",
+     "value": 995.0
+    },
+    {
+     "period": "2016 Q4",
+     "value": 1008.0
+    },
+    {
+     "period": "2017 Q1",
+     "value": 1202.0
+    },
+    {
+     "period": "2017 Q2",
+     "value": 1467.0
+    },
+    {
+     "period": "2017 Q3",
+     "value": 1719.0
+    },
+    {
+     "period": "2017 Q4",
+     "value": 1899.0
+    },
+    {
+     "period": "2018 Q1",
+     "value": 2244.0
+    },
+    {
+     "period": "2018 Q2",
+     "value": 2762.0
+    },
+    {
+     "period": "2018 Q3",
+     "value": 2785.0
+    },
+    {
+     "period": "2018 Q4",
+     "value": 2970.0
+    },
+    {
+     "period": "2019 Q1",
+     "value": 3123.0
+    },
+    {
+     "period": "2019 Q2",
+     "value": 3187.0
+    },
+    {
+     "period": "2019 Q3",
+     "value": 2963.0
+    },
+    {
+     "period": "2019 Q4",
+     "value": 2687.0
+    },
+    {
+     "period": "2020 Q1",
+     "value": 2588.0
+    },
+    {
+     "period": "2020 Q2",
+     "value": 2225.0
+    },
+    {
+     "period": "2020 Q3",
+     "value": 1747.0
+    },
+    {
+     "period": "2020 Q4",
+     "value": 1276.0
+    },
+    {
+     "period": "2021 Q1",
+     "value": 1083.0
+    },
+    {
+     "period": "2021 Q2",
+     "value": 1046.0
+    },
+    {
+     "period": "2021 Q3",
+     "value": 1186.0
+    },
+    {
+     "period": "2021 Q4",
+     "value": 1571.0
+    },
+    {
+     "period": "2022 Q1",
+     "value": 1771.0
+    },
+    {
+     "period": "2022 Q2",
+     "value": 2066.0
+    },
+    {
+     "period": "2022 Q3",
+     "value": 2109.0
+    },
+    {
+     "period": "2022 Q4",
+     "value": 2169.0
+    },
+    {
+     "period": "2023 Q1",
+     "value": 2389.0
+    },
+    {
+     "period": "2023 Q2",
+     "value": 2377.0
+    },
+    {
+     "period": "2023 Q3",
+     "value": 2466.0
+    },
+    {
+     "period": "2023 Q4",
+     "value": 2440.0
+    },
+    {
+     "period": "2024 Q1",
+     "value": 2477.0
+    },
+    {
+     "period": "2024 Q2",
+     "value": 2696.0
+    },
+    {
+     "period": "2024 Q3",
+     "value": 2725.0
+    },
+    {
+     "period": "2024 Q4",
+     "value": 2744.0
+    },
+    {
+     "period": "2025 Q1",
+     "value": 2638.0
+    },
+    {
+     "period": "2025 Q2",
+     "value": 2534.0
+    },
+    {
+     "period": "2025 Q3",
+     "value": 2374.0
+    },
+    {
+     "period": "2025 Q4",
+     "value": 2395.0
+    },
+    {
+     "period": "2026 Q1",
+     "value": 2231.0
+    },
+    {
+     "period": "2026 Q2",
+     "value": 2061.0
+    },
+    {
+     "period": "2026 Q3",
+     "value": 1984.0
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto's Dashboard Key Indicators",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-s-dashboard-key-indicators/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/2350d71a-31d1-4387-9e29-4c1cfc866894",
+    "member": null,
+    "locator": "measure_name = \"Shelter & Overnight Services Use - Families (Average Individuals Per Night)\"; origin as stated in the file: Source: City of Toronto, Shelter and Support Services. For current occupancy data, please visit: https://www.toronto.ca/city-government/data-research-maps/research-reports/housing-and-homelessness-research-and-reports/shelter-census/",
+    "method": "Values as published, one per period."
+   }
+  }
+ }
+}

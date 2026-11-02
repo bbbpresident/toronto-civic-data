@@ -1,0 +1,2900 @@
+{
+ "generatedOn": "2026-10-31",
+ "generator": "scripts/extract_safety.py",
+ "series": {
+  "reported": {
+   "id": "reported",
+   "label": "Reported crimes",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2014",
+     "value": 113513
+    },
+    {
+     "period": "2015",
+     "value": 117543
+    },
+    {
+     "period": "2016",
+     "value": 122760
+    },
+    {
+     "period": "2017",
+     "value": 130331
+    },
+    {
+     "period": "2018",
+     "value": 143272
+    },
+    {
+     "period": "2019",
+     "value": 144545
+    },
+    {
+     "period": "2020",
+     "value": 118673
+    },
+    {
+     "period": "2021",
+     "value": 120482
+    },
+    {
+     "period": "2022",
+     "value": 141269
+    },
+    {
+     "period": "2023",
+     "value": 170532
+    },
+    {
+     "period": "2024",
+     "value": 177767
+    },
+    {
+     "period": "2025",
+     "value": 166186
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "All rows",
+    "method": "Sum of COUNT_ for each REPORT_YEAR."
+   },
+   "note": "The Police Service's file counts every reported offence, including reports later deemed unfounded and offences outside City limits."
+  },
+  "reportedPer100k": {
+   "id": "reportedPer100k",
+   "label": "Per 100,000 residents",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2014",
+     "value": 4070.5272
+    },
+    {
+     "period": "2015",
+     "value": 4197.6045
+    },
+    {
+     "period": "2016",
+     "value": 4349.1662
+    },
+    {
+     "period": "2017",
+     "value": 4562.5205
+    },
+    {
+     "period": "2018",
+     "value": 4933.6581
+    },
+    {
+     "period": "2019",
+     "value": 4917.5604
+    },
+    {
+     "period": "2020",
+     "value": 4019.5897
+    },
+    {
+     "period": "2021",
+     "value": 4129.3966
+    },
+    {
+     "period": "2022",
+     "value": 4726.7044
+    },
+    {
+     "period": "2023",
+     "value": 5441.3355
+    },
+    {
+     "period": "2024",
+     "value": 5419.0367
+    },
+    {
+     "period": "2025",
+     "value": 5079.2981
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "All rows",
+    "method": "Sum of COUNT_ for each REPORT_YEAR ÷ that year's July 1 population × 100,000."
+   },
+   "note": "The Police Service's file counts every reported offence, including reports later deemed unfounded and offences outside City limits.",
+   "inputs": [
+    {
+     "publisher": "Statistics Canada",
+     "dataset": "Population estimates, July 1, by census division, 2021 boundaries (table 17-10-0152-01)",
+     "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015201",
+     "fileUrl": "https://www150.statcan.gc.ca/t1/wds/rest/getDataFromVectorByReferencePeriodRange?vectorIds=%221591053123%22&startRefPeriod=2001-01-01&endReferencePeriod=2026-12-31",
+     "member": null,
+     "locator": "Vector v1591053123: Toronto (census division 3520, the City of Toronto), total gender, all ages",
+     "method": "Values as published, one per year."
+    }
+   ]
+  },
+  "clearanceRate": {
+   "id": "clearanceRate",
+   "label": "Share cleared",
+   "unit": "percent",
+   "points": [
+    {
+     "period": "2014",
+     "value": 51.8187
+    },
+    {
+     "period": "2015",
+     "value": 49.632
+    },
+    {
+     "period": "2016",
+     "value": 48.2934
+    },
+    {
+     "period": "2017",
+     "value": 46.2269
+    },
+    {
+     "period": "2018",
+     "value": 41.3919
+    },
+    {
+     "period": "2019",
+     "value": 40.0353
+    },
+    {
+     "period": "2020",
+     "value": 35.4074
+    },
+    {
+     "period": "2021",
+     "value": 32.7983
+    },
+    {
+     "period": "2022",
+     "value": 30.512
+    },
+    {
+     "period": "2023",
+     "value": 30.1492
+    },
+    {
+     "period": "2024",
+     "value": 30.0961
+    },
+    {
+     "period": "2025",
+     "value": 31.5953
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "All rows",
+    "method": "Sum of COUNT_CLEARED ÷ sum of COUNT_ for each REPORT_YEAR."
+   },
+   "note": "The Police Service's file counts every reported offence, including reports later deemed unfounded and offences outside City limits."
+  },
+  "cat0": {
+   "id": "cat0",
+   "label": "Crimes Against Property",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2014",
+     "value": 68863
+    },
+    {
+     "period": "2015",
+     "value": 69796
+    },
+    {
+     "period": "2016",
+     "value": 73958
+    },
+    {
+     "period": "2017",
+     "value": 80230
+    },
+    {
+     "period": "2018",
+     "value": 93087
+    },
+    {
+     "period": "2019",
+     "value": 95019
+    },
+    {
+     "period": "2020",
+     "value": 77763
+    },
+    {
+     "period": "2021",
+     "value": 77964
+    },
+    {
+     "period": "2022",
+     "value": 96716
+    },
+    {
+     "period": "2023",
+     "value": 119973
+    },
+    {
+     "period": "2024",
+     "value": 122381
+    },
+    {
+     "period": "2025",
+     "value": 111806
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "CATEGORY = \"Crimes Against Property\"",
+    "method": "Sum of COUNT_ for each REPORT_YEAR."
+   }
+  },
+  "catCleared0": {
+   "id": "catCleared0",
+   "label": "Crimes Against Property",
+   "unit": "percent",
+   "points": [
+    {
+     "period": "2014",
+     "value": 35.029
+    },
+    {
+     "period": "2015",
+     "value": 31.625
+    },
+    {
+     "period": "2016",
+     "value": 30.7134
+    },
+    {
+     "period": "2017",
+     "value": 28.3522
+    },
+    {
+     "period": "2018",
+     "value": 25.4439
+    },
+    {
+     "period": "2019",
+     "value": 23.6595
+    },
+    {
+     "period": "2020",
+     "value": 17.9713
+    },
+    {
+     "period": "2021",
+     "value": 14.517
+    },
+    {
+     "period": "2022",
+     "value": 13.9243
+    },
+    {
+     "period": "2023",
+     "value": 14.4091
+    },
+    {
+     "period": "2024",
+     "value": 14.4884
+    },
+    {
+     "period": "2025",
+     "value": 14.9106
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "CATEGORY = \"Crimes Against Property\"",
+    "method": "Sum of COUNT_CLEARED ÷ sum of COUNT_ for each REPORT_YEAR."
+   }
+  },
+  "cat1": {
+   "id": "cat1",
+   "label": "Crimes Against the Person",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2014",
+     "value": 25339
+    },
+    {
+     "period": "2015",
+     "value": 26875
+    },
+    {
+     "period": "2016",
+     "value": 27306
+    },
+    {
+     "period": "2017",
+     "value": 28161
+    },
+    {
+     "period": "2018",
+     "value": 28801
+    },
+    {
+     "period": "2019",
+     "value": 28990
+    },
+    {
+     "period": "2020",
+     "value": 24437
+    },
+    {
+     "period": "2021",
+     "value": 25190
+    },
+    {
+     "period": "2022",
+     "value": 27894
+    },
+    {
+     "period": "2023",
+     "value": 30578
+    },
+    {
+     "period": "2024",
+     "value": 33149
+    },
+    {
+     "period": "2025",
+     "value": 31414
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "CATEGORY = \"Crimes Against the Person\"",
+    "method": "Sum of COUNT_ for each REPORT_YEAR."
+   }
+  },
+  "catCleared1": {
+   "id": "catCleared1",
+   "label": "Crimes Against the Person",
+   "unit": "percent",
+   "points": [
+    {
+     "period": "2014",
+     "value": 65.0341
+    },
+    {
+     "period": "2015",
+     "value": 62.266
+    },
+    {
+     "period": "2016",
+     "value": 60.8584
+    },
+    {
+     "period": "2017",
+     "value": 61.3863
+    },
+    {
+     "period": "2018",
+     "value": 56.5779
+    },
+    {
+     "period": "2019",
+     "value": 59.3687
+    },
+    {
+     "period": "2020",
+     "value": 58.6488
+    },
+    {
+     "period": "2021",
+     "value": 57.4196
+    },
+    {
+     "period": "2022",
+     "value": 59.0234
+    },
+    {
+     "period": "2023",
+     "value": 59.255
+    },
+    {
+     "period": "2024",
+     "value": 57.326
+    },
+    {
+     "period": "2025",
+     "value": 57.4203
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "CATEGORY = \"Crimes Against the Person\"",
+    "method": "Sum of COUNT_CLEARED ÷ sum of COUNT_ for each REPORT_YEAR."
+   }
+  },
+  "cat2": {
+   "id": "cat2",
+   "label": "Other Criminal Code Violations",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2014",
+     "value": 12314
+    },
+    {
+     "period": "2015",
+     "value": 13898
+    },
+    {
+     "period": "2016",
+     "value": 14918
+    },
+    {
+     "period": "2017",
+     "value": 16129
+    },
+    {
+     "period": "2018",
+     "value": 16505
+    },
+    {
+     "period": "2019",
+     "value": 16808
+    },
+    {
+     "period": "2020",
+     "value": 13094
+    },
+    {
+     "period": "2021",
+     "value": 13940
+    },
+    {
+     "period": "2022",
+     "value": 13454
+    },
+    {
+     "period": "2023",
+     "value": 16485
+    },
+    {
+     "period": "2024",
+     "value": 18869
+    },
+    {
+     "period": "2025",
+     "value": 19602
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "CATEGORY = \"Other Criminal Code Violations\"",
+    "method": "Sum of COUNT_ for each REPORT_YEAR."
+   }
+  },
+  "catCleared2": {
+   "id": "catCleared2",
+   "label": "Other Criminal Code Violations",
+   "unit": "percent",
+   "points": [
+    {
+     "period": "2014",
+     "value": 93.1623
+    },
+    {
+     "period": "2015",
+     "value": 92.5529
+    },
+    {
+     "period": "2016",
+     "value": 91.9761
+    },
+    {
+     "period": "2017",
+     "value": 91.1774
+    },
+    {
+     "period": "2018",
+     "value": 89.2942
+    },
+    {
+     "period": "2019",
+     "value": 87.4286
+    },
+    {
+     "period": "2020",
+     "value": 81.6481
+    },
+    {
+     "period": "2021",
+     "value": 77.0947
+    },
+    {
+     "period": "2022",
+     "value": 76.9214
+    },
+    {
+     "period": "2023",
+     "value": 78.1741
+    },
+    {
+     "period": "2024",
+     "value": 73.7453
+    },
+    {
+     "period": "2025",
+     "value": 75.8698
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "CATEGORY = \"Other Criminal Code Violations\"",
+    "method": "Sum of COUNT_CLEARED ÷ sum of COUNT_ for each REPORT_YEAR."
+   }
+  },
+  "cat3": {
+   "id": "cat3",
+   "label": "Controlled Drugs and Substances Act",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2014",
+     "value": 4649
+    },
+    {
+     "period": "2015",
+     "value": 4678
+    },
+    {
+     "period": "2016",
+     "value": 4253
+    },
+    {
+     "period": "2017",
+     "value": 3676
+    },
+    {
+     "period": "2018",
+     "value": 2951
+    },
+    {
+     "period": "2019",
+     "value": 1703
+    },
+    {
+     "period": "2020",
+     "value": 1420
+    },
+    {
+     "period": "2021",
+     "value": 1123
+    },
+    {
+     "period": "2022",
+     "value": 898
+    },
+    {
+     "period": "2023",
+     "value": 989
+    },
+    {
+     "period": "2024",
+     "value": 983
+    },
+    {
+     "period": "2025",
+     "value": 982
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "CATEGORY = \"Controlled Drugs and Substances Act\"",
+    "method": "Sum of COUNT_ for each REPORT_YEAR."
+   }
+  },
+  "catCleared3": {
+   "id": "catCleared3",
+   "label": "Controlled Drugs and Substances Act",
+   "unit": "percent",
+   "points": [
+    {
+     "period": "2014",
+     "value": 95.8916
+    },
+    {
+     "period": "2015",
+     "value": 94.8055
+    },
+    {
+     "period": "2016",
+     "value": 94.5215
+    },
+    {
+     "period": "2017",
+     "value": 94.7769
+    },
+    {
+     "period": "2018",
+     "value": 93.6632
+    },
+    {
+     "period": "2019",
+     "value": 93.1885
+    },
+    {
+     "period": "2020",
+     "value": 91.5493
+    },
+    {
+     "period": "2021",
+     "value": 88.5129
+    },
+    {
+     "period": "2022",
+     "value": 85.7461
+    },
+    {
+     "period": "2023",
+     "value": 88.8777
+    },
+    {
+     "period": "2024",
+     "value": 82.2991
+    },
+    {
+     "period": "2025",
+     "value": 85.5397
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "CATEGORY = \"Controlled Drugs and Substances Act\"",
+    "method": "Sum of COUNT_CLEARED ÷ sum of COUNT_ for each REPORT_YEAR."
+   }
+  },
+  "cat4": {
+   "id": "cat4",
+   "label": "Criminal Code Traffic",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2014",
+     "value": 1938
+    },
+    {
+     "period": "2015",
+     "value": 1911
+    },
+    {
+     "period": "2016",
+     "value": 1974
+    },
+    {
+     "period": "2017",
+     "value": 1877
+    },
+    {
+     "period": "2018",
+     "value": 1681
+    },
+    {
+     "period": "2019",
+     "value": 1797
+    },
+    {
+     "period": "2020",
+     "value": 1782
+    },
+    {
+     "period": "2021",
+     "value": 2135
+    },
+    {
+     "period": "2022",
+     "value": 2217
+    },
+    {
+     "period": "2023",
+     "value": 2428
+    },
+    {
+     "period": "2024",
+     "value": 2281
+    },
+    {
+     "period": "2025",
+     "value": 2319
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "CATEGORY = \"Criminal Code Traffic\"",
+    "method": "Sum of COUNT_ for each REPORT_YEAR."
+   }
+  },
+  "catCleared4": {
+   "id": "catCleared4",
+   "label": "Criminal Code Traffic",
+   "unit": "percent",
+   "points": [
+    {
+     "period": "2014",
+     "value": 97.5748
+    },
+    {
+     "period": "2015",
+     "value": 98.2208
+    },
+    {
+     "period": "2016",
+     "value": 96.6059
+    },
+    {
+     "period": "2017",
+     "value": 96.3772
+    },
+    {
+     "period": "2018",
+     "value": 96.0143
+    },
+    {
+     "period": "2019",
+     "value": 94.8247
+    },
+    {
+     "period": "2020",
+     "value": 89.6184
+    },
+    {
+     "period": "2021",
+     "value": 89.555
+    },
+    {
+     "period": "2022",
+     "value": 90.1669
+    },
+    {
+     "period": "2023",
+     "value": 90.0329
+    },
+    {
+     "period": "2024",
+     "value": 86.804
+    },
+    {
+     "period": "2025",
+     "value": 88.0983
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "CATEGORY = \"Criminal Code Traffic\"",
+    "method": "Sum of COUNT_CLEARED ÷ sum of COUNT_ for each REPORT_YEAR."
+   }
+  },
+  "cat5": {
+   "id": "cat5",
+   "label": "Other Federal Statute Violations",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2014",
+     "value": 410
+    },
+    {
+     "period": "2015",
+     "value": 385
+    },
+    {
+     "period": "2016",
+     "value": 351
+    },
+    {
+     "period": "2017",
+     "value": 258
+    },
+    {
+     "period": "2018",
+     "value": 247
+    },
+    {
+     "period": "2019",
+     "value": 228
+    },
+    {
+     "period": "2020",
+     "value": 177
+    },
+    {
+     "period": "2021",
+     "value": 130
+    },
+    {
+     "period": "2022",
+     "value": 90
+    },
+    {
+     "period": "2023",
+     "value": 79
+    },
+    {
+     "period": "2024",
+     "value": 104
+    },
+    {
+     "period": "2025",
+     "value": 63
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "CATEGORY = \"Other Federal Statute Violations\"",
+    "method": "Sum of COUNT_ for each REPORT_YEAR."
+   }
+  },
+  "catCleared5": {
+   "id": "catCleared5",
+   "label": "Other Federal Statute Violations",
+   "unit": "percent",
+   "points": [
+    {
+     "period": "2014",
+     "value": 97.3171
+    },
+    {
+     "period": "2015",
+     "value": 92.7273
+    },
+    {
+     "period": "2016",
+     "value": 86.6097
+    },
+    {
+     "period": "2017",
+     "value": 83.3333
+    },
+    {
+     "period": "2018",
+     "value": 83.8057
+    },
+    {
+     "period": "2019",
+     "value": 83.7719
+    },
+    {
+     "period": "2020",
+     "value": 70.0565
+    },
+    {
+     "period": "2021",
+     "value": 62.3077
+    },
+    {
+     "period": "2022",
+     "value": 61.1111
+    },
+    {
+     "period": "2023",
+     "value": 70.8861
+    },
+    {
+     "period": "2024",
+     "value": 60.5769
+    },
+    {
+     "period": "2025",
+     "value": 68.254
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Police Annual Statistical Report - Reported Crimes",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+    "member": null,
+    "locator": "CATEGORY = \"Other Federal Statute Violations\"",
+    "method": "Sum of COUNT_CLEARED ÷ sum of COUNT_ for each REPORT_YEAR."
+   }
+  },
+  "homicideShooting": {
+   "id": "homicideShooting",
+   "label": "Shooting",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2004",
+     "value": 26
+    },
+    {
+     "period": "2005",
+     "value": 53
+    },
+    {
+     "period": "2006",
+     "value": 29
+    },
+    {
+     "period": "2007",
+     "value": 44
+    },
+    {
+     "period": "2008",
+     "value": 37
+    },
+    {
+     "period": "2009",
+     "value": 37
+    },
+    {
+     "period": "2010",
+     "value": 32
+    },
+    {
+     "period": "2011",
+     "value": 28
+    },
+    {
+     "period": "2012",
+     "value": 34
+    },
+    {
+     "period": "2013",
+     "value": 22
+    },
+    {
+     "period": "2014",
+     "value": 27
+    },
+    {
+     "period": "2015",
+     "value": 26
+    },
+    {
+     "period": "2016",
+     "value": 41
+    },
+    {
+     "period": "2017",
+     "value": 39
+    },
+    {
+     "period": "2018",
+     "value": 51
+    },
+    {
+     "period": "2019",
+     "value": 44
+    },
+    {
+     "period": "2020",
+     "value": 38
+    },
+    {
+     "period": "2021",
+     "value": 46
+    },
+    {
+     "period": "2022",
+     "value": 44
+    },
+    {
+     "period": "2023",
+     "value": 29
+    },
+    {
+     "period": "2024",
+     "value": 43
+    },
+    {
+     "period": "2025",
+     "value": 20
+    },
+    {
+     "period": "2026",
+     "value": 10,
+     "note": "Year to date (through June 20)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Homicides",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-homicide/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/559d4af8-ba23-44ed-916c-10efb6ed95ef",
+    "member": null,
+    "locator": "HOMICIDE_TYPE = \"Shooting\"",
+    "method": "Rows counted per OCC_YEAR (one row per homicide)."
+   }
+  },
+  "homicideOther": {
+   "id": "homicideOther",
+   "label": "Other",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2004",
+     "value": 19
+    },
+    {
+     "period": "2005",
+     "value": 15
+    },
+    {
+     "period": "2006",
+     "value": 19
+    },
+    {
+     "period": "2007",
+     "value": 18
+    },
+    {
+     "period": "2008",
+     "value": 14
+    },
+    {
+     "period": "2009",
+     "value": 11
+    },
+    {
+     "period": "2010",
+     "value": 20
+    },
+    {
+     "period": "2011",
+     "value": 15
+    },
+    {
+     "period": "2012",
+     "value": 16
+    },
+    {
+     "period": "2013",
+     "value": 21
+    },
+    {
+     "period": "2014",
+     "value": 15
+    },
+    {
+     "period": "2015",
+     "value": 15
+    },
+    {
+     "period": "2016",
+     "value": 25
+    },
+    {
+     "period": "2017",
+     "value": 15
+    },
+    {
+     "period": "2018",
+     "value": 27
+    },
+    {
+     "period": "2019",
+     "value": 19
+    },
+    {
+     "period": "2020",
+     "value": 15
+    },
+    {
+     "period": "2021",
+     "value": 23
+    },
+    {
+     "period": "2022",
+     "value": 10
+    },
+    {
+     "period": "2023",
+     "value": 20
+    },
+    {
+     "period": "2024",
+     "value": 18
+    },
+    {
+     "period": "2025",
+     "value": 11
+    },
+    {
+     "period": "2026",
+     "value": 4,
+     "note": "Year to date (through June 20)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Homicides",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-homicide/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/559d4af8-ba23-44ed-916c-10efb6ed95ef",
+    "member": null,
+    "locator": "HOMICIDE_TYPE = \"Other\"",
+    "method": "Rows counted per OCC_YEAR (one row per homicide)."
+   }
+  },
+  "homicideStabbing": {
+   "id": "homicideStabbing",
+   "label": "Stabbing",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2004",
+     "value": 19
+    },
+    {
+     "period": "2005",
+     "value": 12
+    },
+    {
+     "period": "2006",
+     "value": 22
+    },
+    {
+     "period": "2007",
+     "value": 24
+    },
+    {
+     "period": "2008",
+     "value": 19
+    },
+    {
+     "period": "2009",
+     "value": 14
+    },
+    {
+     "period": "2010",
+     "value": 13
+    },
+    {
+     "period": "2011",
+     "value": 8
+    },
+    {
+     "period": "2012",
+     "value": 7
+    },
+    {
+     "period": "2013",
+     "value": 14
+    },
+    {
+     "period": "2014",
+     "value": 16
+    },
+    {
+     "period": "2015",
+     "value": 18
+    },
+    {
+     "period": "2016",
+     "value": 9
+    },
+    {
+     "period": "2017",
+     "value": 11
+    },
+    {
+     "period": "2018",
+     "value": 20
+    },
+    {
+     "period": "2019",
+     "value": 16
+    },
+    {
+     "period": "2020",
+     "value": 18
+    },
+    {
+     "period": "2021",
+     "value": 16
+    },
+    {
+     "period": "2022",
+     "value": 17
+    },
+    {
+     "period": "2023",
+     "value": 24
+    },
+    {
+     "period": "2024",
+     "value": 24
+    },
+    {
+     "period": "2025",
+     "value": 14
+    },
+    {
+     "period": "2026",
+     "value": 2,
+     "note": "Year to date (through June 20)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Homicides",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-homicide/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/559d4af8-ba23-44ed-916c-10efb6ed95ef",
+    "member": null,
+    "locator": "HOMICIDE_TYPE = \"Stabbing\"",
+    "method": "Rows counted per OCC_YEAR (one row per homicide)."
+   }
+  },
+  "homicides": {
+   "id": "homicides",
+   "label": "Homicides",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2004",
+     "value": 64
+    },
+    {
+     "period": "2005",
+     "value": 80
+    },
+    {
+     "period": "2006",
+     "value": 70
+    },
+    {
+     "period": "2007",
+     "value": 86
+    },
+    {
+     "period": "2008",
+     "value": 70
+    },
+    {
+     "period": "2009",
+     "value": 62
+    },
+    {
+     "period": "2010",
+     "value": 65
+    },
+    {
+     "period": "2011",
+     "value": 51
+    },
+    {
+     "period": "2012",
+     "value": 57
+    },
+    {
+     "period": "2013",
+     "value": 57
+    },
+    {
+     "period": "2014",
+     "value": 58
+    },
+    {
+     "period": "2015",
+     "value": 59
+    },
+    {
+     "period": "2016",
+     "value": 75
+    },
+    {
+     "period": "2017",
+     "value": 65
+    },
+    {
+     "period": "2018",
+     "value": 98
+    },
+    {
+     "period": "2019",
+     "value": 79
+    },
+    {
+     "period": "2020",
+     "value": 71
+    },
+    {
+     "period": "2021",
+     "value": 85
+    },
+    {
+     "period": "2022",
+     "value": 71
+    },
+    {
+     "period": "2023",
+     "value": 73
+    },
+    {
+     "period": "2024",
+     "value": 85
+    },
+    {
+     "period": "2025",
+     "value": 45
+    },
+    {
+     "period": "2026",
+     "value": 16,
+     "note": "Year to date (through June 20)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Homicides",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-homicide/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/559d4af8-ba23-44ed-916c-10efb6ed95ef",
+    "member": null,
+    "locator": "All rows",
+    "method": "Rows counted per OCC_YEAR (one row per homicide)."
+   }
+  },
+  "homicidesPer100k": {
+   "id": "homicidesPer100k",
+   "label": "Per 100,000 residents",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2004",
+     "value": 2.4694
+    },
+    {
+     "period": "2005",
+     "value": 3.0825
+    },
+    {
+     "period": "2006",
+     "value": 2.6833
+    },
+    {
+     "period": "2007",
+     "value": 3.2904
+    },
+    {
+     "period": "2008",
+     "value": 2.6648
+    },
+    {
+     "period": "2009",
+     "value": 2.3407
+    },
+    {
+     "period": "2010",
+     "value": 2.4301
+    },
+    {
+     "period": "2011",
+     "value": 1.8856
+    },
+    {
+     "period": "2012",
+     "value": 2.0825
+    },
+    {
+     "period": "2013",
+     "value": 2.0621
+    },
+    {
+     "period": "2014",
+     "value": 2.0799
+    },
+    {
+     "period": "2015",
+     "value": 2.107
+    },
+    {
+     "period": "2016",
+     "value": 2.6571
+    },
+    {
+     "period": "2017",
+     "value": 2.2755
+    },
+    {
+     "period": "2018",
+     "value": 3.3747
+    },
+    {
+     "period": "2019",
+     "value": 2.6877
+    },
+    {
+     "period": "2020",
+     "value": 2.4049
+    },
+    {
+     "period": "2021",
+     "value": 2.9133
+    },
+    {
+     "period": "2022",
+     "value": 2.3756
+    },
+    {
+     "period": "2023",
+     "value": 2.3293
+    },
+    {
+     "period": "2024",
+     "value": 2.5911
+    },
+    {
+     "period": "2025",
+     "value": 1.3754
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Homicides",
+    "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-homicide/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/559d4af8-ba23-44ed-916c-10efb6ed95ef",
+    "member": null,
+    "locator": "All rows",
+    "method": "Rows counted per OCC_YEAR ÷ that year's July 1 population × 100,000. The current, incomplete year is left out."
+   },
+   "inputs": [
+    {
+     "publisher": "Statistics Canada",
+     "dataset": "Population estimates, July 1, by census division, 2021 boundaries (table 17-10-0152-01)",
+     "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015201",
+     "fileUrl": "https://www150.statcan.gc.ca/t1/wds/rest/getDataFromVectorByReferencePeriodRange?vectorIds=%221591053123%22&startRefPeriod=2001-01-01&endReferencePeriod=2026-12-31",
+     "member": null,
+     "locator": "Vector v1591053123: Toronto (census division 3520, the City of Toronto), total gender, all ages",
+     "method": "Values as published, one per year."
+    }
+   ]
+  }
+ },
+ "categories": [
+  "Crimes Against Property",
+  "Crimes Against the Person",
+  "Other Criminal Code Violations",
+  "Controlled Drugs and Substances Act",
+  "Criminal Code Traffic",
+  "Other Federal Statute Violations"
+ ],
+ "subtypes": [
+  {
+   "category": "Crimes Against Property",
+   "subtype": "Theft Under $5000",
+   "years": {
+    "2014": [
+     38215,
+     13831
+    ],
+    "2015": [
+     37283,
+     12632
+    ],
+    "2016": [
+     39523,
+     13427
+    ],
+    "2017": [
+     43820,
+     13052
+    ],
+    "2018": [
+     52801,
+     13638
+    ],
+    "2019": [
+     52128,
+     13769
+    ],
+    "2020": [
+     37698,
+     6492
+    ],
+    "2021": [
+     39572,
+     4805
+    ],
+    "2022": [
+     51477,
+     6503
+    ],
+    "2023": [
+     65730,
+     9480
+    ],
+    "2024": [
+     70207,
+     10364
+    ],
+    "2025": [
+     64371,
+     10111
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against Property",
+   "subtype": "Fraud",
+   "years": {
+    "2014": [
+     7988,
+     3022
+    ],
+    "2015": [
+     9439,
+     2733
+    ],
+    "2016": [
+     11127,
+     2283
+    ],
+    "2017": [
+     11486,
+     2314
+    ],
+    "2018": [
+     12855,
+     2329
+    ],
+    "2019": [
+     14773,
+     1654
+    ],
+    "2020": [
+     13164,
+     1218
+    ],
+    "2021": [
+     11800,
+     874
+    ],
+    "2022": [
+     13384,
+     928
+    ],
+    "2023": [
+     16358,
+     1017
+    ],
+    "2024": [
+     17506,
+     867
+    ],
+    "2025": [
+     16774,
+     637
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against Property",
+   "subtype": "Other",
+   "years": {
+    "2014": [
+     10633,
+     4266
+    ],
+    "2015": [
+     11309,
+     4361
+    ],
+    "2016": [
+     12140,
+     4800
+    ],
+    "2017": [
+     12898,
+     4983
+    ],
+    "2018": [
+     13490,
+     5030
+    ],
+    "2019": [
+     12650,
+     4386
+    ],
+    "2020": [
+     12680,
+     3785
+    ],
+    "2021": [
+     12862,
+     3504
+    ],
+    "2022": [
+     14120,
+     3615
+    ],
+    "2023": [
+     15778,
+     4067
+    ],
+    "2024": [
+     16150,
+     4014
+    ],
+    "2025": [
+     15134,
+     3650
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against Property",
+   "subtype": "Auto Theft",
+   "years": {
+    "2014": [
+     3771,
+     675
+    ],
+    "2015": [
+     3744,
+     358
+    ],
+    "2016": [
+     3647,
+     450
+    ],
+    "2017": [
+     3883,
+     519
+    ],
+    "2018": [
+     5040,
+     730
+    ],
+    "2019": [
+     5503,
+     597
+    ],
+    "2020": [
+     5987,
+     463
+    ],
+    "2021": [
+     6829,
+     418
+    ],
+    "2022": [
+     10091,
+     573
+    ],
+    "2023": [
+     12680,
+     576
+    ],
+    "2024": [
+     9748,
+     569
+    ],
+    "2025": [
+     7421,
+     429
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against Property",
+   "subtype": "Break & Enter-Commercial",
+   "years": {
+    "2014": [
+     1933,
+     602
+    ],
+    "2015": [
+     1950,
+     584
+    ],
+    "2016": [
+     1915,
+     517
+    ],
+    "2017": [
+     2140,
+     579
+    ],
+    "2018": [
+     2591,
+     719
+    ],
+    "2019": [
+     3340,
+     830
+    ],
+    "2020": [
+     2917,
+     826
+    ],
+    "2021": [
+     2446,
+     646
+    ],
+    "2022": [
+     2593,
+     691
+    ],
+    "2023": [
+     3115,
+     833
+    ],
+    "2024": [
+     2550,
+     686
+    ],
+    "2025": [
+     2133,
+     613
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against Property",
+   "subtype": "Theft Over $5000",
+   "years": {
+    "2014": [
+     1025,
+     286
+    ],
+    "2015": [
+     1061,
+     210
+    ],
+    "2016": [
+     1074,
+     228
+    ],
+    "2017": [
+     1206,
+     223
+    ],
+    "2018": [
+     1268,
+     268
+    ],
+    "2019": [
+     1401,
+     244
+    ],
+    "2020": [
+     1235,
+     185
+    ],
+    "2021": [
+     1090,
+     136
+    ],
+    "2022": [
+     1493,
+     188
+    ],
+    "2023": [
+     1748,
+     218
+    ],
+    "2024": [
+     1887,
+     232
+    ],
+    "2025": [
+     1982,
+     225
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against Property",
+   "subtype": "Break & Enter-House",
+   "years": {
+    "2014": [
+     2951,
+     735
+    ],
+    "2015": [
+     2653,
+     572
+    ],
+    "2016": [
+     2501,
+     455
+    ],
+    "2017": [
+     2585,
+     442
+    ],
+    "2018": [
+     2523,
+     363
+    ],
+    "2019": [
+     2202,
+     305
+    ],
+    "2020": [
+     1589,
+     309
+    ],
+    "2021": [
+     1179,
+     305
+    ],
+    "2022": [
+     1339,
+     281
+    ],
+    "2023": [
+     2113,
+     346
+    ],
+    "2024": [
+     2136,
+     351
+    ],
+    "2025": [
+     1841,
+     300
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against Property",
+   "subtype": "Break & Enter-Apartment",
+   "years": {
+    "2014": [
+     1885,
+     563
+    ],
+    "2015": [
+     2003,
+     529
+    ],
+    "2016": [
+     1622,
+     443
+    ],
+    "2017": [
+     1835,
+     523
+    ],
+    "2018": [
+     2001,
+     493
+    ],
+    "2019": [
+     2454,
+     547
+    ],
+    "2020": [
+     1885,
+     539
+    ],
+    "2021": [
+     1670,
+     486
+    ],
+    "2022": [
+     1697,
+     567
+    ],
+    "2023": [
+     1819,
+     574
+    ],
+    "2024": [
+     1633,
+     502
+    ],
+    "2025": [
+     1671,
+     569
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against Property",
+   "subtype": "Break & Enter-Other",
+   "years": {
+    "2014": [
+     341,
+     105
+    ],
+    "2015": [
+     267,
+     78
+    ],
+    "2016": [
+     282,
+     81
+    ],
+    "2017": [
+     240,
+     78
+    ],
+    "2018": [
+     374,
+     76
+    ],
+    "2019": [
+     420,
+     112
+    ],
+    "2020": [
+     467,
+     120
+    ],
+    "2021": [
+     399,
+     110
+    ],
+    "2022": [
+     419,
+     89
+    ],
+    "2023": [
+     505,
+     136
+    ],
+    "2024": [
+     417,
+     116
+    ],
+    "2025": [
+     355,
+     97
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against Property",
+   "subtype": "Break & Enter-Educational",
+   "years": {
+    "2014": [
+     117,
+     36
+    ],
+    "2015": [
+     84,
+     16
+    ],
+    "2016": [
+     120,
+     28
+    ],
+    "2017": [
+     131,
+     33
+    ],
+    "2018": [
+     138,
+     36
+    ],
+    "2019": [
+     138,
+     34
+    ],
+    "2020": [
+     130,
+     34
+    ],
+    "2021": [
+     100,
+     29
+    ],
+    "2022": [
+     90,
+     25
+    ],
+    "2023": [
+     119,
+     37
+    ],
+    "2024": [
+     129,
+     29
+    ],
+    "2025": [
+     110,
+     38
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against Property",
+   "subtype": "Break & Enter-Transit",
+   "years": {
+    "2014": [
+     4,
+     1
+    ],
+    "2015": [
+     3,
+     0
+    ],
+    "2016": [
+     7,
+     3
+    ],
+    "2017": [
+     6,
+     1
+    ],
+    "2018": [
+     6,
+     3
+    ],
+    "2019": [
+     10,
+     3
+    ],
+    "2020": [
+     11,
+     4
+    ],
+    "2021": [
+     17,
+     5
+    ],
+    "2022": [
+     13,
+     7
+    ],
+    "2023": [
+     8,
+     3
+    ],
+    "2024": [
+     18,
+     1
+    ],
+    "2025": [
+     14,
+     2
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against the Person",
+   "subtype": "Assault",
+   "years": {
+    "2014": [
+     15148,
+     10828
+    ],
+    "2015": [
+     15900,
+     10984
+    ],
+    "2016": [
+     16578,
+     10999
+    ],
+    "2017": [
+     17136,
+     11355
+    ],
+    "2018": [
+     17855,
+     11007
+    ],
+    "2019": [
+     18897,
+     12049
+    ],
+    "2020": [
+     16456,
+     10263
+    ],
+    "2021": [
+     17338,
+     10457
+    ],
+    "2022": [
+     19008,
+     11833
+    ],
+    "2023": [
+     20768,
+     13186
+    ],
+    "2024": [
+     22809,
+     13842
+    ],
+    "2025": [
+     22157,
+     13268
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against the Person",
+   "subtype": "Other",
+   "years": {
+    "2014": [
+     4632,
+     2833
+    ],
+    "2015": [
+     5490,
+     3044
+    ],
+    "2016": [
+     4936,
+     2829
+    ],
+    "2017": [
+     4863,
+     2991
+    ],
+    "2018": [
+     4744,
+     2428
+    ],
+    "2019": [
+     3982,
+     2306
+    ],
+    "2020": [
+     3305,
+     1841
+    ],
+    "2021": [
+     3372,
+     1835
+    ],
+    "2022": [
+     3523,
+     2049
+    ],
+    "2023": [
+     4360,
+     2471
+    ],
+    "2024": [
+     4474,
+     2601
+    ],
+    "2025": [
+     4214,
+     2566
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against the Person",
+   "subtype": "Sexual Violation",
+   "years": {
+    "2014": [
+     2096,
+     1241
+    ],
+    "2015": [
+     2167,
+     1230
+    ],
+    "2016": [
+     2206,
+     1242
+    ],
+    "2017": [
+     2341,
+     1281
+    ],
+    "2018": [
+     2732,
+     1319
+    ],
+    "2019": [
+     2717,
+     1396
+    ],
+    "2020": [
+     2209,
+     1058
+    ],
+    "2021": [
+     2566,
+     1150
+    ],
+    "2022": [
+     2874,
+     1295
+    ],
+    "2023": [
+     2903,
+     1249
+    ],
+    "2024": [
+     3272,
+     1409
+    ],
+    "2025": [
+     2999,
+     1325
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against the Person",
+   "subtype": "Robbery - All Other",
+   "years": {
+    "2014": [
+     2880,
+     1187
+    ],
+    "2015": [
+     2666,
+     1064
+    ],
+    "2016": [
+     2756,
+     1041
+    ],
+    "2017": [
+     2973,
+     1174
+    ],
+    "2018": [
+     2547,
+     952
+    ],
+    "2019": [
+     2503,
+     898
+    ],
+    "2020": [
+     1567,
+     603
+    ],
+    "2021": [
+     1321,
+     649
+    ],
+    "2022": [
+     1540,
+     702
+    ],
+    "2023": [
+     1838,
+     826
+    ],
+    "2024": [
+     1889,
+     825
+    ],
+    "2025": [
+     1426,
+     589
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against the Person",
+   "subtype": "Robbery - Business",
+   "years": {
+    "2014": [
+     253,
+     163
+    ],
+    "2015": [
+     292,
+     164
+    ],
+    "2016": [
+     361,
+     217
+    ],
+    "2017": [
+     403,
+     217
+    ],
+    "2018": [
+     459,
+     284
+    ],
+    "2019": [
+     447,
+     310
+    ],
+    "2020": [
+     471,
+     316
+    ],
+    "2021": [
+     322,
+     213
+    ],
+    "2022": [
+     515,
+     321
+    ],
+    "2023": [
+     324,
+     204
+    ],
+    "2024": [
+     238,
+     138
+    ],
+    "2025": [
+     200,
+     112
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against the Person",
+   "subtype": "Robbery - Vehicle Jacking",
+   "years": {
+    "2014": [
+     17,
+     6
+    ],
+    "2015": [
+     21,
+     11
+    ],
+    "2016": [
+     52,
+     27
+    ],
+    "2017": [
+     56,
+     28
+    ],
+    "2018": [
+     65,
+     31
+    ],
+    "2019": [
+     104,
+     44
+    ],
+    "2020": [
+     145,
+     62
+    ],
+    "2021": [
+     91,
+     47
+    ],
+    "2022": [
+     226,
+     127
+    ],
+    "2023": [
+     210,
+     87
+    ],
+    "2024": [
+     221,
+     84
+    ],
+    "2025": [
+     176,
+     56
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against the Person",
+   "subtype": "Robbery - Home Invasion",
+   "years": {
+    "2014": [
+     131,
+     73
+    ],
+    "2015": [
+     135,
+     79
+    ],
+    "2016": [
+     173,
+     85
+    ],
+    "2017": [
+     136,
+     56
+    ],
+    "2018": [
+     121,
+     51
+    ],
+    "2019": [
+     96,
+     32
+    ],
+    "2020": [
+     116,
+     58
+    ],
+    "2021": [
+     81,
+     35
+    ],
+    "2022": [
+     84,
+     35
+    ],
+    "2023": [
+     93,
+     35
+    ],
+    "2024": [
+     169,
+     49
+    ],
+    "2025": [
+     158,
+     57
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against the Person",
+   "subtype": "Attempt Murder",
+   "years": {
+    "2014": [
+     87,
+     61
+    ],
+    "2015": [
+     120,
+     81
+    ],
+    "2016": [
+     134,
+     84
+    ],
+    "2017": [
+     128,
+     80
+    ],
+    "2018": [
+     154,
+     112
+    ],
+    "2019": [
+     142,
+     98
+    ],
+    "2020": [
+     97,
+     70
+    ],
+    "2021": [
+     62,
+     47
+    ],
+    "2022": [
+     63,
+     54
+    ],
+    "2023": [
+     50,
+     40
+    ],
+    "2024": [
+     41,
+     35
+    ],
+    "2025": [
+     49,
+     43
+    ]
+   }
+  },
+  {
+   "category": "Crimes Against the Person",
+   "subtype": "Robbery - Financial",
+   "years": {
+    "2014": [
+     95,
+     87
+    ],
+    "2015": [
+     84,
+     77
+    ],
+    "2016": [
+     110,
+     94
+    ],
+    "2017": [
+     125,
+     105
+    ],
+    "2018": [
+     124,
+     111
+    ],
+    "2019": [
+     102,
+     78
+    ],
+    "2020": [
+     71,
+     61
+    ],
+    "2021": [
+     37,
+     31
+    ],
+    "2022": [
+     61,
+     48
+    ],
+    "2023": [
+     32,
+     21
+    ],
+    "2024": [
+     36,
+     20
+    ],
+    "2025": [
+     35,
+     22
+    ]
+   }
+  },
+  {
+   "category": "Other Criminal Code Violations",
+   "subtype": "Other",
+   "years": {
+    "2014": [
+     11112,
+     10386
+    ],
+    "2015": [
+     12286,
+     11400
+    ],
+    "2016": [
+     13185,
+     12158
+    ],
+    "2017": [
+     14362,
+     13105
+    ],
+    "2018": [
+     14612,
+     13052
+    ],
+    "2019": [
+     14964,
+     13073
+    ],
+    "2020": [
+     11640,
+     9461
+    ],
+    "2021": [
+     12329,
+     9422
+    ],
+    "2022": [
+     11747,
+     9026
+    ],
+    "2023": [
+     14497,
+     11332
+    ],
+    "2024": [
+     17073,
+     12601
+    ],
+    "2025": [
+     17929,
+     13632
+    ]
+   }
+  },
+  {
+   "category": "Other Criminal Code Violations",
+   "subtype": "Other Criminal Violations - Offensive Weapons",
+   "years": {
+    "2014": [
+     1202,
+     1086
+    ],
+    "2015": [
+     1612,
+     1463
+    ],
+    "2016": [
+     1733,
+     1563
+    ],
+    "2017": [
+     1767,
+     1601
+    ],
+    "2018": [
+     1893,
+     1686
+    ],
+    "2019": [
+     1844,
+     1622
+    ],
+    "2020": [
+     1454,
+     1230
+    ],
+    "2021": [
+     1611,
+     1325
+    ],
+    "2022": [
+     1707,
+     1323
+    ],
+    "2023": [
+     1988,
+     1555
+    ],
+    "2024": [
+     1796,
+     1314
+    ],
+    "2025": [
+     1673,
+     1240
+    ]
+   }
+  },
+  {
+   "category": "Controlled Drugs and Substances Act",
+   "subtype": "Other",
+   "years": {
+    "2014": [
+     4649,
+     4458
+    ],
+    "2015": [
+     4678,
+     4435
+    ],
+    "2016": [
+     4253,
+     4020
+    ],
+    "2017": [
+     3676,
+     3484
+    ],
+    "2018": [
+     2951,
+     2764
+    ],
+    "2019": [
+     1703,
+     1587
+    ],
+    "2020": [
+     1420,
+     1300
+    ],
+    "2021": [
+     1123,
+     994
+    ],
+    "2022": [
+     898,
+     770
+    ],
+    "2023": [
+     989,
+     879
+    ],
+    "2024": [
+     983,
+     809
+    ],
+    "2025": [
+     982,
+     840
+    ]
+   }
+  },
+  {
+   "category": "Criminal Code Traffic",
+   "subtype": "Other",
+   "years": {
+    "2014": [
+     1938,
+     1891
+    ],
+    "2015": [
+     1911,
+     1877
+    ],
+    "2016": [
+     1974,
+     1907
+    ],
+    "2017": [
+     1877,
+     1809
+    ],
+    "2018": [
+     1681,
+     1614
+    ],
+    "2019": [
+     1797,
+     1704
+    ],
+    "2020": [
+     1782,
+     1597
+    ],
+    "2021": [
+     2135,
+     1912
+    ],
+    "2022": [
+     2217,
+     1999
+    ],
+    "2023": [
+     2428,
+     2186
+    ],
+    "2024": [
+     2281,
+     1980
+    ],
+    "2025": [
+     2319,
+     2043
+    ]
+   }
+  },
+  {
+   "category": "Other Federal Statute Violations",
+   "subtype": "Other",
+   "years": {
+    "2014": [
+     410,
+     399
+    ],
+    "2015": [
+     385,
+     357
+    ],
+    "2016": [
+     351,
+     304
+    ],
+    "2017": [
+     258,
+     215
+    ],
+    "2018": [
+     247,
+     207
+    ],
+    "2019": [
+     228,
+     191
+    ],
+    "2020": [
+     177,
+     124
+    ],
+    "2021": [
+     130,
+     81
+    ],
+    "2022": [
+     90,
+     55
+    ],
+    "2023": [
+     79,
+     56
+    ],
+    "2024": [
+     104,
+     63
+    ],
+    "2025": [
+     63,
+     43
+    ]
+   }
+  }
+ ],
+ "subtypeSource": {
+  "publisher": "City of Toronto — Open Data",
+  "dataset": "Police Annual Statistical Report - Reported Crimes",
+  "datasetUrl": "https://open.toronto.ca/dataset/police-annual-statistical-report-reported-crimes/",
+  "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/datastore/dump/5d04d510-88cb-4b48-8311-94b3e155e100",
+  "member": null,
+  "locator": "All rows",
+  "method": "Sum of COUNT_ and of COUNT_CLEARED for each CATEGORY, SUBTYPE and REPORT_YEAR."
+ }
+}
