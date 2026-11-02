@@ -13,12 +13,12 @@ import { fmtMoney } from "@/lib/format";
 import type { DataSource, Series } from "@/lib/types";
 
 // TOday, the daily game: the question bank. Every answer is computed here from the generated
-// datasets (never typed), and carries the files it came from. Level 1 answers fall in 1–10,
-// level 2 in 1–1,000, level 3 is uncapped; building this module throws if an answer falls outside
-// its level, so a data refresh that breaks a question stops the build instead of shipping it.
+// datasets (never typed), and carries the files it came from. Five levels by the size of the
+// answer (1–10, –100, –1,000, –10,000, uncapped), set automatically from the answer (levelOf);
+// building this module throws if a level runs short of questions.
 // Server-only: it reads the datasets; the page hands the finished questions to the client game.
 
-export type Level = 1 | 2 | 3;
+export type Level = 1 | 2 | 3 | 4 | 5;
 
 export interface TodayQuestion {
   /** Stable id: the day's pick is derived from it, so renaming one reshuffles the schedule. */
@@ -45,9 +45,16 @@ export interface TodayQuestion {
 
 export const RANGES: Record<Level, { min: number; max: number | null; label: string }> = {
   1: { min: 1, max: 10, label: "1 to 10" },
-  2: { min: 1, max: 1000, label: "1 to 1,000" },
-  3: { min: 1, max: null, label: "No limit" },
+  2: { min: 1, max: 100, label: "1 to 100" },
+  3: { min: 1, max: 1000, label: "1 to 1,000" },
+  4: { min: 1, max: 10000, label: "1 to 10,000" },
+  5: { min: 1, max: null, label: "No limit" },
 };
+
+/** A question's level is set by the size of its answer, so a data refresh that moves an answer moves the question. */
+export function levelOf(answer: number): Level {
+  return answer <= 10 ? 1 : answer <= 100 ? 2 : answer <= 1000 ? 3 : answer <= 10000 ? 4 : 5;
+}
 
 type Point = { period: string; value: number };
 
@@ -120,10 +127,10 @@ const LEVEL_1: Draft[] = [
     const pay = group(BUDGET, "expenses", "salaries-benefits");
     return {
       id: "salaries-share", topic: "salaries",
-      prompt: `Out of every $10 the City plans to spend in ${BUDGET.year}, how many dollars go to staff salaries and benefits?`,
-      answer: (pay / BUDGET.expenses) * 10, prefix: "$",
+      prompt: `What percentage of the City's ${BUDGET.year} planned spending goes to staff salaries and benefits?`,
+      answer: (pay / BUDGET.expenses) * 100, suffix: "%", decimals: 1,
       fact: `Salaries and benefits are ${fmtMoney(pay)} of ${fmtMoney(BUDGET.expenses)} in planned spending: the biggest single kind of cost.`,
-      how: `Salaries and benefits ÷ total expenses in the ${BUDGET.year} approved operating budget × 10.`,
+      how: `Salaries and benefits ÷ total expenses in the ${BUDGET.year} approved operating budget × 100.`,
       href: "/budget/comparable", hrefLabel: "Where the City's money goes", sources: [BUDGET.source],
     };
   })(),
@@ -149,12 +156,13 @@ const LEVEL_1: Draft[] = [
       href: `/budget/${BUDGET.year}`, hrefLabel: `The ${BUDGET.year} budget by program`, sources: [BUDGET.source],
     };
   })(),
-  ...ELECTIONS.filter(e => e.turnout).slice(-4).map(e => ({
+  ...ELECTIONS.filter(e => e.turnout).slice(-4).map((e, i) => ({
     id: `turnout-${e.id}`, topic: `election-${e.id}`,
-    prompt: `In Toronto's ${e.label}, out of every 10 eligible voters, how many voted?`,
-    answer: e.turnout!.turnoutPct / 10,
+    ...(i < 2
+      ? { prompt: `In Toronto's ${e.label}, out of every 10 eligible voters, how many voted?`, answer: e.turnout!.turnoutPct / 10 }
+      : { prompt: `In Toronto's ${e.label}, what percentage of eligible voters voted?`, answer: e.turnout!.turnoutPct, suffix: "%", decimals: 1 }),
     fact: `${n0(e.turnout!.numberVoted)} of ${n0(e.turnout!.eligibleElectors)} eligible electors voted: ${e.turnout!.turnoutPct.toFixed(1)}%.`,
-    how: "Number voted ÷ eligible electors × 10, from the Grand Total row of the City's voter statistics.",
+    how: "Number voted ÷ eligible electors, from the Grand Total row of the City's voter statistics.",
     href: "/elections", hrefLabel: "Turnout in every election since 2003", sources: [e.turnout!.source],
   })),
   (() => {
@@ -169,18 +177,18 @@ const LEVEL_1: Draft[] = [
     };
   })(),
   ...([
-    ["immigrants", "Out of every 10 people living in Toronto in the {y} census, how many were immigrants?", "people"],
-    ["visibleMinority", "Out of every 10 people living in Toronto in the {y} census, how many belonged to a visible minority?", "people"],
-    ["renters", "Out of every 10 Toronto households in the {y} census, how many rented their home?", "people"],
-    ["seniors", "Out of every 10 people living in Toronto in the {y} census, how many were 65 or older?", "people"],
-  ] as const).map(([id, prompt]) => {
+    ["immigrants", "What percentage of people living in Toronto in the {y} census were immigrants?", "pct"],
+    ["visibleMinority", "What percentage of people living in Toronto in the {y} census belonged to a visible minority?", "pct"],
+    ["renters", "Out of every 10 Toronto households in the {y} census, how many rented their home?", "ten"],
+    ["seniors", "Out of every 10 people living in Toronto in the {y} census, how many were 65 or older?", "ten"],
+  ] as const).map(([id, prompt, mode]) => {
     const c = census(id);
     return {
       id: `census-${id}`, topic: `census-${id}`,
       prompt: prompt.replace("{y}", String(c.latest.year)),
-      answer: c.latest.value / 10,
+      ...(mode === "pct" ? { answer: c.latest.value, suffix: "%", decimals: 1 } : { answer: c.latest.value / 10 }),
       fact: `${c.latest.value.toFixed(1)}% in ${c.latest.year}; ${c.values[0].value.toFixed(1)}% in ${c.values[0].year}.`,
-      how: "The census percentage ÷ 10.",
+      how: mode === "pct" ? "The census percentage." : "The census percentage ÷ 10.",
       href: "/people", hrefLabel: "Five censuses of who lives here", sources: [c.latest.source],
     };
   }),
@@ -243,10 +251,10 @@ const LEVEL_1: Draft[] = [
     const all = last(T.annualRides), off = at(T.ridesOffPeak, all.period);
     return {
       id: "ttc-offpeak", topic: "ttc-rides",
-      prompt: `Out of every 10 TTC rides in ${all.period}, how many did the TTC count as off-peak rather than peak?`,
-      answer: (off.value / all.value) * 10,
+      prompt: `What percentage of TTC rides in ${all.period} were off-peak rather than peak?`,
+      answer: (off.value / all.value) * 100, suffix: "%", decimals: 1,
       fact: `${n0(off.value)} of ${n0(all.value)} rides were off-peak (“Non-Peak” in the file).`,
-      how: "Off-peak rides ÷ annual rides × 10.",
+      how: "Off-peak rides ÷ annual rides × 100.",
       href: "/transit", hrefLabel: "TTC ridership since 2003", sources: [T.annualRides.source],
     };
   })(),
@@ -256,10 +264,10 @@ const LEVEL_1: Draft[] = [
     const ped = at(R.ksi_pedestrian, yr).value;
     return {
       id: "ksi-pedestrian", topic: "road-safety",
-      prompt: `Out of every 10 people killed or seriously injured on Toronto's roads in ${yr}, how many were pedestrians?`,
-      answer: (ped / total) * 10,
+      prompt: `What percentage of people killed or seriously injured on Toronto's roads in ${yr} were pedestrians?`,
+      answer: (ped / total) * 100, suffix: "%", decimals: 1,
       fact: `${n0(ped)} of the ${n0(total)} people killed or seriously injured were on foot.`,
-      how: "Pedestrians ÷ everyone killed or seriously injured (all ways of travelling) × 10.",
+      how: "Pedestrians ÷ everyone killed or seriously injured (all ways of travelling) × 100.",
       href: "/road-safety", hrefLabel: "Road safety since 2006", sources: [R.ksi_pedestrian.source],
     };
   })(),
@@ -279,19 +287,19 @@ const LEVEL_1: Draft[] = [
     const all = boards.reduce((a, b) => a + b.enrolment[SCHOOL_YEAR].value, 0), tdsb = TDSB.enrolment[SCHOOL_YEAR].value;
     return {
       id: "tdsb-share", topic: "schools",
-      prompt: `Out of every 10 students in Toronto's four public school boards in ${SCHOOL_YEAR}, how many were at the Toronto District School Board?`,
-      answer: (tdsb / all) * 10,
+      prompt: `What percentage of students in Toronto's four public school boards in ${SCHOOL_YEAR} were at the Toronto District School Board?`,
+      answer: (tdsb / all) * 100, suffix: "%", decimals: 1,
       fact: `${n0(tdsb)} of ${n0(all)} students. The others are at the Catholic board and the two French-language boards.`,
-      how: `TDSB enrolment ÷ the four boards' enrolment combined × 10 (${boards.map(b => b.board).join(", ")}).`,
+      how: `TDSB enrolment ÷ the four boards' enrolment combined × 100 (${boards.map(b => b.board).join(", ")}).`,
       href: "/schools", hrefLabel: "Enrolment by board", sources: [SCHOOLS.sources[SCHOOL_YEAR].enrolment],
     };
   })(),
   {
     id: "council-unanimous", topic: "council",
-    prompt: `Out of every 10 recorded City Council votes in the ${TERM.term.replace("-", "–")} term, how many were unanimous (everyone who voted, voting the same way)?`,
-    answer: (TERM.unanimous / TERM.votes) * 10,
+    prompt: `What percentage of recorded City Council votes in the ${TERM.term.replace("-", "–")} term were unanimous (everyone who voted, voting the same way)?`,
+    answer: (TERM.unanimous / TERM.votes) * 100, suffix: "%", decimals: 1,
     fact: `${n0(TERM.unanimous)} of ${n0(TERM.votes)} recorded votes were unanimous.`,
-    how: "Unanimous votes ÷ recorded votes × 10.",
+    how: "Unanimous votes ÷ recorded votes × 100.",
     href: `/council/${TERM.term}`, hrefLabel: `Council's ${TERM.term.replace("-", "–")} term`, sources: [TERM.source],
   },
   (() => {
@@ -641,21 +649,111 @@ function areaOf(href: string): string {
   return a;
 }
 
-function finish(level: Level, drafts: Draft[]): TodayQuestion[] {
-  const { min, max } = RANGES[level];
+
+// Mostly 1,000–10,000 answers (the fourth question).
+const MORE: Draft[] = [
+  (() => {
+    const p = last(H.rent2br);
+    return {
+      id: "rent-2br", topic: "rent",
+      prompt: `What was the average monthly rent for a two-bedroom apartment in the Toronto region in ${p.period}?`,
+      answer: p.value, prefix: "$",
+      fact: `$${n0(p.value)} a month, against $${n0(last(H.rent1br).value)} for a one-bedroom.`,
+      how: "The value as published.",
+      href: "/housing", hrefLabel: "Rents since 1992", sources: [H.rent2br.source],
+    };
+  })(),
+  {
+    id: "council-votes", topic: "council",
+    prompt: `How many recorded votes did City Council hold in the ${TERM.term.replace("-", "–")} term?`,
+    answer: TERM.votes,
+    fact: `${n0(TERM.votes)} recorded votes, ${n0(TERM.carried)} of them carried.`,
+    how: "Distinct recorded votes in the City's voting-record file for the term.",
+    href: `/council/${TERM.term}`, hrefLabel: `Council's ${TERM.term.replace("-", "–")} term`, sources: [TERM.source],
+  },
+  (() => {
+    const p = last(R.collisions_pedestrian);
+    return {
+      id: "collisions-pedestrian", topic: "collisions",
+      prompt: `How many traffic collisions involving a pedestrian were reported to Toronto police in ${p.period}?`,
+      answer: p.value,
+      fact: `${n0(p.value)} collisions involving a pedestrian, of ${n0(at(R.collisions_total, p.period).value)} in all.`,
+      how: "The count in the file for the year.",
+      href: "/road-safety", hrefLabel: "Collisions since 2014", sources: [R.collisions_pedestrian.source],
+    };
+  })(),
+  (() => {
+    const p = last(R.collisions_bicycle);
+    return {
+      id: "collisions-bicycle", topic: "collisions",
+      prompt: `How many traffic collisions involving a cyclist were reported to Toronto police in ${p.period}?`,
+      answer: p.value,
+      fact: `${n0(p.value)} collisions involving a cyclist.`,
+      how: "The count in the file for the year.",
+      href: "/road-safety", hrefLabel: "Collisions since 2014", sources: [R.collisions_bicycle.source],
+    };
+  })(),
+  (() => {
+    const p = last(H.adjustmentApps);
+    return {
+      id: "adjustment-apps", topic: "planning",
+      prompt: `How many applications did Toronto's Committee of Adjustment (minor variances to zoning, like a bigger addition) receive in ${p.period}?`,
+      answer: p.value,
+      fact: `${n0(p.value)} applications, against ${n0(at(H.planningApps, p.period).value)} Community Planning applications.`,
+      how: "The value as published.",
+      href: "/housing", hrefLabel: "Planning applications since 2007", sources: [H.adjustmentApps.source],
+    };
+  })(),
+  (() => {
+    const tax = group(POP_BUDGET, "revenue", "property-tax"), pop = population(POP_BUDGET.year)!;
+    return {
+      id: "propertytax-per-resident-year", topic: "property-tax",
+      prompt: `The City's ${POP_BUDGET.year} property tax works out to how much per resident for the year?`,
+      answer: tax / pop, prefix: "$",
+      fact: `${fmtMoney(tax)} ÷ ${n0(pop)} residents. It's paid on homes and businesses alike, so this is an average, not a bill.`,
+      how: `Property tax revenue in the ${POP_BUDGET.year} budget ÷ Statistics Canada's ${POP_BUDGET.year} population.`,
+      href: "/budget/comparable", hrefLabel: "Property tax by year", sources: [POP_BUDGET.source, POPULATION_SOURCE],
+    };
+  })(),
+  (() => {
+    const p = last(H.shelterBeds);
+    return {
+      id: "shelter-beds", topic: "shelter",
+      prompt: `How many beds did Toronto's shelter system have available, on an average night in ${fmtPeriod(p.period)}?`,
+      answer: p.value,
+      fact: `About ${n0(p.value)} beds (actual capacity), ${last(H.shelterOccBeds).value.toFixed(1)}% of them occupied. Families are mostly in rooms, counted separately.`,
+      how: "Average nightly bed capacity (actual) over the month.",
+      href: "/housing", hrefLabel: "The shelter system", sources: [H.shelterBeds.source],
+    };
+  })(),
+  (() => {
+    const p = last(C.reportedPer100k);
+    return {
+      id: "crime-per-100k", topic: "crime",
+      prompt: `How many crimes were reported to Toronto police in ${p.period} for every 100,000 residents?`,
+      answer: p.value,
+      fact: `About ${n0(p.value)} per 100,000; in ${C.reportedPer100k.points[0].period} it was ${n0(C.reportedPer100k.points[0].value!)}.`,
+      how: "Reported crimes ÷ population × 100,000.",
+      href: "/crime", hrefLabel: "Reported crime since 2014", sources: [C.reportedPer100k.source, ...(C.reportedPer100k.inputs ?? [])],
+    };
+  })(),
+];
+
+function finish(drafts: Draft[]): Record<Level, TodayQuestion[]> {
+  const out: Record<Level, TodayQuestion[]> = { 1: [], 2: [], 3: [], 4: [], 5: [] };
   const ids = new Set<string>();
-  return drafts.map(d => {
-    if (!Number.isFinite(d.answer) || d.answer < min || (max != null && d.answer > max)) {
-      throw new Error(`today: level ${level} question "${d.id}" has answer ${d.answer}, outside ${min}–${max ?? "∞"}`);
-    }
+  for (const d of drafts) {
+    if (!Number.isFinite(d.answer) || d.answer < 1) throw new Error(`today: question "${d.id}" has answer ${d.answer}`);
     if (ids.has(d.id)) throw new Error(`today: duplicate question id "${d.id}"`);
     ids.add(d.id);
-    return { ...d, level, area: areaOf(d.href), decimals: d.decimals ?? (level === 1 ? 1 : 0) };
-  });
+    const level = levelOf(d.answer);
+    out[level].push({ ...d, level, area: areaOf(d.href), decimals: d.decimals ?? (level === 1 ? 1 : 0) });
+  }
+  // Each level needs enough questions that a day's five can always avoid repeating a topic or area.
+  for (const l of [1, 2, 3, 4, 5] as Level[]) {
+    if (out[l].length < 8) throw new Error(`today: level ${l} has only ${out[l].length} questions: ${out[l].map(q => q.id).join(", ")}`);
+  }
+  return out;
 }
 
-export const QUESTIONS: Record<Level, TodayQuestion[]> = {
-  1: finish(1, LEVEL_1),
-  2: finish(2, LEVEL_2),
-  3: finish(3, LEVEL_3),
-};
+export const QUESTIONS = finish([...LEVEL_1, ...LEVEL_2, ...LEVEL_3, ...MORE]);

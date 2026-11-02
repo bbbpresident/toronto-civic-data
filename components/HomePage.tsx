@@ -50,7 +50,7 @@ function GameBanner({ compact = false }: { compact?: boolean }) {
       <div style={{ minWidth: 0, flex: "1 1 220px" }}>
         <div style={{ ...kicker, color: "var(--s6)" }}>Daily game</div>
         <div style={{ fontSize: compact ? 20 : 26, fontWeight: 800, letterSpacing: "-0.02em", margin: "4px 0" }}>TOday</div>
-        <div style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.5 }}>Three questions about Toronto, new every day. How close can you get to 30?</div>
+        <div style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.5 }}>Five questions about Toronto, 60 seconds each. Climb the CN Tower to 5,000.</div>
       </div>
       <div aria-hidden style={{ display: "flex", gap: 6 }}>
         {["Q1", "Q2", "Q3"].map((q, i) => (

@@ -4,26 +4,19 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { DataSourceCitation } from "@/components/SourceCitation";
 import type { Level, TodayQuestion } from "@/lib/today";
+import { TIERS, mark, score, tierOf } from "@/lib/today-rules";
 
-// TOday: three questions a day, one per level, the same for everyone. Today's questions are picked
-// from the generated bank by the date in Toronto; guesses are kept in this browser only.
+// TOday: five questions a day, one per level (answers 1–10, –100, –1,000, –10,000, uncapped), 60
+// seconds each, the same for everyone. Up to 1,000 points a question, 5,000 a day, and a tier.
+// Today's questions are picked from the generated bank by the date in Toronto; guesses and the
+// question timers are kept in this browser only.
 
-const LEVELS: Level[] = [1, 2, 3];
-const LEVEL_RANGE: Record<Level, string> = { 1: "1 to 10", 2: "1 to 1,000", 3: "No limit" };
-const STORAGE_KEY = "today:v1";
-
-// ── Scoring: 1–10 a level, 30 a day ─────────────────────────────────────────
-
-/** Level 1 is scored on distance (each 0.5 off costs a point); levels 2 and 3 on ratio, because
- *  being off by 50 means little at 5,000 and a lot at 60. Level 2 bottoms out at 4× off, level 3 at 10×. */
-export function score(level: Level, guess: number, answer: number): number {
-  const raw = level === 1
-    ? 10 - 2 * Math.abs(guess - answer)
-    : 10 - (9 * Math.abs(Math.log(guess / answer))) / Math.log(level === 2 ? 4 : 10);
-  return Math.min(10, Math.max(1, Math.round(raw)));
-}
-
-const mark = (s: number) => (s === 10 ? "🎯" : s >= 8 ? "🟩" : s >= 5 ? "🟨" : "🟥");
+const LEVELS: Level[] = [1, 2, 3, 4, 5];
+const LEVEL_RANGE: Record<Level, string> = { 1: "1 to 10", 2: "1 to 100", 3: "1 to 1,000", 4: "1 to 10,000", 5: "No limit" };
+const LEVEL_MAX: Record<Level, number | null> = { 1: 10, 2: 100, 3: 1000, 4: 10000, 5: null };
+const SECONDS = 60;
+const MAX = 5000;
+const STORAGE_KEY = "today:v2";
 
 // ── The day ─────────────────────────────────────────────────────────────────
 
@@ -71,21 +64,25 @@ function questionsFor(bank: Record<Level, TodayQuestion[]>, n: number): TodayQue
   return day;
 }
 
-// ── Saved plays (this browser only) ─────────────────────────────────────────
+// ── Saved plays and timers (this browser only) ──────────────────────────────
 
-type Plays = Record<string, number[]>;
+/** day → guesses so far (null = time ran out with nothing entered); day → when each question was first shown. */
+interface Saved { plays: Record<string, (number | null)[]>; starts: Record<string, number[]> }
 
-function loadPlays(): Plays {
-  try { return JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "{}").plays ?? {}; } catch { return {}; }
+function load(): Saved {
+  try {
+    const v = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "{}");
+    return { plays: v.plays ?? {}, starts: v.starts ?? {} };
+  } catch { return { plays: {}, starts: {} }; }
 }
-function savePlays(plays: Plays) {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ plays })); } catch { /* private mode: play still works, just isn't kept */ }
+function save(s: Saved) {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); } catch { /* private mode: play still works, just isn't kept */ }
 }
 
 /** Days in a row finished, ending today (or yesterday, if today isn't finished yet). */
-function streak(plays: Plays, today: number): number {
-  let d = plays[today]?.length === 3 ? today : today - 1, n = 0;
-  while (plays[d]?.length === 3) { n++; d--; }
+function streak(plays: Saved["plays"], today: number): number {
+  let d = plays[today]?.length === 5 ? today : today - 1, n = 0;
+  while (plays[d]?.length === 5) { n++; d--; }
   return n;
 }
 
@@ -98,6 +95,7 @@ function fmt(q: TodayQuestion, v: number, decimals = q.decimals): string {
     : v.toLocaleString("en-CA", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
   return `${q.prefix ?? ""}${body}${q.suffix ?? ""}`;
 }
+const fmtGuess = (q: TodayQuestion, g: number | null) => (g == null ? "No answer" : fmt(q, g, q.level === 1 || q.suffix === "%" ? 1 : 0));
 
 const MULT: Record<string, number> = { k: 1e3, thousand: 1e3, m: 1e6, mil: 1e6, million: 1e6, b: 1e9, bn: 1e9, billion: 1e9 };
 
@@ -124,22 +122,43 @@ const input: React.CSSProperties = {
   background: "var(--surface-2)", color: "var(--text-primary)", width: "100%", minWidth: 0, fontVariantNumeric: "tabular-nums",
 };
 
-function Guess({ q, onSubmit }: { q: TodayQuestion; onSubmit: (v: number) => void }) {
+/** One question's input with its 60-second clock. When time runs out, whatever valid answer is entered is
+ *  submitted (the 1–10 slider always has one); otherwise the question is submitted with no answer. */
+function Guess({ q, startedAt, onSubmit }: { q: TodayQuestion; startedAt: number; onSubmit: (v: number | null) => void }) {
   const [v1, setV1] = useState(5.5);
   const [text, setText] = useState("");
+  const [now, setNow] = useState(() => Date.now());
+  const max = LEVEL_MAX[q.level];
   const parsed = q.level === 1 ? v1 : parseAmount(text);
-  const inRange = parsed != null && parsed >= 1 && (q.level !== 2 || parsed <= 1000) && (q.level !== 1 || parsed <= 10);
+  const inRange = parsed != null && parsed >= 1 && (max == null || parsed <= max);
+  const left = Math.max(0, SECONDS - Math.floor((now - startedAt) / 1000));
+  const done = useRef(false);
+  const submit = (v: number | null) => { if (!done.current) { done.current = true; onSubmit(v); } };
+
+  useEffect(() => {
+    const t = setInterval(() => setNow(Date.now()), 250);
+    return () => clearInterval(t);
+  }, []);
+  useEffect(() => {
+    if (left === 0 && !done.current) { done.current = true; onSubmit(inRange ? parsed : null); }
+  }, [left, inRange, parsed, onSubmit]);
+
   const id = `guess-${q.level}`;
   const affix = (s?: string) => s && <span style={{ fontSize: 22, fontWeight: 700, color: "var(--text-secondary)" }}>{s}</span>;
+  const urgent = left <= 10;
 
   return (
-    <form onSubmit={e => { e.preventDefault(); if (inRange) onSubmit(parsed!); }} style={{ display: "grid", gap: 12, marginTop: 14 }}>
+    <form onSubmit={e => { e.preventDefault(); if (inRange) submit(parsed!); }} style={{ display: "grid", gap: 12, marginTop: 14 }}>
+      <div role="timer" aria-live={urgent ? "assertive" : "off"} aria-label={`${left} seconds left`} style={{ display: "flex", alignItems: "center", gap: 10 }}>
+        <div aria-hidden style={{ flex: 1, height: 6, borderRadius: 3, background: "var(--surface-2)", overflow: "hidden" }}>
+          <div style={{ height: "100%", width: `${(left / SECONDS) * 100}%`, background: urgent ? "#ef4444" : "var(--blue)", transition: "width 250ms linear" }} />
+        </div>
+        <span style={{ fontSize: 14, fontWeight: 800, fontVariantNumeric: "tabular-nums", color: urgent ? "#ef4444" : "var(--text-primary)", minWidth: 34, textAlign: "right" }}>{left}s</span>
+      </div>
       <label htmlFor={id} style={{ ...kicker, letterSpacing: "0.04em" }}>Your guess ({LEVEL_RANGE[q.level].toLowerCase()})</label>
       {q.level === 1 ? (
         <>
-          <div style={{ fontSize: 40, fontWeight: 800, letterSpacing: "-0.03em", fontVariantNumeric: "tabular-nums", textAlign: "center" }} aria-hidden>
-            {fmt(q, v1, 1)}
-          </div>
+          <div style={{ fontSize: 40, fontWeight: 800, letterSpacing: "-0.03em", fontVariantNumeric: "tabular-nums", textAlign: "center" }} aria-hidden>{fmt(q, v1, 1)}</div>
           <input id={id} type="range" min={1} max={10} step={0.1} value={v1} onChange={e => setV1(+e.target.value)}
             aria-valuetext={fmt(q, v1, 1)} style={{ width: "100%", accentColor: "var(--blue)" }} />
           <div style={{ display: "flex", justifyContent: "space-between", fontSize: 11, color: "var(--text-secondary)", marginTop: -6 }}><span>1</span><span>10</span></div>
@@ -148,21 +167,21 @@ function Guess({ q, onSubmit }: { q: TodayQuestion; onSubmit: (v: number) => voi
         <>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             {affix(q.prefix)}
-            <input id={id} inputMode={q.level === 2 ? "decimal" : "text"} autoComplete="off" value={text} onChange={e => setText(e.target.value)}
-              placeholder={q.level === 2 ? "e.g. 250" : "e.g. 2.5 million"} style={input} />
+            <input id={id} autoFocus inputMode={q.level <= 3 ? "decimal" : "text"} autoComplete="off" value={text} onChange={e => setText(e.target.value)}
+              placeholder={q.level === 2 ? "e.g. 45" : q.level === 3 ? "e.g. 250" : q.level === 4 ? "e.g. 2,500" : "e.g. 2.5 million"} style={input} />
             {affix(q.suffix)}
           </div>
-          {q.level === 2 && (
-            <input type="range" aria-label="Guess slider, 1 to 1,000" min={0} max={3} step={0.001}
-              value={parsed != null && parsed >= 1 ? Math.min(3, Math.log10(parsed)) : 0}
+          {max != null && (
+            <input type="range" aria-label={`Guess slider, ${LEVEL_RANGE[q.level]}`} min={0} max={Math.log10(max)} step={0.001}
+              value={parsed != null && parsed >= 1 ? Math.min(Math.log10(max), Math.log10(parsed)) : 0}
               onChange={e => { const v = 10 ** +e.target.value; setText(String(v < 10 ? +v.toFixed(1) : Math.round(v))); }}
               style={{ width: "100%", accentColor: "var(--blue)" }} />
           )}
           <div style={{ fontSize: 12, color: "var(--text-secondary)", minHeight: 18 }} aria-live="polite">
-            {text.trim() === "" ? (q.level === 3 ? "Shorthand works: 450k, 2.5m, 1.2b." : "")
+            {text.trim() === "" ? (q.level >= 4 ? "Shorthand works: 4.5k, 2.5m, 1.2b." : "")
               : parsed == null ? "That isn't a number we can read."
               : !inRange ? `Enter a number from ${LEVEL_RANGE[q.level].toLowerCase()}.`
-              : q.level === 3 ? `= ${fmt(q, parsed, 0)}${parsed >= 1e6 ? ` (${(q.prefix ?? "") + Math.round(parsed).toLocaleString("en-CA")})` : ""}` : ""}
+              : parsed >= 1000 ? `= ${fmt(q, parsed, 0)}` : ""}
           </div>
         </>
       )}
@@ -173,102 +192,69 @@ function Guess({ q, onSubmit }: { q: TodayQuestion; onSubmit: (v: number) => voi
   );
 }
 
-// ── The reveal: three columns, one at a time ────────────────────────────────
+// ── The ending: climb the CN Tower ──────────────────────────────────────────
 
-const GUESS = "#ef4444";
-const GRADES: [number, string, string][] = [
-  [30, "A+", "A perfect day."], [26, "A", "You know this city."], [22, "B", "Solid."],
-  [18, "C", "Not bad at all."], [13, "D", "Now you know a bit more."], [0, "F", "Tomorrow's a new day."],
-];
-const grade = (total: number) => GRADES.find(([min]) => total >= min)!;
-
-/** Wait before each step: per column, the guess mark, the rise, the score; then the grade. */
-const STEP_MS = [500, 700, 1600, 450, 700, 1600, 450, 700, 1600, 700];
-const LAST_STEP = STEP_MS.length;
-const RISE_MS = 1400;
-
-function niceCeil(v: number): number {
-  const p = 10 ** Math.floor(Math.log10(v));
-  return [1, 1.2, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10].map(m => m * p).find(x => x >= v)!;
-}
-
-/** Axis labels: $1.2B, 450K, 7.5× */
-function compact(q: TodayQuestion, v: number): string {
-  const a = Math.abs(v);
-  const body = a >= 1e9 ? `${+(v / 1e9).toFixed(1)}B` : a >= 1e6 ? `${+(v / 1e6).toFixed(1)}M` : a >= 1e4 ? `${+(v / 1e3).toFixed(0)}K` : `${+v.toFixed(1)}`;
-  return `${q.prefix ?? ""}${body}${q.suffix ?? ""}`;
-}
-
-function Column({ n, q, guess, step }: { n: number; q: TodayQuestion; guess: number; step: number }) {
-  const base = 3 * n;
-  const showGuess = step > base, risen = step > base + 1, scored = step > base + 2;
-  const top = q.level === 1 ? 10 : niceCeil(Math.max(guess, q.answer) * 1.1);
-  const pct = (v: number) => `${(v / top) * 100}%`;
-  const s = score(q.level, guess, q.answer);
-  const tickStyle: React.CSSProperties = { position: "absolute", left: 0, transform: "translateY(50%)", fontSize: 9, color: "var(--text-secondary)", fontVariantNumeric: "tabular-nums", whiteSpace: "nowrap" };
+/** The tower's silhouette in a 120 × 400 box: antenna, SkyPod, main pod, the tapering shaft and its base. */
+function TowerShape() {
   return (
-    <div style={{ minWidth: 0, display: "flex", flexDirection: "column", alignItems: "stretch" }}
-      aria-label={scored ? `Question ${n + 1}: answer ${fmt(q, q.answer)}, you said ${fmt(q, guess, q.level === 1 ? 1 : 0)}, ${s} out of 10` : undefined}>
-      <div style={{ textAlign: "center", marginBottom: 8 }}>
-        <div style={{ fontSize: 16, fontWeight: 800 }}>Q{n + 1}</div>
-        <div style={{ fontSize: 10, color: "var(--text-secondary)" }}>{LEVEL_RANGE[q.level]}</div>
-      </div>
-      <div aria-hidden style={{ position: "relative", height: 220, marginLeft: 4 }}>
-        {[0, 0.5, 1].map(f => (
-          <div key={f}>
-            <div style={{ position: "absolute", left: 30, right: 0, bottom: `${f * 100}%`, height: 1, background: "var(--border)" }} />
-            <span style={{ ...tickStyle, bottom: `${f * 100}%` }}>{compact(q, top * f)}</span>
-          </div>
-        ))}
-        <div style={{ position: "absolute", left: 30, right: 0, top: 0, bottom: 0, display: "flex", justifyContent: "center" }}>
-          {/* The answer: rises from the bottom of the scale. */}
-          <div style={{
-            position: "absolute", bottom: 0, width: "46%", maxWidth: 44, borderRadius: "4px 4px 0 0", background: "var(--s1)",
-            height: risen ? pct(q.answer) : "0%", transition: `height ${RISE_MS}ms cubic-bezier(.25,.8,.25,1)`,
-          }} />
-          {/* The guess: a red mark across the column. */}
-          <div style={{
-            position: "absolute", left: 0, right: 0, bottom: pct(Math.min(guess, top)), height: 3, marginBottom: -1.5, borderRadius: 2,
-            background: GUESS, boxShadow: "0 0 0 2px var(--surface)", opacity: showGuess ? 1 : 0, transform: showGuess ? "scaleX(1)" : "scaleX(0.3)",
-            transition: "opacity 300ms, transform 300ms",
-          }} />
-        </div>
-      </div>
-      <div style={{ textAlign: "center", marginTop: 10, minHeight: 74, display: "grid", gap: 2, alignContent: "start" }}>
-        <div style={{ fontSize: 12, color: GUESS, fontWeight: 700, opacity: showGuess ? 1 : 0, transition: "opacity 300ms", overflowWrap: "anywhere" }}>
-          You: {fmt(q, guess, q.level === 1 ? 1 : 0)}
-        </div>
-        <div style={{ fontSize: 15, fontWeight: 800, opacity: risen ? 1 : 0, transition: `opacity 400ms ${RISE_MS - 300}ms`, overflowWrap: "anywhere", fontVariantNumeric: "tabular-nums" }}>
-          {fmt(q, q.answer)}
-        </div>
-        <div style={{ fontSize: 14, fontWeight: 800, opacity: scored ? 1 : 0, transform: scored ? "scale(1)" : "scale(0.6)", transition: "opacity 250ms, transform 250ms" }}>
-          {mark(s)} {s}/10
-        </div>
-      </div>
-    </div>
+    <>
+      <rect x={58.5} y={6} width={3} height={64} rx={1.5} />
+      <rect x={53} y={68} width={14} height={12} rx={4} />
+      <rect x={55} y={78} width={10} height={76} />
+      <rect x={34} y={150} width={52} height={14} rx={7} />
+      <rect x={38} y={162} width={44} height={24} rx={10} />
+      <polygon points="53,184 67,184 75,362 45,362" />
+      <polygon points="45,360 75,360 88,392 32,392" />
+    </>
   );
 }
 
-function Results({ day, qs, guesses, plays, animate }: { day: number; qs: TodayQuestion[]; guesses: number[]; plays: Plays; animate: boolean }) {
-  const [step, setStep] = useState(() => (animate ? 0 : LAST_STEP));
-  const [run, setRun] = useState(0);
+const STEP_MS = 1500;
+
+function Tower({ fill, tierLine }: { fill: number; tierLine: number | null }) {
+  const H = 386, top = 6, y = top + H * (1 - Math.min(1, fill / MAX));
+  return (
+    <svg viewBox="0 0 120 400" width="100%" style={{ maxWidth: 150, display: "block", margin: "0 auto", overflow: "visible" }} aria-hidden>
+      <defs>
+        <clipPath id="cn-clip"><TowerShape /></clipPath>
+        <linearGradient id="cn-fill" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stopColor="var(--s1)" />
+          <stop offset="1" stopColor="var(--s6)" />
+        </linearGradient>
+      </defs>
+      <g fill="var(--surface-2)" stroke="var(--border)" strokeWidth={1}><TowerShape /></g>
+      <g clipPath="url(#cn-clip)">
+        <rect x={0} width={120} y={y} height={400 - y} fill="url(#cn-fill)" style={{ transition: `y ${STEP_MS - 300}ms cubic-bezier(.3,.8,.3,1), height ${STEP_MS - 300}ms cubic-bezier(.3,.8,.3,1)` }} />
+      </g>
+      {TIERS.filter(t => t.min > 0 && t.min < MAX).map(t => {
+        const ty = top + H * (1 - t.min / MAX);
+        return <line key={t.min} x1={96} x2={tierLine != null && tierLine >= t.min ? 108 : 102} y1={ty} y2={ty} stroke={tierLine != null && tierLine >= t.min ? "var(--s6)" : "var(--border)"} strokeWidth={1.5} />;
+      })}
+    </svg>
+  );
+}
+
+function Results({ day, qs, guesses, plays, animate }: { day: number; qs: TodayQuestion[]; guesses: (number | null)[]; plays: Saved["plays"]; animate: boolean }) {
   const scores = qs.map((q, i) => score(q.level, guesses[i], q.answer));
   const total = scores.reduce((a, b) => a + b, 0);
-  const [, letter, line] = grade(total);
-  const done = step >= LAST_STEP;
-
+  const tier = tierOf(total);
+  // step k (0–5): k questions scored; 6: the tier is shown.
+  const [step, setStep] = useState(() => (animate ? 0 : 6));
+  const [run, setRun] = useState(0);
   useEffect(() => {
-    if (step >= LAST_STEP) return;
+    if (step >= 6) return;
     const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const t = setTimeout(() => setStep(x => (still ? LAST_STEP : x + 1)), still ? 0 : STEP_MS[step]);
+    const t = setTimeout(() => setStep(x => (still ? 6 : x + 1)), still ? 0 : step === 0 ? 500 : STEP_MS);
     return () => clearTimeout(t);
   }, [step, run]);
+  const scored = Math.min(step, 5);
+  const climbed = scores.slice(0, scored).reduce((a, b) => a + b, 0);
+  const done = step >= 6;
 
   const [copied, setCopied] = useState(false);
   const [now, setNow] = useState(() => new Date());
   useEffect(() => { const t = setInterval(() => setNow(new Date()), 30_000); return () => clearInterval(t); }, []);
-  const text = `TOday #${day} · ${letter} · ${total}/30\n${scores.map(mark).join(" ")}\n${typeof window !== "undefined" ? `${window.location.origin}/today` : ""}`;
-
+  const text = `TOday #${day} · ${tier.name} · ${total.toLocaleString("en-CA")}/5,000\n${scores.map(mark).join("")}\n${typeof window !== "undefined" ? `${window.location.origin}/today` : ""}`;
   async function share() {
     try {
       if (navigator.share && matchMedia("(pointer: coarse)").matches) await navigator.share({ text });
@@ -279,55 +265,73 @@ function Results({ day, qs, guesses, plays, animate }: { day: number; qs: TodayQ
 
   return (
     <>
-      <section style={card} aria-label="Your answers against the real ones">
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 12, marginBottom: 14 }}>
-          <span style={kicker}>The answers</span>
-          <span style={{ fontSize: 11, color: "var(--text-secondary)", display: "flex", gap: 12 }}>
-            <span><span style={{ display: "inline-block", width: 12, height: 3, background: GUESS, verticalAlign: "middle", marginRight: 4 }} />You</span>
-            <span><span style={{ display: "inline-block", width: 10, height: 10, background: "var(--s1)", borderRadius: 2, verticalAlign: "middle", marginRight: 4 }} />Answer</span>
-          </span>
+      <section style={{ ...card, padding: "20px 18px" }} aria-label="Your score">
+        <div style={{ textAlign: "center", minHeight: 96, opacity: done ? 1 : 0, transform: done ? "none" : "translateY(6px)", transition: "opacity 400ms, transform 400ms" }} aria-live="polite">
+          {done && <>
+            <div style={kicker}>Today&apos;s tier</div>
+            <div style={{ fontSize: "clamp(26px, 7vw, 40px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.1, margin: "4px 0" }}>{tier.name}</div>
+            <div style={{ fontSize: 14, color: "var(--text-secondary)" }}>{tier.line}</div>
+          </>}
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: 10 }}>
-          {qs.map((q, i) => <Column key={`${q.id}-${run}`} n={i} q={q} guess={guesses[i]} step={step} />)}
+        <div style={{ display: "grid", gridTemplateColumns: "minmax(90px, 150px) minmax(0, 1fr)", gap: 16, alignItems: "end", marginTop: 8 }}>
+          <div>
+            <Tower key={run} fill={climbed} tierLine={done ? total : null} />
+            <div style={{ textAlign: "center", marginTop: 6, fontSize: 20, fontWeight: 900, fontVariantNumeric: "tabular-nums" }}>
+              {climbed.toLocaleString("en-CA")}<span style={{ fontSize: 12, color: "var(--text-secondary)" }}> / 5,000</span>
+            </div>
+          </div>
+          <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: 8 }}>
+            {qs.map((q, i) => {
+              const shown = i < scored;
+              return (
+                <li key={`${q.id}-${run}`} style={{ border: "1px solid var(--border)", borderRadius: 10, padding: "8px 10px", background: "var(--surface-2)",
+                  opacity: shown ? 1 : 0.25, transform: shown ? "none" : "translateX(6px)", transition: "opacity 350ms, transform 350ms" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", gap: 8, alignItems: "baseline" }}>
+                    <span style={{ fontSize: 12, fontWeight: 800 }}>Q{i + 1} <span style={{ fontWeight: 500, color: "var(--text-secondary)" }}>{LEVEL_RANGE[q.level]}</span></span>
+                    <span style={{ fontSize: 13, fontWeight: 900, fontVariantNumeric: "tabular-nums" }}>{shown ? `+${scores[i].toLocaleString("en-CA")}` : "…"}</span>
+                  </div>
+                  {shown && (
+                    <div style={{ fontSize: 12, marginTop: 2, display: "flex", flexWrap: "wrap", gap: "0 10px", fontVariantNumeric: "tabular-nums" }}>
+                      <span>Answer <strong>{fmt(q, q.answer)}</strong></span>
+                      <span style={{ color: "#ef4444" }}>You {fmtGuess(q, guesses[i])}</span>
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
         </div>
-        <p style={{ fontSize: 11, color: "var(--text-secondary)", margin: "10px 0 0", lineHeight: 1.5 }}>Each column has its own scale, starting at zero.</p>
       </section>
 
-      <section style={{ ...card, textAlign: "center", padding: "22px 18px", opacity: done ? 1 : 0, transform: done ? "none" : "translateY(8px)", transition: "opacity 400ms, transform 400ms" }}
-        aria-live="polite" aria-hidden={!done}>
-        {done && <>
-          <div style={kicker}>Today&apos;s grade</div>
-          <div style={{ fontSize: 64, fontWeight: 900, letterSpacing: "-0.04em", lineHeight: 1.05, margin: "6px 0 0" }}>{letter}</div>
-          <div style={{ fontSize: 18, fontWeight: 700, fontVariantNumeric: "tabular-nums" }}>
-            {total}<span style={{ color: "var(--text-secondary)" }}>/30</span> <span style={{ letterSpacing: 4, marginLeft: 6 }}>{scores.map(mark).join("")}</span>
+      {done && (
+        <section style={{ ...card, textAlign: "center" }}>
+          <div style={{ fontSize: 22, letterSpacing: 4 }} aria-label={scores.map((x, i) => `Question ${i + 1}: ${x} points`).join(", ")}>{scores.map(mark).join("")}</div>
+          <div style={{ fontSize: 13, color: "var(--text-secondary)", marginTop: 6 }}>
+            {s > 1 && <>🔥 {s}-day streak. </>}New questions in {untilMidnight(now)}.
           </div>
-          <div style={{ fontSize: 13, color: "var(--text-secondary)", marginTop: 8 }}>
-            {line} {s > 1 && <>🔥 {s}-day streak. </>}New questions in {untilMidnight(now)}.
-          </div>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginTop: 14 }}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginTop: 12 }}>
             <button type="button" onClick={share} style={button}>{copied ? "Copied" : "Share your score"}</button>
             <button type="button" onClick={() => { setStep(0); setRun(r => r + 1); }}
               style={{ ...button, background: "transparent", color: "var(--text-primary)", border: "1px solid var(--border)" }}>
-              Replay the reveal
+              Replay the climb
             </button>
           </div>
-        </>}
-      </section>
+        </section>
+      )}
 
-      {done && qs.map((q, i) => <Details key={q.id} n={i} q={q} guess={guesses[i]} />)}
+      {done && qs.map((q, i) => <Details key={q.id} n={i} q={q} guess={guesses[i]} points={scores[i]} />)}
     </>
   );
 }
 
 /** One question's answer in words, with its fact, a link into the site and its sources. */
-function Details({ n, q, guess }: { n: number; q: TodayQuestion; guess: number }) {
-  const s = score(q.level, guess, q.answer);
+function Details({ n, q, guess, points }: { n: number; q: TodayQuestion; guess: number | null; points: number }) {
   const exact = q.answer >= 1e6 ? `${q.prefix ?? ""}${Math.round(q.answer).toLocaleString("en-CA")}` : null;
   return (
     <details className="td-reveal" style={card}>
       <summary style={{ listStyle: "none", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 12 }}>
         <span style={{ fontSize: 14, lineHeight: 1.45 }}><strong>Q{n + 1}.</strong> {q.prompt}</span>
-        <span style={{ fontSize: 14, fontWeight: 800, whiteSpace: "nowrap", fontVariantNumeric: "tabular-nums" }}>{s}/10 ▾</span>
+        <span style={{ fontSize: 14, fontWeight: 800, whiteSpace: "nowrap", fontVariantNumeric: "tabular-nums" }}>{points.toLocaleString("en-CA")} ▾</span>
       </summary>
       <div style={{ display: "flex", flexWrap: "wrap", gap: "4px 20px", alignItems: "baseline", marginTop: 10 }}>
         <div>
@@ -336,7 +340,7 @@ function Details({ n, q, guess }: { n: number; q: TodayQuestion; guess: number }
         </div>
         <div>
           <div style={{ fontSize: 11, color: "var(--text-secondary)" }}>You said</div>
-          <div style={{ fontSize: 17, fontWeight: 700, color: GUESS, fontVariantNumeric: "tabular-nums" }}>{fmt(q, guess, q.level === 1 ? 1 : 0)}</div>
+          <div style={{ fontSize: 17, fontWeight: 700, color: "#ef4444", fontVariantNumeric: "tabular-nums" }}>{fmtGuess(q, guess)}</div>
         </div>
       </div>
       {exact && <div style={{ fontSize: 11, color: "var(--text-secondary)", marginTop: 2 }}>Exactly {exact}</div>}
@@ -357,59 +361,67 @@ function Details({ n, q, guess }: { n: number; q: TodayQuestion; guess: number }
 
 export default function TodayGame({ bank, launch }: { bank: Record<Level, TodayQuestion[]>; launch: string }) {
   const [day, setDay] = useState<number | null>(null);
-  const [plays, setPlays] = useState<Plays>({});
-  const topRef = useRef<HTMLDivElement>(null);
-  /** Only a game finished on this visit plays the reveal; reopening the page shows the result. */
+  const [saved, setSaved] = useState<Saved>({ plays: {}, starts: {} });
+  /** Only a game finished on this visit plays the climb; reopening the page shows the result. */
   const [finishedNow, setFinishedNow] = useState(false);
+  const topRef = useRef<HTMLDivElement>(null);
 
   // The date and saved plays exist only in the browser, so the game renders after mount.
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setDay(dayNumber(launch, new Date()));
-    setPlays(loadPlays());
+    setSaved(load());
   }, [launch]);
 
   const qs = useMemo(() => (day == null ? [] : questionsFor(bank, day)), [bank, day]);
-  const guesses = day == null ? [] : plays[day] ?? [];
+  const guesses = day == null ? [] : saved.plays[day] ?? [];
+  const current = day != null && guesses.length < 5 ? qs[guesses.length] : null;
+  const startedAt = day != null && current ? saved.starts[day]?.[guesses.length] : undefined;
+
+  // Start the current question's clock the first time it's shown (kept, so reloading doesn't reset it).
+  useEffect(() => {
+    if (day == null || !current || startedAt != null) return;
+    const next: Saved = { ...saved, starts: { ...saved.starts, [day]: [...(saved.starts[day] ?? []), Date.now()] } };
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setSaved(next);
+    save(next);
+  }, [day, current, startedAt, saved]);
 
   if (day == null) return <div style={{ ...card, color: "var(--text-secondary)", fontSize: 13 }}>Loading today&apos;s questions…</div>;
 
-  function answer(v: number) {
-    const next: Plays = { ...plays, [day!]: [...guesses, v] };
-    if (next[day!].length === 3) setFinishedNow(true);
-    setPlays(next);
-    savePlays(next);
+  function answer(v: number | null) {
+    const next: Saved = { ...saved, plays: { ...saved.plays, [day!]: [...guesses, v] } };
+    if (next.plays[day!].length === 5) setFinishedNow(true);
+    setSaved(next);
+    save(next);
     topRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  const current = guesses.length < 3 ? qs[guesses.length] : null;
   return (
     <div ref={topRef} style={{ display: "grid", gap: 12, scrollMarginTop: 16 }}>
       <style>{`.td-reveal > summary::-webkit-details-marker{display:none}`}</style>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 13, color: "var(--text-secondary)" }}>
         <span>Game #{day}</span>
-        <span style={{ display: "flex", gap: 6, alignItems: "center" }} aria-label={current ? `Question ${guesses.length + 1} of 3` : "Done for today"}>
-          {[0, 1, 2].map(i => (
-            <span key={i} style={{
-              width: 26, height: 6, borderRadius: 3,
-              background: i < guesses.length ? "var(--blue)" : i === guesses.length && current ? "var(--text-secondary)" : "var(--border)",
-            }} />
+        <span style={{ display: "flex", gap: 5, alignItems: "center" }} aria-label={current ? `Question ${guesses.length + 1} of 5` : "Done for today"}>
+          {LEVELS.map((_, i) => (
+            <span key={i} style={{ width: 20, height: 6, borderRadius: 3,
+              background: i < guesses.length ? "var(--blue)" : i === guesses.length && current ? "var(--text-secondary)" : "var(--border)" }} />
           ))}
         </span>
       </div>
       {current ? (
         <section style={card} aria-labelledby="td-q">
-          <div style={kicker}>Question {guesses.length + 1} of 3 · {LEVEL_RANGE[current.level]}</div>
+          <div style={kicker}>Question {guesses.length + 1} of 5 · {LEVEL_RANGE[current.level]}</div>
           <h2 id="td-q" style={{ fontSize: 19, fontWeight: 700, lineHeight: 1.4, margin: "8px 0 0" }}>{current.prompt}</h2>
-          <Guess key={current.id} q={current} onSubmit={answer} />
+          {startedAt != null && <Guess key={current.id} q={current} startedAt={startedAt} onSubmit={answer} />}
           {guesses.length > 0 && (
             <p style={{ fontSize: 12, color: "var(--text-secondary)", margin: "14px 0 0" }}>
-              Locked in: {guesses.map((g, i) => `Q${i + 1} ${fmt(qs[i], g, qs[i].level === 1 ? 1 : 0)}`).join(" · ")}. Answers at the end.
+              Locked in: {guesses.map((g, i) => `Q${i + 1} ${fmtGuess(qs[i], g)}`).join(" · ")}. Answers at the end.
             </p>
           )}
         </section>
       ) : (
-        <Results day={day} qs={qs} guesses={guesses} plays={plays} animate={finishedNow} />
+        <Results day={day} qs={qs} guesses={guesses} plays={saved.plays} animate={finishedNow} />
       )}
     </div>
   );
