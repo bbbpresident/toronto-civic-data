@@ -20,19 +20,16 @@ export function score(level: Level, guess: number | null, answer: number): numbe
 
 export const mark = (s: number) => (s >= 950 ? "🎯" : s >= 750 ? "🟩" : s >= 450 ? "🟨" : s > 0 ? "🟥" : "⬛");
 
-/** The day's tier by total score. The bottom few roast you; the top ones are Toronto slang that praise you. */
+/** The day's tier by total score, in the user's words (2026-11-02): the bottom ones roast you, the top ones hype you up. */
 export const TIERS: { min: number; name: string; line: string }[] = [
-  { min: 5000, name: "You Are the 6ix", line: "A perfect day. The city is you." },
-  { min: 4500, name: "6ix God", line: "You run the city." },
-  { min: 4000, name: "Wallahi, Different", line: "That score is different." },
-  { min: 3500, name: "Say Less", line: "You know your city. Respect." },
-  { min: 3000, name: "Certified 416", line: "Real Torontonian behaviour." },
-  { min: 2500, name: "Bare Decent", line: "You know a ting or two about this city." },
-  { min: 2000, name: "Mans Is Trying", line: "Halfway there, ahlie?" },
-  { min: 1500, name: "Tourist", line: "You sure you didn't just land at Pearson?" },
-  { min: 1000, name: "Left-Side Escalator Stander", line: "Everyone behind you is cheesed." },
-  { min: 500, name: "Waste Yute", line: "Silly. Go look at a map of the city." },
-  { min: 0, name: "Wasteman", line: "Nize it. That was rough, styll." },
+  { min: 5000, name: "????", line: "olivia chow said come reach. you da next mayor fo sho" },
+  { min: 4500, name: "kinda sus", line: "you a nerd or something?" },
+  { min: 4000, name: "wallahi", line: "that's how you're moving? sheeeesh" },
+  { min: 3500, name: "say less", line: "my man with the literacy still" },
+  { min: 3000, name: "lowkey a baddie", line: "you're out here lookin sweet. keep doing you." },
+  { min: 2000, name: "yeah eh?", line: "my mans with the 8th grade wisdom. I see you." },
+  { min: 1000, name: "you finna link up?", line: "at the library. phone down. notebook out. educate yourself brudda" },
+  { min: 0, name: "dunno fam", line: "I do not know you, and you don't know shit. excuse yourself." },
 ];
 export const tierOf = (total: number) => TIERS.find(t => total >= t.min)!;
 
