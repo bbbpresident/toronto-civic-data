@@ -10,8 +10,10 @@ import type { PlayerGroup, SportsSeason, SportsTeam } from "@/lib/types";
 // first: record, playoffs, how far they went) and player records (sortable totals with the team).
 // Server components, except the sortable table (components/PlayerTable.tsx).
 
-export const TEAM_ORDER = ["jays", "raptors", "leafs", "tempo", "argos", "tfc"];
-const SHORT: Record<string, string> = { jays: "Blue Jays", raptors: "Raptors", leafs: "Maple Leafs", tempo: "Tempo", argos: "Argonauts", tfc: "Toronto FC" };
+export const TEAM_ORDER = ["jays", "raptors", "leafs", "tempo", "argos", "tfc", "sceptres", "rock"];
+const SHORT: Record<string, string> = {
+  jays: "Blue Jays", raptors: "Raptors", leafs: "Maple Leafs", tempo: "Tempo", argos: "Argonauts", tfc: "Toronto FC", sceptres: "Sceptres", rock: "Rock",
+};
 const GOLD = "#f2c14e";
 
 export type TeamPageKind = "history" | "players";

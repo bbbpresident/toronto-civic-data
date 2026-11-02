@@ -495,7 +495,10 @@ export type PlayerColumnKind = "int" | "dec1" | "dec2" | "dec3" | "pct" | "ip" |
 
 export interface PlayerColumn {
   key: string;
+  /** Short header (HR, AVG). */
   label: string;
+  /** Full name, shown on hover and read by screen readers. */
+  title?: string;
   /** dec3 shows .295; pct shows a 0–1 rate as .912; ip turns outs into innings (123.1 = 123⅓). */
   kind: PlayerColumnKind;
   /** Lower is better (ERA, GAA): the first click sorts ascending. */

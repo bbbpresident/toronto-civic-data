@@ -14,7 +14,9 @@ Only leagues that publish their records in an official, openly readable form are
     such everywhere it's shown (decided 2026-11-01): nba.com / wnba.com refuse scripted access and
     we don't get around that. Seasons from ESPN standings and the team's playoff schedule; players
     are everyone in any regular-season box score, with ESPN's season totals for the team only.
-The Argonauts (CFL) are listed as unavailable: the CFL's stats service needs a key.
+The Argonauts (CFL), Sceptres (PWHL) and Rock (NLL) are listed as unavailable with the reason: their
+leagues' stats aren't openly available (the CFL API needs a key and appears to be offline; the PWHL and
+NLL use stats providers that aren't open; ESPN doesn't cover them usefully).
 
 Aborts if a season's record is missing, a playoff result can't be determined, or a champion
 count doesn't match the seasons marked champion.
@@ -40,10 +42,13 @@ def get(url, tries=4):
             time.sleep(2 * (i + 1))
 
 
-def col(key, label, kind="int", asc=False, qualify=None):
-    """A players-table column. kind: int, dec1, dec2, dec3 (e.g. .295), pct (0–1 shown as .912), ip (outs → innings), text.
+def col(key, label, kind="int", asc=False, qualify=None, title=None):
+    """A players-table column. label is the short header (HR, AVG); title the full name, shown on hover.
+    kind: int, dec1, dec2, dec3 (e.g. .295), pct (0–1 shown as .912), ip (outs → innings), text.
     asc: lower is better (ERA, GAA). qualify: (key, min, words) — when sorting by this rate, players under the minimum go last."""
     c = {"key": key, "label": label, "kind": kind}
+    if title:
+        c["title"] = title
     if asc:
         c["asc"] = True
     if qualify:
@@ -51,13 +56,26 @@ def col(key, label, kind="int", asc=False, qualify=None):
     return c
 
 
-PO = ("po", "Playoff seasons")
-TEAM_WINS = ("tw", "Team wins (their seasons)")
+def base_cols():
+    """Seasons, GP, Wins, Playoffs — the first columns of every leaderboard."""
+    return [col("seasons", "Seasons", "text", title="First and last season with the team"),
+            col("gp", "GP", title="Games played (regular season)"),
+            col("wins", "Wins", title="Regular-season games the player played that the team won"),
+            col("po", "Playoffs", title="Seasons with the team in which the team made the playoffs")]
+
+
+NOTE = (" Wins = regular-season games the player played that the team won. Playoffs = the player's seasons with the team in which"
+        " the team made the playoffs (being on the roster doesn't mean they played in them).")
 
 
 def group(id, label, columns, rows, sort, src, files, note=None):
     if not rows:
         sys.exit(f"players {id}: no rows")
+    # Sanity checks: a player can't have more playoff seasons than seasons, fewer games than seasons, or more wins than games.
+    bad = [f"{r['name']} (seasons {r['_n']}, GP {r['gp']}, playoffs {r['po']}, wins {r.get('wins')})" for r in rows
+           if r["po"] > r["_n"] or r["gp"] < r["_n"] or (r.get("wins") or 0) > r["gp"]]
+    if bad:
+        sys.exit(f"players {id}: impossible rows: " + "; ".join(bad[:10]))
     # Keep only what the table shows, plus the sample sizes its minimums need.
     keep = {"name", "url"} | {c["key"] for c in columns} | {c["qualify"]["key"] for c in columns if "qualify" in c}
     rows = [{k: v for k, v in r.items() if k in keep} for r in rows]
@@ -68,22 +86,15 @@ def group(id, label, columns, rows, sort, src, files, note=None):
 
 
 def runs(seasons, flags):
-    """Playoff seasons, championship seasons and the team's regular-season wins among a player's seasons with the team."""
+    """The player's playoff seasons (team made the playoffs) among their seasons with the team; `_n` = seasons, for the checks."""
     got = [flags[x] for x in seasons if x in flags]
-    return {"po": sum(1 for f in got if f[0]), "titles": sum(1 for f in got if f[1]), "tw": sum(f[2] for f in got)}
-
-
-RUN_NOTE = (" Playoff seasons count the player's seasons with the team in which the team made the playoffs; being on the roster"
-            " doesn't mean they played in the playoffs.")
-TW_NOTE = " Team wins (their seasons) is the team's regular-season wins in the seasons the player was with the team."
+    return {"po": sum(1 for f in got if f[0]), "_n": len(got)}
 
 
 def span(seasons):
-    ys = sorted(seasons)
-    if len(ys) == 1:
-        return ys[0]
-    # "2009–10 to 2017–18" for two-year seasons; "1993–2004" for single years.
-    return f"{ys[0]} to {ys[-1]}" if "–" in ys[0] else f"{ys[0]}–{ys[-1]}"
+    """"2009 to 2017": two-year seasons ("2009–10") are shown by their starting year."""
+    ys = sorted(str(y)[:4] for y in seasons)
+    return ys[0] if ys[0] == ys[-1] else f"{ys[0]} to {ys[-1]}"
 
 
 # ── Blue Jays (MLB) ──────────────────────────────────────────────────────────
@@ -250,6 +261,17 @@ def tfc():
 
 # ── Players ──────────────────────────────────────────────────────────────────
 
+def mlb_wins(pid, seasons, grp, logs):
+    """Blue Jays wins in games the player appeared in, from MLB's per-game logs (each game says isWin)."""
+    w = 0
+    for y in sorted(seasons):
+        url = f"{MLB}/people/{pid}/stats?stats=gameLog&group={grp}&season={y}"
+        logs.append(url)
+        w += sum(1 for st in get(url).get("stats", []) for sp in st.get("splits", [])
+                 if sp.get("team", {}).get("id") == JAYS and sp.get("isWin"))
+    return w
+
+
 def jays_players(flags):
     hit, pit, files = {}, {}, {"hitting": [], "pitching": []}
     for year in [y for y in range(1977, TODAY.year + 1) if str(y) in flags]:
@@ -272,6 +294,7 @@ def jays_players(flags):
     def total(splits, key):
         return sum(sp["stat"].get(key) or 0 for sp in splits)
 
+    logs = {"hitting": [], "pitching": []}
     hitters = []
     for pid, p in hit.items():
         sp = p["splits"]
@@ -280,32 +303,33 @@ def jays_players(flags):
         ab, h = total(sp, "atBats"), total(sp, "hits")
         ys = {x["season"] for x in sp}
         hitters.append({"name": p["name"], "url": f"https://www.mlb.com/player/{pid}", "seasons": span(ys), **runs(ys, flags),
-                        "pos": p["pos"], "gp": total(sp, "gamesPlayed"), "ab": ab, "h": h, "hr": total(sp, "homeRuns"),
+                        "gp": total(sp, "gamesPlayed"), "wins": mlb_wins(pid, ys, "hitting", logs["hitting"]), "ab": ab, "hr": total(sp, "homeRuns"),
                         "rbi": total(sp, "rbi"), "avg": round(h / ab, 3) if ab else None})
+    print(f"  jays hitters: {len(hitters)}", file=sys.stderr)
     pitchers = []
     for pid, p in pit.items():
         sp = p["splits"]
         if not sp or total(sp, "gamesPlayed") == 0:
             continue
         outs, er = total(sp, "outs"), total(sp, "earnedRuns")
-        strikes = None if any(x["stat"].get("strikes") is None for x in sp) else total(sp, "strikes")
         ys = {x["season"] for x in sp}
         pitchers.append({"name": p["name"], "url": f"https://www.mlb.com/player/{pid}", "seasons": span(ys), **runs(ys, flags),
-                         "gp": total(sp, "gamesPlayed"), "w": total(sp, "wins"), "l": total(sp, "losses"), "sv": total(sp, "saves"),
-                         "ip": outs, "so": total(sp, "strikeOuts"), "strikes": strikes,
-                         "era": round(er * 27 / outs, 2) if outs else None, "sho": total(sp, "shutouts")})
-    how = "Each season's full Blue Jays roster with every player's year-by-year stats; only the splits for team id 141 (the Blue Jays) are added up. "
+                         "gp": total(sp, "gamesPlayed"), "wins": mlb_wins(pid, ys, "pitching", logs["pitching"]),
+                         "ip": outs, "so": total(sp, "strikeOuts"), "era": round(er * 27 / outs, 2) if outs else None})
+    print(f"  jays pitchers: {len(pitchers)}", file=sys.stderr)
+    how = ("Totals: each season's full Blue Jays roster with every player's year-by-year stats, counting only the splits for team id 141. "
+           "Wins: the player's per-game logs (stats=gameLog), counting Blue Jays games marked isWin. ")
     return [
-        group("hitters", "Hitters", [col("seasons", "Seasons", "text"), col("gp", "Games"), col(*TEAM_WINS), col(*PO),
-                                     col("hr", "Home runs"), col("rbi", "RBI"), col("avg", "Batting average", "dec3", qualify=("ab", 1000, "1,000 at bats"))], hitters, "hr",
+        group("hitters", "Hitters", base_cols() + [col("hr", "HR", title="Home runs"), col("rbi", "RBI", title="Runs batted in"),
+                                                 col("avg", "AVG", "dec3", qualify=("ab", 1000, "1,000 at bats"), title="Batting average (hits ÷ at bats)")], hitters, "hr",
               source(MLB_PUB, "MLB Stats API: roster with year-by-year hitting stats", MLB_SITE, files["hitting"][-1], "roster[].person.stats[] splits where team.id = 141",
-                     how + "Average = hits ÷ at bats. Pitchers (primary position P) are in the pitchers table."), files["hitting"],
-              "Regular season only. Players whose primary position is pitcher are listed under Pitchers." + RUN_NOTE + TW_NOTE),
-        group("pitchers", "Pitchers", [col("seasons", "Seasons", "text"), col("gp", "Games"), col("w", "Wins"), col(*PO),
-                                       col("ip", "Innings pitched", "ip"), col("so", "Strikeouts"), col("era", "ERA", "dec2", asc=True, qualify=("ip", 300, "100 innings"))], pitchers, "so",
+                     how + "AVG = hits ÷ at bats."), files["hitting"],
+              "Regular season only. Pitchers (primary position P) are under Pitchers." + NOTE),
+        group("pitchers", "Pitchers", base_cols() + [col("ip", "IP", "ip", title="Innings pitched"), col("so", "K", title="Strikeouts"),
+                                                   col("era", "ERA", "dec2", asc=True, qualify=("ip", 300, "100 innings"), title="Earned run average")], pitchers, "so",
               source(MLB_PUB, "MLB Stats API: roster with year-by-year pitching stats", MLB_SITE, files["pitching"][-1], "roster[].person.stats[] splits where team.id = 141",
-                     how + "ERA = earned runs × 27 ÷ outs recorded. Strikes thrown is shown only when every one of the player's Blue Jays seasons records it."), files["pitching"],
-              "Regular season only. Wins are the pitcher's own wins." + RUN_NOTE),
+                     how + "ERA = earned runs × 27 ÷ outs recorded."), files["pitching"],
+              "Regular season only. Wins here are team wins in games the pitcher appeared in, not the pitcher's own decisions." + NOTE),
     ]
 
 
@@ -313,47 +337,97 @@ NHL_STATS = "https://api.nhle.com/stats/rest/en"
 
 
 def leafs_players(flags):
-    """flags: NHL seasonId (int) → (playoffs, champion)."""
-    last_done = max(flags)  # flags hold completed seasons only
+    """flags: NHL seasonId (int) → (playoffs, champion, wins), completed seasons only."""
+    last_done = max(flags)
     q = "isAggregate=true&isGame=false&limit=-1&cayenneExp=" + quote(f"franchiseId=5 and gameTypeId=2 and seasonId<={last_done}")
-    qs = q.replace("isAggregate=true", "isAggregate=false")
     sk_url, go_url = f"{NHL_STATS}/skater/summary?{q}", f"{NHL_STATS}/goalie/summary?{q}"
-    sk_s_url, go_s_url = f"{NHL_STATS}/skater/summary?{qs}", f"{NHL_STATS}/goalie/summary?{qs}"
-    sk, go, sk_s, go_s = get(sk_url), get(go_url), get(sk_s_url), get(go_s_url)
-    for name, d in (("skaters", sk), ("goalies", go), ("skater seasons", sk_s), ("goalie seasons", go_s)):
+    sk, go = get(sk_url), get(go_url)
+    for name, d in (("skaters", sk), ("goalies", go)):
         if len(d["data"]) != d["total"]:
             sys.exit(f"NHL {name}: got {len(d['data'])} of {d['total']}")
-    seasons_of = {}
-    for r in sk_s["data"] + go_s["data"]:
-        seasons_of.setdefault(r["playerId"], set()).add(r["seasonId"])
-    def extra(pid):
-        ys = seasons_of.get(pid)
-        if not ys:
-            sys.exit(f"NHL player {pid}: in franchise totals but no season rows")
-        lbl = lambda sid: f"{sid // 10000}–{str(sid % 10000)[2:]}"
-        first, last = min(ys), max(ys)
-        return {"seasons": lbl(first) if first == last else f"{lbl(first)} to {lbl(last)}", **runs(ys, flags)}
-    skaters = [{"name": r["skaterFullName"], "url": f"https://www.nhl.com/player/{r['playerId']}", **extra(r["playerId"]), "pos": r["positionCode"], "gp": r["gamesPlayed"],
-                "g": r["goals"], "a": r["assists"], "pts": r["points"], "pim": r["penaltyMinutes"]} for r in sk["data"]]
-    goalies = [{"name": r["goalieFullName"], "url": f"https://www.nhl.com/player/{r['playerId']}", **extra(r["playerId"]), "gp": r["gamesPlayed"], "w": r["wins"], "l": r["losses"],
-                "t": r["ties"], "otl": r["otLosses"], "so": r["shutouts"], "gaa": r["goalsAgainstAverage"], "svpct": r["savePct"]} for r in go["data"]]
-    how = "The NHL stats API's career totals for the franchise (franchiseId 5: Arenas, St. Patricks, Maple Leafs), regular season, as published."
+    # Per game: who played (skater / goalie rows) and whether the Leafs won (team rows), joined on gameId.
+    games = {"skater": {}, "goalie": {}}
+    game_files = []
+    for sid in sorted(flags):
+        gq = "isAggregate=false&isGame=true&limit=-1&cayenneExp=" + quote(f"franchiseId=5 and gameTypeId=2 and seasonId={sid}")
+        urls = {k: f"{NHL_STATS}/{k}/summary?{gq}" for k in ("team", "skater", "goalie")}
+        got = {k: get(u) for k, u in urls.items()}
+        for k, d in got.items():
+            if len(d["data"]) != d["total"]:
+                sys.exit(f"NHL {sid} {k} games: got {len(d['data'])} of {d['total']}")
+        won = {r["gameId"]: bool(r["wins"]) for r in got["team"]["data"]}
+        for k in ("skater", "goalie"):
+            for r in got[k]["data"]:
+                pg = games[k].setdefault(r["playerId"], {"games": set(), "wins": 0, "seasons": set()})
+                if r["gameId"] not in pg["games"]:
+                    pg["games"].add(r["gameId"])
+                    pg["wins"] += won.get(r["gameId"], False)
+                    pg["seasons"].add(sid)
+        game_files += list(urls.values())
+    print(f"  leafs per-game rows: {len(game_files) // 3} seasons", file=sys.stderr)
+
+    def extra(kind, pid, gp):
+        pg = games[kind].get(pid)
+        if not pg:
+            sys.exit(f"NHL {kind} {pid}: in franchise totals but no game rows")
+        return {"seasons": span(pg["seasons"]), **runs(pg["seasons"], flags), "wins": pg["wins"], "_gpgames": len(pg["games"])}
+
+    skaters = [{"name": r["skaterFullName"], "url": f"https://www.nhl.com/player/{r['playerId']}", **extra("skater", r["playerId"], r["gamesPlayed"]),
+                "gp": r["gamesPlayed"], "g": r["goals"], "a": r["assists"], "pts": r["points"]} for r in sk["data"]]
+    goalies = [{"name": r["goalieFullName"], "url": f"https://www.nhl.com/player/{r['playerId']}", **extra("goalie", r["playerId"], r["gamesPlayed"]),
+                "gp": r["gamesPlayed"], "so": r["shutouts"], "gaa": r["goalsAgainstAverage"], "svpct": r["savePct"]} for r in go["data"]]
+    for name, rows in (("skaters", skaters), ("goalies", goalies)):
+        off = [r for r in rows if r["_gpgames"] != r["gp"]]
+        print(f"  leafs {name}: {len(off)} of {len(rows)} have per-game rows ≠ GP", file=sys.stderr)
+    how = ("Totals: the NHL stats API's career totals for the franchise (franchiseId 5: Arenas, St. Patricks, Maple Leafs). "
+           "Seasons, wins and playoffs: the per-game rows for each season (isGame=true) joined to the team's per-game results on gameId.")
     return [
-        group("skaters", "Skaters", [col("seasons", "Seasons", "text"), col("gp", "Games"), col(*TEAM_WINS), col(*PO),
-                                     col("g", "Goals"), col("a", "Assists"), col("pts", "Points")], skaters, "pts",
-              source(NHL_PUB, "NHL stats API: skater summary, franchise totals", "https://www.nhl.com/stats/", sk_url, "data[], one row per player", how), [sk_url, sk_s_url],
-              "Regular season only, completed seasons (the season in progress isn't counted). Seasons are first to last with the franchise (from the per-season rows, the second file)." + RUN_NOTE + TW_NOTE),
-        group("goalies", "Goalies", [col("seasons", "Seasons", "text"), col("gp", "Games"), col("w", "Wins"), col(*PO),
-                                     col("svpct", "Save %", "pct", qualify=("gp", 50, "50 games")), col("so", "Shutouts"),
-                                     col("gaa", "GAA", "dec2", asc=True, qualify=("gp", 50, "50 games"))], goalies, "w",
-              source(NHL_PUB, "NHL stats API: goalie summary, franchise totals", "https://www.nhl.com/stats/", go_url, "data[], one row per player", how), [go_url, go_s_url],
-              "Regular season only. GAA = goals against average. Saves weren't recorded in the earliest seasons, so save % covers only the games the NHL has shot data for." + RUN_NOTE),
+        group("skaters", "Skaters", base_cols() + [col("g", "G", title="Goals"), col("a", "A", title="Assists"), col("pts", "PTS", title="Points")], skaters, "pts",
+              source(NHL_PUB, "NHL stats API: skater summary, franchise totals", "https://www.nhl.com/stats/", sk_url, "data[], one row per player", how),
+              [sk_url] + game_files, "Regular season only, completed seasons." + NOTE),
+        group("goalies", "Goalies", base_cols() + [col("svpct", "SV%", "pct", qualify=("gp", 50, "50 games"), title="Save percentage"),
+                                                 col("so", "SO", title="Shutouts"),
+                                                 col("gaa", "GAA", "dec2", asc=True, qualify=("gp", 50, "50 games"), title="Goals against average")], goalies, "wins",
+              source(NHL_PUB, "NHL stats API: goalie summary, franchise totals", "https://www.nhl.com/stats/", go_url, "data[], one row per player", how),
+              [go_url] + game_files, "Regular season only, completed seasons. Saves weren't recorded in the earliest seasons, so SV% covers only games with shot data." + NOTE),
     ]
+
+
+def tfc_appearances(year, reg_sid):
+    """player_id → (matches played, wins) for Toronto FC's regular-season matches in `year`: starters from the match record,
+    substitutes from its substitution events; a win is a match TFC outscored the opponent."""
+    base = f"{MLS}/matches/seasons/{reg_sid}?competition_id={REG}&match_date%5Bgte%5D={year}-01-01&match_date%5Blte%5D={year}-12-31"
+    sched, token = [], None
+    while True:
+        page = get(base + (f"&page_token={quote(token)}" if token else ""))
+        sched += page.get("schedule", [])
+        token = page.get("next_page_token")
+        if not token:
+            break
+    mine = [m for m in sched if TFC in (m["home_team_id"], m["away_team_id"]) and m["match_status"] == "finalWhistle"]
+    out, files = {}, [base]
+    for m in mine:
+        home = m["home_team_id"] == TFC
+        won = (m["home_team_goals"] > m["away_team_goals"]) if home else (m["away_team_goals"] > m["home_team_goals"])
+        detail = get(f"{MLS}/matches/{m['match_id']}")
+        side = detail.get("home" if home else "away", {})
+        played = {p["person_id"] for p in side.get("players", []) if str(p.get("starting")).lower() == "true"}
+        token = None
+        while True:
+            ev = get(f"{MLS}/matches/{m['match_id']}/key_events" + (f"?page_token={quote(token)}" if token else ""))
+            played |= {e["event"]["player_in_id"] for e in ev.get("events", []) if e["type"] == "substitutions" and e["event"].get("team_id") == TFC and e["event"].get("player_in_id")}
+            token = ev.get("next_page_token")
+            if not token:
+                break
+        for pid in played:
+            gp, w = out.get(pid, (0, 0))
+            out[pid] = (gp + 1, w + won)
+    return out, files, len(mine)
 
 
 def tfc_players(flags):
     reg = {s["season"]: s["season_id"] for s in get(f"{MLS}/competitions/{REG}/seasons")["seasons"]}
-    acc, files, missing = {}, [], []
+    acc, files, missing, unreliable = {}, [], [], []
     for year in [y for y in range(2007, TODAY.year + 1) if str(y) in flags]:
         url = f"{MLS}/statistics/players/competitions/{REG}/seasons/{reg[year]}?club_id={TFC}"
         rows, token = [], None
@@ -369,34 +443,49 @@ def tfc_players(flags):
         if not rows:
             missing.append(year)
             continue
-        files.append(url)
+        apps, app_files, n_matches = tfc_appearances(year, reg[year])
+        files += [url] + app_files
+        # A season's lineups are usable only if every player's appearances match the league's matches played.
+        mp = {r["player_id"]: r.get("matches_played") or 0 for r in rows if r.get("team_id") in (None, TFC)}
+        reliable = all(apps.get(pid, (0, 0))[0] == n for pid, n in mp.items())
+        if not reliable:
+            unreliable.append(year)
         for r in rows:
             if r.get("team_id") not in (None, TFC):
                 continue
             a = acc.setdefault(r["player_id"], {"name": f"{r['player_first_name']} {r['player_last_name']}".strip(), "gk": False, "seasons": set(),
-                                                "gp": 0, "min": 0, "g": 0, "a": 0, "cs": 0, "sv": 0, "ga": 0})
+                                                "gp": 0, "wins": 0, "appgp": 0, "g": 0, "a": 0, "cs": 0, "ga": 0})
             a["gk"] |= bool(r.get("goal_keeper"))
             if (r.get("matches_played") or 0) > 0:
                 a["seasons"].add(str(year))
-            for k, f in (("gp", "matches_played"), ("min", "normalized_player_minutes"), ("g", "goals"), ("a", "assists"),
-                         ("cs", "clean_sheets"), ("sv", "goalkeeper_saves"), ("ga", "goals_conceded")):
+            gp_app, w = apps.get(r["player_id"], (0, 0))
+            if (r.get("matches_played") or 0) > 0 and not reliable:
+                a["wins"] = None  # any season without complete lineups → wins unknown
+            elif a["wins"] is not None:
+                a["wins"] += w
+            a["appgp"] += gp_app
+            for k, f in (("gp", "matches_played"), ("g", "goals"), ("a", "assists"), ("cs", "clean_sheets"), ("ga", "goals_conceded")):
                 a[k] += r.get(f) or 0
-        print(f"  tfc players {year}: {len(rows)}", file=sys.stderr)
-    field = [{"name": a["name"], "seasons": span(a["seasons"]), **runs(a["seasons"], flags), "gp": a["gp"], "min": a["min"], "g": a["g"], "a": a["a"]}
+        print(f"  tfc players {year}: {len(rows)} players, {n_matches} matches", file=sys.stderr)
+    print(f"  tfc: lineups incomplete in {unreliable}; {sum(1 for a in acc.values() if a['wins'] is None)} players get no wins figure", file=sys.stderr)
+    field = [{"name": a["name"], "seasons": span(a["seasons"]), **runs(a["seasons"], flags), "gp": a["gp"], "wins": a["wins"], "g": a["g"], "a": a["a"]}
              for a in acc.values() if not a["gk"] and a["gp"] > 0]
-    keepers = [{"name": a["name"], "seasons": span(a["seasons"]), **runs(a["seasons"], flags), "gp": a["gp"], "cs": a["cs"], "ga": a["ga"],
-                "gapg": round(a["ga"] / a["gp"], 2)}
-               for a in acc.values() if a["gk"] and a["gp"] > 0]
+    keepers = [{"name": a["name"], "seasons": span(a["seasons"]), **runs(a["seasons"], flags), "gp": a["gp"], "wins": a["wins"], "cs": a["cs"],
+                "gapg": round(a["ga"] / a["gp"], 2)} for a in acc.values() if a["gk"] and a["gp"] > 0]
     gap = f" The league's file has no player statistics for Toronto FC in {', '.join(map(str, missing))}, so those seasons aren't counted." if missing else ""
-    how = "Each season's MLS regular-season player statistics for Toronto FC (all pages), added up per player."
+    if unreliable:
+        gap += (f" Wins show — for anyone who played in {', '.join(map(str, unreliable))}: the league's match records for those seasons don't list"
+                " complete lineups, so wins can't be counted.")
+    how = ("Totals: each season's MLS regular-season player statistics for Toronto FC (all pages), added up. Wins: each regular-season match's "
+           "starting lineup plus its substitutions (key_events), counting matches TFC won.")
     return [
-        group("field", "Field players", [col("seasons", "Seasons", "text"), col("gp", "Games"), col(*TEAM_WINS), col(*PO), col("g", "Goals"), col("a", "Assists")],
-              field, "g", source(MLS_PUB, "MLS Stats API: player statistics by club and season", MLS_SITE, files[-1], "player_statistics[] (all pages)", how), files,
-              "Regular season only." + gap + RUN_NOTE + TW_NOTE),
-        group("keepers", "Goalkeepers", [col("seasons", "Seasons", "text"), col("gp", "Games"), col(*TEAM_WINS), col(*PO), col("cs", "Shutouts (clean sheets)"),
-                                         col("gapg", "Goals allowed per game", "dec2", asc=True, qualify=("gp", 20, "20 games"))],
-              keepers, "cs", source(MLS_PUB, "MLS Stats API: player statistics by club and season", MLS_SITE, files[-1], "player_statistics[] (all pages)", how), files,
-              "Regular season only. A clean sheet (shutout) is a match without conceding; goals allowed per game = goals conceded ÷ games." + gap + RUN_NOTE + TW_NOTE),
+        group("field", "Field players", base_cols() + [col("g", "G", title="Goals"), col("a", "A", title="Assists")], field, "g",
+              source(MLS_PUB, "MLS Stats API: player statistics by club and season", MLS_SITE, files[0], "player_statistics[] (all pages)", how), files,
+              "Regular season only." + gap + NOTE),
+        group("keepers", "Goalkeepers", base_cols() + [col("cs", "SO", title="Shutouts (clean sheets)"),
+                                                     col("gapg", "GA/GP", "dec2", asc=True, qualify=("gp", 20, "20 games"), title="Goals allowed per game")],
+              keepers, "cs", source(MLS_PUB, "MLS Stats API: player statistics by club and season", MLS_SITE, files[0], "player_statistics[] (all pages)", how), files,
+              "Regular season only. SO = clean sheets (matches without conceding); GA/GP = goals conceded ÷ games." + gap + NOTE),
     ]
 
 
@@ -507,19 +596,32 @@ def espn_team(league, team_id, first_year):
 def espn_players(league, team_id, schedules, flags):
     """Who played: everyone listed in any regular-season box score. Their numbers: ESPN's season totals,
     counting only the rows for this team (ESPN's box scores have gaps, so they aren't summed)."""
-    ids, files = {}, []
+    ids, files, box_files, played = {}, [], [], {}
     for label, year in sorted(schedules.items(), key=lambda kv: kv[1]):
+        if label not in flags:
+            continue  # season in progress
         sched_url = f"{ESPN_API}/{league}/teams/{team_id}/schedule?season={year}&seasontype=2"
+        box_files.append(sched_url)
         games = [e for e in get(sched_url).get("events", []) if e["competitions"][0]["status"]["type"]["completed"]]
         for e in games:
+            won = any(c["id"] == str(team_id) and c.get("winner") for c in e["competitions"][0]["competitors"])
             box = get(f"{ESPN_API}/{league}/summary?event={e['id']}").get("boxscore", {}).get("players", [])
             for t in box:
                 if t["team"]["id"] == str(team_id):
-                    for a in t["statistics"][0]["athletes"]:
-                        if a["athlete"].get("id"):
-                            ids.setdefault(a["athlete"]["id"], a["athlete"].get("displayName") or a["athlete"].get("shortName"))
+                    st = t["statistics"][0]
+                    labels = st.get("labels") or st.get("names") or []
+                    mi = labels.index("MIN") if "MIN" in labels else None
+                    for a in st["athletes"]:
+                        aid = a["athlete"].get("id")
+                        if not aid:
+                            continue
+                        ids.setdefault(aid, a["athlete"].get("displayName") or a["athlete"].get("shortName"))
+                        # Played = has a stat line with minutes (ESPN writes "--" for players who sat).
+                        if not a.get("didNotPlay") and a.get("stats") and (mi is None or a["stats"][mi] not in ("--", "", "0")):
+                            gp, w = played.get(aid, (0, 0))
+                            played[aid] = (gp + 1, w + won)
         print(f"  {league} roster {label}: {len(games)} games, {len(ids)} players so far", file=sys.stderr)
-    rows, no_page = [], []
+    rows, no_page, log_files = [], [], []
     for aid, name in ids.items():
         url = f"{ESPN_WEB}/{league}/athletes/{aid}/stats?seasontype=2"
         try:
@@ -540,22 +642,41 @@ def espn_players(league, team_id, schedules, flags):
         if gp == 0:
             continue
         files.append(url)
+        # Wins: the player's ESPN game log per season, regular-season games for this team marked W.
+        log_gp = wins = 0
+        for r in mine:
+            gl_url = f"{ESPN_WEB}/{league}/athletes/{aid}/gamelog?season={r['season']['year']}"
+            gl = get(gl_url)
+            events = gl.get("events", {})
+            reg_ids = {e["eventId"] for st in gl.get("seasonTypes", []) if "Regular Season" in st.get("displayName", "")
+                       for c in st.get("categories", []) for e in c.get("events", [])}
+            mine_ev = [events[i] for i in reg_ids if i in events and str(events[i].get("team", {}).get("id")) == str(team_id)]
+            log_gp += len(mine_ev)
+            wins += sum(1 for e in mine_ev if e.get("gameResult") == "W")
+            log_files.append(gl_url)
         rows.append({"name": name, "url": f"https://www.espn.com/{league}/player/_/id/{aid}", "seasons": span(seasons), **runs(seasons, flags),
-                     "gp": gp, "pts": sum(val(r, "points") for r in mine), "reb": sum(val(r, "totalRebounds") for r in mine),
+                     "gp": gp, "wins": wins if log_gp == gp else None, "_boxgp": log_gp, "pts": sum(val(r, "points") for r in mine), "reb": sum(val(r, "totalRebounds") for r in mine),
                      "ast": sum(val(r, "assists") for r in mine)})
-    print(f"  {league} players: {len(rows)}", file=sys.stderr)
-    return [group("players", "Players", [col("seasons", "Seasons", "text"), col("gp", "Games"), col(*TEAM_WINS), col(*PO),
-                                         col("pts", "Points"), col("reb", "Rebounds"), col("ast", "Assists")], rows, "pts",
+    off = [r for r in rows if abs(r["_boxgp"] - r["gp"]) > 0]
+    print(f"  {league} players: {len(rows)}; game-log games ≠ ESPN GP for {len(off)} (wins shown as —): "
+          + ", ".join(f"{r['name']} {r['_boxgp']}/{r['gp']}" for r in sorted(off, key=lambda r: -abs(r['_boxgp'] - r['gp']))[:8]), file=sys.stderr)
+    return [group("players", "Players", base_cols() + [col("pts", "PTS", title="Points"), col("reb", "REB", title="Rebounds"),
+                                                     col("ast", "AST", title="Assists")], rows, "pts",
                   source(ESPN_PUB, "ESPN site API: player season stats", ESPN_SITE, files[0],
                          f"categories totals/averages, statistics[] rows where teamId = {team_id}",
                          "Players: everyone in any regular-season box score for the team. Numbers: each player's ESPN season totals for this team only, "
-                         "added up (games played from the averages table, matched by season and team)."), files,
+                         "added up (games played from the averages table, matched by season and team). Wins: each player's game log (gamelog?season=), "
+                         "regular-season games for this team with gameResult W."),
+                  files + log_files,
                   "Regular season only. Source: ESPN, not the league — nba.com and wnba.com don't allow scripted access."
                   + (f" {len(no_page)} player{'s' if len(no_page) != 1 else ''} in the box scores ({', '.join(sorted(no_page))}) "
                      f"{'have' if len(no_page) != 1 else 'has'} no ESPN stats page and {'aren' if len(no_page) != 1 else 'isn'}'t included." if no_page else "")
-                  + RUN_NOTE + TW_NOTE)]
+                  + " Wins are counted from each player's ESPN game log; a player whose game log doesn't account for every game played shows —."
+                  + NOTE)]
 
 UNAVAILABLE_WHY = {
+    "pwhl": "The PWHL's stats appear on its site through a licensed stats provider and aren't published in an open form, and ESPN doesn't cover the PWHL, so we can't generate them yet.",
+    "nll": "The NLL's stats appear on its site through a third-party stats app and aren't published in an open form, and ESPN has only the current NLL season, so we can't generate them yet.",
     "nba": "The NBA publishes team records on nba.com, which refuses scripted access, so we can't generate them from the official source yet.",
     "wnba": "The WNBA publishes team records on wnba.com, which refuses scripted access, so we can't generate them from the official source yet.",
     "cfl": "The CFL's stats service isn't openly accessible, so we can't generate the Argonauts' records from the official source yet.",
@@ -596,6 +717,8 @@ def main():
         team("tempo", "Toronto Tempo", "WNBA", "Basketball", "WNBA championship", tempo_s, url="https://www.wnba.com",
              players=espn_players("wnba", 131935, tempo_sched, flags_of(tempo_s)), secondary="ESPN"),
         team("argos", "Toronto Argonauts", "CFL", "Football", "Grey Cup", unavailable=UNAVAILABLE_WHY["cfl"], url="https://www.argonauts.ca"),
+        team("sceptres", "Toronto Sceptres", "PWHL", "Hockey", "Walter Cup", unavailable=UNAVAILABLE_WHY["pwhl"], url="https://www.thepwhl.com/en/teams/toronto-sceptres"),
+        team("rock", "Toronto Rock", "NLL", "Lacrosse", "NLL Cup", unavailable=UNAVAILABLE_WHY["nll"], url="https://www.torontorock.com"),
         team("tfc", "Toronto FC", "MLS", "Soccer", "MLS Cup", tfc_s, url="https://www.torontofc.ca", players=tfc_players(flags_of(tfc_s))),
     ]
     # Sanity checks against figures the leagues state elsewhere would be guesses; instead check

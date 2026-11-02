@@ -63,13 +63,13 @@ export default function PlayerTable({ label, columns, rows, sort }: { label: str
           aria-label={`Find a player in ${label}`}
           style={{ fontSize: 14, padding: "8px 12px", borderRadius: 10, border: "1px solid var(--border)", background: "var(--surface-2)", color: "var(--text-primary)", minWidth: 0, flex: "1 1 200px", maxWidth: 320 }} />
         <span style={{ fontSize: 12, color: "var(--text-secondary)" }} aria-live="polite">
-          {sorted.length.toLocaleString("en-CA")} players{active?.qualify ? `; players with fewer than ${active.qualify.label} are listed last` : ""}
+          {sorted.length.toLocaleString("en-CA")} players{active?.qualify ? `; fewer than ${active.qualify.label} listed last` : ""}. Hover a heading for its full name.
         </span>
       </div>
       <div style={{ overflowX: "auto", border: "1px solid var(--border)", borderRadius: 12 }}>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, fontVariantNumeric: "tabular-nums" }}>
           <caption className="sr-only" style={{ position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0 0 0 0)" }}>
-            {label}, sorted by {cols.find(c => c.key === key)?.label} {desc ? "descending" : "ascending"}
+            {label}, sorted by {(() => { const c = cols.find(x => x.key === key); return c?.title ?? c?.label; })()} {desc ? "descending" : "ascending"}
           </caption>
           <thead style={{ background: "var(--surface-2)" }}>
             <tr>
@@ -78,7 +78,8 @@ export default function PlayerTable({ label, columns, rows, sort }: { label: str
                 return (
                   <th key={c.key} scope="col" aria-sort={active ? (desc ? "descending" : "ascending") : "none"}
                     style={{ ...th, textAlign: c.kind === "text" ? "left" : "right", ...(c.name ? { position: "sticky", left: 0, background: "var(--surface-2)", zIndex: 1 } : {}) }}>
-                    <button type="button" onClick={() => sortBy(c)} style={{ ...btn(active), textAlign: c.kind === "text" ? "left" : "right" }}>
+                    <button type="button" onClick={() => sortBy(c)} title={c.title} aria-label={c.title ? `${c.label}: ${c.title}` : undefined}
+                      style={{ ...btn(active), textAlign: c.kind === "text" ? "left" : "right" }}>
                       {c.label}{active ? (desc ? " ↓" : " ↑") : ""}
                     </button>
                   </th>
