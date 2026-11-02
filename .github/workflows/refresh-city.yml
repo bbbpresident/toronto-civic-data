@@ -1,0 +1,45 @@
+# Weekly refresh of lib/city.json: road restrictions (construction map), the City's events calendar
+# and ward boundaries, all City of Toronto Open Data. Commits only when the data changed; the push
+# redeploys the site on Vercel. Run it by hand from the Actions tab ("Run workflow") any time.
+name: Refresh city data
+
+on:
+  schedule:
+    - cron: "0 11 * * 1"   # Mondays 11:00 UTC (6 a.m. in Toronto, 7 a.m. in summer)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-city
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Standard library + curl only. Aborts (and the job fails, leaving the site as it was) if a
+      # feed is empty or doesn't answer; if a City server ever asks for a bot check, fix by hand,
+      # never work around it.
+      - name: Regenerate lib/city.json
+        run: python scripts/extract_city.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- lib/city.json; then
+            echo "No change in city data."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lib/city.json
+          git commit -m "Refresh city data (events, road restrictions) $(date -u +%Y-%m-%d)"
+          git push
