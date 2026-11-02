@@ -527,3 +527,52 @@ export interface SportsData {
   generator: string;
   teams: SportsTeam[];
 }
+
+// ── What's on in the city (generated: scripts/extract_city.py) ──────────────
+
+export interface CityEvent {
+  name: string;
+  start: string | null;
+  end: string | null;
+  category: string | null;
+  free: boolean;
+  where: string | null;
+  url: string | null;
+  about: string | null;
+}
+
+export interface CityEvents {
+  from: string;
+  to: string;
+  items: CityEvent[];
+  /** "YYYY-MM-DD" → indexes into items (events of up to a few days). */
+  days: Record<string, number[]>;
+  /** Indexes of longer-running events (exhibitions, seasonal programs), soonest-ending first. */
+  ongoing: number[];
+  calendarUrl: string;
+  submitUrl: string;
+  source: DataSource;
+}
+
+export interface RoadRestriction {
+  id: string;
+  type: string | null;
+  road: string;
+  where: string;
+  district: string | null;
+  by: string | null;
+  about: string | null;
+  from: string | null;
+  until: string | null;
+  /** Position on the ward map (SVG units). */
+  x: number;
+  y: number;
+}
+
+export interface CityData {
+  generatedOn: string;
+  generator: string;
+  events: CityEvents;
+  construction: { items: RoadRestriction[]; mapUrl: string; source: DataSource };
+  wards: { width: number; height: number; paths: { ward: string; name: string; d: string }[]; source: DataSource };
+}
