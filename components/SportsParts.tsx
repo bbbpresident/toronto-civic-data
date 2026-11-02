@@ -39,6 +39,28 @@ export function TeamToggle({ teams, current, kind }: { teams: SportsTeam[]; curr
   );
 }
 
+/** The label every page of a team carries when its data isn't from the league itself. */
+/** When the figures were pulled, and that they're refreshed once a year (they're stored, not fetched live). */
+export function RefreshNote({ generatedOn }: { generatedOn: string }) {
+  return (
+    <p style={{ fontSize: 11, color: "var(--text-secondary)", margin: "20px 0 0", lineHeight: 1.55 }}>
+      These figures are stored with the site, not looked up live: pulled from the sources listed on this page on {generatedOn}, and refreshed
+      once a year after each season ends (scripts/extract_sports.py). A season still being played shows as &ldquo;In progress&rdquo; and isn&apos;t counted
+      in any total until it&apos;s over.
+    </p>
+  );
+}
+
+export function SecondaryNote({ team }: { team: SportsTeam }) {
+  if (!team.secondarySource) return null;
+  return (
+    <p role="note" style={{ fontSize: 12, lineHeight: 1.5, margin: "0 0 12px", padding: "8px 12px", borderRadius: 10, border: "1px solid var(--border)", background: "var(--surface-2)", color: "var(--text-secondary)" }}>
+      <strong style={{ color: "var(--text-primary)" }}>Source: {team.secondarySource}, not the {team.league}.</strong>{" "}
+      The {team.league} doesn&apos;t allow automated access to its own site, so these figures come from {team.secondarySource}&apos;s published data rather than the league&apos;s.
+    </p>
+  );
+}
+
 /** Team history / Player records, for teams that have both. */
 export function TeamSubNav({ team, kind }: { team: SportsTeam; kind: TeamPageKind }) {
   if (!team.players) return null;
@@ -83,8 +105,10 @@ export function PlayersView({ team }: { team: SportsTeam }) {
         Every player&apos;s regular-season totals as a member of the {team.name}. Select a column to sort; select a name for the player&apos;s page on the league&apos;s site.
       </p>
       <section style={{ ...card, marginTop: 12 }}>
-        <ViewToggle size="lg" label="Which players" storageKey={`players-${team.id}`}
-          views={team.players!.map(g => ({ id: g.id, label: `${g.label} (${g.rows.length.toLocaleString("en-CA")})`, content: <PlayerGroupSection g={g} /> }))} />
+        {team.players!.length > 1
+          ? <ViewToggle size="lg" label="Which players" storageKey={`players-${team.id}`}
+              views={team.players!.map(g => ({ id: g.id, label: `${g.label} (${g.rows.length.toLocaleString("en-CA")})`, content: <PlayerGroupSection g={g} /> }))} />
+          : <PlayerGroupSection g={team.players![0]} />}
       </section>
     </>
   );
@@ -118,16 +142,17 @@ function Season({ s, team }: { s: SportsSeason; team: SportsTeam }) {
     <li style={{ borderTop: "1px solid var(--border)", padding: "10px 0", background: s.champion ? "linear-gradient(90deg, rgba(242,193,78,.08), transparent 60%)" : undefined }}>
       <div style={{ display: "grid", gridTemplateColumns: cols, gap: 10, alignItems: "baseline", fontSize: 13 }}>
         <span style={{ fontWeight: 700, fontVariantNumeric: "tabular-nums" }}>{s.season}</span>
-        <span style={{ fontVariantNumeric: "tabular-nums" }}>{record(s)}{s.inProgress && <span style={small}> (so far)</span>}</span>
-        <span style={{ color: s.playoffs ? "var(--text-primary)" : "var(--text-secondary)" }}>{s.playoffs == null ? "—" : s.playoffs ? "Yes" : "No"}</span>
+        <span style={{ fontVariantNumeric: "tabular-nums", color: s.inProgress ? "var(--text-secondary)" : undefined }}>{s.inProgress ? "In progress" : record(s)}</span>
+        <span style={{ color: s.playoffs ? "var(--text-primary)" : "var(--text-secondary)" }}>{s.inProgress || s.playoffs == null ? "—" : s.playoffs ? "Yes" : "No"}</span>
         <span style={{ display: "flex", gap: 6, alignItems: "baseline", minWidth: 0 }}>
           {s.champion && <Trophy title={`Won the ${team.trophy}`} />}
           <span style={{ fontWeight: s.champion ? 700 : 400, color: s.champion ? GOLD : s.result ? "var(--text-primary)" : "var(--text-secondary)" }}>
-            {s.result ?? (s.inProgress ? "Season in progress" : "")}
+            {s.inProgress ? "" : s.result ?? ""}
           </span>
         </span>
       </div>
       {s.team && s.team !== team.name && <div style={{ ...small, marginTop: 2 }}>Played as the {s.team}</div>}
+      {s.note && <div style={{ ...small, marginTop: 2 }}>⚠ {s.note}</div>}
     </li>
   );
 }

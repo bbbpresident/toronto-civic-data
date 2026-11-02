@@ -467,6 +467,8 @@ export interface SportsSeason {
   /** How far they went, in the league's words (e.g. "Lost in the AL Championship Series"). */
   result: string | null;
   champion: boolean;
+  /** A caveat about this season's figures (e.g. the source contradicting itself). */
+  note?: string;
   /** The file behind each part of the row. NHL records and playoffs share one file. */
   sources: { record: DataSource; playoffs?: DataSource };
 }
@@ -481,6 +483,8 @@ export interface SportsTeam {
   available: boolean;
   /** Why there's no data, when `available` is false. */
   reason?: string;
+  /** Set when the data comes from a secondary source rather than the league (e.g. "ESPN"); shown on every page. */
+  secondarySource?: string;
   seasons?: SportsSeason[];
   championships?: string[];
   /** Player records: each player's regular-season totals with the team, in groups (hitters/pitchers…). */

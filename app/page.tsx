@@ -11,7 +11,7 @@ const SECTIONS = [
   { href: "/crime", title: "Crime", blurb: "Reported crime and how much is cleared since 2014, by category and offence, and homicides since 2004." },
   { href: "/road-safety", title: "Road safety", blurb: "People killed or seriously injured on Toronto's streets since 2006, by how they were travelling, and all police-reported collisions." },
   { href: "/transit", title: "Transit", blurb: "TTC ridership since 2003, monthly since 2008, plus business-day trips, revenue and elevators." },
-  { href: "/sports", title: "Sports", blurb: "The Blue Jays, Maple Leafs and Toronto FC season by season: records, playoff runs and championships." },
+  { href: "/sports", title: "Sports", blurb: "The Blue Jays, Raptors, Maple Leafs, Tempo and Toronto FC: every season's record and playoff run, championships, and sortable player records." },
   { href: "/schools", title: "Schools", blurb: "Enrolment and provincial test results by board since 2017–18, and a page for every Toronto school." },
 ];
 
