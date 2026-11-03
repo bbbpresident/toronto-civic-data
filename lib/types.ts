@@ -576,3 +576,25 @@ export interface CityData {
   construction: { items: RoadRestriction[]; mapUrl: string; source: DataSource };
   wards: { width: number; height: number; paths: { ward: string; name: string; d: string }[]; source: DataSource };
 }
+
+// ── TOday's map questions (generated: scripts/extract_places.py) ─────────────
+
+export type PlaceKind = "landmark" | "park" | "neighbourhood" | "district" | "beach" | "station";
+
+export interface Place {
+  id: string;
+  kind: PlaceKind;
+  name: string;
+  /** Position on the blank map (SVG units), for points… */
+  point?: [number, number];
+  /** …or the outline, for areas (one or more rings of [x, y]). */
+  rings?: [number, number][][];
+}
+
+export interface PlacesData {
+  generatedOn: string;
+  generator: string;
+  map: { width: number; height: number; paths: string[]; kmPerUnit: number; source: DataSource };
+  places: Place[];
+  sources: Record<PlaceKind, DataSource>;
+}

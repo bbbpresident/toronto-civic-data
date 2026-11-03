@@ -26,6 +26,29 @@ function useToday(fallback: string) {
   return today;
 }
 
+function DayCell({ day, label, num, from, to, counts, today, selected, onPick, compact }: {
+  day: string; label: string; num: number; from: string; to: string; counts: Record<string, number>; today: string; selected?: string;
+  onPick: (d: string) => void; compact?: boolean;
+}) {
+  const c = counts[day] ?? 0, inWindow = day >= from && day <= to;
+  const isToday = day === today, isSel = day === selected, past = day < today;
+  const aria = `${label}: ${c ? `${c} event${c === 1 ? "" : "s"}` : "no events listed"}${isToday ? " (today)" : ""}`;
+  return (
+    <button type="button" role="gridcell" aria-label={aria} aria-selected={isSel} disabled={!inWindow} onClick={() => onPick(day)}
+      style={{
+        all: "unset", boxSizing: "border-box", cursor: inWindow ? "pointer" : "default", height: compact ? 30 : 44, borderRadius: 8, display: "flex", flexDirection: "column",
+        alignItems: "center", justifyContent: "center", gap: 2, fontSize: compact ? 12 : 13, fontVariantNumeric: "tabular-nums",
+        background: isSel ? "var(--blue)" : c ? "var(--surface-2)" : "transparent", color: isSel ? "#0b0e15" : past || !inWindow ? "var(--text-secondary)" : "var(--text-primary)",
+        opacity: inWindow ? 1 : 0.35, outline: isToday && !isSel ? "2px solid var(--blue)" : undefined, outlineOffset: -2, fontWeight: isToday ? 800 : 500,
+      }}>
+      {num}
+      {c > 0 && (compact
+        ? <span aria-hidden style={{ width: 5, height: 5, borderRadius: 3, background: isSel ? "#0b0e15" : "var(--s6)" }} />
+        : <span aria-hidden style={{ fontSize: 9, fontWeight: 700, color: isSel ? "#0b0e15" : "var(--s6)" }}>{c}</span>)}
+    </button>
+  );
+}
+
 function MonthGrid({ year, month, from, to, counts, today, selected, onPick, compact }: {
   year: number; month: number; from: string; to: string; counts: Record<string, number>; today: string; selected?: string;
   onPick: (d: string) => void; compact?: boolean;
@@ -33,30 +56,12 @@ function MonthGrid({ year, month, from, to, counts, today, selected, onPick, com
   const first = new Date(year, month, 1).getDay(), n = new Date(year, month + 1, 0).getDate();
   const cells: (number | null)[] = [...Array(first).fill(null), ...Array.from({ length: n }, (_, i) => i + 1)];
   while (cells.length % 7) cells.push(null);
-  const size = compact ? 30 : 44;
   return (
     <div role="grid" aria-label={`${MONTHS[month]} ${year}`} style={{ display: "grid", gridTemplateColumns: "repeat(7, minmax(0, 1fr))", gap: compact ? 3 : 4 }}>
       {DOW.map((d, i) => <div key={i} role="columnheader" aria-hidden style={{ fontSize: 10, fontWeight: 700, color: "var(--text-secondary)", textAlign: "center", paddingBottom: 2 }}>{d}</div>)}
-      {cells.map((d, i) => {
-        if (d == null) return <div key={i} />;
-        const day = iso(year, month, d), c = counts[day] ?? 0, inWindow = day >= from && day <= to;
-        const isToday = day === today, isSel = day === selected, past = day < today;
-        const label = `${MONTHS[month]} ${d}: ${c ? `${c} event${c === 1 ? "" : "s"}` : "no events listed"}${isToday ? " (today)" : ""}`;
-        return (
-          <button key={i} type="button" role="gridcell" aria-label={label} aria-selected={isSel} disabled={!inWindow} onClick={() => onPick(day)}
-            style={{
-              all: "unset", boxSizing: "border-box", cursor: inWindow ? "pointer" : "default", height: size, borderRadius: 8, display: "flex", flexDirection: "column",
-              alignItems: "center", justifyContent: "center", gap: 2, fontSize: compact ? 12 : 13, fontVariantNumeric: "tabular-nums",
-              background: isSel ? "var(--blue)" : c ? "var(--surface-2)" : "transparent", color: isSel ? "#0b0e15" : past || !inWindow ? "var(--text-secondary)" : "var(--text-primary)",
-              opacity: inWindow ? 1 : 0.35, outline: isToday && !isSel ? "2px solid var(--blue)" : undefined, outlineOffset: -2, fontWeight: isToday ? 800 : 500,
-            }}>
-            {d}
-            {c > 0 && (compact
-              ? <span aria-hidden style={{ width: 5, height: 5, borderRadius: 3, background: isSel ? "#0b0e15" : "var(--s6)" }} />
-              : <span aria-hidden style={{ fontSize: 9, fontWeight: 700, color: isSel ? "#0b0e15" : "var(--s6)" }}>{c}</span>)}
-          </button>
-        );
-      })}
+      {cells.map((d, i) => d == null ? <div key={i} /> : (
+        <DayCell key={i} day={iso(year, month, d)} label={`${MONTHS[month]} ${d}`} num={d} from={from} to={to} counts={counts} today={today} selected={selected} onPick={onPick} compact={compact} />
+      ))}
     </div>
   );
 }
@@ -123,17 +128,35 @@ export default function EventsCalendar({ from, to, items, days, calendarUrl }: {
   );
 }
 
-/** Compact month calendar for the home page: dots on days with events, and what's coming up. */
+/** This week and next (Sunday to Saturday), for the home page. */
+function TwoWeeks({ from, to, counts, today, onPick }: { from: string; to: string; counts: Record<string, number>; today: string; onPick: (d: string) => void }) {
+  const t = new Date(`${today}T12:00:00`);
+  const start = new Date(t); start.setDate(t.getDate() - t.getDay());
+  const dates = Array.from({ length: 14 }, (_, i) => { const d = new Date(start); d.setDate(start.getDate() + i); return d; });
+  const fmtShort = (d: Date) => d.toLocaleDateString("en-CA", { month: "short", day: "numeric" });
+  return (
+    <div>
+      <div style={{ fontSize: 11, color: "var(--text-secondary)", marginBottom: 4 }}>{fmtShort(dates[0])} – {fmtShort(dates[13])}</div>
+      <div role="grid" aria-label={`This week and next, ${fmtShort(dates[0])} to ${fmtShort(dates[13])}`} style={{ display: "grid", gridTemplateColumns: "repeat(7, minmax(0, 1fr))", gap: 3 }}>
+        {DOW.map((d, i) => <div key={i} role="columnheader" aria-hidden style={{ fontSize: 10, fontWeight: 700, color: "var(--text-secondary)", textAlign: "center", paddingBottom: 2 }}>{d}</div>)}
+        {dates.map(d => {
+          const day = iso(d.getFullYear(), d.getMonth(), d.getDate());
+          return <DayCell key={day} day={day} label={`${MONTHS[d.getMonth()]} ${d.getDate()}`} num={d.getDate()} from={from} to={to} counts={counts} today={today} onPick={onPick} compact />;
+        })}
+      </div>
+    </div>
+  );
+}
+
+/** The home page's calendar: this week and next, with dots on days that have events, and what's coming up. */
 export function MiniCalendar({ from, to, items, days }: { from: string; to: string; items: CalEvent[]; days: Record<string, number[]> }) {
   const today = useToday(from);
-  const y = Number(today.slice(0, 4)), m = Number(today.slice(5, 7)) - 1;
   const counts = useMemo(() => Object.fromEntries(Object.entries(days).map(([d, ix]) => [d, ix.length])), [days]);
   const upcoming = useMemo(() => Object.keys(days).filter(d => d >= today).sort().slice(0, 3)
     .flatMap(d => days[d].slice(0, 2).map(i => ({ d, e: items[i] }))).slice(0, 4), [days, items, today]);
   return (
     <div>
-      <MonthGrid year={y} month={m} from={from} to={to} counts={counts} today={today} compact
-        onPick={d => { window.location.href = `/events?d=${d}`; }} />
+      <TwoWeeks from={from} to={to} counts={counts} today={today} onPick={d => { window.location.href = `/events?d=${d}`; }} />
       <ul style={{ listStyle: "none", margin: "12px 0 0", padding: 0, display: "grid", gridTemplateColumns: "minmax(0, 1fr)", gap: 6 }}>
         {upcoming.map(({ d, e }, i) => (
           <li key={i} style={{ fontSize: 12, lineHeight: 1.35, display: "flex", gap: 8, minWidth: 0 }}>

@@ -1,7 +1,10 @@
 import Link from "next/link";
+import { TowerShape } from "@/components/TodayGame";
 import { MiniCalendar } from "@/components/EventsCalendar";
 import { HUBS, SECTIONS, figure, type Section } from "@/lib/home";
 import { CITY } from "@/lib/city";
+import { LAYERS } from "@/lib/layers";
+import bus from "@/public/layers/bus.json";
 
 // The home page (the "magazine" layout): the budget as the lead story, the City's events calendar
 // and the daily game beside it, then twelve questions, one per section. Every figure links to the
@@ -49,23 +52,46 @@ function GameBanner({ compact = false }: { compact?: boolean }) {
     }}>
       <div style={{ minWidth: 0, flex: "1 1 220px" }}>
         <div style={{ ...kicker, color: "var(--s6)" }}>Daily game</div>
-        <div style={{ fontSize: compact ? 20 : 26, fontWeight: 800, letterSpacing: "-0.02em", margin: "4px 0" }}>TOday</div>
-        <div style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.5 }}>Five questions about Toronto, 60 seconds each. Climb the CN Tower to 5,000.</div>
+        <div style={{ fontSize: compact ? 20 : 26, fontWeight: 800, letterSpacing: "-0.02em", margin: "4px 0" }}>416</div>
+        <div style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.5 }}>4 questions. 1 minute. 6ix tiers.</div>
       </div>
-      <div aria-hidden style={{ display: "flex", gap: 6 }}>
-        {["Q1", "Q2", "Q3"].map((q, i) => (
-          <div key={q} style={{ width: 40, height: compact ? 54 : 62, borderRadius: 8, background: "var(--surface-2)", position: "relative", overflow: "hidden" }}>
-            <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: `${[45, 70, 55][i]}%`, background: "var(--s1)", opacity: 0.85 }} />
-            <div style={{ position: "absolute", left: 4, right: 4, bottom: `${[60, 52, 74][i]}%`, height: 3, borderRadius: 2, background: "#ef4444" }} />
-            <span style={{ position: "absolute", top: 3, left: 0, right: 0, textAlign: "center", fontSize: 9, fontWeight: 700, color: "var(--text-secondary)" }}>{q}</span>
-          </div>
-        ))}
-      </div>
+      <svg aria-hidden viewBox="0 0 120 400" style={{ height: compact ? 96 : 120, width: "auto", flex: "none" }}>
+        <defs>
+          <clipPath id="banner-cn"><TowerShape /></clipPath>
+          <linearGradient id="banner-cn-fill" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stopColor="var(--s1)" /><stop offset="1" stopColor="var(--s6)" /></linearGradient>
+        </defs>
+        <g fill="var(--surface-2)" stroke="var(--border)" strokeWidth={2}><TowerShape /></g>
+        <rect clipPath="url(#banner-cn)" x={0} y={150} width={120} height={250} fill="url(#banner-cn-fill)" />
+      </svg>
     </Link>
   );
 }
 
 // ── 2. Magazine ─────────────────────────────────────────────────────────────
+
+/** A small preview of the map page: the city outline with the bus network (the map's default view) drawn on it. */
+function MapCard() {
+  const m = LAYERS.map, routes = bus as unknown as { items: [number, string, string][] };
+  return (
+    <Link href="/map" className="hd-card" style={{ ...card, padding: "16px 16px 14px", display: "block" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 8, marginBottom: 8 }}>
+        <span style={{ ...kicker, color: "var(--s3)" }}>Toronto on a map</span>
+        <span style={{ fontSize: 12, fontWeight: 700, color: "var(--blue)" }}>Open the map →</span>
+      </div>
+      <svg viewBox={`0 0 ${m.width} ${m.height}`} width="100%" aria-hidden style={{ display: "block", borderRadius: 10, background: "var(--surface-2)" }}>
+        <g fill="none" stroke="var(--text-secondary)" strokeWidth={6} strokeLinejoin="round">{m.paths.map((d, i) => <path key={i} d={d} />)}</g>
+        <g fill="var(--surface)" stroke="var(--surface)" strokeWidth={2}>{m.paths.map((d, i) => <path key={i} d={d} />)}</g>
+        <defs><clipPath id="map-card-city">{m.paths.map((d, i) => <path key={i} d={d} />)}</clipPath></defs>
+        <g clipPath="url(#map-card-city)">
+          {routes.items.map((it, i) => <path key={i} d={it[2]} fill="none" stroke="var(--s1)" strokeWidth={3} strokeOpacity={0.6} strokeLinecap="round" strokeLinejoin="round" />)}
+        </g>
+      </svg>
+      <p style={{ fontSize: 12, color: "var(--text-secondary)", margin: "8px 0 0", lineHeight: 1.45 }}>
+        {LAYERS.views.length} views: transit, bike lanes, green space, courts and fields, schools, housing, density and more.
+      </p>
+    </Link>
+  );
+}
 
 function CalendarCard() {
   const ev = CITY.events;
@@ -109,6 +135,7 @@ export default function HomePage() {
         <div style={{ display: "grid", gap: 14, alignContent: "start", minWidth: 0 }}>
           <CalendarCard />
           <GameBanner compact />
+          <MapCard />
         </div>
       </div>
       <h2 style={{ fontSize: 13, fontWeight: 800, letterSpacing: "0.06em", textTransform: "uppercase", margin: "34px 0 12px" }}>Questions worth asking</h2>

@@ -11,6 +11,10 @@ import { TRANSIT } from "@/lib/transit";
 import { fmtPeriod } from "@/lib/chart-format";
 import { fmtMoney } from "@/lib/format";
 import type { DataSource, Series } from "@/lib/types";
+import { LAYERS } from "@/lib/layers";
+import densityLayer from "@/public/layers/density.json";
+import subwayLayer from "@/public/layers/subway.json";
+import parksLayer from "@/public/layers/parks.json";
 
 // TOday, the daily game: the question bank. Every answer is computed here from the generated
 // datasets (never typed), and carries the files it came from. Five levels by the size of the
@@ -640,7 +644,7 @@ const LEVEL_3: Draft[] = [
 
 const AREAS: Record<string, string> = {
   budget: "budget", people: "people", elections: "government", council: "government", housing: "housing",
-  crime: "safety", "road-safety": "safety", transit: "transit", schools: "schools",
+  crime: "safety", "road-safety": "safety", transit: "transit", schools: "schools", map: "map",
 };
 
 function areaOf(href: string): string {
@@ -757,3 +761,171 @@ function finish(drafts: Draft[]): Record<Level, TodayQuestion[]> {
 }
 
 export const QUESTIONS = finish([...LEVEL_1, ...LEVEL_2, ...LEVEL_3, ...MORE]);
+
+// ── Multiple choice (416's first question) ──────────────────────────────────
+// Four options, each with a value computed from the data; the right answer is the biggest (or the
+// smallest) value. Option order is shuffled by a hash of the question and the option, so it's the same
+// for everyone and never typed.
+
+export interface ChoiceQuestion {
+  id: string;
+  topic: string;
+  area: string;
+  prompt: string;
+  options: string[];
+  correct: number;
+  fact: string;
+  how: string;
+  href: string;
+  hrefLabel: string;
+  sources: DataSource[];
+}
+
+type ChoiceDraft = Omit<ChoiceQuestion, "area" | "options" | "correct" | "fact"> & {
+  choices: { label: string; value: number }[];
+  best: "max" | "min";
+  fmt: (v: number) => string;
+  factLead?: string;
+};
+
+function fnv(s: string): number {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 0x01000193) >>> 0;
+  return h;
+}
+
+const layerSources = (id: string) => LAYERS.views.find(v => v.id === id)?.sources ?? [];
+const bySize = <T,>(xs: T[], v: (x: T) => number) => [...xs].sort((a, b) => v(b) - v(a));
+
+const DENS = densityLayer as unknown as { items: [string, string, number][] };
+const SUBWAY = subwayLayer as unknown as { groups: { label: string }[]; items: [number, string, string][]; info: string[] };
+const PARKS = parksLayer as unknown as { items: [number, string, string][]; info: string[] };
+const km = (s: string) => parseFloat(s);              // "38.9 km long · …" → 38.9
+const ha = (s: string) => parseFloat(s.replace(/,/g, "")); // "1,060.6 hectares …" → 1060.6
+
+const CHOICES: ChoiceDraft[] = [
+  (() => {
+    const names = ["Toronto Police Service", "Children's Services", "Toronto Fire Services", "Toronto Public Library"];
+    return {
+      id: "mc-budget-programs", topic: "police-budget", best: "max" as const, fmt: fmtMoney,
+      prompt: `Which of these gets the most money in the City's ${BUDGET.year} operating budget?`,
+      choices: names.map(n => ({ label: n.replace(/^Toronto /, ""), value: program(BUDGET, n).amount })),
+      how: `Each program's gross expenses in the ${BUDGET.year} approved operating budget.`,
+      href: `/budget/${BUDGET.year}`, hrefLabel: `The ${BUDGET.year} budget by program`, sources: [BUDGET.source],
+    };
+  })(),
+  {
+    id: "mc-revenue", topic: "property-tax", best: "max", fmt: fmtMoney,
+    prompt: `Where does the City's ${BUDGET.year} operating budget get the most money?`,
+    choices: [["property-tax", "Property tax"], ["provincial", "The Province of Ontario"], ["user-fees", "User fees, licences and permits"], ["federal", "The Government of Canada"]]
+      .map(([g, label]) => ({ label, value: group(BUDGET, "revenue", g) })),
+    how: `Each group's revenue in the ${BUDGET.year} approved operating budget, grouped the same way every year (see “Comparable across years”).`,
+    href: "/budget/comparable", hrefLabel: "Where the City's money comes from", sources: [BUDGET.source],
+  },
+  (() => {
+    const sorted = bySize(DENS.items, it => it[2]);
+    const pick = [0, 35, 80, 130].map(i => sorted[i]);
+    return {
+      id: "mc-densest", topic: "density", best: "max" as const, fmt: (v: number) => `${n0(v)} people per km²`,
+      prompt: "Which of these neighbourhoods is the most densely populated?",
+      choices: pick.map(it => ({ label: it[0], value: it[2] })),
+      how: "Each neighbourhood's 2021 census population ÷ its land area (measured from the City's boundary).",
+      href: "/map", hrefLabel: "Population density on the map", sources: layerSources("density"),
+    };
+  })(),
+  (() => {
+    const lines = SUBWAY.items.map((it, i) => ({ label: SUBWAY.groups[it[0]].label.replace(/ \(.*\)$/, "").replace(/^Line (\d) (.*)$/, "Line $1 ($2)"), value: km(SUBWAY.info[i]) }));
+    const four = bySize(lines, l => l.value).slice(0, 4);
+    return {
+      id: "mc-longest-line", topic: "ttc-lines", best: "max" as const, fmt: (v: number) => `${v.toFixed(1)} km`,
+      prompt: "Which of these TTC rapid transit lines is the longest?",
+      choices: four,
+      how: "Each line's length measured along its full path in the TTC's schedule data (GTFS shapes).",
+      href: "/map", hrefLabel: "Rapid transit on the map", sources: layerSources("subway"),
+    };
+  })(),
+  (() => {
+    const es = ELECTIONS.filter(e => e.turnout).slice(-4);
+    return {
+      id: "mc-turnout", topic: "turnout", best: "max" as const, fmt: (v: number) => `${v.toFixed(1)}% turnout`,
+      prompt: "In which of these Toronto elections did the biggest share of eligible voters vote?",
+      choices: es.map(e => ({ label: e.label, value: e.turnout!.turnoutPct })),
+      how: "Number voted ÷ eligible electors, from each election's voter statistics.",
+      href: "/elections", hrefLabel: "Turnout in every election since 2003", sources: es.map(e => e.turnout!.source),
+    };
+  })(),
+  (() => {
+    const named = PARKS.items.map((it, i) => ({ label: it[1], value: ha(PARKS.info[i]) })).filter(p => p.label && !/^unnamed/i.test(p.label));
+    const seen = new Set<string>(), uniq = bySize(named, p => p.value).filter(p => !seen.has(p.label) && seen.add(p.label));
+    return {
+      id: "mc-largest-park", topic: "parks", best: "max" as const, fmt: (v: number) => `${v.toFixed(0)} hectares`,
+      prompt: "Which of these parks is the biggest?",
+      choices: [2, 6, 12, 25].map(i => uniq[i]),
+      how: "Each park's area measured on its outline in the City's Green Spaces data.",
+      href: "/map", hrefLabel: "Green space on the map", sources: layerSources("parks"),
+    };
+  })(),
+  (() => {
+    const yr = last(C.reported).period;
+    const cats = CRIME.categories.map((name, i) => ({ label: name, value: at(C[`cat${i}`], yr).value }));
+    return {
+      id: "mc-crime-type", topic: "crime", best: "max" as const, fmt: (v: number) => `${n0(v)} reported`,
+      prompt: `Which kind of crime was reported most to Toronto police in ${yr}?`,
+      choices: bySize(cats, c => c.value).slice(0, 4),
+      how: `Reported offences in ${yr}, by the police service's own categories.`,
+      href: "/crime", hrefLabel: "Crime by category", sources: [C.cat0.source],
+    };
+  })(),
+  (() => {
+    const yr = last(R.ksi_pedestrian).period;
+    const modes = [["ksi_pedestrian", "Pedestrians"], ["ksi_cyclist", "Cyclists"], ["ksi_motorcyclist", "Motorcyclists"], ["ksi_driver", "Drivers"]];
+    return {
+      id: "mc-ksi-mode", topic: "road-safety", best: "max" as const, fmt: (v: number) => `${n0(v)} killed or seriously injured`,
+      prompt: `Who made up the most people killed or seriously injured on Toronto's roads in ${yr}?`,
+      choices: modes.map(([k, label]) => ({ label, value: at(R[k], yr).value })),
+      how: `People killed or seriously injured in ${yr}, by how they were travelling.`,
+      href: "/road-safety", hrefLabel: "Road safety by how people travel", sources: [R.ksi_pedestrian.source],
+    };
+  })(),
+  (() => {
+    const yr = last(H.starts).period;
+    const kinds = [["startsApartment", "Apartments"], ["startsSingle", "Single-detached houses"], ["startsSemi", "Semi-detached houses"], ["startsRow", "Row houses"]];
+    return {
+      id: "mc-starts-type", topic: "housing-starts", best: "max" as const, fmt: (v: number) => `${n0(v)} started`,
+      prompt: `What kind of new home was started most in the Toronto region in ${yr}?`,
+      choices: kinds.map(([k, label]) => ({ label, value: at(H[k], yr).value })),
+      how: `Housing starts in ${yr} by type of dwelling (Toronto region).`,
+      href: "/housing", hrefLabel: "Homes built since 1972", sources: [H.starts.source],
+    };
+  })(),
+  (() => {
+    const pts = complete(T.annualRides), top = bySize(pts, p => p.value)[0], lastP = pts[pts.length - 1];
+    const others = [pts[0], pts.find(p => p.period === "2020") ?? pts[1], lastP].filter(p => p.period !== top.period);
+    const four = [top, ...others].slice(0, 4);
+    return {
+      id: "mc-ttc-peak-year", topic: "ttc-rides", best: "max" as const, fmt: (v: number) => `${(v / 1e6).toFixed(0)} million rides`,
+      prompt: "In which of these years did the TTC carry the most riders?",
+      choices: four.map(p => ({ label: p.period, value: p.value })),
+      how: "Annual rides as the TTC reports them.",
+      href: "/transit", hrefLabel: "TTC ridership since 2003", sources: [T.annualRides.source],
+    };
+  })(),
+];
+
+function finishChoices(drafts: ChoiceDraft[]): ChoiceQuestion[] {
+  return drafts.map(d => {
+    if (d.choices.length !== 4 || d.choices.some(c => !c || !Number.isFinite(c.value))) throw new Error(`today: choice question "${d.id}" needs four options with values`);
+    const best = d.best === "max" ? Math.max(...d.choices.map(c => c.value)) : Math.min(...d.choices.map(c => c.value));
+    if (d.choices.filter(c => c.value === best).length !== 1) throw new Error(`today: choice question "${d.id}" has a tie for the answer`);
+    const order = [...d.choices].sort((a, b) => fnv(`${d.id}:${a.label}`) - fnv(`${d.id}:${b.label}`));
+    const winner = order.find(c => c.value === best)!;
+    const { choices: _c, best: _b, fmt, factLead, ...rest } = d;
+    void _c; void _b;
+    return {
+      ...rest, area: areaOf(d.href), options: order.map(c => c.label), correct: order.indexOf(winner),
+      fact: `${factLead ?? ""}${bySize(order, c => (d.best === "max" ? c.value : -c.value)).map(c => `${c.label}: ${fmt(c.value)}`).join(" · ")}.`,
+    };
+  });
+}
+
+export const CHOICE_QUESTIONS = finishChoices(CHOICES);

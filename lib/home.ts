@@ -41,7 +41,7 @@ export const SECTIONS: Section[] = [
   { href: "/road-safety", hub: "safety", title: "Road safety", question: "How safe are our streets?", blurb: "People killed or seriously injured on Toronto's streets since 2006, by how they were travelling, and all police-reported collisions." },
   { href: "/construction", hub: "living", title: "Construction", question: "Where's the construction?", blurb: "Every road restriction in the city on a map: construction and closures, who's doing the work, and until when." },
   { href: "/get-involved", hub: "money", title: "Get involved", question: "How do I have my say?", blurb: "The City's own forms: list your event, email the mayor, reach your councillor, ask 311, speak at a committee." },
-  { href: "/today", hub: "play", title: "TOday", question: "How well do you know Toronto?", blurb: "Five questions a day about the city, 60 seconds each. How high can you climb?" },
+  { href: "/today", hub: "play", title: "416", question: "How well do you know Toronto?", blurb: "4 questions. 1 minute. 6ix tiers." },
   { href: "/sports", hub: "play", title: "Sports", question: "How have our teams done?", blurb: "The Blue Jays, Raptors, Maple Leafs, Tempo and Toronto FC: every season's record and playoff run, championships, and player records." },
 ];
 
