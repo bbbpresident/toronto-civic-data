@@ -251,8 +251,10 @@ def main():
         for line in lines:
             d = path_of(line, 0.8)
             if d:
-                items.append([order.index(k), (r.get("STREET_NAME") or "").strip(), d])
                 km = km_of(line)
+                inst = yr("INSTALLED")
+                # [kind, street, path, installed year (0 if none), km]: the year and length drive the map's "watch it grow" playback
+                items.append([order.index(k), (r.get("STREET_NAME") or "").strip(), d, int(inst) if inst and inst.isdigit() else 0, round(km, 3)])
                 info.append(" · ".join(x for x in [f"{km * 1000:,.0f} m" if km < 1 else f"{km:.1f} km", infra.strip(),
                                                     f"installed {yr('INSTALLED')}" if yr("INSTALLED") else "", f"upgraded {yr('UPGRADED')}" if yr("UPGRADED") else ""] if x))
     save("cycling", "Bike lanes and trails", "The cycling network: trails, bike lanes, separated cycle tracks and shared lanes.", "Getting around",

@@ -598,3 +598,20 @@ export interface PlacesData {
   places: Place[];
   sources: Record<PlaceKind, DataSource>;
 }
+
+// ── Rankings (top-N lists and breakdowns) ───────────────────────────────────
+
+/** A ranked or ordered list from one file (scripts/_common.py `ranking`). */
+export interface Ranking {
+  id: string;
+  title: string;
+  unit: "count" | "dollars" | "percent" | "minutes";
+  rows: { label: string; value: number; sub?: string | null }[];
+  source: DataSource;
+  note?: string;
+}
+
+/** A dataset of series plus rankings (pcard, parking, marriage, homelessness, delays, lobbying). */
+export interface RankedData extends SeriesData {
+  ranks: Record<string, Ranking>;
+}

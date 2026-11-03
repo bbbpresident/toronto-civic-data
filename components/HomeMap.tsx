@@ -16,7 +16,7 @@ interface Measure { label: string; color: string; bins?: number[]; unit?: string
 /** `info[i]` holds the facts for item i (length and rank, area, spaces…), shown when it's tapped. */
 type Layer = { info?: string[] } & (
   | { type: "points"; groups: Group[]; items: [number, number, number, string, number?][]; amenities?: string[] }
-  | { type: "lines"; groups: Group[]; items: [number, string, string][]; stops?: [number, number, string][]; stopInfo?: string[]; uniform?: boolean }
+  | { type: "lines"; groups: Group[]; items: [number, string, string, number?, number?][]; stops?: [number, number, string][]; stopInfo?: string[]; uniform?: boolean }
   | { type: "areas"; groups: Group[]; items: [number, string, string, number?, number?][]; labels?: boolean }
   | { type: "choropleth"; measures: Measure[]; items: (string | number)[][] });
 
@@ -28,6 +28,8 @@ const GRID_ANGLE = 17;
 const PCT_BINS = [0, 20, 40, 60, 80];
 /** Shaded areas go under lines, lines under points. */
 const DRAW_ORDER: Layer["type"][] = ["choropleth", "areas", "lines", "points"];
+/** Bike lanes "watch it grow": one year per tick. Cycling items carry [.., installed year, km]. */
+const YEAR_MS = 650;
 
 /** The drawing frame: the map itself, or, once rotated, the box around the turned city outline (so no empty corners). */
 function frameFor(rotated: boolean, W: number, H: number, paths: string[]) {
@@ -50,6 +52,8 @@ export default function HomeMap({ map, views }: { map: { width: number; height: 
   const [amenity, setAmenity] = useState<number | null>(null);
   const [measure, setMeasure] = useState(0);
   const [rotated, setRotated] = useState(false);
+  /** The bike-lane playback: the year shown, and whether it's running; null = today's network. */
+  const [grow, setGrow] = useState<{ year: number; playing: boolean } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
   const drag = useRef<{ x: number; y: number; vx: number; vy: number } | null>(null);
 
@@ -67,8 +71,31 @@ export default function HomeMap({ map, views }: { map: { width: number; height: 
     }
   }, [active, layers, failed]);
 
+  // Bike lanes by year. Most segments are dated to one early year (the file's baseline), so playback starts there, with
+  // the handful dated earlier folded in.
+  const cycling = layers.cycling?.type === "lines" ? layers.cycling : null;
+  const bikeYears = useMemo(() => {
+    if (!cycling) return null;
+    const n: Record<number, number> = {};
+    for (const it of cycling.items) if (it[3]) n[it[3]] = (n[it[3]] ?? 0) + 1;
+    const ys = Object.keys(n).map(Number).sort((a, b) => a - b);
+    const first = ys.find(y => n[y] > 20) ?? ys[0];
+    return { first, last: ys[ys.length - 1], firstCount: n[first] ?? 0 };
+  }, [cycling]);
+  useEffect(() => {
+    if (!grow?.playing || !bikeYears) return;
+    const t = setTimeout(() => setGrow(g => g && (g.year >= bikeYears.last ? { ...g, playing: false } : { ...g, year: g.year + 1 })),
+      grow.year === bikeYears.first ? YEAR_MS * 2 : YEAR_MS);
+    return () => clearTimeout(t);
+  }, [grow, bikeYears]);
+  const bikeYear = (it: [number, string, string, number?, number?]) => Math.max(bikeYears?.first ?? 0, it[3] ?? 0);
+  const bikeKm = grow && cycling && bikeYears
+    ? cycling.items.reduce((a, it) => { const y = bikeYear(it); return [a[0] + (it[3] && y <= grow.year ? it[4] ?? 0 : 0), a[1] + (it[3] && y === grow.year ? it[4] ?? 0 : 0)]; }, [0, 0])
+    : null;
+
   function toggle(id: string) {
     setPicked(null);
+    if (id === "cycling") setGrow(null);
     setActive(a => (a.includes(id) ? a.filter(x => x !== id) : [...a, id].slice(-MAX_VIEWS)));
     if (id === "facilities") setAmenity(null);
   }
@@ -115,6 +142,19 @@ export default function HomeMap({ map, views }: { map: { width: number; height: 
     }
     if (layer.type === "lines") {
       counts[id] = layer.items.length;
+      if (id === "cycling" && grow && bikeYears) {
+        return layer.items.map((it, i) => {
+          const y = bikeYear(it);
+          if (!it[3] || y > grow.year) return null;
+          const fresh = y === grow.year && y > bikeYears.first;
+          return (
+            <path key={i} d={it[2]} fill="none" stroke={fresh ? "var(--text-primary)" : layer.groups[it[0]]?.color ?? "var(--s1)"} strokeWidth={(fresh ? 4 : 2.2) * s}
+              strokeLinecap="round" strokeLinejoin="round" onClick={pick(it[1], layer.info?.[i])} style={{ cursor: "pointer" }}>
+              <title>{it[1]}</title>
+            </path>
+          );
+        });
+      }
       return (
         <>
           {layer.items.map((it, i) => (
@@ -191,6 +231,28 @@ export default function HomeMap({ map, views }: { map: { width: number; height: 
               <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }} role="group" aria-label="Filter facilities by amenity">
                 <button type="button" aria-pressed={amenity == null} onClick={() => setAmenity(null)} style={chip(amenity == null)}>All</button>
                 {layer.amenities.map((a, i) => <button key={a} type="button" aria-pressed={amenity === i} onClick={() => setAmenity(i)} style={chip(amenity === i)}>{a}</button>)}
+              </div>
+            )}
+            {id === "cycling" && bikeYears && (
+              <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 8 }}>
+                <button type="button" style={{ ...chip(!!grow?.playing), fontWeight: 700 }}
+                  onClick={() => setGrow(g => g?.playing ? { ...g, playing: false } : { year: !g || g.year >= bikeYears.last ? bikeYears.first : g.year, playing: true })}>
+                  {grow?.playing ? "❚❚ Pause" : grow && grow.year < bikeYears.last ? "▶ Play" : "▶ Watch it grow"}
+                </button>
+                {grow && (
+                  <>
+                    <input type="range" min={bikeYears.first} max={bikeYears.last} value={grow.year} aria-label="Year" aria-valuetext={String(grow.year)}
+                      onChange={e => setGrow({ year: +e.target.value, playing: false })} style={{ flex: "1 1 160px", accentColor: "var(--blue)" }} />
+                    <button type="button" style={chip(false)} onClick={() => setGrow(null)}>Back to today</button>
+                  </>
+                )}
+                {grow && (
+                  <p style={{ flexBasis: "100%", fontSize: 11, color: "var(--text-secondary)", margin: 0, lineHeight: 1.5 }}>
+                    Each segment appears in its installed year from the City&apos;s file; white is new that year. {bikeYears.first} is the earliest year for most segments
+                    ({bikeYears.firstCount.toLocaleString("en-CA")} are dated {bikeYears.first}), so it starts there. It&apos;s today&apos;s network by when each piece went in:
+                    removed routes aren&apos;t in the file.
+                  </p>
+                )}
               </div>
             )}
             {layer?.type === "choropleth" && layer.measures.length > 1 && (
@@ -271,6 +333,17 @@ export default function HomeMap({ map, views }: { map: { width: number; height: 
           <button type="button" aria-pressed={rotated} onClick={rotate} title={rotated ? "Back to north up" : "Turn the map to line up with the street grid"}
             style={{ ...btn, fontSize: 11, borderColor: rotated ? "var(--blue)" : "var(--border)" }}>{rotated ? "North up" : "Grid ⟳"}</button>
         </div>
+        {grow && bikeKm && bikeYears && (
+          <div aria-live="polite" style={{ position: "absolute", top: 10, left: 12, pointerEvents: "none", textShadow: "0 0 6px var(--surface)" }}>
+            <div style={{ fontSize: "clamp(28px, 7vw, 44px)", fontWeight: 900, letterSpacing: "-0.04em", lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>
+              {grow.year === bikeYears.first && <span style={{ fontSize: "0.45em", color: "var(--text-secondary)" }}>by </span>}{grow.year}
+            </div>
+            <div style={{ fontSize: 12, color: "var(--text-secondary)", fontVariantNumeric: "tabular-nums" }}>
+              <strong style={{ color: "var(--text-primary)" }}>{Math.round(bikeKm[0]).toLocaleString("en-CA")} km</strong>
+              {grow.year > bikeYears.first && <> · +{bikeKm[1] < 10 ? bikeKm[1].toFixed(1) : Math.round(bikeKm[1])} km</>}
+            </div>
+          </div>
+        )}
         {loading.length > 0 && <div style={{ position: "absolute", left: 10, bottom: 10, fontSize: 12, color: "var(--text-secondary)" }}>Loading…</div>}
         {active.length === 0 && (
           <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, color: "var(--text-secondary)", pointerEvents: "none" }}>

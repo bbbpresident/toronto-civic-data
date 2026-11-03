@@ -1,0 +1,971 @@
+{
+ "generatedOn": "2026-11-03",
+ "generator": "scripts/extract_parking.py",
+ "latestYear": 2025,
+ "series": {
+  "tickets": {
+   "id": "tickets",
+   "label": "Parking tickets",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2008",
+     "value": 2862776
+    },
+    {
+     "period": "2009",
+     "value": 2582383
+    },
+    {
+     "period": "2010",
+     "value": 2721462
+    },
+    {
+     "period": "2011",
+     "value": 2805492
+    },
+    {
+     "period": "2012",
+     "value": 2746154
+    },
+    {
+     "period": "2013",
+     "value": 2351358
+    },
+    {
+     "period": "2014",
+     "value": 2484983
+    },
+    {
+     "period": "2015",
+     "value": 2168493
+    },
+    {
+     "period": "2016",
+     "value": 2254761
+    },
+    {
+     "period": "2017",
+     "value": 2144226
+    },
+    {
+     "period": "2018",
+     "value": 2044288
+    },
+    {
+     "period": "2019",
+     "value": 2213939
+    },
+    {
+     "period": "2020",
+     "value": 1403663
+    },
+    {
+     "period": "2021",
+     "value": 1481709
+    },
+    {
+     "period": "2022",
+     "value": 1821887
+    },
+    {
+     "period": "2023",
+     "value": 2256360
+    },
+    {
+     "period": "2024",
+     "value": 2147159
+    },
+    {
+     "period": "2025",
+     "value": 2051175
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Parking Tickets — 2025 file (and each earlier year's file)",
+    "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/0c4aa89c-ec26-45f7-86a1-eee89e9e3fb1/download/parking-tickets-2025.zip",
+    "member": null,
+    "locator": "every row, by year of DATE_OF_INFRACTION",
+    "method": "Rows counted per year file."
+   },
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/4042b925-4797-48c1-b417-475b2c0ea796/download/parking_tickets_2008.zip",
+     "member": null,
+     "locator": "2008 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/651f97ec-af99-4e24-94ac-0f00093aff99/download/parking_tickets_2009.zip",
+     "member": null,
+     "locator": "2009 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/6167002f-4a67-47f2-8250-c42fe6bb896d/download/parking_tickets_2010.zip",
+     "member": null,
+     "locator": "2010 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/312bc336-1d52-445d-98a4-ea385fd89d11/download/parking_tickets_2011.zip",
+     "member": null,
+     "locator": "2011 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/27059645-a22f-445d-81a9-6f4f11ac403e/download/parking_tickets_2012.zip",
+     "member": null,
+     "locator": "2012 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/f8f7039f-9548-4d9c-a9fe-4d2e91015ea8/download/parking_tickets_2013.zip",
+     "member": null,
+     "locator": "2013 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/3a4673ed-9caa-4e06-8746-a8ac36de7ed2/download/parking_tickets_2014.zip",
+     "member": null,
+     "locator": "2014 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/81c8d080-864f-4dd7-aa92-325259eb00e0/download/parking_tickets_2015.zip",
+     "member": null,
+     "locator": "2015 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/2fbcff61-4c3b-42a7-bdc5-02fb07e728aa/download/parking_tickets_2016.zip",
+     "member": null,
+     "locator": "2016 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/f1e9e1a3-cc95-4ce4-9dbe-081d9e6edc4a/download/parking_tickets_2017.zip",
+     "member": null,
+     "locator": "2017 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/590e5f97-461b-4f72-b448-ef52bbfd1296/download/parking_tickets_2018.zip",
+     "member": null,
+     "locator": "2018 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/91006b8a-f018-4627-9353-4dfdab71861d/download/parking_tags_data_2019.zip",
+     "member": null,
+     "locator": "2019 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/0d26a209-6e61-4154-9d70-8a6ad0e2d14d/download/parking_tags_data_2020.zip",
+     "member": null,
+     "locator": "2020 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/4ba88ad4-897f-4916-b032-a3d353ed1a9a/download/parking_tickets_2021.zip",
+     "member": null,
+     "locator": "2021 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/a0586d31-675e-4669-bcd7-b96325bfdf32/download/parking-tickets-2022.zip",
+     "member": null,
+     "locator": "2022 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/95b34a0c-3403-4075-aa37-e9a91c4d4f29/download/parking-tickets-2023.zip",
+     "member": null,
+     "locator": "2023 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/3263cbd6-39f8-46c9-8ca6-bd8ffc730157/download/parking-tickets-2024.zip",
+     "member": null,
+     "locator": "2024 file: all rows",
+     "method": "Counted with the other years as described."
+    }
+   ]
+  },
+  "fines": {
+   "id": "fines",
+   "label": "Set fines on those tickets",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2008",
+     "value": 111228805
+    },
+    {
+     "period": "2009",
+     "value": 105339165
+    },
+    {
+     "period": "2010",
+     "value": 109961165
+    },
+    {
+     "period": "2011",
+     "value": 114226595
+    },
+    {
+     "period": "2012",
+     "value": 111485565
+    },
+    {
+     "period": "2013",
+     "value": 95829295
+    },
+    {
+     "period": "2014",
+     "value": 108987340
+    },
+    {
+     "period": "2015",
+     "value": 99872770
+    },
+    {
+     "period": "2016",
+     "value": 109675985
+    },
+    {
+     "period": "2017",
+     "value": 106200060
+    },
+    {
+     "period": "2018",
+     "value": 100206695
+    },
+    {
+     "period": "2019",
+     "value": 108424170
+    },
+    {
+     "period": "2020",
+     "value": 70555350
+    },
+    {
+     "period": "2021",
+     "value": 81688410
+    },
+    {
+     "period": "2022",
+     "value": 96347560
+    },
+    {
+     "period": "2023",
+     "value": 122409230
+    },
+    {
+     "period": "2024",
+     "value": 145978460
+    },
+    {
+     "period": "2025",
+     "value": 164705020
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Parking Tickets — 2025 file (and each earlier year's file)",
+    "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/0c4aa89c-ec26-45f7-86a1-eee89e9e3fb1/download/parking-tickets-2025.zip",
+    "member": null,
+    "locator": "SET_FINE_AMOUNT, every row",
+    "method": "Sum of the set fine on each ticket. That's the fine as issued, not what was paid: tickets can be cancelled, disputed or paid late."
+   },
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/4042b925-4797-48c1-b417-475b2c0ea796/download/parking_tickets_2008.zip",
+     "member": null,
+     "locator": "2008 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/651f97ec-af99-4e24-94ac-0f00093aff99/download/parking_tickets_2009.zip",
+     "member": null,
+     "locator": "2009 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/6167002f-4a67-47f2-8250-c42fe6bb896d/download/parking_tickets_2010.zip",
+     "member": null,
+     "locator": "2010 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/312bc336-1d52-445d-98a4-ea385fd89d11/download/parking_tickets_2011.zip",
+     "member": null,
+     "locator": "2011 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/27059645-a22f-445d-81a9-6f4f11ac403e/download/parking_tickets_2012.zip",
+     "member": null,
+     "locator": "2012 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/f8f7039f-9548-4d9c-a9fe-4d2e91015ea8/download/parking_tickets_2013.zip",
+     "member": null,
+     "locator": "2013 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/3a4673ed-9caa-4e06-8746-a8ac36de7ed2/download/parking_tickets_2014.zip",
+     "member": null,
+     "locator": "2014 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/81c8d080-864f-4dd7-aa92-325259eb00e0/download/parking_tickets_2015.zip",
+     "member": null,
+     "locator": "2015 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/2fbcff61-4c3b-42a7-bdc5-02fb07e728aa/download/parking_tickets_2016.zip",
+     "member": null,
+     "locator": "2016 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/f1e9e1a3-cc95-4ce4-9dbe-081d9e6edc4a/download/parking_tickets_2017.zip",
+     "member": null,
+     "locator": "2017 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/590e5f97-461b-4f72-b448-ef52bbfd1296/download/parking_tickets_2018.zip",
+     "member": null,
+     "locator": "2018 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/91006b8a-f018-4627-9353-4dfdab71861d/download/parking_tags_data_2019.zip",
+     "member": null,
+     "locator": "2019 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/0d26a209-6e61-4154-9d70-8a6ad0e2d14d/download/parking_tags_data_2020.zip",
+     "member": null,
+     "locator": "2020 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/4ba88ad4-897f-4916-b032-a3d353ed1a9a/download/parking_tickets_2021.zip",
+     "member": null,
+     "locator": "2021 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/a0586d31-675e-4669-bcd7-b96325bfdf32/download/parking-tickets-2022.zip",
+     "member": null,
+     "locator": "2022 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/95b34a0c-3403-4075-aa37-e9a91c4d4f29/download/parking-tickets-2023.zip",
+     "member": null,
+     "locator": "2023 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Parking Tickets",
+     "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/3263cbd6-39f8-46c9-8ca6-bd8ffc730157/download/parking-tickets-2024.zip",
+     "member": null,
+     "locator": "2024 file: all rows",
+     "method": "Counted with the other years as described."
+    }
+   ]
+  }
+ },
+ "ranks": {
+  "infractions": {
+   "id": "infractions",
+   "title": "Most common tickets, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Park on private property",
+     "value": 387885,
+     "sub": "$75 fine"
+    },
+    {
+     "label": "Park-signed hwy-prohibit dy/tm",
+     "value": 286961,
+     "sub": "$65 fine"
+    },
+    {
+     "label": "Park prohibited time no permit",
+     "value": 273337,
+     "sub": "$45 fine"
+    },
+    {
+     "label": "Park machine-reqd fee not paid",
+     "value": 270929,
+     "sub": "$50 fine"
+    },
+    {
+     "label": "Stop-signed hwy-prohibit tm/dy",
+     "value": 144101,
+     "sub": "$120 fine"
+    },
+    {
+     "label": "Park - longer than 3 hours",
+     "value": 139059,
+     "sub": "$40 fine"
+    },
+    {
+     "label": "Stop-signed highway-rush hour",
+     "value": 75710,
+     "sub": "$190 fine"
+    },
+    {
+     "label": "Parking mach-not used/no fee",
+     "value": 63705,
+     "sub": "$75 fine"
+    },
+    {
+     "label": "Stand veh.-prohibit time/day",
+     "value": 61154,
+     "sub": "$120 fine"
+    },
+    {
+     "label": "Park on municipal property",
+     "value": 47798,
+     "sub": "$75 fine"
+    },
+    {
+     "label": "Park-signed hwy-exc permt time",
+     "value": 40182,
+     "sub": "$50 fine"
+    },
+    {
+     "label": "Park-within 3m of fire hydrant",
+     "value": 28941,
+     "sub": "$125 fine"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Parking Tickets",
+    "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/0c4aa89c-ec26-45f7-86a1-eee89e9e3fb1/download/parking-tickets-2025.zip",
+    "member": null,
+    "locator": "INFRACTION_DESCRIPTION, all rows",
+    "method": "Tickets counted per description; the fine shown is the most common SET_FINE_AMOUNT for it."
+   }
+  },
+  "streets": {
+   "id": "streets",
+   "title": "Most-ticketed streets, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Yonge St",
+     "value": 51115
+    },
+    {
+     "label": "Keele St",
+     "value": 34594
+    },
+    {
+     "label": "Queen St W",
+     "value": 33165
+    },
+    {
+     "label": "Dundas St W",
+     "value": 23330
+    },
+    {
+     "label": "Queen St E",
+     "value": 23071
+    },
+    {
+     "label": "Danforth Ave",
+     "value": 22480
+    },
+    {
+     "label": "College St",
+     "value": 22399
+    },
+    {
+     "label": "St Clair Ave W",
+     "value": 20644
+    },
+    {
+     "label": "King St W",
+     "value": 17912
+    },
+    {
+     "label": "Bloor St W",
+     "value": 17634
+    },
+    {
+     "label": "Bayview Ave",
+     "value": 14737
+    },
+    {
+     "label": "Ossington Ave",
+     "value": 14471
+    },
+    {
+     "label": "Bay St",
+     "value": 11882
+    },
+    {
+     "label": "Adelaide St W",
+     "value": 11876
+    },
+    {
+     "label": "Church St",
+     "value": 11017
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Parking Tickets",
+    "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/0c4aa89c-ec26-45f7-86a1-eee89e9e3fb1/download/parking-tickets-2025.zip",
+    "member": null,
+    "locator": "LOCATION2, all rows",
+    "method": "Street name from LOCATION2 with the house number removed; tickets counted per street."
+   }
+  },
+  "addresses": {
+   "id": "addresses",
+   "title": "Most-ticketed addresses, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "4700 Keele St",
+     "value": 31713
+    },
+    {
+     "label": "2075 Bayview Ave",
+     "value": 5170
+    },
+    {
+     "label": "1750 Finch Ave East",
+     "value": 4930
+    },
+    {
+     "label": "18 Hendon Avenue",
+     "value": 4580
+    },
+    {
+     "label": "400 Munster Avenue",
+     "value": 4183
+    },
+    {
+     "label": "31 A Parliament Street",
+     "value": 3837
+    },
+    {
+     "label": "81 Bay St",
+     "value": 3429
+    },
+    {
+     "label": "160 Marine Parade Dr",
+     "value": 3031
+    },
+    {
+     "label": "15 Marine Parade Dr",
+     "value": 2848
+    },
+    {
+     "label": "890 Willowdale Avenue",
+     "value": 2649
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Parking Tickets",
+    "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/0c4aa89c-ec26-45f7-86a1-eee89e9e3fb1/download/parking-tickets-2025.zip",
+    "member": null,
+    "locator": "LOCATION2, all rows",
+    "method": "Tickets counted per LOCATION2 exactly as written."
+   }
+  },
+  "months": {
+   "id": "months",
+   "title": "Tickets by month, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Jan",
+     "value": 165719
+    },
+    {
+     "label": "Feb",
+     "value": 138615
+    },
+    {
+     "label": "Mar",
+     "value": 179429
+    },
+    {
+     "label": "Apr",
+     "value": 174447
+    },
+    {
+     "label": "May",
+     "value": 181556
+    },
+    {
+     "label": "Jun",
+     "value": 168956
+    },
+    {
+     "label": "Jul",
+     "value": 162878
+    },
+    {
+     "label": "Aug",
+     "value": 163124
+    },
+    {
+     "label": "Sep",
+     "value": 181879
+    },
+    {
+     "label": "Oct",
+     "value": 187403
+    },
+    {
+     "label": "Nov",
+     "value": 176469
+    },
+    {
+     "label": "Dec",
+     "value": 170700
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Parking Tickets",
+    "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/0c4aa89c-ec26-45f7-86a1-eee89e9e3fb1/download/parking-tickets-2025.zip",
+    "member": null,
+    "locator": "DATE_OF_INFRACTION, all rows",
+    "method": "Tickets counted per month."
+   }
+  }
+ },
+ "grid": {
+  "days": [
+   "Monday",
+   "Tuesday",
+   "Wednesday",
+   "Thursday",
+   "Friday",
+   "Saturday",
+   "Sunday"
+  ],
+  "counts": [
+   [
+    8084,
+    8522,
+    11342,
+    13429,
+    10874,
+    1832,
+    4229,
+    9087,
+    14581,
+    21872,
+    19577,
+    25095,
+    26367,
+    22791,
+    16698,
+    16895,
+    16702,
+    12314,
+    10958,
+    11813,
+    9975,
+    7007,
+    3614,
+    1710
+   ],
+   [
+    7753,
+    8665,
+    12293,
+    14230,
+    11510,
+    3082,
+    5454,
+    9223,
+    15542,
+    23574,
+    22722,
+    28832,
+    29244,
+    25629,
+    19047,
+    18230,
+    18090,
+    13227,
+    11976,
+    13011,
+    10747,
+    7826,
+    3859,
+    2118
+   ],
+   [
+    8443,
+    9650,
+    13152,
+    15111,
+    11959,
+    2712,
+    5456,
+    9201,
+    15615,
+    23692,
+    22029,
+    28088,
+    29091,
+    25429,
+    19055,
+    18241,
+    17082,
+    12672,
+    11555,
+    12213,
+    9951,
+    6998,
+    3782,
+    1914
+   ],
+   [
+    7928,
+    8956,
+    11604,
+    13955,
+    11182,
+    2667,
+    4727,
+    8232,
+    13696,
+    21620,
+    19522,
+    25522,
+    26267,
+    23308,
+    18330,
+    16953,
+    16485,
+    12100,
+    11201,
+    12785,
+    10599,
+    7440,
+    4392,
+    2343
+   ],
+   [
+    8662,
+    9283,
+    12320,
+    14460,
+    11858,
+    3214,
+    5669,
+    9572,
+    15830,
+    23306,
+    20584,
+    25093,
+    25531,
+    23348,
+    19015,
+    16565,
+    16299,
+    12966,
+    11592,
+    12656,
+    11189,
+    8827,
+    5852,
+    3823
+   ],
+   [
+    13487,
+    11792,
+    13868,
+    13891,
+    10876,
+    3472,
+    4387,
+    6460,
+    10774,
+    13006,
+    11958,
+    12376,
+    11816,
+    10203,
+    7687,
+    10428,
+    13899,
+    12428,
+    11204,
+    11605,
+    11025,
+    8471,
+    4759,
+    3743
+   ],
+   [
+    14366,
+    11714,
+    13335,
+    13604,
+    11061,
+    2853,
+    2731,
+    4223,
+    5933,
+    7756,
+    7349,
+    8770,
+    9082,
+    9387,
+    3879,
+    7083,
+    11457,
+    10800,
+    9305,
+    9213,
+    9291,
+    6185,
+    2953,
+    1558
+   ]
+  ],
+  "source": {
+   "publisher": "City of Toronto — Open Data",
+   "dataset": "Parking Tickets",
+   "datasetUrl": "https://open.toronto.ca/dataset/parking-tickets/",
+   "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8c233bc2-1879-44ff-a0e4-9b69a9032c54/resource/0c4aa89c-ec26-45f7-86a1-eee89e9e3fb1/download/parking-tickets-2025.zip",
+   "member": null,
+   "locator": "DATE_OF_INFRACTION (weekday) and TIME_OF_INFRACTION (hour), all rows",
+   "method": "Tickets counted per weekday and hour."
+  }
+ }
+}

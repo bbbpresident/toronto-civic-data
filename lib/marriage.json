@@ -1,0 +1,1304 @@
+{
+ "generatedOn": "2026-11-03",
+ "generator": "scripts/extract_marriage.py",
+ "lastMonth": "2026-09",
+ "centres": {
+  "TO": "Toronto City Hall",
+  "NY": "North York",
+  "SC": "Scarborough",
+  "ET": "Etobicoke"
+ },
+ "series": {
+  "yearly": {
+   "id": "yearly",
+   "label": "Marriage licences",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 15644
+    },
+    {
+     "period": "2012",
+     "value": 15497
+    },
+    {
+     "period": "2013",
+     "value": 14375
+    },
+    {
+     "period": "2014",
+     "value": 14892
+    },
+    {
+     "period": "2015",
+     "value": 15513
+    },
+    {
+     "period": "2016",
+     "value": 15756
+    },
+    {
+     "period": "2017",
+     "value": 15884
+    },
+    {
+     "period": "2018",
+     "value": 16330
+    },
+    {
+     "period": "2019",
+     "value": 16225
+    },
+    {
+     "period": "2020",
+     "value": 9743
+    },
+    {
+     "period": "2021",
+     "value": 11758
+    },
+    {
+     "period": "2022",
+     "value": 15223
+    },
+    {
+     "period": "2023",
+     "value": 16036
+    },
+    {
+     "period": "2024",
+     "value": 16791
+    },
+    {
+     "period": "2025",
+     "value": 16766
+    },
+    {
+     "period": "2026",
+     "value": 13411,
+     "note": "Year to date (through September)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Marriage Licence Statistics",
+    "datasetUrl": "https://open.toronto.ca/dataset/marriage-licence-statistics/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/e28bc818-43d5-43f7-b5d9-bdfb4eda5feb/resource/61cb68b6-2085-4d7f-a044-7da8ea935b18/download/marriage-licence-statistics.csv",
+    "member": null,
+    "locator": "MARRIAGE_LICENSES, all rows",
+    "method": "Summed per year across the four civic centres."
+   }
+  },
+  "monthly": {
+   "id": "monthly",
+   "label": "Marriage licences",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011-01",
+     "value": 742
+    },
+    {
+     "period": "2011-02",
+     "value": 796
+    },
+    {
+     "period": "2011-03",
+     "value": 1210
+    },
+    {
+     "period": "2011-04",
+     "value": 1376
+    },
+    {
+     "period": "2011-05",
+     "value": 1885
+    },
+    {
+     "period": "2011-06",
+     "value": 1824
+    },
+    {
+     "period": "2011-07",
+     "value": 1943
+    },
+    {
+     "period": "2011-08",
+     "value": 1933
+    },
+    {
+     "period": "2011-09",
+     "value": 1321
+    },
+    {
+     "period": "2011-10",
+     "value": 1013
+    },
+    {
+     "period": "2011-11",
+     "value": 816
+    },
+    {
+     "period": "2011-12",
+     "value": 785
+    },
+    {
+     "period": "2012-01",
+     "value": 902
+    },
+    {
+     "period": "2012-02",
+     "value": 879
+    },
+    {
+     "period": "2012-03",
+     "value": 1227
+    },
+    {
+     "period": "2012-04",
+     "value": 1232
+    },
+    {
+     "period": "2012-05",
+     "value": 1650
+    },
+    {
+     "period": "2012-06",
+     "value": 1843
+    },
+    {
+     "period": "2012-07",
+     "value": 2015
+    },
+    {
+     "period": "2012-08",
+     "value": 1930
+    },
+    {
+     "period": "2012-09",
+     "value": 1143
+    },
+    {
+     "period": "2012-10",
+     "value": 1065
+    },
+    {
+     "period": "2012-11",
+     "value": 826
+    },
+    {
+     "period": "2012-12",
+     "value": 785
+    },
+    {
+     "period": "2013-01",
+     "value": 763
+    },
+    {
+     "period": "2013-02",
+     "value": 725
+    },
+    {
+     "period": "2013-03",
+     "value": 990
+    },
+    {
+     "period": "2013-04",
+     "value": 1360
+    },
+    {
+     "period": "2013-05",
+     "value": 1581
+    },
+    {
+     "period": "2013-06",
+     "value": 1579
+    },
+    {
+     "period": "2013-07",
+     "value": 1999
+    },
+    {
+     "period": "2013-08",
+     "value": 1821
+    },
+    {
+     "period": "2013-09",
+     "value": 1229
+    },
+    {
+     "period": "2013-10",
+     "value": 940
+    },
+    {
+     "period": "2013-11",
+     "value": 709
+    },
+    {
+     "period": "2013-12",
+     "value": 679
+    },
+    {
+     "period": "2014-01",
+     "value": 785
+    },
+    {
+     "period": "2014-02",
+     "value": 717
+    },
+    {
+     "period": "2014-03",
+     "value": 1062
+    },
+    {
+     "period": "2014-04",
+     "value": 1294
+    },
+    {
+     "period": "2014-05",
+     "value": 1682
+    },
+    {
+     "period": "2014-06",
+     "value": 1806
+    },
+    {
+     "period": "2014-07",
+     "value": 1962
+    },
+    {
+     "period": "2014-08",
+     "value": 1845
+    },
+    {
+     "period": "2014-09",
+     "value": 1280
+    },
+    {
+     "period": "2014-10",
+     "value": 1001
+    },
+    {
+     "period": "2014-11",
+     "value": 673
+    },
+    {
+     "period": "2014-12",
+     "value": 785
+    },
+    {
+     "period": "2015-01",
+     "value": 739
+    },
+    {
+     "period": "2015-02",
+     "value": 730
+    },
+    {
+     "period": "2015-03",
+     "value": 1160
+    },
+    {
+     "period": "2015-04",
+     "value": 1344
+    },
+    {
+     "period": "2015-05",
+     "value": 1663
+    },
+    {
+     "period": "2015-06",
+     "value": 1927
+    },
+    {
+     "period": "2015-07",
+     "value": 2184
+    },
+    {
+     "period": "2015-08",
+     "value": 1855
+    },
+    {
+     "period": "2015-09",
+     "value": 1391
+    },
+    {
+     "period": "2015-10",
+     "value": 1010
+    },
+    {
+     "period": "2015-11",
+     "value": 758
+    },
+    {
+     "period": "2015-12",
+     "value": 752
+    },
+    {
+     "period": "2016-01",
+     "value": 725
+    },
+    {
+     "period": "2016-02",
+     "value": 830
+    },
+    {
+     "period": "2016-03",
+     "value": 1073
+    },
+    {
+     "period": "2016-04",
+     "value": 1395
+    },
+    {
+     "period": "2016-05",
+     "value": 1774
+    },
+    {
+     "period": "2016-06",
+     "value": 2011
+    },
+    {
+     "period": "2016-07",
+     "value": 2047
+    },
+    {
+     "period": "2016-08",
+     "value": 2059
+    },
+    {
+     "period": "2016-09",
+     "value": 1356
+    },
+    {
+     "period": "2016-10",
+     "value": 986
+    },
+    {
+     "period": "2016-11",
+     "value": 753
+    },
+    {
+     "period": "2016-12",
+     "value": 747
+    },
+    {
+     "period": "2017-01",
+     "value": 742
+    },
+    {
+     "period": "2017-02",
+     "value": 770
+    },
+    {
+     "period": "2017-03",
+     "value": 1251
+    },
+    {
+     "period": "2017-04",
+     "value": 1298
+    },
+    {
+     "period": "2017-05",
+     "value": 1774
+    },
+    {
+     "period": "2017-06",
+     "value": 1889
+    },
+    {
+     "period": "2017-07",
+     "value": 1945
+    },
+    {
+     "period": "2017-08",
+     "value": 2046
+    },
+    {
+     "period": "2017-09",
+     "value": 1437
+    },
+    {
+     "period": "2017-10",
+     "value": 1109
+    },
+    {
+     "period": "2017-11",
+     "value": 836
+    },
+    {
+     "period": "2017-12",
+     "value": 787
+    },
+    {
+     "period": "2018-01",
+     "value": 815
+    },
+    {
+     "period": "2018-02",
+     "value": 820
+    },
+    {
+     "period": "2018-03",
+     "value": 1137
+    },
+    {
+     "period": "2018-04",
+     "value": 1322
+    },
+    {
+     "period": "2018-05",
+     "value": 1748
+    },
+    {
+     "period": "2018-06",
+     "value": 1918
+    },
+    {
+     "period": "2018-07",
+     "value": 2169
+    },
+    {
+     "period": "2018-08",
+     "value": 2197
+    },
+    {
+     "period": "2018-09",
+     "value": 1400
+    },
+    {
+     "period": "2018-10",
+     "value": 1182
+    },
+    {
+     "period": "2018-11",
+     "value": 905
+    },
+    {
+     "period": "2018-12",
+     "value": 717
+    },
+    {
+     "period": "2019-01",
+     "value": 777
+    },
+    {
+     "period": "2019-02",
+     "value": 873
+    },
+    {
+     "period": "2019-03",
+     "value": 1222
+    },
+    {
+     "period": "2019-04",
+     "value": 1444
+    },
+    {
+     "period": "2019-05",
+     "value": 1735
+    },
+    {
+     "period": "2019-06",
+     "value": 1738
+    },
+    {
+     "period": "2019-07",
+     "value": 2117
+    },
+    {
+     "period": "2019-08",
+     "value": 2005
+    },
+    {
+     "period": "2019-09",
+     "value": 1426
+    },
+    {
+     "period": "2019-10",
+     "value": 1126
+    },
+    {
+     "period": "2019-11",
+     "value": 907
+    },
+    {
+     "period": "2019-12",
+     "value": 855
+    },
+    {
+     "period": "2020-01",
+     "value": 895
+    },
+    {
+     "period": "2020-02",
+     "value": 908
+    },
+    {
+     "period": "2020-03",
+     "value": 616
+    },
+    {
+     "period": "2020-04",
+     "value": 47
+    },
+    {
+     "period": "2020-05",
+     "value": 123
+    },
+    {
+     "period": "2020-06",
+     "value": 637
+    },
+    {
+     "period": "2020-07",
+     "value": 1500
+    },
+    {
+     "period": "2020-08",
+     "value": 1413
+    },
+    {
+     "period": "2020-09",
+     "value": 1433
+    },
+    {
+     "period": "2020-10",
+     "value": 1117
+    },
+    {
+     "period": "2020-11",
+     "value": 686
+    },
+    {
+     "period": "2020-12",
+     "value": 368
+    },
+    {
+     "period": "2021-01",
+     "value": 364
+    },
+    {
+     "period": "2021-02",
+     "value": 535
+    },
+    {
+     "period": "2021-03",
+     "value": 916
+    },
+    {
+     "period": "2021-04",
+     "value": 752
+    },
+    {
+     "period": "2021-05",
+     "value": 705
+    },
+    {
+     "period": "2021-06",
+     "value": 895
+    },
+    {
+     "period": "2021-07",
+     "value": 1372
+    },
+    {
+     "period": "2021-08",
+     "value": 1560
+    },
+    {
+     "period": "2021-09",
+     "value": 1773
+    },
+    {
+     "period": "2021-10",
+     "value": 1413
+    },
+    {
+     "period": "2021-11",
+     "value": 783
+    },
+    {
+     "period": "2021-12",
+     "value": 690
+    },
+    {
+     "period": "2022-01",
+     "value": 472
+    },
+    {
+     "period": "2022-02",
+     "value": 536
+    },
+    {
+     "period": "2022-03",
+     "value": 1220
+    },
+    {
+     "period": "2022-04",
+     "value": 1265
+    },
+    {
+     "period": "2022-05",
+     "value": 1269
+    },
+    {
+     "period": "2022-06",
+     "value": 2113
+    },
+    {
+     "period": "2022-07",
+     "value": 2066
+    },
+    {
+     "period": "2022-08",
+     "value": 2303
+    },
+    {
+     "period": "2022-09",
+     "value": 1575
+    },
+    {
+     "period": "2022-10",
+     "value": 915
+    },
+    {
+     "period": "2022-11",
+     "value": 805
+    },
+    {
+     "period": "2022-12",
+     "value": 684
+    },
+    {
+     "period": "2023-01",
+     "value": 712
+    },
+    {
+     "period": "2023-02",
+     "value": 773
+    },
+    {
+     "period": "2023-03",
+     "value": 1144
+    },
+    {
+     "period": "2023-04",
+     "value": 1404
+    },
+    {
+     "period": "2023-05",
+     "value": 1812
+    },
+    {
+     "period": "2023-06",
+     "value": 1923
+    },
+    {
+     "period": "2023-07",
+     "value": 2067
+    },
+    {
+     "period": "2023-08",
+     "value": 2061
+    },
+    {
+     "period": "2023-09",
+     "value": 1422
+    },
+    {
+     "period": "2023-10",
+     "value": 1107
+    },
+    {
+     "period": "2023-11",
+     "value": 866
+    },
+    {
+     "period": "2023-12",
+     "value": 745
+    },
+    {
+     "period": "2024-01",
+     "value": 975
+    },
+    {
+     "period": "2024-02",
+     "value": 993
+    },
+    {
+     "period": "2024-03",
+     "value": 1230
+    },
+    {
+     "period": "2024-04",
+     "value": 1549
+    },
+    {
+     "period": "2024-05",
+     "value": 1756
+    },
+    {
+     "period": "2024-06",
+     "value": 1749
+    },
+    {
+     "period": "2024-07",
+     "value": 2215
+    },
+    {
+     "period": "2024-08",
+     "value": 2081
+    },
+    {
+     "period": "2024-09",
+     "value": 1377
+    },
+    {
+     "period": "2024-10",
+     "value": 1206
+    },
+    {
+     "period": "2024-11",
+     "value": 877
+    },
+    {
+     "period": "2024-12",
+     "value": 783
+    },
+    {
+     "period": "2025-01",
+     "value": 1093
+    },
+    {
+     "period": "2025-02",
+     "value": 933
+    },
+    {
+     "period": "2025-03",
+     "value": 1098
+    },
+    {
+     "period": "2025-04",
+     "value": 1300
+    },
+    {
+     "period": "2025-05",
+     "value": 1739
+    },
+    {
+     "period": "2025-06",
+     "value": 2114
+    },
+    {
+     "period": "2025-07",
+     "value": 2317
+    },
+    {
+     "period": "2025-08",
+     "value": 1959
+    },
+    {
+     "period": "2025-09",
+     "value": 1488
+    },
+    {
+     "period": "2025-10",
+     "value": 1119
+    },
+    {
+     "period": "2025-11",
+     "value": 818
+    },
+    {
+     "period": "2025-12",
+     "value": 788
+    },
+    {
+     "period": "2026-01",
+     "value": 844
+    },
+    {
+     "period": "2026-02",
+     "value": 849
+    },
+    {
+     "period": "2026-03",
+     "value": 1354
+    },
+    {
+     "period": "2026-04",
+     "value": 1392
+    },
+    {
+     "period": "2026-05",
+     "value": 1606
+    },
+    {
+     "period": "2026-06",
+     "value": 1952
+    },
+    {
+     "period": "2026-07",
+     "value": 2139
+    },
+    {
+     "period": "2026-08",
+     "value": 1828
+    },
+    {
+     "period": "2026-09",
+     "value": 1447
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Marriage Licence Statistics",
+    "datasetUrl": "https://open.toronto.ca/dataset/marriage-licence-statistics/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/e28bc818-43d5-43f7-b5d9-bdfb4eda5feb/resource/61cb68b6-2085-4d7f-a044-7da8ea935b18/download/marriage-licence-statistics.csv",
+    "member": null,
+    "locator": "MARRIAGE_LICENSES, all rows",
+    "method": "Summed per month across the four civic centres."
+   }
+  },
+  "centre_TO": {
+   "id": "centre_TO",
+   "label": "Toronto City Hall",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 7496
+    },
+    {
+     "period": "2012",
+     "value": 7409
+    },
+    {
+     "period": "2013",
+     "value": 6945
+    },
+    {
+     "period": "2014",
+     "value": 7574
+    },
+    {
+     "period": "2015",
+     "value": 7504
+    },
+    {
+     "period": "2016",
+     "value": 7896
+    },
+    {
+     "period": "2017",
+     "value": 7872
+    },
+    {
+     "period": "2018",
+     "value": 7992
+    },
+    {
+     "period": "2019",
+     "value": 8033
+    },
+    {
+     "period": "2020",
+     "value": 1572
+    },
+    {
+     "period": "2021",
+     "value": 5583
+    },
+    {
+     "period": "2022",
+     "value": 12334
+    },
+    {
+     "period": "2023",
+     "value": 12705
+    },
+    {
+     "period": "2024",
+     "value": 12489
+    },
+    {
+     "period": "2025",
+     "value": 12203
+    },
+    {
+     "period": "2026",
+     "value": 9146,
+     "note": "Year to date (through September)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Marriage Licence Statistics",
+    "datasetUrl": "https://open.toronto.ca/dataset/marriage-licence-statistics/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/e28bc818-43d5-43f7-b5d9-bdfb4eda5feb/resource/61cb68b6-2085-4d7f-a044-7da8ea935b18/download/marriage-licence-statistics.csv",
+    "member": null,
+    "locator": "rows with CIVIC_CENTRE = TO",
+    "method": "Summed per year."
+   }
+  },
+  "centre_NY": {
+   "id": "centre_NY",
+   "label": "North York",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 3083
+    },
+    {
+     "period": "2012",
+     "value": 3018
+    },
+    {
+     "period": "2013",
+     "value": 2920
+    },
+    {
+     "period": "2014",
+     "value": 2795
+    },
+    {
+     "period": "2015",
+     "value": 3019
+    },
+    {
+     "period": "2016",
+     "value": 2956
+    },
+    {
+     "period": "2017",
+     "value": 3041
+    },
+    {
+     "period": "2018",
+     "value": 3055
+    },
+    {
+     "period": "2019",
+     "value": 3180
+    },
+    {
+     "period": "2020",
+     "value": 4069
+    },
+    {
+     "period": "2021",
+     "value": 4469
+    },
+    {
+     "period": "2022",
+     "value": 2889
+    },
+    {
+     "period": "2023",
+     "value": 3331
+    },
+    {
+     "period": "2024",
+     "value": 4302
+    },
+    {
+     "period": "2025",
+     "value": 4563
+    },
+    {
+     "period": "2026",
+     "value": 4265,
+     "note": "Year to date (through September)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Marriage Licence Statistics",
+    "datasetUrl": "https://open.toronto.ca/dataset/marriage-licence-statistics/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/e28bc818-43d5-43f7-b5d9-bdfb4eda5feb/resource/61cb68b6-2085-4d7f-a044-7da8ea935b18/download/marriage-licence-statistics.csv",
+    "member": null,
+    "locator": "rows with CIVIC_CENTRE = NY",
+    "method": "Summed per year."
+   }
+  },
+  "centre_SC": {
+   "id": "centre_SC",
+   "label": "Scarborough",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 3018
+    },
+    {
+     "period": "2012",
+     "value": 2973
+    },
+    {
+     "period": "2013",
+     "value": 2626
+    },
+    {
+     "period": "2014",
+     "value": 2612
+    },
+    {
+     "period": "2015",
+     "value": 2857
+    },
+    {
+     "period": "2016",
+     "value": 2720
+    },
+    {
+     "period": "2017",
+     "value": 2751
+    },
+    {
+     "period": "2018",
+     "value": 2804
+    },
+    {
+     "period": "2019",
+     "value": 2705
+    },
+    {
+     "period": "2020",
+     "value": 3741
+    },
+    {
+     "period": "2021",
+     "value": 1705
+    },
+    {
+     "period": "2022",
+     "value": 0
+    },
+    {
+     "period": "2023",
+     "value": 0
+    },
+    {
+     "period": "2024",
+     "value": 0
+    },
+    {
+     "period": "2025",
+     "value": 0
+    },
+    {
+     "period": "2026",
+     "value": 0,
+     "note": "Year to date (through September)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Marriage Licence Statistics",
+    "datasetUrl": "https://open.toronto.ca/dataset/marriage-licence-statistics/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/e28bc818-43d5-43f7-b5d9-bdfb4eda5feb/resource/61cb68b6-2085-4d7f-a044-7da8ea935b18/download/marriage-licence-statistics.csv",
+    "member": null,
+    "locator": "rows with CIVIC_CENTRE = SC",
+    "method": "Summed per year."
+   }
+  },
+  "centre_ET": {
+   "id": "centre_ET",
+   "label": "Etobicoke",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 2047
+    },
+    {
+     "period": "2012",
+     "value": 2097
+    },
+    {
+     "period": "2013",
+     "value": 1884
+    },
+    {
+     "period": "2014",
+     "value": 1911
+    },
+    {
+     "period": "2015",
+     "value": 2133
+    },
+    {
+     "period": "2016",
+     "value": 2184
+    },
+    {
+     "period": "2017",
+     "value": 2220
+    },
+    {
+     "period": "2018",
+     "value": 2479
+    },
+    {
+     "period": "2019",
+     "value": 2307
+    },
+    {
+     "period": "2020",
+     "value": 361
+    },
+    {
+     "period": "2021",
+     "value": 1
+    },
+    {
+     "period": "2022",
+     "value": 0
+    },
+    {
+     "period": "2023",
+     "value": 0
+    },
+    {
+     "period": "2024",
+     "value": 0
+    },
+    {
+     "period": "2025",
+     "value": 0
+    },
+    {
+     "period": "2026",
+     "value": 0,
+     "note": "Year to date (through September)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Marriage Licence Statistics",
+    "datasetUrl": "https://open.toronto.ca/dataset/marriage-licence-statistics/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/e28bc818-43d5-43f7-b5d9-bdfb4eda5feb/resource/61cb68b6-2085-4d7f-a044-7da8ea935b18/download/marriage-licence-statistics.csv",
+    "member": null,
+    "locator": "rows with CIVIC_CENTRE = ET",
+    "method": "Summed per year."
+   }
+  }
+ },
+ "ranks": {
+  "seasons": {
+   "id": "seasons",
+   "title": "An average month, 2011–2025 (not counting 2020 and 2021)",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "January",
+     "value": 788
+    },
+    {
+     "label": "February",
+     "value": 798
+    },
+    {
+     "label": "March",
+     "value": 1156
+    },
+    {
+     "label": "April",
+     "value": 1353
+    },
+    {
+     "label": "May",
+     "value": 1698
+    },
+    {
+     "label": "June",
+     "value": 1880
+    },
+    {
+     "label": "July",
+     "value": 2080
+    },
+    {
+     "label": "August",
+     "value": 2007
+    },
+    {
+     "label": "September",
+     "value": 1373
+    },
+    {
+     "label": "October",
+     "value": 1060
+    },
+    {
+     "label": "November",
+     "value": 811
+    },
+    {
+     "label": "December",
+     "value": 761
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Marriage Licence Statistics",
+    "datasetUrl": "https://open.toronto.ca/dataset/marriage-licence-statistics/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/e28bc818-43d5-43f7-b5d9-bdfb4eda5feb/resource/61cb68b6-2085-4d7f-a044-7da8ea935b18/download/marriage-licence-statistics.csv",
+    "member": null,
+    "locator": "MARRIAGE_LICENSES, all rows",
+    "method": "Each calendar month's total averaged over 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025; 2020 and 2021 (the first years of the COVID-19 pandemic) are left out: both were far below every other year."
+   }
+  },
+  "busiest": {
+   "id": "busiest",
+   "title": "Busiest months on record",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "July 2025",
+     "value": 2317
+    },
+    {
+     "label": "August 2022",
+     "value": 2303
+    },
+    {
+     "label": "July 2024",
+     "value": 2215
+    },
+    {
+     "label": "August 2018",
+     "value": 2197
+    },
+    {
+     "label": "July 2015",
+     "value": 2184
+    },
+    {
+     "label": "July 2018",
+     "value": 2169
+    },
+    {
+     "label": "July 2026",
+     "value": 2139
+    },
+    {
+     "label": "July 2019",
+     "value": 2117
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Marriage Licence Statistics",
+    "datasetUrl": "https://open.toronto.ca/dataset/marriage-licence-statistics/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/e28bc818-43d5-43f7-b5d9-bdfb4eda5feb/resource/61cb68b6-2085-4d7f-a044-7da8ea935b18/download/marriage-licence-statistics.csv",
+    "member": null,
+    "locator": "MARRIAGE_LICENSES, all rows",
+    "method": "Monthly totals across the four civic centres, highest first."
+   }
+  }
+ }
+}

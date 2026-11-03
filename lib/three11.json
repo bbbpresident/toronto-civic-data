@@ -1,0 +1,745 @@
+{
+ "generatedOn": "2026-11-03",
+ "generator": "scripts/extract_311.py",
+ "latestYear": 2025,
+ "lastDate": "2026-09-30",
+ "series": {
+  "requests": {
+   "id": "requests",
+   "label": "311 service requests",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2010",
+     "value": 254218
+    },
+    {
+     "period": "2011",
+     "value": 285333
+    },
+    {
+     "period": "2012",
+     "value": 307299
+    },
+    {
+     "period": "2013",
+     "value": 385870
+    },
+    {
+     "period": "2014",
+     "value": 446547
+    },
+    {
+     "period": "2015",
+     "value": 447879
+    },
+    {
+     "period": "2016",
+     "value": 406291
+    },
+    {
+     "period": "2017",
+     "value": 396379
+    },
+    {
+     "period": "2018",
+     "value": 412095
+    },
+    {
+     "period": "2019",
+     "value": 438914
+    },
+    {
+     "period": "2020",
+     "value": 347748
+    },
+    {
+     "period": "2021",
+     "value": 323885
+    },
+    {
+     "period": "2022",
+     "value": 442950
+    },
+    {
+     "period": "2023",
+     "value": 414282
+    },
+    {
+     "period": "2024",
+     "value": 437043
+    },
+    {
+     "period": "2025",
+     "value": 500269
+    },
+    {
+     "period": "2026",
+     "value": 430607,
+     "note": "Year to date (through September)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "311 Service Requests - Customer Initiated — 2026 file (and each earlier year's file)",
+    "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/99b7f283-7345-4f5a-a126-d078ed4f3419/download/sr2026.zip",
+    "member": null,
+    "locator": "every row, by year file",
+    "method": "Rows counted per year."
+   },
+   "inputs": [
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/e256aa93-1c8e-4b2e-ba63-a269081b3f55/download/311-service-requests-2010.zip",
+     "member": null,
+     "locator": "2010 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/c98df60e-530c-4e3d-a0c9-d21f0af350c9/download/311-service-requests-2011.zip",
+     "member": null,
+     "locator": "2011 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/5f0fd6dc-401d-422d-965d-f55cc98ec3f1/download/311-service-requests-2012.zip",
+     "member": null,
+     "locator": "2012 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/ddd49c44-e32f-4b9c-8053-39e0398ae665/download/311-service-requests-2013.zip",
+     "member": null,
+     "locator": "2013 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/de039d83-15fe-4a22-ad84-b0389a8c04d9/download/311-service-requests-2014.zip",
+     "member": null,
+     "locator": "2014 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/e33b6300-8899-4f73-8ed0-febe10cbce92/download/311-service-requests-2015.zip",
+     "member": null,
+     "locator": "2015 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/4c6f5bed-5e7f-41c9-95c0-7181e048cdcf/download/311-service-requests-2016.zip",
+     "member": null,
+     "locator": "2016 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/0b45485e-690d-425b-a69b-8b8c4f039f2b/download/311-service-requests-2017.zip",
+     "member": null,
+     "locator": "2017 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/5cce361d-35af-4251-802e-1b1ea1306a07/download/311-service-requests-2018.zip",
+     "member": null,
+     "locator": "2018 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://www.toronto.ca/data/311/opendata/servicerequest/SR2019.zip",
+     "member": null,
+     "locator": "2019 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/04169bcc-860f-465d-b562-caab023b6f3c/download/sr2020.zip",
+     "member": null,
+     "locator": "2020 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/95145825-04b4-40d8-b883-9d114b5853c4/download/sr2021.zip",
+     "member": null,
+     "locator": "2021 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/f00a3313-f074-463e-89a7-26563084fbef/download/sr2022.zip",
+     "member": null,
+     "locator": "2022 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/079766f3-815d-4257-8731-5ff6b0c84c13/download/sr2023.zip",
+     "member": null,
+     "locator": "2023 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/f46b640d-d465-4f8b-9db5-5000a08295cd/download/sr2024.zip",
+     "member": null,
+     "locator": "2024 file: all rows",
+     "method": "Counted with the other years as described."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "311 Service Requests - Customer Initiated",
+     "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/f3db05ab-2588-4159-89f7-56c74d1d8201/download/sr2025.zip",
+     "member": null,
+     "locator": "2025 file: all rows",
+     "method": "Counted with the other years as described."
+    }
+   ]
+  }
+ },
+ "ranks": {
+  "types": {
+   "id": "types",
+   "title": "What people called about most, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Residential Bin Lid Damaged",
+     "value": 24448
+    },
+    {
+     "label": "Property Standards and Maintenance Violations",
+     "value": 17079
+    },
+    {
+     "label": "Pick up Dead Wildlife",
+     "value": 15513
+    },
+    {
+     "label": "Injured - Wildlife",
+     "value": 15192
+    },
+    {
+     "label": "General Pruning",
+     "value": 12873
+    },
+    {
+     "label": "Road Pothole / Road Damage",
+     "value": 11304
+    },
+    {
+     "label": "Residential Bin Body or Handle Damaged",
+     "value": 11238
+    },
+    {
+     "label": "Sidewalk Snow Clearing Required",
+     "value": 10241
+    },
+    {
+     "label": "Res / Garbage / Not Picked Up",
+     "value": 9159
+    },
+    {
+     "label": "Residential Furniture / Not Picked Up",
+     "value": 8634
+    },
+    {
+     "label": "Res / Recycle / Not Picked Up",
+     "value": 8370
+    },
+    {
+     "label": "Tree Emergency Clean-Up",
+     "value": 8227
+    },
+    {
+     "label": "Res / Organic Green Bin / Not Picked Up",
+     "value": 8008
+    },
+    {
+     "label": "Clean up Illegal Dumping on City Road Allowance",
+     "value": 6970
+    },
+    {
+     "label": "Sewer Service Line-Blocked",
+     "value": 6712
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "311 Service Requests - Customer Initiated",
+    "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/f3db05ab-2588-4159-89f7-56c74d1d8201/download/sr2025.zip",
+    "member": null,
+    "locator": "Service Request Type, all rows",
+    "method": "Requests counted per type as written."
+   }
+  },
+  "divisions": {
+   "id": "divisions",
+   "title": "Which divisions handle them, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Solid Waste Management Services",
+     "value": 170443
+    },
+    {
+     "label": "Transportation Services",
+     "value": 130056
+    },
+    {
+     "label": "Municipal Licensing & Standards",
+     "value": 117630
+    },
+    {
+     "label": "Toronto Water",
+     "value": 36839
+    },
+    {
+     "label": "Environment",
+     "value": 36174
+    },
+    {
+     "label": "311",
+     "value": 7690
+    },
+    {
+     "label": "Parks and Recreation",
+     "value": 1437
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "311 Service Requests - Customer Initiated",
+    "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/f3db05ab-2588-4159-89f7-56c74d1d8201/download/sr2025.zip",
+    "member": null,
+    "locator": "Division, all rows",
+    "method": "Requests counted per division."
+   }
+  },
+  "wards": {
+   "id": "wards",
+   "title": "Requests by ward, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Toronto-Danforth (Ward 14)",
+     "value": 30476
+    },
+    {
+     "label": "Davenport (Ward 9)",
+     "value": 27124
+    },
+    {
+     "label": "University-Rosedale (Ward 11)",
+     "value": 27122
+    },
+    {
+     "label": "Beaches-East York (Ward 19)",
+     "value": 27018
+    },
+    {
+     "label": "Etobicoke-Lakeshore (Ward 3)",
+     "value": 25874
+    },
+    {
+     "label": "Parkdale-High Park (Ward 4)",
+     "value": 25517
+    },
+    {
+     "label": "Eglinton-Lawrence (Ward 8)",
+     "value": 24221
+    },
+    {
+     "label": "Scarborough Southwest (Ward 20)",
+     "value": 22300
+    },
+    {
+     "label": "Toronto-St. Paul's (Ward 12)",
+     "value": 21747
+    },
+    {
+     "label": "Spadina-Fort York (Ward 10)",
+     "value": 21243
+    },
+    {
+     "label": "Etobicoke Centre (Ward 2)",
+     "value": 21242
+    },
+    {
+     "label": "York South-Weston (Ward 5)",
+     "value": 20772
+    },
+    {
+     "label": "Don Valley West (Ward 15)",
+     "value": 19631
+    },
+    {
+     "label": "Scarborough-Rouge Park (Ward 25)",
+     "value": 19396
+    },
+    {
+     "label": "York Centre (Ward 6)",
+     "value": 18852
+    },
+    {
+     "label": "Scarborough Centre (Ward 21)",
+     "value": 18777
+    },
+    {
+     "label": "Toronto Centre (Ward 13)",
+     "value": 18718
+    },
+    {
+     "label": "Willowdale (Ward 18)",
+     "value": 15510
+    },
+    {
+     "label": "Scarborough-Guildwood (Ward 24)",
+     "value": 15439
+    },
+    {
+     "label": "Etobicoke North (Ward 1)",
+     "value": 15406
+    },
+    {
+     "label": "Don Valley North (Ward 17)",
+     "value": 13737
+    },
+    {
+     "label": "Humber River-Black Creek (Ward 7)",
+     "value": 13514
+    },
+    {
+     "label": "Scarborough-Agincourt (Ward 22)",
+     "value": 12690
+    },
+    {
+     "label": "Scarborough North (Ward 23)",
+     "value": 12308
+    },
+    {
+     "label": "Don Valley East (Ward 16)",
+     "value": 11628
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "311 Service Requests - Customer Initiated",
+    "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/f3db05ab-2588-4159-89f7-56c74d1d8201/download/sr2025.zip",
+    "member": null,
+    "locator": "Ward, all rows",
+    "method": "Requests counted per ward; rows without a ward left out."
+   }
+  },
+  "months": {
+   "id": "months",
+   "title": "Requests by month, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Jan",
+     "value": 32793
+    },
+    {
+     "label": "Feb",
+     "value": 53707
+    },
+    {
+     "label": "Mar",
+     "value": 37317
+    },
+    {
+     "label": "Apr",
+     "value": 38111
+    },
+    {
+     "label": "May",
+     "value": 44571
+    },
+    {
+     "label": "Jun",
+     "value": 46971
+    },
+    {
+     "label": "Jul",
+     "value": 48120
+    },
+    {
+     "label": "Aug",
+     "value": 43555
+    },
+    {
+     "label": "Sep",
+     "value": 44851
+    },
+    {
+     "label": "Oct",
+     "value": 37840
+    },
+    {
+     "label": "Nov",
+     "value": 33525
+    },
+    {
+     "label": "Dec",
+     "value": 38908
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "311 Service Requests - Customer Initiated",
+    "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/f3db05ab-2588-4159-89f7-56c74d1d8201/download/sr2025.zip",
+    "member": null,
+    "locator": "Creation Date, all rows",
+    "method": "Requests counted per month."
+   }
+  }
+ },
+ "grid": {
+  "days": [
+   "Monday",
+   "Tuesday",
+   "Wednesday",
+   "Thursday",
+   "Friday",
+   "Saturday",
+   "Sunday"
+  ],
+  "counts": [
+   [
+    496,
+    329,
+    191,
+    161,
+    155,
+    257,
+    642,
+    1620,
+    3942,
+    6211,
+    6687,
+    6812,
+    6132,
+    6027,
+    5838,
+    5586,
+    4965,
+    3787,
+    3061,
+    2657,
+    2157,
+    1810,
+    1230,
+    972
+   ],
+   [
+    577,
+    310,
+    197,
+    159,
+    157,
+    347,
+    888,
+    2229,
+    4848,
+    6923,
+    7159,
+    7082,
+    6684,
+    6806,
+    6462,
+    6345,
+    6116,
+    6095,
+    5088,
+    3834,
+    2886,
+    2450,
+    1555,
+    1169
+   ],
+   [
+    635,
+    362,
+    228,
+    157,
+    177,
+    353,
+    1050,
+    2459,
+    5536,
+    7637,
+    7847,
+    7702,
+    6891,
+    6835,
+    6769,
+    6706,
+    6182,
+    5895,
+    4744,
+    3672,
+    2969,
+    2385,
+    1714,
+    1250
+   ],
+   [
+    643,
+    329,
+    225,
+    171,
+    191,
+    350,
+    935,
+    2273,
+    5234,
+    7096,
+    7419,
+    7096,
+    6473,
+    6464,
+    6530,
+    6226,
+    6053,
+    6197,
+    4825,
+    3724,
+    2732,
+    2098,
+    1445,
+    1043
+   ],
+   [
+    624,
+    351,
+    227,
+    161,
+    160,
+    316,
+    860,
+    2112,
+    5195,
+    7681,
+    7509,
+    7594,
+    6871,
+    6697,
+    6481,
+    6337,
+    5505,
+    5360,
+    3688,
+    2846,
+    2218,
+    1630,
+    1290,
+    1184
+   ],
+   [
+    734,
+    492,
+    336,
+    229,
+    195,
+    238,
+    457,
+    1227,
+    2308,
+    3335,
+    3711,
+    3949,
+    3849,
+    3489,
+    3163,
+    2872,
+    2672,
+    2444,
+    2109,
+    1800,
+    1597,
+    1339,
+    1167,
+    1351
+   ],
+   [
+    800,
+    552,
+    363,
+    288,
+    172,
+    235,
+    410,
+    797,
+    1536,
+    2311,
+    2899,
+    3040,
+    2801,
+    2847,
+    2715,
+    2564,
+    2517,
+    2289,
+    2128,
+    1822,
+    1678,
+    1428,
+    1178,
+    921
+   ]
+  ],
+  "source": {
+   "publisher": "City of Toronto — Open Data",
+   "dataset": "311 Service Requests - Customer Initiated",
+   "datasetUrl": "https://open.toronto.ca/dataset/311-service-requests-customer-initiated/",
+   "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/2e54bc0e-4399-4076-b717-351df5918ae7/resource/f3db05ab-2588-4159-89f7-56c74d1d8201/download/sr2025.zip",
+   "member": null,
+   "locator": "Creation Date (weekday and hour), all rows",
+   "method": "Requests counted per weekday and hour created."
+  }
+ }
+}

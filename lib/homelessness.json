@@ -1,0 +1,5746 @@
+{
+ "generatedOn": "2026-11-03",
+ "generator": "scripts/extract_homelessness.py",
+ "lastMonth": "2026-09",
+ "series": {
+  "active": {
+   "id": "active",
+   "label": "Actively homeless",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018-01",
+     "value": 7958
+    },
+    {
+     "period": "2018-02",
+     "value": 8132
+    },
+    {
+     "period": "2018-03",
+     "value": 8607
+    },
+    {
+     "period": "2018-04",
+     "value": 9033
+    },
+    {
+     "period": "2018-05",
+     "value": 9516
+    },
+    {
+     "period": "2018-06",
+     "value": 9823
+    },
+    {
+     "period": "2018-07",
+     "value": 9602
+    },
+    {
+     "period": "2018-08",
+     "value": 9557
+    },
+    {
+     "period": "2018-09",
+     "value": 9341
+    },
+    {
+     "period": "2018-10",
+     "value": 9144
+    },
+    {
+     "period": "2018-11",
+     "value": 9557
+    },
+    {
+     "period": "2018-12",
+     "value": 9782
+    },
+    {
+     "period": "2019-01",
+     "value": 10029
+    },
+    {
+     "period": "2019-02",
+     "value": 9982
+    },
+    {
+     "period": "2019-03",
+     "value": 10043
+    },
+    {
+     "period": "2019-04",
+     "value": 10142
+    },
+    {
+     "period": "2019-05",
+     "value": 10184
+    },
+    {
+     "period": "2019-06",
+     "value": 10100
+    },
+    {
+     "period": "2019-07",
+     "value": 9558
+    },
+    {
+     "period": "2019-08",
+     "value": 9322
+    },
+    {
+     "period": "2019-09",
+     "value": 9141
+    },
+    {
+     "period": "2019-10",
+     "value": 9206
+    },
+    {
+     "period": "2019-11",
+     "value": 9457
+    },
+    {
+     "period": "2019-12",
+     "value": 9914
+    },
+    {
+     "period": "2020-01",
+     "value": 9916
+    },
+    {
+     "period": "2020-02",
+     "value": 9834
+    },
+    {
+     "period": "2020-03",
+     "value": 9680
+    },
+    {
+     "period": "2020-04",
+     "value": 8935
+    },
+    {
+     "period": "2020-05",
+     "value": 8207
+    },
+    {
+     "period": "2020-06",
+     "value": 7668
+    },
+    {
+     "period": "2020-07",
+     "value": 7552
+    },
+    {
+     "period": "2020-08",
+     "value": 7580
+    },
+    {
+     "period": "2020-09",
+     "value": 7572
+    },
+    {
+     "period": "2020-10",
+     "value": 7506
+    },
+    {
+     "period": "2020-11",
+     "value": 7586
+    },
+    {
+     "period": "2020-12",
+     "value": 7741
+    },
+    {
+     "period": "2021-01",
+     "value": 7829
+    },
+    {
+     "period": "2021-02",
+     "value": 7871
+    },
+    {
+     "period": "2021-03",
+     "value": 7745
+    },
+    {
+     "period": "2021-04",
+     "value": 7516
+    },
+    {
+     "period": "2021-05",
+     "value": 7575
+    },
+    {
+     "period": "2021-06",
+     "value": 8037
+    },
+    {
+     "period": "2021-07",
+     "value": 8322
+    },
+    {
+     "period": "2021-08",
+     "value": 8479
+    },
+    {
+     "period": "2021-09",
+     "value": 8760
+    },
+    {
+     "period": "2021-10",
+     "value": 8992
+    },
+    {
+     "period": "2021-11",
+     "value": 9199
+    },
+    {
+     "period": "2021-12",
+     "value": 9255
+    },
+    {
+     "period": "2022-01",
+     "value": 9410
+    },
+    {
+     "period": "2022-02",
+     "value": 9559
+    },
+    {
+     "period": "2022-03",
+     "value": 9933
+    },
+    {
+     "period": "2022-04",
+     "value": 9913
+    },
+    {
+     "period": "2022-05",
+     "value": 9732
+    },
+    {
+     "period": "2022-06",
+     "value": 9752
+    },
+    {
+     "period": "2022-07",
+     "value": 9768
+    },
+    {
+     "period": "2022-08",
+     "value": 9724
+    },
+    {
+     "period": "2022-09",
+     "value": 9690
+    },
+    {
+     "period": "2022-10",
+     "value": 9622
+    },
+    {
+     "period": "2022-11",
+     "value": 9711
+    },
+    {
+     "period": "2022-12",
+     "value": 10408
+    },
+    {
+     "period": "2023-01",
+     "value": 10702
+    },
+    {
+     "period": "2023-02",
+     "value": 10849
+    },
+    {
+     "period": "2023-03",
+     "value": 10811
+    },
+    {
+     "period": "2023-04",
+     "value": 10515
+    },
+    {
+     "period": "2023-05",
+     "value": 10453
+    },
+    {
+     "period": "2023-06",
+     "value": 10418
+    },
+    {
+     "period": "2023-07",
+     "value": 10110
+    },
+    {
+     "period": "2023-08",
+     "value": 9988
+    },
+    {
+     "period": "2023-09",
+     "value": 10212
+    },
+    {
+     "period": "2023-10",
+     "value": 10111
+    },
+    {
+     "period": "2023-11",
+     "value": 10498
+    },
+    {
+     "period": "2023-12",
+     "value": 10607
+    },
+    {
+     "period": "2024-01",
+     "value": 10999
+    },
+    {
+     "period": "2024-02",
+     "value": 11173
+    },
+    {
+     "period": "2024-03",
+     "value": 10833
+    },
+    {
+     "period": "2024-04",
+     "value": 10964
+    },
+    {
+     "period": "2024-05",
+     "value": 10795
+    },
+    {
+     "period": "2024-06",
+     "value": 10627
+    },
+    {
+     "period": "2024-07",
+     "value": 10499
+    },
+    {
+     "period": "2024-08",
+     "value": 10503
+    },
+    {
+     "period": "2024-09",
+     "value": 10339
+    },
+    {
+     "period": "2024-10",
+     "value": 10331
+    },
+    {
+     "period": "2024-11",
+     "value": 10460
+    },
+    {
+     "period": "2024-12",
+     "value": 11144
+    },
+    {
+     "period": "2025-01",
+     "value": 11780
+    },
+    {
+     "period": "2025-02",
+     "value": 11721
+    },
+    {
+     "period": "2025-03",
+     "value": 11421
+    },
+    {
+     "period": "2025-04",
+     "value": 10861
+    },
+    {
+     "period": "2025-05",
+     "value": 10251
+    },
+    {
+     "period": "2025-06",
+     "value": 9928
+    },
+    {
+     "period": "2025-07",
+     "value": 10069
+    },
+    {
+     "period": "2025-08",
+     "value": 9858
+    },
+    {
+     "period": "2025-09",
+     "value": 9637
+    },
+    {
+     "period": "2025-10",
+     "value": 9573
+    },
+    {
+     "period": "2025-11",
+     "value": 9756
+    },
+    {
+     "period": "2025-12",
+     "value": 10477
+    },
+    {
+     "period": "2026-01",
+     "value": 11057
+    },
+    {
+     "period": "2026-02",
+     "value": 10928
+    },
+    {
+     "period": "2026-03",
+     "value": 10569
+    },
+    {
+     "period": "2026-04",
+     "value": 9938
+    },
+    {
+     "period": "2026-05",
+     "value": 9251
+    },
+    {
+     "period": "2026-06",
+     "value": 8957
+    },
+    {
+     "period": "2026-07",
+     "value": 8851
+    },
+    {
+     "period": "2026-08",
+     "value": 8664
+    },
+    {
+     "period": "2026-09",
+     "value": 8290
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "actively_homeless, population_group = All Population",
+    "method": "As published, per month."
+   },
+   "note": "Counts people who used an overnight service in the City's shelter system (shelters, respite sites, hotel programs) in the last three months and weren't recorded as moving into housing. It doesn't count people sleeping outdoors or using services the City doesn't fund: the City estimates, from its most recent Street Needs Assessment, that about 18% of people experiencing homelessness aren't in this data."
+  },
+  "group_0": {
+   "id": "group_0",
+   "label": "Chronic",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018-01",
+     "value": 2532
+    },
+    {
+     "period": "2018-02",
+     "value": 2541
+    },
+    {
+     "period": "2018-03",
+     "value": 2614
+    },
+    {
+     "period": "2018-04",
+     "value": 2653
+    },
+    {
+     "period": "2018-05",
+     "value": 2697
+    },
+    {
+     "period": "2018-06",
+     "value": 2725
+    },
+    {
+     "period": "2018-07",
+     "value": 2791
+    },
+    {
+     "period": "2018-08",
+     "value": 2766
+    },
+    {
+     "period": "2018-09",
+     "value": 2716
+    },
+    {
+     "period": "2018-10",
+     "value": 2868
+    },
+    {
+     "period": "2018-11",
+     "value": 2840
+    },
+    {
+     "period": "2018-12",
+     "value": 2906
+    },
+    {
+     "period": "2019-01",
+     "value": 3053
+    },
+    {
+     "period": "2019-02",
+     "value": 3083
+    },
+    {
+     "period": "2019-03",
+     "value": 3287
+    },
+    {
+     "period": "2019-04",
+     "value": 3308
+    },
+    {
+     "period": "2019-05",
+     "value": 3382
+    },
+    {
+     "period": "2019-06",
+     "value": 3388
+    },
+    {
+     "period": "2019-07",
+     "value": 3314
+    },
+    {
+     "period": "2019-08",
+     "value": 3336
+    },
+    {
+     "period": "2019-09",
+     "value": 3299
+    },
+    {
+     "period": "2019-10",
+     "value": 3275
+    },
+    {
+     "period": "2019-11",
+     "value": 3320
+    },
+    {
+     "period": "2019-12",
+     "value": 3459
+    },
+    {
+     "period": "2020-01",
+     "value": 3547
+    },
+    {
+     "period": "2020-02",
+     "value": 3519
+    },
+    {
+     "period": "2020-03",
+     "value": 3547
+    },
+    {
+     "period": "2020-04",
+     "value": 3546
+    },
+    {
+     "period": "2020-05",
+     "value": 3623
+    },
+    {
+     "period": "2020-06",
+     "value": 3704
+    },
+    {
+     "period": "2020-07",
+     "value": 3677
+    },
+    {
+     "period": "2020-08",
+     "value": 3782
+    },
+    {
+     "period": "2020-09",
+     "value": 3776
+    },
+    {
+     "period": "2020-10",
+     "value": 3695
+    },
+    {
+     "period": "2020-11",
+     "value": 3552
+    },
+    {
+     "period": "2020-12",
+     "value": 3533
+    },
+    {
+     "period": "2021-01",
+     "value": 3550
+    },
+    {
+     "period": "2021-02",
+     "value": 3601
+    },
+    {
+     "period": "2021-03",
+     "value": 3615
+    },
+    {
+     "period": "2021-04",
+     "value": 3627
+    },
+    {
+     "period": "2021-05",
+     "value": 3739
+    },
+    {
+     "period": "2021-06",
+     "value": 3840
+    },
+    {
+     "period": "2021-07",
+     "value": 3904
+    },
+    {
+     "period": "2021-08",
+     "value": 3915
+    },
+    {
+     "period": "2021-09",
+     "value": 3958
+    },
+    {
+     "period": "2021-10",
+     "value": 4010
+    },
+    {
+     "period": "2021-11",
+     "value": 4131
+    },
+    {
+     "period": "2021-12",
+     "value": 4258
+    },
+    {
+     "period": "2022-01",
+     "value": 4365
+    },
+    {
+     "period": "2022-02",
+     "value": 4508
+    },
+    {
+     "period": "2022-03",
+     "value": 4686
+    },
+    {
+     "period": "2022-04",
+     "value": 4778
+    },
+    {
+     "period": "2022-05",
+     "value": 4885
+    },
+    {
+     "period": "2022-06",
+     "value": 4916
+    },
+    {
+     "period": "2022-07",
+     "value": 4901
+    },
+    {
+     "period": "2022-08",
+     "value": 4899
+    },
+    {
+     "period": "2022-09",
+     "value": 4978
+    },
+    {
+     "period": "2022-10",
+     "value": 4926
+    },
+    {
+     "period": "2022-11",
+     "value": 4898
+    },
+    {
+     "period": "2022-12",
+     "value": 4895
+    },
+    {
+     "period": "2023-01",
+     "value": 5015
+    },
+    {
+     "period": "2023-02",
+     "value": 5001
+    },
+    {
+     "period": "2023-03",
+     "value": 5091
+    },
+    {
+     "period": "2023-04",
+     "value": 5017
+    },
+    {
+     "period": "2023-05",
+     "value": 4917
+    },
+    {
+     "period": "2023-06",
+     "value": 5111
+    },
+    {
+     "period": "2023-07",
+     "value": 5145
+    },
+    {
+     "period": "2023-08",
+     "value": 5338
+    },
+    {
+     "period": "2023-09",
+     "value": 5596
+    },
+    {
+     "period": "2023-10",
+     "value": 5564
+    },
+    {
+     "period": "2023-11",
+     "value": 5711
+    },
+    {
+     "period": "2023-12",
+     "value": 5774
+    },
+    {
+     "period": "2024-01",
+     "value": 5888
+    },
+    {
+     "period": "2024-02",
+     "value": 5940
+    },
+    {
+     "period": "2024-03",
+     "value": 6288
+    },
+    {
+     "period": "2024-04",
+     "value": 6687
+    },
+    {
+     "period": "2024-05",
+     "value": 7177
+    },
+    {
+     "period": "2024-06",
+     "value": 7510
+    },
+    {
+     "period": "2024-07",
+     "value": 7671
+    },
+    {
+     "period": "2024-08",
+     "value": 7843
+    },
+    {
+     "period": "2024-09",
+     "value": 7822
+    },
+    {
+     "period": "2024-10",
+     "value": 8064
+    },
+    {
+     "period": "2024-11",
+     "value": 7785
+    },
+    {
+     "period": "2024-12",
+     "value": 7688
+    },
+    {
+     "period": "2025-01",
+     "value": 7500
+    },
+    {
+     "period": "2025-02",
+     "value": 7169
+    },
+    {
+     "period": "2025-03",
+     "value": 7038
+    },
+    {
+     "period": "2025-04",
+     "value": 6950
+    },
+    {
+     "period": "2025-05",
+     "value": 7035
+    },
+    {
+     "period": "2025-06",
+     "value": 6975
+    },
+    {
+     "period": "2025-07",
+     "value": 7015
+    },
+    {
+     "period": "2025-08",
+     "value": 7006
+    },
+    {
+     "period": "2025-09",
+     "value": 6968
+    },
+    {
+     "period": "2025-10",
+     "value": 6820
+    },
+    {
+     "period": "2025-11",
+     "value": 6769
+    },
+    {
+     "period": "2025-12",
+     "value": 6728
+    },
+    {
+     "period": "2026-01",
+     "value": 6767
+    },
+    {
+     "period": "2026-02",
+     "value": 6623
+    },
+    {
+     "period": "2026-03",
+     "value": 6473
+    },
+    {
+     "period": "2026-04",
+     "value": 6333
+    },
+    {
+     "period": "2026-05",
+     "value": 6176
+    },
+    {
+     "period": "2026-06",
+     "value": 6082
+    },
+    {
+     "period": "2026-07",
+     "value": 6059
+    },
+    {
+     "period": "2026-08",
+     "value": 5943
+    },
+    {
+     "period": "2026-09",
+     "value": 5648
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "actively_homeless, population_group = Chronic",
+    "method": "As published, per month. Groups overlap: a person can be in more than one."
+   }
+  },
+  "group_1": {
+   "id": "group_1",
+   "label": "Refugees",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018-01",
+     "value": 2408
+    },
+    {
+     "period": "2018-02",
+     "value": 2491
+    },
+    {
+     "period": "2018-03",
+     "value": 2826
+    },
+    {
+     "period": "2018-04",
+     "value": 3170
+    },
+    {
+     "period": "2018-05",
+     "value": 3694
+    },
+    {
+     "period": "2018-06",
+     "value": 3947
+    },
+    {
+     "period": "2018-07",
+     "value": 3725
+    },
+    {
+     "period": "2018-08",
+     "value": 3602
+    },
+    {
+     "period": "2018-09",
+     "value": 3304
+    },
+    {
+     "period": "2018-10",
+     "value": 3142
+    },
+    {
+     "period": "2018-11",
+     "value": 3249
+    },
+    {
+     "period": "2018-12",
+     "value": 3294
+    },
+    {
+     "period": "2019-01",
+     "value": 3309
+    },
+    {
+     "period": "2019-02",
+     "value": 3202
+    },
+    {
+     "period": "2019-03",
+     "value": 3171
+    },
+    {
+     "period": "2019-04",
+     "value": 3219
+    },
+    {
+     "period": "2019-05",
+     "value": 3323
+    },
+    {
+     "period": "2019-06",
+     "value": 3392
+    },
+    {
+     "period": "2019-07",
+     "value": 3286
+    },
+    {
+     "period": "2019-08",
+     "value": 3153
+    },
+    {
+     "period": "2019-09",
+     "value": 3094
+    },
+    {
+     "period": "2019-10",
+     "value": 3189
+    },
+    {
+     "period": "2019-11",
+     "value": 3133
+    },
+    {
+     "period": "2019-12",
+     "value": 3229
+    },
+    {
+     "period": "2020-01",
+     "value": 2941
+    },
+    {
+     "period": "2020-02",
+     "value": 2902
+    },
+    {
+     "period": "2020-03",
+     "value": 2787
+    },
+    {
+     "period": "2020-04",
+     "value": 2452
+    },
+    {
+     "period": "2020-05",
+     "value": 2172
+    },
+    {
+     "period": "2020-06",
+     "value": 1917
+    },
+    {
+     "period": "2020-07",
+     "value": 1643
+    },
+    {
+     "period": "2020-08",
+     "value": 1487
+    },
+    {
+     "period": "2020-09",
+     "value": 1412
+    },
+    {
+     "period": "2020-10",
+     "value": 1215
+    },
+    {
+     "period": "2020-11",
+     "value": 1096
+    },
+    {
+     "period": "2020-12",
+     "value": 1024
+    },
+    {
+     "period": "2021-01",
+     "value": 995
+    },
+    {
+     "period": "2021-02",
+     "value": 996
+    },
+    {
+     "period": "2021-03",
+     "value": 961
+    },
+    {
+     "period": "2021-04",
+     "value": 939
+    },
+    {
+     "period": "2021-05",
+     "value": 939
+    },
+    {
+     "period": "2021-06",
+     "value": 998
+    },
+    {
+     "period": "2021-07",
+     "value": 1014
+    },
+    {
+     "period": "2021-08",
+     "value": 995
+    },
+    {
+     "period": "2021-09",
+     "value": 1149
+    },
+    {
+     "period": "2021-10",
+     "value": 1301
+    },
+    {
+     "period": "2021-11",
+     "value": 1349
+    },
+    {
+     "period": "2021-12",
+     "value": 1530
+    },
+    {
+     "period": "2022-01",
+     "value": 1726
+    },
+    {
+     "period": "2022-02",
+     "value": 1833
+    },
+    {
+     "period": "2022-03",
+     "value": 2099
+    },
+    {
+     "period": "2022-04",
+     "value": 2263
+    },
+    {
+     "period": "2022-05",
+     "value": 2379
+    },
+    {
+     "period": "2022-06",
+     "value": 2449
+    },
+    {
+     "period": "2022-07",
+     "value": 2638
+    },
+    {
+     "period": "2022-08",
+     "value": 2813
+    },
+    {
+     "period": "2022-09",
+     "value": 2976
+    },
+    {
+     "period": "2022-10",
+     "value": 3109
+    },
+    {
+     "period": "2022-11",
+     "value": 3185
+    },
+    {
+     "period": "2022-12",
+     "value": 3530
+    },
+    {
+     "period": "2023-01",
+     "value": 3575
+    },
+    {
+     "period": "2023-02",
+     "value": 3592
+    },
+    {
+     "period": "2023-03",
+     "value": 3633
+    },
+    {
+     "period": "2023-04",
+     "value": 3663
+    },
+    {
+     "period": "2023-05",
+     "value": 3914
+    },
+    {
+     "period": "2023-06",
+     "value": 4171
+    },
+    {
+     "period": "2023-07",
+     "value": 4354
+    },
+    {
+     "period": "2023-08",
+     "value": 4525
+    },
+    {
+     "period": "2023-09",
+     "value": 4855
+    },
+    {
+     "period": "2023-10",
+     "value": 5002
+    },
+    {
+     "period": "2023-11",
+     "value": 5386
+    },
+    {
+     "period": "2023-12",
+     "value": 5512
+    },
+    {
+     "period": "2024-01",
+     "value": 5628
+    },
+    {
+     "period": "2024-02",
+     "value": 5768
+    },
+    {
+     "period": "2024-03",
+     "value": 5805
+    },
+    {
+     "period": "2024-04",
+     "value": 6193
+    },
+    {
+     "period": "2024-05",
+     "value": 6198
+    },
+    {
+     "period": "2024-06",
+     "value": 6157
+    },
+    {
+     "period": "2024-07",
+     "value": 6149
+    },
+    {
+     "period": "2024-08",
+     "value": 6143
+    },
+    {
+     "period": "2024-09",
+     "value": 6052
+    },
+    {
+     "period": "2024-10",
+     "value": 6075
+    },
+    {
+     "period": "2024-11",
+     "value": 6012
+    },
+    {
+     "period": "2024-12",
+     "value": 6082
+    },
+    {
+     "period": "2025-01",
+     "value": 5979
+    },
+    {
+     "period": "2025-02",
+     "value": 5775
+    },
+    {
+     "period": "2025-03",
+     "value": 5659
+    },
+    {
+     "period": "2025-04",
+     "value": 5518
+    },
+    {
+     "period": "2025-05",
+     "value": 5374
+    },
+    {
+     "period": "2025-06",
+     "value": 5183
+    },
+    {
+     "period": "2025-07",
+     "value": 5145
+    },
+    {
+     "period": "2025-08",
+     "value": 4905
+    },
+    {
+     "period": "2025-09",
+     "value": 4781
+    },
+    {
+     "period": "2025-10",
+     "value": 4733
+    },
+    {
+     "period": "2025-11",
+     "value": 4671
+    },
+    {
+     "period": "2025-12",
+     "value": 4550
+    },
+    {
+     "period": "2026-01",
+     "value": 4469
+    },
+    {
+     "period": "2026-02",
+     "value": 4280
+    },
+    {
+     "period": "2026-03",
+     "value": 4068
+    },
+    {
+     "period": "2026-04",
+     "value": 3874
+    },
+    {
+     "period": "2026-05",
+     "value": 3629
+    },
+    {
+     "period": "2026-06",
+     "value": 3435
+    },
+    {
+     "period": "2026-07",
+     "value": 3296
+    },
+    {
+     "period": "2026-08",
+     "value": 3124
+    },
+    {
+     "period": "2026-09",
+     "value": 2823
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "actively_homeless, population_group = Refugees",
+    "method": "As published, per month. Groups overlap: a person can be in more than one."
+   }
+  },
+  "group_2": {
+   "id": "group_2",
+   "label": "Non-refugees",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018-01",
+     "value": 5550
+    },
+    {
+     "period": "2018-02",
+     "value": 5641
+    },
+    {
+     "period": "2018-03",
+     "value": 5781
+    },
+    {
+     "period": "2018-04",
+     "value": 5863
+    },
+    {
+     "period": "2018-05",
+     "value": 5822
+    },
+    {
+     "period": "2018-06",
+     "value": 5876
+    },
+    {
+     "period": "2018-07",
+     "value": 5877
+    },
+    {
+     "period": "2018-08",
+     "value": 5955
+    },
+    {
+     "period": "2018-09",
+     "value": 6037
+    },
+    {
+     "period": "2018-10",
+     "value": 6002
+    },
+    {
+     "period": "2018-11",
+     "value": 6308
+    },
+    {
+     "period": "2018-12",
+     "value": 6488
+    },
+    {
+     "period": "2019-01",
+     "value": 6720
+    },
+    {
+     "period": "2019-02",
+     "value": 6780
+    },
+    {
+     "period": "2019-03",
+     "value": 6872
+    },
+    {
+     "period": "2019-04",
+     "value": 6923
+    },
+    {
+     "period": "2019-05",
+     "value": 6861
+    },
+    {
+     "period": "2019-06",
+     "value": 6708
+    },
+    {
+     "period": "2019-07",
+     "value": 6272
+    },
+    {
+     "period": "2019-08",
+     "value": 6169
+    },
+    {
+     "period": "2019-09",
+     "value": 6047
+    },
+    {
+     "period": "2019-10",
+     "value": 6017
+    },
+    {
+     "period": "2019-11",
+     "value": 6324
+    },
+    {
+     "period": "2019-12",
+     "value": 6685
+    },
+    {
+     "period": "2020-01",
+     "value": 6975
+    },
+    {
+     "period": "2020-02",
+     "value": 6932
+    },
+    {
+     "period": "2020-03",
+     "value": 6893
+    },
+    {
+     "period": "2020-04",
+     "value": 6483
+    },
+    {
+     "period": "2020-05",
+     "value": 6035
+    },
+    {
+     "period": "2020-06",
+     "value": 5751
+    },
+    {
+     "period": "2020-07",
+     "value": 5909
+    },
+    {
+     "period": "2020-08",
+     "value": 6093
+    },
+    {
+     "period": "2020-09",
+     "value": 6160
+    },
+    {
+     "period": "2020-10",
+     "value": 6291
+    },
+    {
+     "period": "2020-11",
+     "value": 6490
+    },
+    {
+     "period": "2020-12",
+     "value": 6717
+    },
+    {
+     "period": "2021-01",
+     "value": 6834
+    },
+    {
+     "period": "2021-02",
+     "value": 6875
+    },
+    {
+     "period": "2021-03",
+     "value": 6784
+    },
+    {
+     "period": "2021-04",
+     "value": 6577
+    },
+    {
+     "period": "2021-05",
+     "value": 6636
+    },
+    {
+     "period": "2021-06",
+     "value": 7039
+    },
+    {
+     "period": "2021-07",
+     "value": 7308
+    },
+    {
+     "period": "2021-08",
+     "value": 7484
+    },
+    {
+     "period": "2021-09",
+     "value": 7611
+    },
+    {
+     "period": "2021-10",
+     "value": 7691
+    },
+    {
+     "period": "2021-11",
+     "value": 7850
+    },
+    {
+     "period": "2021-12",
+     "value": 7725
+    },
+    {
+     "period": "2022-01",
+     "value": 7684
+    },
+    {
+     "period": "2022-02",
+     "value": 7726
+    },
+    {
+     "period": "2022-03",
+     "value": 7834
+    },
+    {
+     "period": "2022-04",
+     "value": 7650
+    },
+    {
+     "period": "2022-05",
+     "value": 7353
+    },
+    {
+     "period": "2022-06",
+     "value": 7303
+    },
+    {
+     "period": "2022-07",
+     "value": 7130
+    },
+    {
+     "period": "2022-08",
+     "value": 6911
+    },
+    {
+     "period": "2022-09",
+     "value": 6714
+    },
+    {
+     "period": "2022-10",
+     "value": 6513
+    },
+    {
+     "period": "2022-11",
+     "value": 6526
+    },
+    {
+     "period": "2022-12",
+     "value": 6878
+    },
+    {
+     "period": "2023-01",
+     "value": 7127
+    },
+    {
+     "period": "2023-02",
+     "value": 7257
+    },
+    {
+     "period": "2023-03",
+     "value": 7178
+    },
+    {
+     "period": "2023-04",
+     "value": 6852
+    },
+    {
+     "period": "2023-05",
+     "value": 6539
+    },
+    {
+     "period": "2023-06",
+     "value": 6247
+    },
+    {
+     "period": "2023-07",
+     "value": 5756
+    },
+    {
+     "period": "2023-08",
+     "value": 5463
+    },
+    {
+     "period": "2023-09",
+     "value": 5357
+    },
+    {
+     "period": "2023-10",
+     "value": 5109
+    },
+    {
+     "period": "2023-11",
+     "value": 5112
+    },
+    {
+     "period": "2023-12",
+     "value": 5095
+    },
+    {
+     "period": "2024-01",
+     "value": 5371
+    },
+    {
+     "period": "2024-02",
+     "value": 5405
+    },
+    {
+     "period": "2024-03",
+     "value": 5028
+    },
+    {
+     "period": "2024-04",
+     "value": 4771
+    },
+    {
+     "period": "2024-05",
+     "value": 4597
+    },
+    {
+     "period": "2024-06",
+     "value": 4470
+    },
+    {
+     "period": "2024-07",
+     "value": 4350
+    },
+    {
+     "period": "2024-08",
+     "value": 4360
+    },
+    {
+     "period": "2024-09",
+     "value": 4287
+    },
+    {
+     "period": "2024-10",
+     "value": 4256
+    },
+    {
+     "period": "2024-11",
+     "value": 4448
+    },
+    {
+     "period": "2024-12",
+     "value": 5062
+    },
+    {
+     "period": "2025-01",
+     "value": 5801
+    },
+    {
+     "period": "2025-02",
+     "value": 5946
+    },
+    {
+     "period": "2025-03",
+     "value": 5762
+    },
+    {
+     "period": "2025-04",
+     "value": 5343
+    },
+    {
+     "period": "2025-05",
+     "value": 4877
+    },
+    {
+     "period": "2025-06",
+     "value": 4745
+    },
+    {
+     "period": "2025-07",
+     "value": 4924
+    },
+    {
+     "period": "2025-08",
+     "value": 4953
+    },
+    {
+     "period": "2025-09",
+     "value": 4856
+    },
+    {
+     "period": "2025-10",
+     "value": 4840
+    },
+    {
+     "period": "2025-11",
+     "value": 5085
+    },
+    {
+     "period": "2025-12",
+     "value": 5927
+    },
+    {
+     "period": "2026-01",
+     "value": 6588
+    },
+    {
+     "period": "2026-02",
+     "value": 6648
+    },
+    {
+     "period": "2026-03",
+     "value": 6501
+    },
+    {
+     "period": "2026-04",
+     "value": 6064
+    },
+    {
+     "period": "2026-05",
+     "value": 5622
+    },
+    {
+     "period": "2026-06",
+     "value": 5522
+    },
+    {
+     "period": "2026-07",
+     "value": 5555
+    },
+    {
+     "period": "2026-08",
+     "value": 5540
+    },
+    {
+     "period": "2026-09",
+     "value": 5467
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "actively_homeless, population_group = Non-refugees",
+    "method": "As published, per month. Groups overlap: a person can be in more than one."
+   }
+  },
+  "group_3": {
+   "id": "group_3",
+   "label": "Families",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018-01",
+     "value": 2277
+    },
+    {
+     "period": "2018-02",
+     "value": 2336
+    },
+    {
+     "period": "2018-03",
+     "value": 2636
+    },
+    {
+     "period": "2018-04",
+     "value": 2953
+    },
+    {
+     "period": "2018-05",
+     "value": 3350
+    },
+    {
+     "period": "2018-06",
+     "value": 3568
+    },
+    {
+     "period": "2018-07",
+     "value": 3387
+    },
+    {
+     "period": "2018-08",
+     "value": 3411
+    },
+    {
+     "period": "2018-09",
+     "value": 3221
+    },
+    {
+     "period": "2018-10",
+     "value": 3053
+    },
+    {
+     "period": "2018-11",
+     "value": 3153
+    },
+    {
+     "period": "2018-12",
+     "value": 3258
+    },
+    {
+     "period": "2019-01",
+     "value": 3197
+    },
+    {
+     "period": "2019-02",
+     "value": 3104
+    },
+    {
+     "period": "2019-03",
+     "value": 3106
+    },
+    {
+     "period": "2019-04",
+     "value": 3182
+    },
+    {
+     "period": "2019-05",
+     "value": 3267
+    },
+    {
+     "period": "2019-06",
+     "value": 3156
+    },
+    {
+     "period": "2019-07",
+     "value": 3007
+    },
+    {
+     "period": "2019-08",
+     "value": 2900
+    },
+    {
+     "period": "2019-09",
+     "value": 2817
+    },
+    {
+     "period": "2019-10",
+     "value": 2775
+    },
+    {
+     "period": "2019-11",
+     "value": 2638
+    },
+    {
+     "period": "2019-12",
+     "value": 2661
+    },
+    {
+     "period": "2020-01",
+     "value": 2706
+    },
+    {
+     "period": "2020-02",
+     "value": 2686
+    },
+    {
+     "period": "2020-03",
+     "value": 2636
+    },
+    {
+     "period": "2020-04",
+     "value": 2514
+    },
+    {
+     "period": "2020-05",
+     "value": 2217
+    },
+    {
+     "period": "2020-06",
+     "value": 2089
+    },
+    {
+     "period": "2020-07",
+     "value": 1951
+    },
+    {
+     "period": "2020-08",
+     "value": 1881
+    },
+    {
+     "period": "2020-09",
+     "value": 1615
+    },
+    {
+     "period": "2020-10",
+     "value": 1463
+    },
+    {
+     "period": "2020-11",
+     "value": 1359
+    },
+    {
+     "period": "2020-12",
+     "value": 1288
+    },
+    {
+     "period": "2021-01",
+     "value": 1239
+    },
+    {
+     "period": "2021-02",
+     "value": 1221
+    },
+    {
+     "period": "2021-03",
+     "value": 1165
+    },
+    {
+     "period": "2021-04",
+     "value": 1157
+    },
+    {
+     "period": "2021-05",
+     "value": 1173
+    },
+    {
+     "period": "2021-06",
+     "value": 1276
+    },
+    {
+     "period": "2021-07",
+     "value": 1356
+    },
+    {
+     "period": "2021-08",
+     "value": 1378
+    },
+    {
+     "period": "2021-09",
+     "value": 1548
+    },
+    {
+     "period": "2021-10",
+     "value": 1700
+    },
+    {
+     "period": "2021-11",
+     "value": 1754
+    },
+    {
+     "period": "2021-12",
+     "value": 1827
+    },
+    {
+     "period": "2022-01",
+     "value": 1861
+    },
+    {
+     "period": "2022-02",
+     "value": 1904
+    },
+    {
+     "period": "2022-03",
+     "value": 2115
+    },
+    {
+     "period": "2022-04",
+     "value": 2208
+    },
+    {
+     "period": "2022-05",
+     "value": 2260
+    },
+    {
+     "period": "2022-06",
+     "value": 2218
+    },
+    {
+     "period": "2022-07",
+     "value": 2274
+    },
+    {
+     "period": "2022-08",
+     "value": 2257
+    },
+    {
+     "period": "2022-09",
+     "value": 2221
+    },
+    {
+     "period": "2022-10",
+     "value": 2260
+    },
+    {
+     "period": "2022-11",
+     "value": 2255
+    },
+    {
+     "period": "2022-12",
+     "value": 2529
+    },
+    {
+     "period": "2023-01",
+     "value": 2508
+    },
+    {
+     "period": "2023-02",
+     "value": 2458
+    },
+    {
+     "period": "2023-03",
+     "value": 2475
+    },
+    {
+     "period": "2023-04",
+     "value": 2432
+    },
+    {
+     "period": "2023-05",
+     "value": 2458
+    },
+    {
+     "period": "2023-06",
+     "value": 2554
+    },
+    {
+     "period": "2023-07",
+     "value": 2557
+    },
+    {
+     "period": "2023-08",
+     "value": 2539
+    },
+    {
+     "period": "2023-09",
+     "value": 2552
+    },
+    {
+     "period": "2023-10",
+     "value": 2475
+    },
+    {
+     "period": "2023-11",
+     "value": 2525
+    },
+    {
+     "period": "2023-12",
+     "value": 2522
+    },
+    {
+     "period": "2024-01",
+     "value": 2522
+    },
+    {
+     "period": "2024-02",
+     "value": 2538
+    },
+    {
+     "period": "2024-03",
+     "value": 2555
+    },
+    {
+     "period": "2024-04",
+     "value": 2826
+    },
+    {
+     "period": "2024-05",
+     "value": 2824
+    },
+    {
+     "period": "2024-06",
+     "value": 2822
+    },
+    {
+     "period": "2024-07",
+     "value": 2779
+    },
+    {
+     "period": "2024-08",
+     "value": 2799
+    },
+    {
+     "period": "2024-09",
+     "value": 2830
+    },
+    {
+     "period": "2024-10",
+     "value": 2822
+    },
+    {
+     "period": "2024-11",
+     "value": 2804
+    },
+    {
+     "period": "2024-12",
+     "value": 2771
+    },
+    {
+     "period": "2025-01",
+     "value": 2731
+    },
+    {
+     "period": "2025-02",
+     "value": 2614
+    },
+    {
+     "period": "2025-03",
+     "value": 2639
+    },
+    {
+     "period": "2025-04",
+     "value": 2642
+    },
+    {
+     "period": "2025-05",
+     "value": 2585
+    },
+    {
+     "period": "2025-06",
+     "value": 2487
+    },
+    {
+     "period": "2025-07",
+     "value": 2522
+    },
+    {
+     "period": "2025-08",
+     "value": 2444
+    },
+    {
+     "period": "2025-09",
+     "value": 2476
+    },
+    {
+     "period": "2025-10",
+     "value": 2511
+    },
+    {
+     "period": "2025-11",
+     "value": 2445
+    },
+    {
+     "period": "2025-12",
+     "value": 2379
+    },
+    {
+     "period": "2026-01",
+     "value": 2350
+    },
+    {
+     "period": "2026-02",
+     "value": 2283
+    },
+    {
+     "period": "2026-03",
+     "value": 2211
+    },
+    {
+     "period": "2026-04",
+     "value": 2207
+    },
+    {
+     "period": "2026-05",
+     "value": 2100
+    },
+    {
+     "period": "2026-06",
+     "value": 2116
+    },
+    {
+     "period": "2026-07",
+     "value": 2144
+    },
+    {
+     "period": "2026-08",
+     "value": 2091
+    },
+    {
+     "period": "2026-09",
+     "value": 1962
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "actively_homeless, population_group = Families",
+    "method": "As published, per month. Groups overlap: a person can be in more than one."
+   }
+  },
+  "group_4": {
+   "id": "group_4",
+   "label": "Youth",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018-01",
+     "value": 924
+    },
+    {
+     "period": "2018-02",
+     "value": 893
+    },
+    {
+     "period": "2018-03",
+     "value": 905
+    },
+    {
+     "period": "2018-04",
+     "value": 909
+    },
+    {
+     "period": "2018-05",
+     "value": 921
+    },
+    {
+     "period": "2018-06",
+     "value": 950
+    },
+    {
+     "period": "2018-07",
+     "value": 953
+    },
+    {
+     "period": "2018-08",
+     "value": 934
+    },
+    {
+     "period": "2018-09",
+     "value": 886
+    },
+    {
+     "period": "2018-10",
+     "value": 902
+    },
+    {
+     "period": "2018-11",
+     "value": 903
+    },
+    {
+     "period": "2018-12",
+     "value": 906
+    },
+    {
+     "period": "2019-01",
+     "value": 950
+    },
+    {
+     "period": "2019-02",
+     "value": 935
+    },
+    {
+     "period": "2019-03",
+     "value": 945
+    },
+    {
+     "period": "2019-04",
+     "value": 951
+    },
+    {
+     "period": "2019-05",
+     "value": 950
+    },
+    {
+     "period": "2019-06",
+     "value": 998
+    },
+    {
+     "period": "2019-07",
+     "value": 984
+    },
+    {
+     "period": "2019-08",
+     "value": 961
+    },
+    {
+     "period": "2019-09",
+     "value": 989
+    },
+    {
+     "period": "2019-10",
+     "value": 975
+    },
+    {
+     "period": "2019-11",
+     "value": 957
+    },
+    {
+     "period": "2019-12",
+     "value": 983
+    },
+    {
+     "period": "2020-01",
+     "value": 987
+    },
+    {
+     "period": "2020-02",
+     "value": 957
+    },
+    {
+     "period": "2020-03",
+     "value": 905
+    },
+    {
+     "period": "2020-04",
+     "value": 829
+    },
+    {
+     "period": "2020-05",
+     "value": 769
+    },
+    {
+     "period": "2020-06",
+     "value": 701
+    },
+    {
+     "period": "2020-07",
+     "value": 693
+    },
+    {
+     "period": "2020-08",
+     "value": 697
+    },
+    {
+     "period": "2020-09",
+     "value": 713
+    },
+    {
+     "period": "2020-10",
+     "value": 721
+    },
+    {
+     "period": "2020-11",
+     "value": 714
+    },
+    {
+     "period": "2020-12",
+     "value": 729
+    },
+    {
+     "period": "2021-01",
+     "value": 752
+    },
+    {
+     "period": "2021-02",
+     "value": 743
+    },
+    {
+     "period": "2021-03",
+     "value": 735
+    },
+    {
+     "period": "2021-04",
+     "value": 771
+    },
+    {
+     "period": "2021-05",
+     "value": 769
+    },
+    {
+     "period": "2021-06",
+     "value": 826
+    },
+    {
+     "period": "2021-07",
+     "value": 829
+    },
+    {
+     "period": "2021-08",
+     "value": 823
+    },
+    {
+     "period": "2021-09",
+     "value": 842
+    },
+    {
+     "period": "2021-10",
+     "value": 861
+    },
+    {
+     "period": "2021-11",
+     "value": 855
+    },
+    {
+     "period": "2021-12",
+     "value": 850
+    },
+    {
+     "period": "2022-01",
+     "value": 851
+    },
+    {
+     "period": "2022-02",
+     "value": 882
+    },
+    {
+     "period": "2022-03",
+     "value": 913
+    },
+    {
+     "period": "2022-04",
+     "value": 908
+    },
+    {
+     "period": "2022-05",
+     "value": 907
+    },
+    {
+     "period": "2022-06",
+     "value": 932
+    },
+    {
+     "period": "2022-07",
+     "value": 899
+    },
+    {
+     "period": "2022-08",
+     "value": 904
+    },
+    {
+     "period": "2022-09",
+     "value": 914
+    },
+    {
+     "period": "2022-10",
+     "value": 889
+    },
+    {
+     "period": "2022-11",
+     "value": 889
+    },
+    {
+     "period": "2022-12",
+     "value": 936
+    },
+    {
+     "period": "2023-01",
+     "value": 959
+    },
+    {
+     "period": "2023-02",
+     "value": 963
+    },
+    {
+     "period": "2023-03",
+     "value": 971
+    },
+    {
+     "period": "2023-04",
+     "value": 986
+    },
+    {
+     "period": "2023-05",
+     "value": 1015
+    },
+    {
+     "period": "2023-06",
+     "value": 1033
+    },
+    {
+     "period": "2023-07",
+     "value": 1029
+    },
+    {
+     "period": "2023-08",
+     "value": 1011
+    },
+    {
+     "period": "2023-09",
+     "value": 1039
+    },
+    {
+     "period": "2023-10",
+     "value": 1023
+    },
+    {
+     "period": "2023-11",
+     "value": 1052
+    },
+    {
+     "period": "2023-12",
+     "value": 1079
+    },
+    {
+     "period": "2024-01",
+     "value": 1061
+    },
+    {
+     "period": "2024-02",
+     "value": 1056
+    },
+    {
+     "period": "2024-03",
+     "value": 1012
+    },
+    {
+     "period": "2024-04",
+     "value": 986
+    },
+    {
+     "period": "2024-05",
+     "value": 996
+    },
+    {
+     "period": "2024-06",
+     "value": 978
+    },
+    {
+     "period": "2024-07",
+     "value": 1003
+    },
+    {
+     "period": "2024-08",
+     "value": 987
+    },
+    {
+     "period": "2024-09",
+     "value": 971
+    },
+    {
+     "period": "2024-10",
+     "value": 977
+    },
+    {
+     "period": "2024-11",
+     "value": 994
+    },
+    {
+     "period": "2024-12",
+     "value": 1031
+    },
+    {
+     "period": "2025-01",
+     "value": 1096
+    },
+    {
+     "period": "2025-02",
+     "value": 1094
+    },
+    {
+     "period": "2025-03",
+     "value": 1070
+    },
+    {
+     "period": "2025-04",
+     "value": 1014
+    },
+    {
+     "period": "2025-05",
+     "value": 957
+    },
+    {
+     "period": "2025-06",
+     "value": 957
+    },
+    {
+     "period": "2025-07",
+     "value": 984
+    },
+    {
+     "period": "2025-08",
+     "value": 979
+    },
+    {
+     "period": "2025-09",
+     "value": 952
+    },
+    {
+     "period": "2025-10",
+     "value": 956
+    },
+    {
+     "period": "2025-11",
+     "value": 961
+    },
+    {
+     "period": "2025-12",
+     "value": 984
+    },
+    {
+     "period": "2026-01",
+     "value": 999
+    },
+    {
+     "period": "2026-02",
+     "value": 994
+    },
+    {
+     "period": "2026-03",
+     "value": 997
+    },
+    {
+     "period": "2026-04",
+     "value": 991
+    },
+    {
+     "period": "2026-05",
+     "value": 964
+    },
+    {
+     "period": "2026-06",
+     "value": 946
+    },
+    {
+     "period": "2026-07",
+     "value": 925
+    },
+    {
+     "period": "2026-08",
+     "value": 907
+    },
+    {
+     "period": "2026-09",
+     "value": 904
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "actively_homeless, population_group = Youth",
+    "method": "As published, per month. Groups overlap: a person can be in more than one."
+   }
+  },
+  "group_5": {
+   "id": "group_5",
+   "label": "Single Adult",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018-01",
+     "value": 4757
+    },
+    {
+     "period": "2018-02",
+     "value": 4903
+    },
+    {
+     "period": "2018-03",
+     "value": 5066
+    },
+    {
+     "period": "2018-04",
+     "value": 5171
+    },
+    {
+     "period": "2018-05",
+     "value": 5245
+    },
+    {
+     "period": "2018-06",
+     "value": 5305
+    },
+    {
+     "period": "2018-07",
+     "value": 5262
+    },
+    {
+     "period": "2018-08",
+     "value": 5212
+    },
+    {
+     "period": "2018-09",
+     "value": 5234
+    },
+    {
+     "period": "2018-10",
+     "value": 5189
+    },
+    {
+     "period": "2018-11",
+     "value": 5501
+    },
+    {
+     "period": "2018-12",
+     "value": 5618
+    },
+    {
+     "period": "2019-01",
+     "value": 5882
+    },
+    {
+     "period": "2019-02",
+     "value": 5943
+    },
+    {
+     "period": "2019-03",
+     "value": 5992
+    },
+    {
+     "period": "2019-04",
+     "value": 6009
+    },
+    {
+     "period": "2019-05",
+     "value": 5967
+    },
+    {
+     "period": "2019-06",
+     "value": 5946
+    },
+    {
+     "period": "2019-07",
+     "value": 5567
+    },
+    {
+     "period": "2019-08",
+     "value": 5461
+    },
+    {
+     "period": "2019-09",
+     "value": 5335
+    },
+    {
+     "period": "2019-10",
+     "value": 5456
+    },
+    {
+     "period": "2019-11",
+     "value": 5862
+    },
+    {
+     "period": "2019-12",
+     "value": 6270
+    },
+    {
+     "period": "2020-01",
+     "value": 6223
+    },
+    {
+     "period": "2020-02",
+     "value": 6191
+    },
+    {
+     "period": "2020-03",
+     "value": 6139
+    },
+    {
+     "period": "2020-04",
+     "value": 5593
+    },
+    {
+     "period": "2020-05",
+     "value": 5221
+    },
+    {
+     "period": "2020-06",
+     "value": 4878
+    },
+    {
+     "period": "2020-07",
+     "value": 4908
+    },
+    {
+     "period": "2020-08",
+     "value": 5002
+    },
+    {
+     "period": "2020-09",
+     "value": 5244
+    },
+    {
+     "period": "2020-10",
+     "value": 5323
+    },
+    {
+     "period": "2020-11",
+     "value": 5513
+    },
+    {
+     "period": "2020-12",
+     "value": 5724
+    },
+    {
+     "period": "2021-01",
+     "value": 5838
+    },
+    {
+     "period": "2021-02",
+     "value": 5907
+    },
+    {
+     "period": "2021-03",
+     "value": 5845
+    },
+    {
+     "period": "2021-04",
+     "value": 5588
+    },
+    {
+     "period": "2021-05",
+     "value": 5633
+    },
+    {
+     "period": "2021-06",
+     "value": 5935
+    },
+    {
+     "period": "2021-07",
+     "value": 6137
+    },
+    {
+     "period": "2021-08",
+     "value": 6278
+    },
+    {
+     "period": "2021-09",
+     "value": 6370
+    },
+    {
+     "period": "2021-10",
+     "value": 6431
+    },
+    {
+     "period": "2021-11",
+     "value": 6590
+    },
+    {
+     "period": "2021-12",
+     "value": 6578
+    },
+    {
+     "period": "2022-01",
+     "value": 6698
+    },
+    {
+     "period": "2022-02",
+     "value": 6773
+    },
+    {
+     "period": "2022-03",
+     "value": 6905
+    },
+    {
+     "period": "2022-04",
+     "value": 6797
+    },
+    {
+     "period": "2022-05",
+     "value": 6565
+    },
+    {
+     "period": "2022-06",
+     "value": 6602
+    },
+    {
+     "period": "2022-07",
+     "value": 6595
+    },
+    {
+     "period": "2022-08",
+     "value": 6563
+    },
+    {
+     "period": "2022-09",
+     "value": 6555
+    },
+    {
+     "period": "2022-10",
+     "value": 6473
+    },
+    {
+     "period": "2022-11",
+     "value": 6567
+    },
+    {
+     "period": "2022-12",
+     "value": 6943
+    },
+    {
+     "period": "2023-01",
+     "value": 7235
+    },
+    {
+     "period": "2023-02",
+     "value": 7428
+    },
+    {
+     "period": "2023-03",
+     "value": 7365
+    },
+    {
+     "period": "2023-04",
+     "value": 7097
+    },
+    {
+     "period": "2023-05",
+     "value": 6980
+    },
+    {
+     "period": "2023-06",
+     "value": 6831
+    },
+    {
+     "period": "2023-07",
+     "value": 6524
+    },
+    {
+     "period": "2023-08",
+     "value": 6438
+    },
+    {
+     "period": "2023-09",
+     "value": 6621
+    },
+    {
+     "period": "2023-10",
+     "value": 6613
+    },
+    {
+     "period": "2023-11",
+     "value": 6921
+    },
+    {
+     "period": "2023-12",
+     "value": 7006
+    },
+    {
+     "period": "2024-01",
+     "value": 7416
+    },
+    {
+     "period": "2024-02",
+     "value": 7579
+    },
+    {
+     "period": "2024-03",
+     "value": 7266
+    },
+    {
+     "period": "2024-04",
+     "value": 7152
+    },
+    {
+     "period": "2024-05",
+     "value": 6975
+    },
+    {
+     "period": "2024-06",
+     "value": 6827
+    },
+    {
+     "period": "2024-07",
+     "value": 6717
+    },
+    {
+     "period": "2024-08",
+     "value": 6717
+    },
+    {
+     "period": "2024-09",
+     "value": 6538
+    },
+    {
+     "period": "2024-10",
+     "value": 6532
+    },
+    {
+     "period": "2024-11",
+     "value": 6662
+    },
+    {
+     "period": "2024-12",
+     "value": 7342
+    },
+    {
+     "period": "2025-01",
+     "value": 7953
+    },
+    {
+     "period": "2025-02",
+     "value": 8013
+    },
+    {
+     "period": "2025-03",
+     "value": 7712
+    },
+    {
+     "period": "2025-04",
+     "value": 7205
+    },
+    {
+     "period": "2025-05",
+     "value": 6709
+    },
+    {
+     "period": "2025-06",
+     "value": 6484
+    },
+    {
+     "period": "2025-07",
+     "value": 6563
+    },
+    {
+     "period": "2025-08",
+     "value": 6435
+    },
+    {
+     "period": "2025-09",
+     "value": 6209
+    },
+    {
+     "period": "2025-10",
+     "value": 6106
+    },
+    {
+     "period": "2025-11",
+     "value": 6350
+    },
+    {
+     "period": "2025-12",
+     "value": 7114
+    },
+    {
+     "period": "2026-01",
+     "value": 7708
+    },
+    {
+     "period": "2026-02",
+     "value": 7651
+    },
+    {
+     "period": "2026-03",
+     "value": 7361
+    },
+    {
+     "period": "2026-04",
+     "value": 6740
+    },
+    {
+     "period": "2026-05",
+     "value": 6187
+    },
+    {
+     "period": "2026-06",
+     "value": 5895
+    },
+    {
+     "period": "2026-07",
+     "value": 5782
+    },
+    {
+     "period": "2026-08",
+     "value": 5666
+    },
+    {
+     "period": "2026-09",
+     "value": 5424
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "actively_homeless, population_group = Single Adult",
+    "method": "As published, per month. Groups overlap: a person can be in more than one."
+   }
+  },
+  "group_6": {
+   "id": "group_6",
+   "label": "Indigenous",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2021-01",
+     "value": 895
+    },
+    {
+     "period": "2021-02",
+     "value": 927
+    },
+    {
+     "period": "2021-03",
+     "value": 912
+    },
+    {
+     "period": "2021-04",
+     "value": 861
+    },
+    {
+     "period": "2021-05",
+     "value": 888
+    },
+    {
+     "period": "2021-06",
+     "value": 936
+    },
+    {
+     "period": "2021-07",
+     "value": 972
+    },
+    {
+     "period": "2021-08",
+     "value": 1002
+    },
+    {
+     "period": "2021-09",
+     "value": 1026
+    },
+    {
+     "period": "2021-10",
+     "value": 1053
+    },
+    {
+     "period": "2021-11",
+     "value": 1070
+    },
+    {
+     "period": "2021-12",
+     "value": 1043
+    },
+    {
+     "period": "2022-01",
+     "value": 1098
+    },
+    {
+     "period": "2022-02",
+     "value": 1159
+    },
+    {
+     "period": "2022-03",
+     "value": 1193
+    },
+    {
+     "period": "2022-04",
+     "value": 1153
+    },
+    {
+     "period": "2022-05",
+     "value": 1130
+    },
+    {
+     "period": "2022-06",
+     "value": 1103
+    },
+    {
+     "period": "2022-07",
+     "value": 1034
+    },
+    {
+     "period": "2022-08",
+     "value": 971
+    },
+    {
+     "period": "2022-09",
+     "value": 915
+    },
+    {
+     "period": "2022-10",
+     "value": 895
+    },
+    {
+     "period": "2022-11",
+     "value": 897
+    },
+    {
+     "period": "2022-12",
+     "value": 978
+    },
+    {
+     "period": "2023-01",
+     "value": 1018
+    },
+    {
+     "period": "2023-02",
+     "value": 1067
+    },
+    {
+     "period": "2023-03",
+     "value": 1078
+    },
+    {
+     "period": "2023-04",
+     "value": 1023
+    },
+    {
+     "period": "2023-05",
+     "value": 972
+    },
+    {
+     "period": "2023-06",
+     "value": 855
+    },
+    {
+     "period": "2023-07",
+     "value": 749
+    },
+    {
+     "period": "2023-08",
+     "value": 668
+    },
+    {
+     "period": "2023-09",
+     "value": 660
+    },
+    {
+     "period": "2023-10",
+     "value": 649
+    },
+    {
+     "period": "2023-11",
+     "value": 665
+    },
+    {
+     "period": "2023-12",
+     "value": 679
+    },
+    {
+     "period": "2024-01",
+     "value": 792
+    },
+    {
+     "period": "2024-02",
+     "value": 802
+    },
+    {
+     "period": "2024-03",
+     "value": 734
+    },
+    {
+     "period": "2024-04",
+     "value": 667
+    },
+    {
+     "period": "2024-05",
+     "value": 639
+    },
+    {
+     "period": "2024-06",
+     "value": 605
+    },
+    {
+     "period": "2024-07",
+     "value": 584
+    },
+    {
+     "period": "2024-08",
+     "value": 576
+    },
+    {
+     "period": "2024-09",
+     "value": 542
+    },
+    {
+     "period": "2024-10",
+     "value": 551
+    },
+    {
+     "period": "2024-11",
+     "value": 614
+    },
+    {
+     "period": "2024-12",
+     "value": 816
+    },
+    {
+     "period": "2025-01",
+     "value": 1003
+    },
+    {
+     "period": "2025-02",
+     "value": 1071
+    },
+    {
+     "period": "2025-03",
+     "value": 1031
+    },
+    {
+     "period": "2025-04",
+     "value": 891
+    },
+    {
+     "period": "2025-05",
+     "value": 740
+    },
+    {
+     "period": "2025-06",
+     "value": 705
+    },
+    {
+     "period": "2025-07",
+     "value": 740
+    },
+    {
+     "period": "2025-08",
+     "value": 708
+    },
+    {
+     "period": "2025-09",
+     "value": 681
+    },
+    {
+     "period": "2025-10",
+     "value": 698
+    },
+    {
+     "period": "2025-11",
+     "value": 762
+    },
+    {
+     "period": "2025-12",
+     "value": 991
+    },
+    {
+     "period": "2026-01",
+     "value": 1179
+    },
+    {
+     "period": "2026-02",
+     "value": 1207
+    },
+    {
+     "period": "2026-03",
+     "value": 1114
+    },
+    {
+     "period": "2026-04",
+     "value": 991
+    },
+    {
+     "period": "2026-05",
+     "value": 869
+    },
+    {
+     "period": "2026-06",
+     "value": 802
+    },
+    {
+     "period": "2026-07",
+     "value": 782
+    },
+    {
+     "period": "2026-08",
+     "value": 771
+    },
+    {
+     "period": "2026-09",
+     "value": 765
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "actively_homeless, population_group = Indigenous",
+    "method": "As published, per month. Groups overlap: a person can be in more than one."
+   }
+  },
+  "flow_newly_identified": {
+   "id": "flow_newly_identified",
+   "label": "Newly identified",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018-01",
+     "value": 1106
+    },
+    {
+     "period": "2018-02",
+     "value": 947
+    },
+    {
+     "period": "2018-03",
+     "value": 1226
+    },
+    {
+     "period": "2018-04",
+     "value": 1305
+    },
+    {
+     "period": "2018-05",
+     "value": 1469
+    },
+    {
+     "period": "2018-06",
+     "value": 1333
+    },
+    {
+     "period": "2018-07",
+     "value": 1156
+    },
+    {
+     "period": "2018-08",
+     "value": 1214
+    },
+    {
+     "period": "2018-09",
+     "value": 1204
+    },
+    {
+     "period": "2018-10",
+     "value": 1022
+    },
+    {
+     "period": "2018-11",
+     "value": 1308
+    },
+    {
+     "period": "2018-12",
+     "value": 1152
+    },
+    {
+     "period": "2019-01",
+     "value": 1106
+    },
+    {
+     "period": "2019-02",
+     "value": 1021
+    },
+    {
+     "period": "2019-03",
+     "value": 1162
+    },
+    {
+     "period": "2019-04",
+     "value": 1121
+    },
+    {
+     "period": "2019-05",
+     "value": 1221
+    },
+    {
+     "period": "2019-06",
+     "value": 1057
+    },
+    {
+     "period": "2019-07",
+     "value": 1037
+    },
+    {
+     "period": "2019-08",
+     "value": 1058
+    },
+    {
+     "period": "2019-09",
+     "value": 1115
+    },
+    {
+     "period": "2019-10",
+     "value": 1038
+    },
+    {
+     "period": "2019-11",
+     "value": 1036
+    },
+    {
+     "period": "2019-12",
+     "value": 1152
+    },
+    {
+     "period": "2020-01",
+     "value": 901
+    },
+    {
+     "period": "2020-02",
+     "value": 959
+    },
+    {
+     "period": "2020-03",
+     "value": 900
+    },
+    {
+     "period": "2020-04",
+     "value": 469
+    },
+    {
+     "period": "2020-05",
+     "value": 390
+    },
+    {
+     "period": "2020-06",
+     "value": 368
+    },
+    {
+     "period": "2020-07",
+     "value": 552
+    },
+    {
+     "period": "2020-08",
+     "value": 628
+    },
+    {
+     "period": "2020-09",
+     "value": 595
+    },
+    {
+     "period": "2020-10",
+     "value": 636
+    },
+    {
+     "period": "2020-11",
+     "value": 598
+    },
+    {
+     "period": "2020-12",
+     "value": 621
+    },
+    {
+     "period": "2021-01",
+     "value": 647
+    },
+    {
+     "period": "2021-02",
+     "value": 590
+    },
+    {
+     "period": "2021-03",
+     "value": 539
+    },
+    {
+     "period": "2021-04",
+     "value": 480
+    },
+    {
+     "period": "2021-05",
+     "value": 626
+    },
+    {
+     "period": "2021-06",
+     "value": 719
+    },
+    {
+     "period": "2021-07",
+     "value": 740
+    },
+    {
+     "period": "2021-08",
+     "value": 685
+    },
+    {
+     "period": "2021-09",
+     "value": 832
+    },
+    {
+     "period": "2021-10",
+     "value": 850
+    },
+    {
+     "period": "2021-11",
+     "value": 783
+    },
+    {
+     "period": "2021-12",
+     "value": 806
+    },
+    {
+     "period": "2022-01",
+     "value": 741
+    },
+    {
+     "period": "2022-02",
+     "value": 780
+    },
+    {
+     "period": "2022-03",
+     "value": 954
+    },
+    {
+     "period": "2022-04",
+     "value": 718
+    },
+    {
+     "period": "2022-05",
+     "value": 740
+    },
+    {
+     "period": "2022-06",
+     "value": 779
+    },
+    {
+     "period": "2022-07",
+     "value": 814
+    },
+    {
+     "period": "2022-08",
+     "value": 797
+    },
+    {
+     "period": "2022-09",
+     "value": 791
+    },
+    {
+     "period": "2022-10",
+     "value": 733
+    },
+    {
+     "period": "2022-11",
+     "value": 722
+    },
+    {
+     "period": "2022-12",
+     "value": 1226
+    },
+    {
+     "period": "2023-01",
+     "value": 813
+    },
+    {
+     "period": "2023-02",
+     "value": 865
+    },
+    {
+     "period": "2023-03",
+     "value": 801
+    },
+    {
+     "period": "2023-04",
+     "value": 766
+    },
+    {
+     "period": "2023-05",
+     "value": 1132
+    },
+    {
+     "period": "2023-06",
+     "value": 899
+    },
+    {
+     "period": "2023-07",
+     "value": 599
+    },
+    {
+     "period": "2023-08",
+     "value": 539
+    },
+    {
+     "period": "2023-09",
+     "value": 841
+    },
+    {
+     "period": "2023-10",
+     "value": 929
+    },
+    {
+     "period": "2023-11",
+     "value": 1113
+    },
+    {
+     "period": "2023-12",
+     "value": 886
+    },
+    {
+     "period": "2024-01",
+     "value": 930
+    },
+    {
+     "period": "2024-02",
+     "value": 803
+    },
+    {
+     "period": "2024-03",
+     "value": 617
+    },
+    {
+     "period": "2024-04",
+     "value": 852
+    },
+    {
+     "period": "2024-05",
+     "value": 328
+    },
+    {
+     "period": "2024-06",
+     "value": 312
+    },
+    {
+     "period": "2024-07",
+     "value": 368
+    },
+    {
+     "period": "2024-08",
+     "value": 383
+    },
+    {
+     "period": "2024-09",
+     "value": 408
+    },
+    {
+     "period": "2024-10",
+     "value": 434
+    },
+    {
+     "period": "2024-11",
+     "value": 670
+    },
+    {
+     "period": "2024-12",
+     "value": 966
+    },
+    {
+     "period": "2025-01",
+     "value": 947
+    },
+    {
+     "period": "2025-02",
+     "value": 797
+    },
+    {
+     "period": "2025-03",
+     "value": 665
+    },
+    {
+     "period": "2025-04",
+     "value": 352
+    },
+    {
+     "period": "2025-05",
+     "value": 385
+    },
+    {
+     "period": "2025-06",
+     "value": 459
+    },
+    {
+     "period": "2025-07",
+     "value": 589
+    },
+    {
+     "period": "2025-08",
+     "value": 448
+    },
+    {
+     "period": "2025-09",
+     "value": 419
+    },
+    {
+     "period": "2025-10",
+     "value": 417
+    },
+    {
+     "period": "2025-11",
+     "value": 457
+    },
+    {
+     "period": "2025-12",
+     "value": 742
+    },
+    {
+     "period": "2026-01",
+     "value": 709
+    },
+    {
+     "period": "2026-02",
+     "value": 532
+    },
+    {
+     "period": "2026-03",
+     "value": 532
+    },
+    {
+     "period": "2026-04",
+     "value": 436
+    },
+    {
+     "period": "2026-05",
+     "value": 316
+    },
+    {
+     "period": "2026-06",
+     "value": 463
+    },
+    {
+     "period": "2026-07",
+     "value": 396
+    },
+    {
+     "period": "2026-08",
+     "value": 399
+    },
+    {
+     "period": "2026-09",
+     "value": 414
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "newly_identified, population_group = All Population",
+    "method": "As published, per month."
+   }
+  },
+  "flow_returned_from_housing": {
+   "id": "flow_returned_from_housing",
+   "label": "Returned from housing",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018-01",
+     "value": 46
+    },
+    {
+     "period": "2018-02",
+     "value": 78
+    },
+    {
+     "period": "2018-03",
+     "value": 64
+    },
+    {
+     "period": "2018-04",
+     "value": 59
+    },
+    {
+     "period": "2018-05",
+     "value": 50
+    },
+    {
+     "period": "2018-06",
+     "value": 56
+    },
+    {
+     "period": "2018-07",
+     "value": 73
+    },
+    {
+     "period": "2018-08",
+     "value": 79
+    },
+    {
+     "period": "2018-09",
+     "value": 56
+    },
+    {
+     "period": "2018-10",
+     "value": 68
+    },
+    {
+     "period": "2018-11",
+     "value": 79
+    },
+    {
+     "period": "2018-12",
+     "value": 68
+    },
+    {
+     "period": "2019-01",
+     "value": 67
+    },
+    {
+     "period": "2019-02",
+     "value": 63
+    },
+    {
+     "period": "2019-03",
+     "value": 58
+    },
+    {
+     "period": "2019-04",
+     "value": 86
+    },
+    {
+     "period": "2019-05",
+     "value": 94
+    },
+    {
+     "period": "2019-06",
+     "value": 73
+    },
+    {
+     "period": "2019-07",
+     "value": 63
+    },
+    {
+     "period": "2019-08",
+     "value": 60
+    },
+    {
+     "period": "2019-09",
+     "value": 81
+    },
+    {
+     "period": "2019-10",
+     "value": 69
+    },
+    {
+     "period": "2019-11",
+     "value": 82
+    },
+    {
+     "period": "2019-12",
+     "value": 77
+    },
+    {
+     "period": "2020-01",
+     "value": 64
+    },
+    {
+     "period": "2020-02",
+     "value": 76
+    },
+    {
+     "period": "2020-03",
+     "value": 89
+    },
+    {
+     "period": "2020-04",
+     "value": 67
+    },
+    {
+     "period": "2020-05",
+     "value": 57
+    },
+    {
+     "period": "2020-06",
+     "value": 48
+    },
+    {
+     "period": "2020-07",
+     "value": 87
+    },
+    {
+     "period": "2020-08",
+     "value": 89
+    },
+    {
+     "period": "2020-09",
+     "value": 82
+    },
+    {
+     "period": "2020-10",
+     "value": 88
+    },
+    {
+     "period": "2020-11",
+     "value": 53
+    },
+    {
+     "period": "2020-12",
+     "value": 91
+    },
+    {
+     "period": "2021-01",
+     "value": 84
+    },
+    {
+     "period": "2021-02",
+     "value": 88
+    },
+    {
+     "period": "2021-03",
+     "value": 71
+    },
+    {
+     "period": "2021-04",
+     "value": 69
+    },
+    {
+     "period": "2021-05",
+     "value": 78
+    },
+    {
+     "period": "2021-06",
+     "value": 98
+    },
+    {
+     "period": "2021-07",
+     "value": 87
+    },
+    {
+     "period": "2021-08",
+     "value": 104
+    },
+    {
+     "period": "2021-09",
+     "value": 101
+    },
+    {
+     "period": "2021-10",
+     "value": 80
+    },
+    {
+     "period": "2021-11",
+     "value": 77
+    },
+    {
+     "period": "2021-12",
+     "value": 52
+    },
+    {
+     "period": "2022-01",
+     "value": 85
+    },
+    {
+     "period": "2022-02",
+     "value": 87
+    },
+    {
+     "period": "2022-03",
+     "value": 101
+    },
+    {
+     "period": "2022-04",
+     "value": 77
+    },
+    {
+     "period": "2022-05",
+     "value": 82
+    },
+    {
+     "period": "2022-06",
+     "value": 81
+    },
+    {
+     "period": "2022-07",
+     "value": 74
+    },
+    {
+     "period": "2022-08",
+     "value": 82
+    },
+    {
+     "period": "2022-09",
+     "value": 73
+    },
+    {
+     "period": "2022-10",
+     "value": 49
+    },
+    {
+     "period": "2022-11",
+     "value": 56
+    },
+    {
+     "period": "2022-12",
+     "value": 93
+    },
+    {
+     "period": "2023-01",
+     "value": 75
+    },
+    {
+     "period": "2023-02",
+     "value": 73
+    },
+    {
+     "period": "2023-03",
+     "value": 79
+    },
+    {
+     "period": "2023-04",
+     "value": 66
+    },
+    {
+     "period": "2023-05",
+     "value": 68
+    },
+    {
+     "period": "2023-06",
+     "value": 47
+    },
+    {
+     "period": "2023-07",
+     "value": 34
+    },
+    {
+     "period": "2023-08",
+     "value": 42
+    },
+    {
+     "period": "2023-09",
+     "value": 49
+    },
+    {
+     "period": "2023-10",
+     "value": 33
+    },
+    {
+     "period": "2023-11",
+     "value": 69
+    },
+    {
+     "period": "2023-12",
+     "value": 53
+    },
+    {
+     "period": "2024-01",
+     "value": 53
+    },
+    {
+     "period": "2024-02",
+     "value": 47
+    },
+    {
+     "period": "2024-03",
+     "value": 31
+    },
+    {
+     "period": "2024-04",
+     "value": 33
+    },
+    {
+     "period": "2024-05",
+     "value": 23
+    },
+    {
+     "period": "2024-06",
+     "value": 28
+    },
+    {
+     "period": "2024-07",
+     "value": 33
+    },
+    {
+     "period": "2024-08",
+     "value": 43
+    },
+    {
+     "period": "2024-09",
+     "value": 35
+    },
+    {
+     "period": "2024-10",
+     "value": 30
+    },
+    {
+     "period": "2024-11",
+     "value": 49
+    },
+    {
+     "period": "2024-12",
+     "value": 60
+    },
+    {
+     "period": "2025-01",
+     "value": 70
+    },
+    {
+     "period": "2025-02",
+     "value": 64
+    },
+    {
+     "period": "2025-03",
+     "value": 86
+    },
+    {
+     "period": "2025-04",
+     "value": 31
+    },
+    {
+     "period": "2025-05",
+     "value": 39
+    },
+    {
+     "period": "2025-06",
+     "value": 37
+    },
+    {
+     "period": "2025-07",
+     "value": 63
+    },
+    {
+     "period": "2025-08",
+     "value": 38
+    },
+    {
+     "period": "2025-09",
+     "value": 41
+    },
+    {
+     "period": "2025-10",
+     "value": 38
+    },
+    {
+     "period": "2025-11",
+     "value": 56
+    },
+    {
+     "period": "2025-12",
+     "value": 62
+    },
+    {
+     "period": "2026-01",
+     "value": 82
+    },
+    {
+     "period": "2026-02",
+     "value": 65
+    },
+    {
+     "period": "2026-03",
+     "value": 87
+    },
+    {
+     "period": "2026-04",
+     "value": 55
+    },
+    {
+     "period": "2026-05",
+     "value": 57
+    },
+    {
+     "period": "2026-06",
+     "value": 67
+    },
+    {
+     "period": "2026-07",
+     "value": 55
+    },
+    {
+     "period": "2026-08",
+     "value": 56
+    },
+    {
+     "period": "2026-09",
+     "value": 65
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "returned_from_housing, population_group = All Population",
+    "method": "As published, per month."
+   }
+  },
+  "flow_returned_to_shelter": {
+   "id": "flow_returned_to_shelter",
+   "label": "Returned to shelter",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018-01",
+     "value": 494
+    },
+    {
+     "period": "2018-02",
+     "value": 481
+    },
+    {
+     "period": "2018-03",
+     "value": 489
+    },
+    {
+     "period": "2018-04",
+     "value": 518
+    },
+    {
+     "period": "2018-05",
+     "value": 484
+    },
+    {
+     "period": "2018-06",
+     "value": 475
+    },
+    {
+     "period": "2018-07",
+     "value": 492
+    },
+    {
+     "period": "2018-08",
+     "value": 486
+    },
+    {
+     "period": "2018-09",
+     "value": 499
+    },
+    {
+     "period": "2018-10",
+     "value": 445
+    },
+    {
+     "period": "2018-11",
+     "value": 639
+    },
+    {
+     "period": "2018-12",
+     "value": 553
+    },
+    {
+     "period": "2019-01",
+     "value": 563
+    },
+    {
+     "period": "2019-02",
+     "value": 540
+    },
+    {
+     "period": "2019-03",
+     "value": 532
+    },
+    {
+     "period": "2019-04",
+     "value": 547
+    },
+    {
+     "period": "2019-05",
+     "value": 508
+    },
+    {
+     "period": "2019-06",
+     "value": 459
+    },
+    {
+     "period": "2019-07",
+     "value": 430
+    },
+    {
+     "period": "2019-08",
+     "value": 434
+    },
+    {
+     "period": "2019-09",
+     "value": 403
+    },
+    {
+     "period": "2019-10",
+     "value": 498
+    },
+    {
+     "period": "2019-11",
+     "value": 658
+    },
+    {
+     "period": "2019-12",
+     "value": 603
+    },
+    {
+     "period": "2020-01",
+     "value": 487
+    },
+    {
+     "period": "2020-02",
+     "value": 512
+    },
+    {
+     "period": "2020-03",
+     "value": 479
+    },
+    {
+     "period": "2020-04",
+     "value": 349
+    },
+    {
+     "period": "2020-05",
+     "value": 407
+    },
+    {
+     "period": "2020-06",
+     "value": 324
+    },
+    {
+     "period": "2020-07",
+     "value": 530
+    },
+    {
+     "period": "2020-08",
+     "value": 434
+    },
+    {
+     "period": "2020-09",
+     "value": 385
+    },
+    {
+     "period": "2020-10",
+     "value": 431
+    },
+    {
+     "period": "2020-11",
+     "value": 486
+    },
+    {
+     "period": "2020-12",
+     "value": 484
+    },
+    {
+     "period": "2021-01",
+     "value": 425
+    },
+    {
+     "period": "2021-02",
+     "value": 389
+    },
+    {
+     "period": "2021-03",
+     "value": 389
+    },
+    {
+     "period": "2021-04",
+     "value": 309
+    },
+    {
+     "period": "2021-05",
+     "value": 485
+    },
+    {
+     "period": "2021-06",
+     "value": 465
+    },
+    {
+     "period": "2021-07",
+     "value": 453
+    },
+    {
+     "period": "2021-08",
+     "value": 452
+    },
+    {
+     "period": "2021-09",
+     "value": 433
+    },
+    {
+     "period": "2021-10",
+     "value": 450
+    },
+    {
+     "period": "2021-11",
+     "value": 455
+    },
+    {
+     "period": "2021-12",
+     "value": 319
+    },
+    {
+     "period": "2022-01",
+     "value": 408
+    },
+    {
+     "period": "2022-02",
+     "value": 370
+    },
+    {
+     "period": "2022-03",
+     "value": 349
+    },
+    {
+     "period": "2022-04",
+     "value": 316
+    },
+    {
+     "period": "2022-05",
+     "value": 309
+    },
+    {
+     "period": "2022-06",
+     "value": 382
+    },
+    {
+     "period": "2022-07",
+     "value": 277
+    },
+    {
+     "period": "2022-08",
+     "value": 289
+    },
+    {
+     "period": "2022-09",
+     "value": 265
+    },
+    {
+     "period": "2022-10",
+     "value": 281
+    },
+    {
+     "period": "2022-11",
+     "value": 370
+    },
+    {
+     "period": "2022-12",
+     "value": 500
+    },
+    {
+     "period": "2023-01",
+     "value": 441
+    },
+    {
+     "period": "2023-02",
+     "value": 438
+    },
+    {
+     "period": "2023-03",
+     "value": 322
+    },
+    {
+     "period": "2023-04",
+     "value": 301
+    },
+    {
+     "period": "2023-05",
+     "value": 266
+    },
+    {
+     "period": "2023-06",
+     "value": 188
+    },
+    {
+     "period": "2023-07",
+     "value": 148
+    },
+    {
+     "period": "2023-08",
+     "value": 201
+    },
+    {
+     "period": "2023-09",
+     "value": 194
+    },
+    {
+     "period": "2023-10",
+     "value": 165
+    },
+    {
+     "period": "2023-11",
+     "value": 267
+    },
+    {
+     "period": "2023-12",
+     "value": 266
+    },
+    {
+     "period": "2024-01",
+     "value": 383
+    },
+    {
+     "period": "2024-02",
+     "value": 206
+    },
+    {
+     "period": "2024-03",
+     "value": 185
+    },
+    {
+     "period": "2024-04",
+     "value": 154
+    },
+    {
+     "period": "2024-05",
+     "value": 174
+    },
+    {
+     "period": "2024-06",
+     "value": 132
+    },
+    {
+     "period": "2024-07",
+     "value": 187
+    },
+    {
+     "period": "2024-08",
+     "value": 155
+    },
+    {
+     "period": "2024-09",
+     "value": 154
+    },
+    {
+     "period": "2024-10",
+     "value": 196
+    },
+    {
+     "period": "2024-11",
+     "value": 331
+    },
+    {
+     "period": "2024-12",
+     "value": 496
+    },
+    {
+     "period": "2025-01",
+     "value": 533
+    },
+    {
+     "period": "2025-02",
+     "value": 341
+    },
+    {
+     "period": "2025-03",
+     "value": 252
+    },
+    {
+     "period": "2025-04",
+     "value": 157
+    },
+    {
+     "period": "2025-05",
+     "value": 172
+    },
+    {
+     "period": "2025-06",
+     "value": 241
+    },
+    {
+     "period": "2025-07",
+     "value": 289
+    },
+    {
+     "period": "2025-08",
+     "value": 189
+    },
+    {
+     "period": "2025-09",
+     "value": 179
+    },
+    {
+     "period": "2025-10",
+     "value": 220
+    },
+    {
+     "period": "2025-11",
+     "value": 365
+    },
+    {
+     "period": "2025-12",
+     "value": 635
+    },
+    {
+     "period": "2026-01",
+     "value": 487
+    },
+    {
+     "period": "2026-02",
+     "value": 326
+    },
+    {
+     "period": "2026-03",
+     "value": 281
+    },
+    {
+     "period": "2026-04",
+     "value": 176
+    },
+    {
+     "period": "2026-05",
+     "value": 201
+    },
+    {
+     "period": "2026-06",
+     "value": 251
+    },
+    {
+     "period": "2026-07",
+     "value": 254
+    },
+    {
+     "period": "2026-08",
+     "value": 195
+    },
+    {
+     "period": "2026-09",
+     "value": 240
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "returned_to_shelter, population_group = All Population",
+    "method": "As published, per month."
+   }
+  },
+  "flow_moved_to_housing": {
+   "id": "flow_moved_to_housing",
+   "label": "Moved to housing",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018-01",
+     "value": 508
+    },
+    {
+     "period": "2018-02",
+     "value": 489
+    },
+    {
+     "period": "2018-03",
+     "value": 533
+    },
+    {
+     "period": "2018-04",
+     "value": 652
+    },
+    {
+     "period": "2018-05",
+     "value": 575
+    },
+    {
+     "period": "2018-06",
+     "value": 624
+    },
+    {
+     "period": "2018-07",
+     "value": 952
+    },
+    {
+     "period": "2018-08",
+     "value": 834
+    },
+    {
+     "period": "2018-09",
+     "value": 883
+    },
+    {
+     "period": "2018-10",
+     "value": 749
+    },
+    {
+     "period": "2018-11",
+     "value": 675
+    },
+    {
+     "period": "2018-12",
+     "value": 661
+    },
+    {
+     "period": "2019-01",
+     "value": 578
+    },
+    {
+     "period": "2019-02",
+     "value": 700
+    },
+    {
+     "period": "2019-03",
+     "value": 719
+    },
+    {
+     "period": "2019-04",
+     "value": 704
+    },
+    {
+     "period": "2019-05",
+     "value": 678
+    },
+    {
+     "period": "2019-06",
+     "value": 662
+    },
+    {
+     "period": "2019-07",
+     "value": 803
+    },
+    {
+     "period": "2019-08",
+     "value": 783
+    },
+    {
+     "period": "2019-09",
+     "value": 834
+    },
+    {
+     "period": "2019-10",
+     "value": 616
+    },
+    {
+     "period": "2019-11",
+     "value": 632
+    },
+    {
+     "period": "2019-12",
+     "value": 584
+    },
+    {
+     "period": "2020-01",
+     "value": 567
+    },
+    {
+     "period": "2020-02",
+     "value": 601
+    },
+    {
+     "period": "2020-03",
+     "value": 660
+    },
+    {
+     "period": "2020-04",
+     "value": 600
+    },
+    {
+     "period": "2020-05",
+     "value": 497
+    },
+    {
+     "period": "2020-06",
+     "value": 434
+    },
+    {
+     "period": "2020-07",
+     "value": 512
+    },
+    {
+     "period": "2020-08",
+     "value": 477
+    },
+    {
+     "period": "2020-09",
+     "value": 522
+    },
+    {
+     "period": "2020-10",
+     "value": 444
+    },
+    {
+     "period": "2020-11",
+     "value": 405
+    },
+    {
+     "period": "2020-12",
+     "value": 375
+    },
+    {
+     "period": "2021-01",
+     "value": 346
+    },
+    {
+     "period": "2021-02",
+     "value": 297
+    },
+    {
+     "period": "2021-03",
+     "value": 341
+    },
+    {
+     "period": "2021-04",
+     "value": 268
+    },
+    {
+     "period": "2021-05",
+     "value": 278
+    },
+    {
+     "period": "2021-06",
+     "value": 253
+    },
+    {
+     "period": "2021-07",
+     "value": 284
+    },
+    {
+     "period": "2021-08",
+     "value": 306
+    },
+    {
+     "period": "2021-09",
+     "value": 255
+    },
+    {
+     "period": "2021-10",
+     "value": 270
+    },
+    {
+     "period": "2021-11",
+     "value": 250
+    },
+    {
+     "period": "2021-12",
+     "value": 261
+    },
+    {
+     "period": "2022-01",
+     "value": 235
+    },
+    {
+     "period": "2022-02",
+     "value": 282
+    },
+    {
+     "period": "2022-03",
+     "value": 321
+    },
+    {
+     "period": "2022-04",
+     "value": 283
+    },
+    {
+     "period": "2022-05",
+     "value": 333
+    },
+    {
+     "period": "2022-06",
+     "value": 373
+    },
+    {
+     "period": "2022-07",
+     "value": 344
+    },
+    {
+     "period": "2022-08",
+     "value": 418
+    },
+    {
+     "period": "2022-09",
+     "value": 376
+    },
+    {
+     "period": "2022-10",
+     "value": 453
+    },
+    {
+     "period": "2022-11",
+     "value": 464
+    },
+    {
+     "period": "2022-12",
+     "value": 503
+    },
+    {
+     "period": "2023-01",
+     "value": 448
+    },
+    {
+     "period": "2023-02",
+     "value": 492
+    },
+    {
+     "period": "2023-03",
+     "value": 523
+    },
+    {
+     "period": "2023-04",
+     "value": 595
+    },
+    {
+     "period": "2023-05",
+     "value": 704
+    },
+    {
+     "period": "2023-06",
+     "value": 446
+    },
+    {
+     "period": "2023-07",
+     "value": 248
+    },
+    {
+     "period": "2023-08",
+     "value": 246
+    },
+    {
+     "period": "2023-09",
+     "value": 348
+    },
+    {
+     "period": "2023-10",
+     "value": 710
+    },
+    {
+     "period": "2023-11",
+     "value": 550
+    },
+    {
+     "period": "2023-12",
+     "value": 617
+    },
+    {
+     "period": "2024-01",
+     "value": 520
+    },
+    {
+     "period": "2024-02",
+     "value": 495
+    },
+    {
+     "period": "2024-03",
+     "value": 426
+    },
+    {
+     "period": "2024-04",
+     "value": 292
+    },
+    {
+     "period": "2024-05",
+     "value": 166
+    },
+    {
+     "period": "2024-06",
+     "value": 183
+    },
+    {
+     "period": "2024-07",
+     "value": 295
+    },
+    {
+     "period": "2024-08",
+     "value": 246
+    },
+    {
+     "period": "2024-09",
+     "value": 363
+    },
+    {
+     "period": "2024-10",
+     "value": 277
+    },
+    {
+     "period": "2024-11",
+     "value": 545
+    },
+    {
+     "period": "2024-12",
+     "value": 536
+    },
+    {
+     "period": "2025-01",
+     "value": 556
+    },
+    {
+     "period": "2025-02",
+     "value": 676
+    },
+    {
+     "period": "2025-03",
+     "value": 543
+    },
+    {
+     "period": "2025-04",
+     "value": 292
+    },
+    {
+     "period": "2025-05",
+     "value": 307
+    },
+    {
+     "period": "2025-06",
+     "value": 436
+    },
+    {
+     "period": "2025-07",
+     "value": 386
+    },
+    {
+     "period": "2025-08",
+     "value": 396
+    },
+    {
+     "period": "2025-09",
+     "value": 275
+    },
+    {
+     "period": "2025-10",
+     "value": 240
+    },
+    {
+     "period": "2025-11",
+     "value": 282
+    },
+    {
+     "period": "2025-12",
+     "value": 365
+    },
+    {
+     "period": "2026-01",
+     "value": 283
+    },
+    {
+     "period": "2026-02",
+     "value": 387
+    },
+    {
+     "period": "2026-03",
+     "value": 460
+    },
+    {
+     "period": "2026-04",
+     "value": 350
+    },
+    {
+     "period": "2026-05",
+     "value": 359
+    },
+    {
+     "period": "2026-06",
+     "value": 324
+    },
+    {
+     "period": "2026-07",
+     "value": 267
+    },
+    {
+     "period": "2026-08",
+     "value": 340
+    },
+    {
+     "period": "2026-09",
+     "value": 501
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "moved_to_housing, population_group = All Population",
+    "method": "As published, per month."
+   }
+  },
+  "flow_became_inactive": {
+   "id": "flow_became_inactive",
+   "label": "Became inactive",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018-01",
+     "value": 862
+    },
+    {
+     "period": "2018-02",
+     "value": 757
+    },
+    {
+     "period": "2018-03",
+     "value": 736
+    },
+    {
+     "period": "2018-04",
+     "value": 760
+    },
+    {
+     "period": "2018-05",
+     "value": 882
+    },
+    {
+     "period": "2018-06",
+     "value": 888
+    },
+    {
+     "period": "2018-07",
+     "value": 929
+    },
+    {
+     "period": "2018-08",
+     "value": 921
+    },
+    {
+     "period": "2018-09",
+     "value": 1037
+    },
+    {
+     "period": "2018-10",
+     "value": 933
+    },
+    {
+     "period": "2018-11",
+     "value": 871
+    },
+    {
+     "period": "2018-12",
+     "value": 844
+    },
+    {
+     "period": "2019-01",
+     "value": 840
+    },
+    {
+     "period": "2019-02",
+     "value": 907
+    },
+    {
+     "period": "2019-03",
+     "value": 923
+    },
+    {
+     "period": "2019-04",
+     "value": 907
+    },
+    {
+     "period": "2019-05",
+     "value": 1028
+    },
+    {
+     "period": "2019-06",
+     "value": 960
+    },
+    {
+     "period": "2019-07",
+     "value": 1218
+    },
+    {
+     "period": "2019-08",
+     "value": 944
+    },
+    {
+     "period": "2019-09",
+     "value": 898
+    },
+    {
+     "period": "2019-10",
+     "value": 868
+    },
+    {
+     "period": "2019-11",
+     "value": 812
+    },
+    {
+     "period": "2019-12",
+     "value": 732
+    },
+    {
+     "period": "2020-01",
+     "value": 845
+    },
+    {
+     "period": "2020-02",
+     "value": 968
+    },
+    {
+     "period": "2020-03",
+     "value": 891
+    },
+    {
+     "period": "2020-04",
+     "value": 961
+    },
+    {
+     "period": "2020-05",
+     "value": 1015
+    },
+    {
+     "period": "2020-06",
+     "value": 798
+    },
+    {
+     "period": "2020-07",
+     "value": 712
+    },
+    {
+     "period": "2020-08",
+     "value": 595
+    },
+    {
+     "period": "2020-09",
+     "value": 584
+    },
+    {
+     "period": "2020-10",
+     "value": 721
+    },
+    {
+     "period": "2020-11",
+     "value": 606
+    },
+    {
+     "period": "2020-12",
+     "value": 606
+    },
+    {
+     "period": "2021-01",
+     "value": 660
+    },
+    {
+     "period": "2021-02",
+     "value": 670
+    },
+    {
+     "period": "2021-03",
+     "value": 725
+    },
+    {
+     "period": "2021-04",
+     "value": 778
+    },
+    {
+     "period": "2021-05",
+     "value": 784
+    },
+    {
+     "period": "2021-06",
+     "value": 514
+    },
+    {
+     "period": "2021-07",
+     "value": 637
+    },
+    {
+     "period": "2021-08",
+     "value": 728
+    },
+    {
+     "period": "2021-09",
+     "value": 753
+    },
+    {
+     "period": "2021-10",
+     "value": 823
+    },
+    {
+     "period": "2021-11",
+     "value": 813
+    },
+    {
+     "period": "2021-12",
+     "value": 805
+    },
+    {
+     "period": "2022-01",
+     "value": 781
+    },
+    {
+     "period": "2022-02",
+     "value": 721
+    },
+    {
+     "period": "2022-03",
+     "value": 673
+    },
+    {
+     "period": "2022-04",
+     "value": 803
+    },
+    {
+     "period": "2022-05",
+     "value": 939
+    },
+    {
+     "period": "2022-06",
+     "value": 791
+    },
+    {
+     "period": "2022-07",
+     "value": 762
+    },
+    {
+     "period": "2022-08",
+     "value": 743
+    },
+    {
+     "period": "2022-09",
+     "value": 746
+    },
+    {
+     "period": "2022-10",
+     "value": 651
+    },
+    {
+     "period": "2022-11",
+     "value": 565
+    },
+    {
+     "period": "2022-12",
+     "value": 563
+    },
+    {
+     "period": "2023-01",
+     "value": 546
+    },
+    {
+     "period": "2023-02",
+     "value": 674
+    },
+    {
+     "period": "2023-03",
+     "value": 683
+    },
+    {
+     "period": "2023-04",
+     "value": 787
+    },
+    {
+     "period": "2023-05",
+     "value": 773
+    },
+    {
+     "period": "2023-06",
+     "value": 701
+    },
+    {
+     "period": "2023-07",
+     "value": 807
+    },
+    {
+     "period": "2023-08",
+     "value": 632
+    },
+    {
+     "period": "2023-09",
+     "value": 483
+    },
+    {
+     "period": "2023-10",
+     "value": 502
+    },
+    {
+     "period": "2023-11",
+     "value": 472
+    },
+    {
+     "period": "2023-12",
+     "value": 447
+    },
+    {
+     "period": "2024-01",
+     "value": 431
+    },
+    {
+     "period": "2024-02",
+     "value": 369
+    },
+    {
+     "period": "2024-03",
+     "value": 716
+    },
+    {
+     "period": "2024-04",
+     "value": 590
+    },
+    {
+     "period": "2024-05",
+     "value": 507
+    },
+    {
+     "period": "2024-06",
+     "value": 438
+    },
+    {
+     "period": "2024-07",
+     "value": 405
+    },
+    {
+     "period": "2024-08",
+     "value": 315
+    },
+    {
+     "period": "2024-09",
+     "value": 385
+    },
+    {
+     "period": "2024-10",
+     "value": 371
+    },
+    {
+     "period": "2024-11",
+     "value": 342
+    },
+    {
+     "period": "2024-12",
+     "value": 283
+    },
+    {
+     "period": "2025-01",
+     "value": 328
+    },
+    {
+     "period": "2025-02",
+     "value": 548
+    },
+    {
+     "period": "2025-03",
+     "value": 722
+    },
+    {
+     "period": "2025-04",
+     "value": 789
+    },
+    {
+     "period": "2025-05",
+     "value": 868
+    },
+    {
+     "period": "2025-06",
+     "value": 586
+    },
+    {
+     "period": "2025-07",
+     "value": 389
+    },
+    {
+     "period": "2025-08",
+     "value": 471
+    },
+    {
+     "period": "2025-09",
+     "value": 560
+    },
+    {
+     "period": "2025-10",
+     "value": 471
+    },
+    {
+     "period": "2025-11",
+     "value": 386
+    },
+    {
+     "period": "2025-12",
+     "value": 318
+    },
+    {
+     "period": "2026-01",
+     "value": 376
+    },
+    {
+     "period": "2026-02",
+     "value": 628
+    },
+    {
+     "period": "2026-03",
+     "value": 760
+    },
+    {
+     "period": "2026-04",
+     "value": 917
+    },
+    {
+     "period": "2026-05",
+     "value": 867
+    },
+    {
+     "period": "2026-06",
+     "value": 712
+    },
+    {
+     "period": "2026-07",
+     "value": 512
+    },
+    {
+     "period": "2026-08",
+     "value": 465
+    },
+    {
+     "period": "2026-09",
+     "value": 551
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "became_inactive, population_group = All Population",
+    "method": "As published, per month."
+   }
+  },
+  "yearIn": {
+   "id": "yearIn",
+   "label": "Newly identified",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018",
+     "value": 14442
+    },
+    {
+     "period": "2019",
+     "value": 13124
+    },
+    {
+     "period": "2020",
+     "value": 7617
+    },
+    {
+     "period": "2021",
+     "value": 8297
+    },
+    {
+     "period": "2022",
+     "value": 9795
+    },
+    {
+     "period": "2023",
+     "value": 10183
+    },
+    {
+     "period": "2024",
+     "value": 7071
+    },
+    {
+     "period": "2025",
+     "value": 6677
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "newly_identified, population_group = All Population",
+    "method": "Monthly counts summed per calendar year (complete years only)."
+   }
+  },
+  "yearHoused": {
+   "id": "yearHoused",
+   "label": "Moved to housing",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2018",
+     "value": 8135
+    },
+    {
+     "period": "2019",
+     "value": 8293
+    },
+    {
+     "period": "2020",
+     "value": 6094
+    },
+    {
+     "period": "2021",
+     "value": 3409
+    },
+    {
+     "period": "2022",
+     "value": 4385
+    },
+    {
+     "period": "2023",
+     "value": 5927
+    },
+    {
+     "period": "2024",
+     "value": 4344
+    },
+    {
+     "period": "2025",
+     "value": 4754
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "moved_to_housing, population_group = All Population",
+    "method": "Monthly counts summed per calendar year (complete years only)."
+   }
+  }
+ },
+ "ranks": {
+  "groups": {
+   "id": "groups",
+   "title": "Who's actively homeless",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Chronic",
+     "value": 5648
+    },
+    {
+     "label": "Refugees",
+     "value": 2823
+    },
+    {
+     "label": "Non-refugees",
+     "value": 5467
+    },
+    {
+     "label": "Families",
+     "value": 1962
+    },
+    {
+     "label": "Youth",
+     "value": 904
+    },
+    {
+     "label": "Single Adult",
+     "value": 5424
+    },
+    {
+     "label": "Indigenous",
+     "value": 765
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "actively_homeless for each population_group, latest month",
+    "method": "As published. Groups overlap, so they don't add up to the total."
+   }
+  },
+  "ages": {
+   "id": "ages",
+   "title": "By age",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Under 16",
+     "value": 962
+    },
+    {
+     "label": "16 to 24",
+     "value": 1138
+    },
+    {
+     "label": "25 to 34",
+     "value": 1481
+    },
+    {
+     "label": "35 to 44",
+     "value": 1773
+    },
+    {
+     "label": "45 to 54",
+     "value": 1247
+    },
+    {
+     "label": "55 to 64",
+     "value": 1060
+    },
+    {
+     "label": "65 and over",
+     "value": 629
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "age columns, population_group = All Population, latest month",
+    "method": "As published."
+   }
+  },
+  "genders": {
+   "id": "genders",
+   "title": "By gender",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Men",
+     "value": 4867
+    },
+    {
+     "label": "Women",
+     "value": 3282
+    },
+    {
+     "label": "Transgender, non-binary or Two-Spirit",
+     "value": 141
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Toronto Shelter System Flow",
+    "datasetUrl": "https://open.toronto.ca/dataset/toronto-shelter-system-flow/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ac77f532-f18b-427c-905c-4ae87ce69c93/resource/237d5eff-ba47-46c4-8717-a92a802abdf7/download/toronto-shelter-system-flow.csv",
+    "member": null,
+    "locator": "gender columns, population_group = All Population, latest month",
+    "method": "As published."
+   }
+  }
+ }
+}

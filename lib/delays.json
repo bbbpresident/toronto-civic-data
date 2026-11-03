@@ -1,0 +1,751 @@
+{
+ "generatedOn": "2026-11-03",
+ "generator": "scripts/extract_delays.py",
+ "modes": {
+  "subway": {
+   "year": "2025",
+   "lastMonth": "2026-09",
+   "codes": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Subway Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-subway-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/996cfe8d-fb35-40ce-b569-698d51fc683b/resource/b2d8f5e0-0997-46b5-8abd-caa685a0290b/download/code-descriptions.csv",
+    "member": null,
+    "locator": "CODE → DESCRIPTION",
+    "method": "Used to name each delay code."
+   },
+   "minutes": 70751,
+   "delays": 9093
+  },
+  "bus": {
+   "year": "2025",
+   "lastMonth": "2026-09",
+   "codes": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Bus Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-bus-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/e271cdae-8788-4980-96ce-6a5c95bc6618/resource/874ae66c-9f6f-443f-91e0-1d37d416e0d8/download/code-descriptions.csv",
+    "member": null,
+    "locator": "CODE → DESCRIPTION",
+    "method": "Used to name each delay code."
+   },
+   "minutes": 1284498,
+   "delays": 54911
+  },
+  "streetcar": {
+   "year": "2025",
+   "lastMonth": "2026-09",
+   "codes": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Streetcar Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-streetcar-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/b68cb71b-44a7-4394-97e2-5d2f41462a5d/resource/06d13be4-a8b7-4365-ac68-2169de8e0630/download/code-descriptions.csv",
+    "member": null,
+    "locator": "CODE → DESCRIPTION",
+    "method": "Used to name each delay code."
+   },
+   "minutes": 251220,
+   "delays": 11197
+  }
+ },
+ "series": {
+  "subway_monthly": {
+   "id": "subway_monthly",
+   "label": "Subway",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2025-01",
+     "value": 6381
+    },
+    {
+     "period": "2025-02",
+     "value": 8766
+    },
+    {
+     "period": "2025-03",
+     "value": 6305
+    },
+    {
+     "period": "2025-04",
+     "value": 6055
+    },
+    {
+     "period": "2025-05",
+     "value": 5432
+    },
+    {
+     "period": "2025-06",
+     "value": 5117
+    },
+    {
+     "period": "2025-07",
+     "value": 5597
+    },
+    {
+     "period": "2025-08",
+     "value": 5127
+    },
+    {
+     "period": "2025-09",
+     "value": 4193
+    },
+    {
+     "period": "2025-10",
+     "value": 5150
+    },
+    {
+     "period": "2025-11",
+     "value": 6187
+    },
+    {
+     "period": "2025-12",
+     "value": 6458
+    },
+    {
+     "period": "2026-01",
+     "value": 12376
+    },
+    {
+     "period": "2026-02",
+     "value": 5816
+    },
+    {
+     "period": "2026-03",
+     "value": 5789
+    },
+    {
+     "period": "2026-04",
+     "value": 7205
+    },
+    {
+     "period": "2026-05",
+     "value": 5617
+    },
+    {
+     "period": "2026-06",
+     "value": 5571
+    },
+    {
+     "period": "2026-07",
+     "value": 4782
+    },
+    {
+     "period": "2026-08",
+     "value": 4147
+    },
+    {
+     "period": "2026-09",
+     "value": 4607
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Subway Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-subway-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/996cfe8d-fb35-40ce-b569-698d51fc683b/resource/0b6e5c52-e993-46d6-8d74-8602ee224457/download/ttc-subway-delay-data-since-2025.csv",
+    "member": null,
+    "locator": "Min Delay, every row with a delay",
+    "method": "Minutes of delay summed per month."
+   }
+  },
+  "bus_monthly": {
+   "id": "bus_monthly",
+   "label": "Bus",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2025-01",
+     "value": 72665
+    },
+    {
+     "period": "2025-02",
+     "value": 113994
+    },
+    {
+     "period": "2025-03",
+     "value": 98551
+    },
+    {
+     "period": "2025-04",
+     "value": 105077
+    },
+    {
+     "period": "2025-05",
+     "value": 108477
+    },
+    {
+     "period": "2025-06",
+     "value": 117021
+    },
+    {
+     "period": "2025-07",
+     "value": 114025
+    },
+    {
+     "period": "2025-08",
+     "value": 117450
+    },
+    {
+     "period": "2025-09",
+     "value": 105702
+    },
+    {
+     "period": "2025-10",
+     "value": 106541
+    },
+    {
+     "period": "2025-11",
+     "value": 106526
+    },
+    {
+     "period": "2025-12",
+     "value": 121130
+    },
+    {
+     "period": "2026-01",
+     "value": 143043
+    },
+    {
+     "period": "2026-02",
+     "value": 111849
+    },
+    {
+     "period": "2026-03",
+     "value": 98429
+    },
+    {
+     "period": "2026-04",
+     "value": 94603
+    },
+    {
+     "period": "2026-05",
+     "value": 105165
+    },
+    {
+     "period": "2026-06",
+     "value": 102299
+    },
+    {
+     "period": "2026-07",
+     "value": 110244
+    },
+    {
+     "period": "2026-08",
+     "value": 110311
+    },
+    {
+     "period": "2026-09",
+     "value": 145512
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Bus Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-bus-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/e271cdae-8788-4980-96ce-6a5c95bc6618/resource/b5725365-9252-4bfe-b6f4-cda7ddf74341/download/ttc-bus-delay-data-since-2025.csv",
+    "member": null,
+    "locator": "Min Delay, every row with a delay",
+    "method": "Minutes of delay summed per month."
+   }
+  },
+  "streetcar_monthly": {
+   "id": "streetcar_monthly",
+   "label": "Streetcar",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2025-01",
+     "value": 16260
+    },
+    {
+     "period": "2025-02",
+     "value": 42873
+    },
+    {
+     "period": "2025-03",
+     "value": 22063
+    },
+    {
+     "period": "2025-04",
+     "value": 21533
+    },
+    {
+     "period": "2025-05",
+     "value": 21337
+    },
+    {
+     "period": "2025-06",
+     "value": 21226
+    },
+    {
+     "period": "2025-07",
+     "value": 19157
+    },
+    {
+     "period": "2025-08",
+     "value": 19397
+    },
+    {
+     "period": "2025-09",
+     "value": 13435
+    },
+    {
+     "period": "2025-10",
+     "value": 18937
+    },
+    {
+     "period": "2025-11",
+     "value": 18939
+    },
+    {
+     "period": "2025-12",
+     "value": 17730
+    },
+    {
+     "period": "2026-01",
+     "value": 28306
+    },
+    {
+     "period": "2026-02",
+     "value": 22646
+    },
+    {
+     "period": "2026-03",
+     "value": 22916
+    },
+    {
+     "period": "2026-04",
+     "value": 18749
+    },
+    {
+     "period": "2026-05",
+     "value": 22357
+    },
+    {
+     "period": "2026-06",
+     "value": 15795
+    },
+    {
+     "period": "2026-07",
+     "value": 15351
+    },
+    {
+     "period": "2026-08",
+     "value": 17506
+    },
+    {
+     "period": "2026-09",
+     "value": 18709
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Streetcar Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-streetcar-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/b68cb71b-44a7-4394-97e2-5d2f41462a5d/resource/cf2fdd12-6f0e-4644-aae7-0bbfc31df031/download/ttc-streetcar-delay-data-since-2025.csv",
+    "member": null,
+    "locator": "Min Delay, every row with a delay",
+    "method": "Minutes of delay summed per month."
+   }
+  }
+ },
+ "ranks": {
+  "subway_lines": {
+   "id": "subway_lines",
+   "title": "Most-delayed lines, 2025",
+   "unit": "minutes",
+   "rows": [
+    {
+     "label": "Line 1 Yonge-University",
+     "value": 40232,
+     "sub": "5,057 delays"
+    },
+    {
+     "label": "Line 2 Bloor-Danforth",
+     "value": 27404,
+     "sub": "3,684 delays"
+    },
+    {
+     "label": "Line 4 Sheppard",
+     "value": 3115,
+     "sub": "352 delays"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Subway Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-subway-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/996cfe8d-fb35-40ce-b569-698d51fc683b/resource/0b6e5c52-e993-46d6-8d74-8602ee224457/download/ttc-subway-delay-data-since-2025.csv",
+    "member": null,
+    "locator": "Min Delay and Line (single-line values only), 2025 rows with a delay",
+    "method": "Minutes of delay summed per line; delays counted."
+   }
+  },
+  "subway_causes": {
+   "id": "subway_causes",
+   "title": "Top causes, 2025",
+   "unit": "minutes",
+   "rows": [
+    {
+     "label": "Disorderly patron",
+     "value": 7646
+    },
+    {
+     "label": "Injured/ill customer on train – medical aid refused",
+     "value": 4797
+    },
+    {
+     "label": "Unauthorized at track level",
+     "value": 3917
+    },
+    {
+     "label": "Injured/ill customer on train – transported",
+     "value": 3785
+    },
+    {
+     "label": "Security other",
+     "value": 3418
+    },
+    {
+     "label": "Opto (communications) train door monitoring",
+     "value": 3406
+    },
+    {
+     "label": "PAA – no trouble found",
+     "value": 2955
+    },
+    {
+     "label": "Weather reports / related problems",
+     "value": 2745
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Subway Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-subway-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/996cfe8d-fb35-40ce-b569-698d51fc683b/resource/0b6e5c52-e993-46d6-8d74-8602ee224457/download/ttc-subway-delay-data-since-2025.csv",
+    "member": null,
+    "locator": "Code (described in Code Descriptions.csv) and Min Delay, 2025 rows with a delay",
+    "method": "Minutes of delay summed per cause."
+   }
+  },
+  "stations": {
+   "id": "stations",
+   "title": "Stations with the most delay, 2025",
+   "unit": "minutes",
+   "rows": [
+    {
+     "label": "Eglinton",
+     "value": 2822
+    },
+    {
+     "label": "Sheppard West",
+     "value": 2221
+    },
+    {
+     "label": "Wilson",
+     "value": 2146
+    },
+    {
+     "label": "Kipling",
+     "value": 2050
+    },
+    {
+     "label": "Kennedy BD",
+     "value": 1851
+    },
+    {
+     "label": "Lawrence",
+     "value": 1813
+    },
+    {
+     "label": "Bloor",
+     "value": 1691
+    },
+    {
+     "label": "Davisville",
+     "value": 1589
+    },
+    {
+     "label": "Warden",
+     "value": 1484
+    },
+    {
+     "label": "Finch",
+     "value": 1477
+    },
+    {
+     "label": "Yonge BD",
+     "value": 1284
+    },
+    {
+     "label": "York Mills",
+     "value": 1243
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Subway Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-subway-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/996cfe8d-fb35-40ce-b569-698d51fc683b/resource/0b6e5c52-e993-46d6-8d74-8602ee224457/download/ttc-subway-delay-data-since-2025.csv",
+    "member": null,
+    "locator": "Station and Min Delay, 2025 rows with a delay",
+    "method": "Minutes of delay summed per Station as written."
+   }
+  },
+  "bus_lines": {
+   "id": "bus_lines",
+   "title": "Most-delayed routes, 2025",
+   "unit": "minutes",
+   "rows": [
+    {
+     "label": "29 Dufferin",
+     "value": 34990,
+     "sub": "1,080 delays"
+    },
+    {
+     "label": "52 Lawrence West",
+     "value": 30684,
+     "sub": "1,436 delays"
+    },
+    {
+     "label": "97 Yonge",
+     "value": 28317,
+     "sub": "558 delays"
+    },
+    {
+     "label": "102 Markham Road",
+     "value": 24142,
+     "sub": "1,141 delays"
+    },
+    {
+     "label": "32 Eglinton West",
+     "value": 22445,
+     "sub": "1,498 delays"
+    },
+    {
+     "label": "63 Ossington",
+     "value": 19746,
+     "sub": "915 delays"
+    },
+    {
+     "label": "54 Lawrence East",
+     "value": 19467,
+     "sub": "1,015 delays"
+    },
+    {
+     "label": "96 Wilson",
+     "value": 18222,
+     "sub": "836 delays"
+    },
+    {
+     "label": "86 Scarborough",
+     "value": 17511,
+     "sub": "820 delays"
+    },
+    {
+     "label": "47 Lansdowne",
+     "value": 17319,
+     "sub": "723 delays"
+    },
+    {
+     "label": "939 Finch Express",
+     "value": 17084,
+     "sub": "1,025 delays"
+    },
+    {
+     "label": "64 Main",
+     "value": 16346,
+     "sub": "461 delays"
+    },
+    {
+     "label": "129 Mccowan North",
+     "value": 15676,
+     "sub": "516 delays"
+    },
+    {
+     "label": "85 Sheppard East",
+     "value": 15404,
+     "sub": "879 delays"
+    },
+    {
+     "label": "94 Wellesley",
+     "value": 15369,
+     "sub": "445 delays"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Bus Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-bus-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/e271cdae-8788-4980-96ce-6a5c95bc6618/resource/b5725365-9252-4bfe-b6f4-cda7ddf74341/download/ttc-bus-delay-data-since-2025.csv",
+    "member": null,
+    "locator": "Min Delay and Line, grouped by route number, 2025 rows with a delay",
+    "method": "Minutes of delay summed per line; delays counted."
+   }
+  },
+  "bus_causes": {
+   "id": "bus_causes",
+   "title": "Top causes, 2025",
+   "unit": "minutes",
+   "rows": [
+    {
+     "label": "On diversion",
+     "value": 506695
+    },
+    {
+     "label": "Other",
+     "value": 211281
+    },
+    {
+     "label": "No operator available",
+     "value": 89568
+    },
+    {
+     "label": "Other – switch violation",
+     "value": 60293
+    },
+    {
+     "label": "Used as shuttle bus",
+     "value": 55241
+    },
+    {
+     "label": "TTC collision – property damage",
+     "value": 51140
+    },
+    {
+     "label": "Doors",
+     "value": 35758
+    },
+    {
+     "label": "Unsanitary",
+     "value": 27361
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Bus Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-bus-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/e271cdae-8788-4980-96ce-6a5c95bc6618/resource/b5725365-9252-4bfe-b6f4-cda7ddf74341/download/ttc-bus-delay-data-since-2025.csv",
+    "member": null,
+    "locator": "Code (described in Code Descriptions.csv) and Min Delay, 2025 rows with a delay",
+    "method": "Minutes of delay summed per cause."
+   }
+  },
+  "streetcar_lines": {
+   "id": "streetcar_lines",
+   "title": "Most-delayed routes, 2025",
+   "unit": "minutes",
+   "rows": [
+    {
+     "label": "504 King",
+     "value": 48397,
+     "sub": "2,087 delays"
+    },
+    {
+     "label": "501 Queen",
+     "value": 43882,
+     "sub": "1,851 delays"
+    },
+    {
+     "label": "505 Dundas",
+     "value": 35039,
+     "sub": "1,434 delays"
+    },
+    {
+     "label": "506 Carlton",
+     "value": 33266,
+     "sub": "1,399 delays"
+    },
+    {
+     "label": "503 Kingston Road",
+     "value": 23378,
+     "sub": "1,043 delays"
+    },
+    {
+     "label": "512 St. Clair",
+     "value": 15967,
+     "sub": "927 delays"
+    },
+    {
+     "label": "510 Spadina",
+     "value": 11751,
+     "sub": "873 delays"
+    },
+    {
+     "label": "511 Bathurst",
+     "value": 9286,
+     "sub": "468 delays"
+    },
+    {
+     "label": "507 Long Branch",
+     "value": 8064,
+     "sub": "382 delays"
+    },
+    {
+     "label": "509 Harbourfront",
+     "value": 6702,
+     "sub": "305 delays"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Streetcar Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-streetcar-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/b68cb71b-44a7-4394-97e2-5d2f41462a5d/resource/cf2fdd12-6f0e-4644-aae7-0bbfc31df031/download/ttc-streetcar-delay-data-since-2025.csv",
+    "member": null,
+    "locator": "Min Delay and Line, grouped by route number, 2025 rows with a delay",
+    "method": "Minutes of delay summed per line; delays counted."
+   }
+  },
+  "streetcar_causes": {
+   "id": "streetcar_causes",
+   "title": "Top causes, 2025",
+   "unit": "minutes",
+   "rows": [
+    {
+     "label": "On diversion",
+     "value": 63802
+    },
+    {
+     "label": "Auto foul rail",
+     "value": 28710
+    },
+    {
+     "label": "Other",
+     "value": 15798
+    },
+    {
+     "label": "Unsanitary vehicle",
+     "value": 15633
+    },
+    {
+     "label": "TTC collision – property damage",
+     "value": 12903
+    },
+    {
+     "label": "Injuried/ill customer – transported",
+     "value": 11503
+    },
+    {
+     "label": "Disorderly patron",
+     "value": 10388
+    },
+    {
+     "label": "No operator available",
+     "value": 9339
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "TTC Streetcar Delay Data",
+    "datasetUrl": "https://open.toronto.ca/dataset/ttc-streetcar-delay-data/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/b68cb71b-44a7-4394-97e2-5d2f41462a5d/resource/cf2fdd12-6f0e-4644-aae7-0bbfc31df031/download/ttc-streetcar-delay-data-since-2025.csv",
+    "member": null,
+    "locator": "Code (described in Code Descriptions.csv) and Min Delay, 2025 rows with a delay",
+    "method": "Minutes of delay summed per cause."
+   }
+  }
+ }
+}

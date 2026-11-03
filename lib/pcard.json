@@ -1,0 +1,1408 @@
+{
+ "generatedOn": "2026-11-03",
+ "generator": "scripts/extract_pcard.py",
+ "lastMonth": "2026-07",
+ "latestYear": "2025",
+ "series": {
+  "spend": {
+   "id": "spend",
+   "label": "Spent on PCards",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 7524597
+    },
+    {
+     "period": "2012",
+     "value": 7374451
+    },
+    {
+     "period": "2013",
+     "value": 7200253
+    },
+    {
+     "period": "2014",
+     "value": 9291195
+    },
+    {
+     "period": "2015",
+     "value": 11535158
+    },
+    {
+     "period": "2016",
+     "value": 13633963
+    },
+    {
+     "period": "2017",
+     "value": 15355511
+    },
+    {
+     "period": "2018",
+     "value": 17005293
+    },
+    {
+     "period": "2019",
+     "value": 17887247
+    },
+    {
+     "period": "2020",
+     "value": 16496691
+    },
+    {
+     "period": "2021",
+     "value": 15255675
+    },
+    {
+     "period": "2022",
+     "value": 20311799
+    },
+    {
+     "period": "2023",
+     "value": 24217449
+    },
+    {
+     "period": "2024",
+     "value": 25069083
+    },
+    {
+     "period": "2025",
+     "value": 28587561
+    },
+    {
+     "period": "2026",
+     "value": 17947200,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Transaction Amt., all rows, by year of Transaction Date",
+    "method": "Summed per year; refunds (negative amounts) netted in."
+   }
+  },
+  "purchases": {
+   "id": "purchases",
+   "label": "Purchases",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 40683
+    },
+    {
+     "period": "2012",
+     "value": 38677
+    },
+    {
+     "period": "2013",
+     "value": 40087
+    },
+    {
+     "period": "2014",
+     "value": 43929
+    },
+    {
+     "period": "2015",
+     "value": 47151
+    },
+    {
+     "period": "2016",
+     "value": 51204
+    },
+    {
+     "period": "2017",
+     "value": 54063
+    },
+    {
+     "period": "2018",
+     "value": 57987
+    },
+    {
+     "period": "2019",
+     "value": 61307
+    },
+    {
+     "period": "2020",
+     "value": 45792
+    },
+    {
+     "period": "2021",
+     "value": 43063
+    },
+    {
+     "period": "2022",
+     "value": 61307
+    },
+    {
+     "period": "2023",
+     "value": 72220
+    },
+    {
+     "period": "2024",
+     "value": 75758
+    },
+    {
+     "period": "2025",
+     "value": 81116
+    },
+    {
+     "period": "2026",
+     "value": 52012,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "all rows, by year of Transaction Date",
+    "method": "Rows counted per year (refunds included)."
+   }
+  },
+  "fam_0": {
+   "id": "fam_0",
+   "label": "Amazon",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 15422
+    },
+    {
+     "period": "2012",
+     "value": 16312
+    },
+    {
+     "period": "2013",
+     "value": 19952
+    },
+    {
+     "period": "2014",
+     "value": 22226
+    },
+    {
+     "period": "2015",
+     "value": 33276
+    },
+    {
+     "period": "2016",
+     "value": 61843
+    },
+    {
+     "period": "2017",
+     "value": 92194
+    },
+    {
+     "period": "2018",
+     "value": 245163
+    },
+    {
+     "period": "2019",
+     "value": 409058
+    },
+    {
+     "period": "2020",
+     "value": 428274
+    },
+    {
+     "period": "2021",
+     "value": 558702
+    },
+    {
+     "period": "2022",
+     "value": 878629
+    },
+    {
+     "period": "2023",
+     "value": 1017481
+    },
+    {
+     "period": "2024",
+     "value": 1120238
+    },
+    {
+     "period": "2025",
+     "value": 1197378
+    },
+    {
+     "period": "2026",
+     "value": 877035,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name beginning AMZN, AMAZON",
+    "method": "Transaction Amt. summed per year across the chain's locations."
+   }
+  },
+  "fam_1": {
+   "id": "fam_1",
+   "label": "The Home Depot",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 242535
+    },
+    {
+     "period": "2012",
+     "value": 274087
+    },
+    {
+     "period": "2013",
+     "value": 335048
+    },
+    {
+     "period": "2014",
+     "value": 355435
+    },
+    {
+     "period": "2015",
+     "value": 417065
+    },
+    {
+     "period": "2016",
+     "value": 588140
+    },
+    {
+     "period": "2017",
+     "value": 663492
+    },
+    {
+     "period": "2018",
+     "value": 729097
+    },
+    {
+     "period": "2019",
+     "value": 715599
+    },
+    {
+     "period": "2020",
+     "value": 837672
+    },
+    {
+     "period": "2021",
+     "value": 734371
+    },
+    {
+     "period": "2022",
+     "value": 1108835
+    },
+    {
+     "period": "2023",
+     "value": 1253384
+    },
+    {
+     "period": "2024",
+     "value": 1436304
+    },
+    {
+     "period": "2025",
+     "value": 1330207
+    },
+    {
+     "period": "2026",
+     "value": 888482,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name beginning THE HOME DEPOT, HOME DEPOT",
+    "method": "Transaction Amt. summed per year across the chain's locations."
+   }
+  },
+  "fam_2": {
+   "id": "fam_2",
+   "label": "Canadian Tire",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 0
+    },
+    {
+     "period": "2012",
+     "value": 0
+    },
+    {
+     "period": "2013",
+     "value": 0
+    },
+    {
+     "period": "2014",
+     "value": 217
+    },
+    {
+     "period": "2015",
+     "value": 935
+    },
+    {
+     "period": "2016",
+     "value": 3319
+    },
+    {
+     "period": "2017",
+     "value": 14164
+    },
+    {
+     "period": "2018",
+     "value": 13166
+    },
+    {
+     "period": "2019",
+     "value": 23408
+    },
+    {
+     "period": "2020",
+     "value": 58717
+    },
+    {
+     "period": "2021",
+     "value": 90720
+    },
+    {
+     "period": "2022",
+     "value": 64719
+    },
+    {
+     "period": "2023",
+     "value": 55165
+    },
+    {
+     "period": "2024",
+     "value": 394277
+    },
+    {
+     "period": "2025",
+     "value": 604116
+    },
+    {
+     "period": "2026",
+     "value": 425899,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name beginning CANADIAN TIRE, WWW.CANADIANTIRE",
+    "method": "Transaction Amt. summed per year across the chain's locations."
+   }
+  },
+  "fam_3": {
+   "id": "fam_3",
+   "label": "Walmart",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 126700
+    },
+    {
+     "period": "2012",
+     "value": 136338
+    },
+    {
+     "period": "2013",
+     "value": 160992
+    },
+    {
+     "period": "2014",
+     "value": 201466
+    },
+    {
+     "period": "2015",
+     "value": 225501
+    },
+    {
+     "period": "2016",
+     "value": 281891
+    },
+    {
+     "period": "2017",
+     "value": 287894
+    },
+    {
+     "period": "2018",
+     "value": 277697
+    },
+    {
+     "period": "2019",
+     "value": 274621
+    },
+    {
+     "period": "2020",
+     "value": 130026
+    },
+    {
+     "period": "2021",
+     "value": 113455
+    },
+    {
+     "period": "2022",
+     "value": 238226
+    },
+    {
+     "period": "2023",
+     "value": 270268
+    },
+    {
+     "period": "2024",
+     "value": 253499
+    },
+    {
+     "period": "2025",
+     "value": 350683
+    },
+    {
+     "period": "2026",
+     "value": 232484,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name beginning WALMART, WAL-MART",
+    "method": "Transaction Amt. summed per year across the chain's locations."
+   }
+  },
+  "fam_4": {
+   "id": "fam_4",
+   "label": "Costco",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 12532
+    },
+    {
+     "period": "2012",
+     "value": 4211
+    },
+    {
+     "period": "2013",
+     "value": 3662
+    },
+    {
+     "period": "2014",
+     "value": 24507
+    },
+    {
+     "period": "2015",
+     "value": 107261
+    },
+    {
+     "period": "2016",
+     "value": 118054
+    },
+    {
+     "period": "2017",
+     "value": 107249
+    },
+    {
+     "period": "2018",
+     "value": 148567
+    },
+    {
+     "period": "2019",
+     "value": 186074
+    },
+    {
+     "period": "2020",
+     "value": 98967
+    },
+    {
+     "period": "2021",
+     "value": 92685
+    },
+    {
+     "period": "2022",
+     "value": 237462
+    },
+    {
+     "period": "2023",
+     "value": 335965
+    },
+    {
+     "period": "2024",
+     "value": 368495
+    },
+    {
+     "period": "2025",
+     "value": 477110
+    },
+    {
+     "period": "2026",
+     "value": 279175,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name beginning COSTCO",
+    "method": "Transaction Amt. summed per year across the chain's locations."
+   }
+  },
+  "fam_5": {
+   "id": "fam_5",
+   "label": "Staples",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 80712
+    },
+    {
+     "period": "2012",
+     "value": 60452
+    },
+    {
+     "period": "2013",
+     "value": 34965
+    },
+    {
+     "period": "2014",
+     "value": 42879
+    },
+    {
+     "period": "2015",
+     "value": 50964
+    },
+    {
+     "period": "2016",
+     "value": 58636
+    },
+    {
+     "period": "2017",
+     "value": 158384
+    },
+    {
+     "period": "2018",
+     "value": 112860
+    },
+    {
+     "period": "2019",
+     "value": 82465
+    },
+    {
+     "period": "2020",
+     "value": 74252
+    },
+    {
+     "period": "2021",
+     "value": 55538
+    },
+    {
+     "period": "2022",
+     "value": 82265
+    },
+    {
+     "period": "2023",
+     "value": 86014
+    },
+    {
+     "period": "2024",
+     "value": 77614
+    },
+    {
+     "period": "2025",
+     "value": 121332
+    },
+    {
+     "period": "2026",
+     "value": 87716,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name beginning STAPLES",
+    "method": "Transaction Amt. summed per year across the chain's locations."
+   }
+  },
+  "fam_6": {
+   "id": "fam_6",
+   "label": "Tim Hortons",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 1300
+    },
+    {
+     "period": "2012",
+     "value": 7231
+    },
+    {
+     "period": "2013",
+     "value": 5256
+    },
+    {
+     "period": "2014",
+     "value": 7277
+    },
+    {
+     "period": "2015",
+     "value": 10756
+    },
+    {
+     "period": "2016",
+     "value": 11361
+    },
+    {
+     "period": "2017",
+     "value": 22938
+    },
+    {
+     "period": "2018",
+     "value": 35084
+    },
+    {
+     "period": "2019",
+     "value": 26714
+    },
+    {
+     "period": "2020",
+     "value": 12492
+    },
+    {
+     "period": "2021",
+     "value": 51789
+    },
+    {
+     "period": "2022",
+     "value": 25203
+    },
+    {
+     "period": "2023",
+     "value": 48737
+    },
+    {
+     "period": "2024",
+     "value": 70433
+    },
+    {
+     "period": "2025",
+     "value": 97902
+    },
+    {
+     "period": "2026",
+     "value": 47480,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name beginning TIM HORTONS",
+    "method": "Transaction Amt. summed per year across the chain's locations."
+   }
+  },
+  "fam_7": {
+   "id": "fam_7",
+   "label": "Starbucks",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 19
+    },
+    {
+     "period": "2012",
+     "value": 0
+    },
+    {
+     "period": "2013",
+     "value": 153
+    },
+    {
+     "period": "2014",
+     "value": 283
+    },
+    {
+     "period": "2015",
+     "value": 608
+    },
+    {
+     "period": "2016",
+     "value": 482
+    },
+    {
+     "period": "2017",
+     "value": 1316
+    },
+    {
+     "period": "2018",
+     "value": 1218
+    },
+    {
+     "period": "2019",
+     "value": 2530
+    },
+    {
+     "period": "2020",
+     "value": 594
+    },
+    {
+     "period": "2021",
+     "value": 212
+    },
+    {
+     "period": "2022",
+     "value": 1130
+    },
+    {
+     "period": "2023",
+     "value": 2273
+    },
+    {
+     "period": "2024",
+     "value": 4264
+    },
+    {
+     "period": "2025",
+     "value": 2945
+    },
+    {
+     "period": "2026",
+     "value": 2067,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name beginning STARBUCKS",
+    "method": "Transaction Amt. summed per year across the chain's locations."
+   }
+  },
+  "fam_8": {
+   "id": "fam_8",
+   "label": "Pizza Pizza",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 6445
+    },
+    {
+     "period": "2012",
+     "value": 9351
+    },
+    {
+     "period": "2013",
+     "value": 5912
+    },
+    {
+     "period": "2014",
+     "value": 2793
+    },
+    {
+     "period": "2015",
+     "value": 8902
+    },
+    {
+     "period": "2016",
+     "value": 23075
+    },
+    {
+     "period": "2017",
+     "value": 15731
+    },
+    {
+     "period": "2018",
+     "value": 14120
+    },
+    {
+     "period": "2019",
+     "value": 19412
+    },
+    {
+     "period": "2020",
+     "value": 37502
+    },
+    {
+     "period": "2021",
+     "value": 3497
+    },
+    {
+     "period": "2022",
+     "value": 19727
+    },
+    {
+     "period": "2023",
+     "value": 40658
+    },
+    {
+     "period": "2024",
+     "value": 15875
+    },
+    {
+     "period": "2025",
+     "value": 19582
+    },
+    {
+     "period": "2026",
+     "value": 18315,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name beginning PIZZA PIZZA",
+    "method": "Transaction Amt. summed per year across the chain's locations."
+   }
+  },
+  "fam_9": {
+   "id": "fam_9",
+   "label": "Uber",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 0
+    },
+    {
+     "period": "2012",
+     "value": 342
+    },
+    {
+     "period": "2013",
+     "value": 122
+    },
+    {
+     "period": "2014",
+     "value": 308
+    },
+    {
+     "period": "2015",
+     "value": 1365
+    },
+    {
+     "period": "2016",
+     "value": 510
+    },
+    {
+     "period": "2017",
+     "value": 1356
+    },
+    {
+     "period": "2018",
+     "value": 5178
+    },
+    {
+     "period": "2019",
+     "value": 4731
+    },
+    {
+     "period": "2020",
+     "value": 22502
+    },
+    {
+     "period": "2021",
+     "value": 2417
+    },
+    {
+     "period": "2022",
+     "value": 9288
+    },
+    {
+     "period": "2023",
+     "value": 20908
+    },
+    {
+     "period": "2024",
+     "value": 23293
+    },
+    {
+     "period": "2025",
+     "value": 25696
+    },
+    {
+     "period": "2026",
+     "value": 14639,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name beginning UBER",
+    "method": "Transaction Amt. summed per year across the chain's locations."
+   }
+  },
+  "fam_10": {
+   "id": "fam_10",
+   "label": "Dollarama",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 0
+    },
+    {
+     "period": "2012",
+     "value": 0
+    },
+    {
+     "period": "2013",
+     "value": 0
+    },
+    {
+     "period": "2014",
+     "value": 0
+    },
+    {
+     "period": "2015",
+     "value": 0
+    },
+    {
+     "period": "2016",
+     "value": 0
+    },
+    {
+     "period": "2017",
+     "value": 63315
+    },
+    {
+     "period": "2018",
+     "value": 101889
+    },
+    {
+     "period": "2019",
+     "value": 134688
+    },
+    {
+     "period": "2020",
+     "value": 130688
+    },
+    {
+     "period": "2021",
+     "value": 97410
+    },
+    {
+     "period": "2022",
+     "value": 170642
+    },
+    {
+     "period": "2023",
+     "value": 186787
+    },
+    {
+     "period": "2024",
+     "value": 166395
+    },
+    {
+     "period": "2025",
+     "value": 204753
+    },
+    {
+     "period": "2026",
+     "value": 130239,
+     "note": "Year to date (through July)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name beginning DOLLARAMA",
+    "method": "Transaction Amt. summed per year across the chain's locations."
+   }
+  }
+ },
+ "ranks": {
+  "divisions": {
+   "id": "divisions",
+   "title": "Which divisions spend the most, 2025",
+   "unit": "dollars",
+   "rows": [
+    {
+     "label": "Parks And Recreation",
+     "value": 8232938
+    },
+    {
+     "label": "Toronto Water",
+     "value": 3430315
+    },
+    {
+     "label": "Seniors Services & Long-Term Care",
+     "value": 1891545
+    },
+    {
+     "label": "Parks, Forestry & Recreation",
+     "value": 1777246
+    },
+    {
+     "label": "Fleet Services",
+     "value": 1707472
+    },
+    {
+     "label": "Economic Development & Culture",
+     "value": 1441254
+    },
+    {
+     "label": "Corporate Real Estate Mgt",
+     "value": 1370042
+    },
+    {
+     "label": "Toronto Shelter & Support Services",
+     "value": 1355702
+    },
+    {
+     "label": "Toronto Paramedic Services",
+     "value": 1004005
+    },
+    {
+     "label": "Public Health",
+     "value": 961551
+    },
+    {
+     "label": "Solid Waste Mgt Services",
+     "value": 800445
+    },
+    {
+     "label": "Toronto Fire Services",
+     "value": 773012
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Division and Transaction Amt., rows dated 2025",
+    "method": "Summed per division, using the Division names as written: a division renamed partway through the year appears under both names."
+   }
+  },
+  "merchants": {
+   "id": "merchants",
+   "title": "Where the money went, 2025",
+   "unit": "dollars",
+   "rows": [
+    {
+     "label": "MTO TSD SO (all offices)",
+     "value": 1675164,
+     "sub": "319 purchases"
+    },
+    {
+     "label": "The Home Depot",
+     "value": 1330207,
+     "sub": "5,931 purchases"
+    },
+    {
+     "label": "Amazon",
+     "value": 1197378,
+     "sub": "11,025 purchases"
+    },
+    {
+     "label": "Uline",
+     "value": 952256,
+     "sub": "889 purchases"
+    },
+    {
+     "label": "Canadian Tire",
+     "value": 604116,
+     "sub": "3,455 purchases"
+    },
+    {
+     "label": "Costco",
+     "value": 477110,
+     "sub": "2,134 purchases"
+    },
+    {
+     "label": "Walmart",
+     "value": 350683,
+     "sub": "2,646 purchases"
+    },
+    {
+     "label": "RONA",
+     "value": 255407,
+     "sub": "1,185 purchases"
+    },
+    {
+     "label": "Chartered Professional",
+     "value": 204947,
+     "sub": "207 purchases"
+    },
+    {
+     "label": "Dollarama",
+     "value": 204753,
+     "sub": "3,579 purchases"
+    },
+    {
+     "label": "Whitecapsupplycanada",
+     "value": 187417,
+     "sub": "580 purchases"
+    },
+    {
+     "label": "Sq Aqua Controls Inc.",
+     "value": 166500,
+     "sub": "63 purchases"
+    },
+    {
+     "label": "Fundscrip",
+     "value": 165045,
+     "sub": "16 purchases"
+    },
+    {
+     "label": "Best Buy",
+     "value": 157352,
+     "sub": "432 purchases"
+    },
+    {
+     "label": "Water And Ice North Am",
+     "value": 145616,
+     "sub": "106 purchases"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name and Transaction Amt., rows dated 2025",
+    "method": "Summed per merchant, with store numbers removed and a few chains' locations combined."
+   }
+  },
+  "types": {
+   "id": "types",
+   "title": "What kind of shops, 2025",
+   "unit": "dollars",
+   "rows": [
+    {
+     "label": "Government Services - Not Elsewhere Clas",
+     "value": 1961355
+    },
+    {
+     "label": "Home Supply Warehouse",
+     "value": 1426862
+    },
+    {
+     "label": "Industrial Supplies Not Elsewhere Classi",
+     "value": 1390110
+    },
+    {
+     "label": "Hardware Stores",
+     "value": 1243519
+    },
+    {
+     "label": "Computer Network/Information Services",
+     "value": 1196845
+    },
+    {
+     "label": "Direct Marketing - Catalog Merchants",
+     "value": 952696
+    },
+    {
+     "label": "Business Services - Not Elsewhere Classi",
+     "value": 907186
+    },
+    {
+     "label": "Grocery Stores, Supermarkets",
+     "value": 770285
+    },
+    {
+     "label": "Organizations, Membership - Not Elsewher",
+     "value": 583121
+    },
+    {
+     "label": "Wholesale Clubs",
+     "value": 510370
+    },
+    {
+     "label": "Organizations, Charitable and Social Ser",
+     "value": 487016
+    },
+    {
+     "label": "Hardware Equipment and Supplies",
+     "value": 448551
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Type Description and Transaction Amt., rows dated 2025",
+    "method": "Summed per merchant type."
+   }
+  },
+  "familiar": {
+   "id": "familiar",
+   "title": "Some familiar names, 2025",
+   "unit": "dollars",
+   "rows": [
+    {
+     "label": "The Home Depot",
+     "value": 1330207
+    },
+    {
+     "label": "Amazon",
+     "value": 1197378
+    },
+    {
+     "label": "Canadian Tire",
+     "value": 604116
+    },
+    {
+     "label": "Costco",
+     "value": 477110
+    },
+    {
+     "label": "Walmart",
+     "value": 350683
+    },
+    {
+     "label": "Dollarama",
+     "value": 204753
+    },
+    {
+     "label": "Staples",
+     "value": 121332
+    },
+    {
+     "label": "Tim Hortons",
+     "value": 97902
+    },
+    {
+     "label": "Uber",
+     "value": 25696
+    },
+    {
+     "label": "Pizza Pizza",
+     "value": 19582
+    },
+    {
+     "label": "Starbucks",
+     "value": 2945
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "Merchant Name and Transaction Amt., rows dated 2025",
+    "method": "Summed across each chain's locations (merchant names beginning with the chain's name)."
+   }
+  },
+  "biggest": {
+   "id": "biggest",
+   "title": "The biggest single purchases, 2025",
+   "unit": "dollars",
+   "rows": [
+    {
+     "label": "Teranet Inc.",
+     "value": 53946.2,
+     "sub": "Revenue Services · Computer software maint & support servs"
+    },
+    {
+     "label": "Costar Intl Llc",
+     "value": 36054.24,
+     "sub": "Revenue Services · Computer software maint & support servs"
+    },
+    {
+     "label": "Monarch Mechanical Ltd",
+     "value": 33900.0,
+     "sub": "Toronto Shelter & Support Services · R & m - kitchens"
+    },
+    {
+     "label": "Softchoice Lp",
+     "value": 33895.41,
+     "sub": "Revenue Services · Computer software maint & support servs"
+    },
+    {
+     "label": "Fundscrip",
+     "value": 31182.12,
+     "sub": "Toronto Shelter & Support Services · Conc, snackbar/giftshop food items&sup"
+    },
+    {
+     "label": "Siemens Healthineers",
+     "value": 30712.27,
+     "sub": "Toronto Paramedic Services · M & e - medical"
+    },
+    {
+     "label": "MTO TSD SO (all offices)",
+     "value": 27455.0,
+     "sub": "Toronto Paramedic Services · Permit & license fees"
+    },
+    {
+     "label": "MTO TSD SO (all offices)",
+     "value": 26191.75,
+     "sub": "Toronto Paramedic Services · Permit & license fees"
+    },
+    {
+     "label": "Fundscrip",
+     "value": 24869.09,
+     "sub": "Toronto Shelter & Support Services · Food & non-alcoholic beverages"
+    },
+    {
+     "label": "MTO TSD SO (all offices)",
+     "value": 23826.0,
+     "sub": "Toronto Paramedic Services · Permit & license fees"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "PCard Expenditures",
+    "datasetUrl": "https://open.toronto.ca/dataset/pcard-expenditures/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/ebc3f9c2-2f80-4405-bf4f-5fb309581485/resource/24b9c441-e6e6-4f81-aea0-315f613c1e6e/download/pcard-expenses.csv",
+    "member": null,
+    "locator": "rows dated 2025, highest Transaction Amt.",
+    "method": "As published: merchant, division and G/L Account Description (the Purpose text isn't shown)."
+   }
+  }
+ }
+}

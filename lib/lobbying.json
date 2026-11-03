@@ -1,0 +1,531 @@
+{
+ "generatedOn": "2026-11-03",
+ "generator": "scripts/extract_lobbying.py",
+ "year": 2025,
+ "lastMonth": "2026-11",
+ "series": {
+  "contacts": {
+   "id": "contacts",
+   "label": "Reported lobbying contacts",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 1964
+    },
+    {
+     "period": "2012",
+     "value": 3322
+    },
+    {
+     "period": "2013",
+     "value": 4364
+    },
+    {
+     "period": "2014",
+     "value": 3809
+    },
+    {
+     "period": "2015",
+     "value": 5300
+    },
+    {
+     "period": "2016",
+     "value": 4801
+    },
+    {
+     "period": "2017",
+     "value": 5765
+    },
+    {
+     "period": "2018",
+     "value": 4828
+    },
+    {
+     "period": "2019",
+     "value": 5536
+    },
+    {
+     "period": "2020",
+     "value": 4078
+    },
+    {
+     "period": "2021",
+     "value": 4987
+    },
+    {
+     "period": "2022",
+     "value": 3251
+    },
+    {
+     "period": "2023",
+     "value": 4470
+    },
+    {
+     "period": "2024",
+     "value": 5249
+    },
+    {
+     "period": "2025",
+     "value": 4087
+    },
+    {
+     "period": "2026",
+     "value": 2771,
+     "note": "Year to date (through November)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Lobbyist Registry",
+    "datasetUrl": "https://open.toronto.ca/dataset/lobbyist-registry/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6a87b8bf-f4df-4762-b5dc-bf393336687b/resource/94c1fe59-7247-4b92-b213-950f71e04aff/download/lobbyactivity.zip",
+    "member": null,
+    "locator": "Communication elements with a CommunicationDate, active and closed files",
+    "method": "Counted per year of CommunicationDate. Contacts de-duplicated by SMNumber and CommunicationGroupId (or date, office holder and method)."
+   }
+  },
+  "registrations": {
+   "id": "registrations",
+   "label": "New subject-matter registrations",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 655
+    },
+    {
+     "period": "2012",
+     "value": 679
+    },
+    {
+     "period": "2013",
+     "value": 716
+    },
+    {
+     "period": "2014",
+     "value": 615
+    },
+    {
+     "period": "2015",
+     "value": 965
+    },
+    {
+     "period": "2016",
+     "value": 948
+    },
+    {
+     "period": "2017",
+     "value": 1153
+    },
+    {
+     "period": "2018",
+     "value": 868
+    },
+    {
+     "period": "2019",
+     "value": 1027
+    },
+    {
+     "period": "2020",
+     "value": 899
+    },
+    {
+     "period": "2021",
+     "value": 900
+    },
+    {
+     "period": "2022",
+     "value": 677
+    },
+    {
+     "period": "2023",
+     "value": 850
+    },
+    {
+     "period": "2024",
+     "value": 792
+    },
+    {
+     "period": "2025",
+     "value": 805
+    },
+    {
+     "period": "2026",
+     "value": 569,
+     "note": "Year to date (through November)"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Lobbyist Registry",
+    "datasetUrl": "https://open.toronto.ca/dataset/lobbyist-registry/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6a87b8bf-f4df-4762-b5dc-bf393336687b/resource/94c1fe59-7247-4b92-b213-950f71e04aff/download/lobbyactivity.zip",
+    "member": null,
+    "locator": "SM elements, InitialApprovalDate",
+    "method": "Registrations counted per year first approved."
+   }
+  }
+ },
+ "ranks": {
+  "council": {
+   "id": "council",
+   "title": "Most-lobbied members of Council, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Olivia Chow",
+     "value": 61,
+     "sub": "Mayor"
+    },
+    {
+     "label": "Dianne Saxe",
+     "value": 58,
+     "sub": "Ward 11 University-Rosedale"
+    },
+    {
+     "label": "Josh Matlow",
+     "value": 55,
+     "sub": "Ward 12 Toronto-St. Paul's"
+    },
+    {
+     "label": "Brad Bradford",
+     "value": 50,
+     "sub": "Ward 19 Beaches-East York"
+    },
+    {
+     "label": "Frances Nunziata",
+     "value": 50,
+     "sub": "Ward 5 York South-Weston"
+    },
+    {
+     "label": "Chris Moise",
+     "value": 49,
+     "sub": "Ward 13 Toronto Centre"
+    },
+    {
+     "label": "Mike Colle",
+     "value": 48,
+     "sub": "Ward 8 Eglinton-Lawrence"
+    },
+    {
+     "label": "Vincent Crisanti",
+     "value": 48,
+     "sub": "Ward 1 Etobicoke North"
+    },
+    {
+     "label": "Amber Morley",
+     "value": 47,
+     "sub": "Ward 3 Etobicoke-Lakeshore"
+    },
+    {
+     "label": "Jamaal Myers",
+     "value": 46,
+     "sub": "Ward 23 Scarborough North"
+    },
+    {
+     "label": "Ausma Malik",
+     "value": 45,
+     "sub": "Ward 10 Spadina-Fort York"
+    },
+    {
+     "label": "Lily Cheng",
+     "value": 45,
+     "sub": "Ward 18 Willowdale"
+    },
+    {
+     "label": "Alejandra Bravo",
+     "value": 43,
+     "sub": "Ward 9 Davenport"
+    },
+    {
+     "label": "Gord Perks",
+     "value": 43,
+     "sub": "Ward 4 Parkdale-High Park"
+    },
+    {
+     "label": "James Pasternak",
+     "value": 39,
+     "sub": "Ward 6 York Centre"
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Lobbyist Registry",
+    "datasetUrl": "https://open.toronto.ca/dataset/lobbyist-registry/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6a87b8bf-f4df-4762-b5dc-bf393336687b/resource/94c1fe59-7247-4b92-b213-950f71e04aff/download/lobbyactivity.zip",
+    "member": null,
+    "locator": "POH_Type = Member of Council, POH_Name and POH_Office, contacts in 2025",
+    "method": "Contacts counted per member of Council. Contacts de-duplicated by SMNumber and CommunicationGroupId (or date, office holder and method)."
+   }
+  },
+  "offices": {
+   "id": "offices",
+   "title": "City offices lobbied most, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Development Review",
+     "value": 258
+    },
+    {
+     "label": "Technology Services",
+     "value": 142
+    },
+    {
+     "label": "Toronto Building",
+     "value": 79
+    },
+    {
+     "label": "Transportation Services",
+     "value": 71
+    },
+    {
+     "label": "Toronto Water",
+     "value": 68
+    },
+    {
+     "label": "Engineering and Construction Services",
+     "value": 52
+    },
+    {
+     "label": "Development Review Division",
+     "value": 48
+    },
+    {
+     "label": "Economic Development and Culture",
+     "value": 45
+    },
+    {
+     "label": "Corporate Real Estate Management",
+     "value": 39
+    },
+    {
+     "label": "City Planning",
+     "value": 35
+    },
+    {
+     "label": "Parks and Recreation",
+     "value": 35
+    },
+    {
+     "label": "Engineering & Construction Services",
+     "value": 33
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Lobbyist Registry",
+    "datasetUrl": "https://open.toronto.ca/dataset/lobbyist-registry/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6a87b8bf-f4df-4762-b5dc-bf393336687b/resource/94c1fe59-7247-4b92-b213-950f71e04aff/download/lobbyactivity.zip",
+    "member": null,
+    "locator": "POH_Type = Employee of the City, POH_Office, contacts in 2025",
+    "method": "Contacts counted per office as written. Contacts de-duplicated by SMNumber and CommunicationGroupId (or date, office holder and method)."
+   }
+  },
+  "subjects": {
+   "id": "subjects",
+   "title": "What they lobbied about, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Procurement",
+     "value": 691
+    },
+    {
+     "label": "Technology",
+     "value": 689
+    },
+    {
+     "label": "Economic Development",
+     "value": 684
+    },
+    {
+     "label": "Transportation",
+     "value": 546
+    },
+    {
+     "label": "Planning and Development",
+     "value": 533
+    },
+    {
+     "label": "Planning and Development Application",
+     "value": 402
+    },
+    {
+     "label": "Real Estate / Property (City-owned)",
+     "value": 398
+    },
+    {
+     "label": "Planning and Development Application, Zoning By-law",
+     "value": 369
+    },
+    {
+     "label": "Transportation - Roads / Bridges",
+     "value": 358
+    },
+    {
+     "label": "By-law / Regulation",
+     "value": 314
+    },
+    {
+     "label": "Transportation - Cycling / Bicycle Lanes",
+     "value": 297
+    },
+    {
+     "label": "Transit / TTC",
+     "value": 266
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Lobbyist Registry",
+    "datasetUrl": "https://open.toronto.ca/dataset/lobbyist-registry/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6a87b8bf-f4df-4762-b5dc-bf393336687b/resource/94c1fe59-7247-4b92-b213-950f71e04aff/download/lobbyactivity.zip",
+    "member": null,
+    "locator": "SubjectMatter of each contact's registration, contacts in 2025",
+    "method": "A registration can list several subjects; each contact counts once for each. Contacts de-duplicated by SMNumber and CommunicationGroupId (or date, office holder and method)."
+   }
+  },
+  "clients": {
+   "id": "clients",
+   "title": "Who lobbied most, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Sutera Canada Inc.",
+     "value": 202
+    },
+    {
+     "label": "2868415 Ontario Inc",
+     "value": 169
+    },
+    {
+     "label": "Accela Inc.",
+     "value": 107
+    },
+    {
+     "label": "Action First Aid Inc.",
+     "value": 100
+    },
+    {
+     "label": "Magna International Inc.",
+     "value": 95
+    },
+    {
+     "label": "RioCan Real Estate Investment Trust",
+     "value": 90
+    },
+    {
+     "label": "Labourers' International Union of North America Ontario Provincial District Council (LiUNA OPDC)",
+     "value": 89
+    },
+    {
+     "label": "Motorola Solutions Canada Inc.",
+     "value": 69
+    },
+    {
+     "label": "Bolt Services CA Inc",
+     "value": 62
+    },
+    {
+     "label": "Oneida Investment Corporation",
+     "value": 55
+    },
+    {
+     "label": "Jim Pattison Developments Ltd.",
+     "value": 51
+    },
+    {
+     "label": "Conduent Incorporated",
+     "value": 45
+    },
+    {
+     "label": "Bird Canada",
+     "value": 44
+    },
+    {
+     "label": "The Gordian Group, Inc.",
+     "value": 44
+    },
+    {
+     "label": "Capital Infrastructure Group Inc.",
+     "value": 43
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Lobbyist Registry",
+    "datasetUrl": "https://open.toronto.ca/dataset/lobbyist-registry/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6a87b8bf-f4df-4762-b5dc-bf393336687b/resource/94c1fe59-7247-4b92-b213-950f71e04aff/download/lobbyactivity.zip",
+    "member": null,
+    "locator": "Beneficiary (client) name, or the in-house firm's name, contacts in 2025",
+    "method": "Contacts counted per client or organization, by name as registered. Contacts de-duplicated by SMNumber and CommunicationGroupId (or date, office holder and method)."
+   }
+  },
+  "methods": {
+   "id": "methods",
+   "title": "How, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "E-mail",
+     "value": 1930
+    },
+    {
+     "label": "Meeting",
+     "value": 1894
+    },
+    {
+     "label": "Other",
+     "value": 327
+    },
+    {
+     "label": "Telephone",
+     "value": 240
+    },
+    {
+     "label": "Written",
+     "value": 30
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Lobbyist Registry",
+    "datasetUrl": "https://open.toronto.ca/dataset/lobbyist-registry/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6a87b8bf-f4df-4762-b5dc-bf393336687b/resource/94c1fe59-7247-4b92-b213-950f71e04aff/download/lobbyactivity.zip",
+    "member": null,
+    "locator": "CommunicationMethod, contacts in 2025",
+    "method": "A contact listing several methods counts once for each. Contacts de-duplicated by SMNumber and CommunicationGroupId (or date, office holder and method)."
+   }
+  },
+  "kinds": {
+   "id": "kinds",
+   "title": "Who does the lobbying, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "In-house lobbyists (employees)",
+     "value": 2371
+    },
+    {
+     "label": "Consultant lobbyists (hired)",
+     "value": 1701
+    },
+    {
+     "label": "Voluntary (unpaid)",
+     "value": 15
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Lobbyist Registry",
+    "datasetUrl": "https://open.toronto.ca/dataset/lobbyist-registry/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6a87b8bf-f4df-4762-b5dc-bf393336687b/resource/94c1fe59-7247-4b92-b213-950f71e04aff/download/lobbyactivity.zip",
+    "member": null,
+    "locator": "Type of each contact's registration, contacts in 2025",
+    "method": "Contacts counted per registration type. Contacts de-duplicated by SMNumber and CommunicationGroupId (or date, office holder and method)."
+   }
+  }
+ }
+}

@@ -227,3 +227,14 @@ def city_population(first=2001):
     src = source(STATCAN, "Population estimates, July 1, by census division, 2021 boundaries (table 17-10-0152-01)", POP_TABLE_URL, url,
                  f"Vector v{POP_VECTOR}: Toronto (census division 3520, the City of Toronto), total gender, all ages", "Values as published, one per year.")
     return values, src
+
+
+def ranking(id, title, unit, rows, src, note=None):
+    """A ranked (or ordered) list: rows of {label, value, sub?}. Used for top-N lists and breakdowns."""
+    assert unit in ("count", "dollars", "percent", "minutes"), unit
+    if not rows:
+        sys.exit(f"ranking {id}: no rows")
+    r = {"id": id, "title": title, "unit": unit, "rows": rows, "source": src}
+    if note:
+        r["note"] = note
+    return r

@@ -1,5 +1,5 @@
 {
- "generatedOn": "2026-11-02",
+ "generatedOn": "2026-11-03",
  "generator": "scripts/extract_layers.py",
  "map": {
   "width": 1000,
@@ -67,7 +67,7 @@
    "blurb": "Every streetcar route's path.",
    "group": "Getting around",
    "count": 16,
-   "bytes": 4890,
+   "bytes": 4893,
    "sources": [
     {
      "publisher": "City of Toronto — Open Data",
@@ -86,7 +86,7 @@
    "blurb": "Every bus route's path (one per route).",
    "group": "Getting around",
    "count": 209,
-   "bytes": 62945,
+   "bytes": 62969,
    "sources": [
     {
      "publisher": "City of Toronto — Open Data",
@@ -105,7 +105,7 @@
    "blurb": "The cycling network: trails, bike lanes, separated cycle tracks and shared lanes.",
    "group": "Getting around",
    "count": 1615,
-   "bytes": 175461,
+   "bytes": 193046,
    "sources": [
     {
      "publisher": "City of Toronto — Open Data",
@@ -312,8 +312,8 @@
    "title": "Construction",
    "blurb": "Road restrictions in effect on 2026-11-02.",
    "group": "Housing and the city",
-   "count": 1507,
-   "bytes": 244304,
+   "count": 1720,
+   "bytes": 278654,
    "sources": [
     {
      "publisher": "City of Toronto — Open Data",
