@@ -390,6 +390,8 @@ def main():
     total = row(r"^Total - Occupied private dwellings by structural type of dwelling")
     single = row(r"^Single-detached house$")
     tall = row(r"^Apartment in a building that has five or more storeys$")
+    hh_income = row(r"^Median total income of household in 2020")
+    low_income = row(r"^Prevalence of low income based on the Low-income measure, after tax \(LIM-AT\)")
     _, _, nrows = records("neighbourhoods")
     # The census file and the boundaries spell some names differently ("O`Connor Parkview" / "O'Connor-Parkview"),
     # so match ignoring punctuation and spacing.
@@ -406,7 +408,7 @@ def main():
                 a -= abs(sum(x1 * y2 - x2 * y1 for (x1, y1), (x2, y2) in zip(h, h[1:] + h[:1]))) / 2
         return a * (111.32 / PROJ["scale"]) ** 2
 
-    items, dens, unmatched = [], [], []
+    items, dens, unmatched, money = [], [], [], []
     for ci, name in enumerate(header):
         if ci == 0 or not name or name == "City of Toronto":
             continue
@@ -423,24 +425,30 @@ def main():
         items.append([name, d, round(float(tall[ci] or 0) / tot * 100, 1), round(float(single[ci] or 0) / tot * 100, 1)])
         km2 = area_km2(polys)
         dens.append([name, d, round(float(population[ci] or 0) / km2) if km2 else 0, round(km2, 2), int(population[ci] or 0)])
+        money.append((float(hh_income[ci] or 0), float(low_income[ci] or 0)))
     if unmatched or len(items) != 158:
         sys.exit(f"layers: census neighbourhoods without a boundary: {unmatched} ({len(items)} matched)")
     rt, rs = ranks([it[2] for it in items]), ranks([it[3] for it in items])
-    homes_info = [f"{it[2]}% in 5+ storey apartments ({ordinal(a)} of 158) · {it[3]}% single-detached houses ({ordinal(b)} of 158)" for it, a, b in zip(items, rt, rs)]
+    # Income facts (2021 census, 2020 incomes), added to every neighbourhood view's details.
+    rh, rl = ranks([m[0] for m in money]), ranks([m[1] for m in money])
+    income_info = [f"median household income ${m[0]:,.0f} ({ordinal(a)} highest of 158) · {m[1]:g}% in low income ({ordinal(b)} highest)" for m, a, b in zip(money, rh, rl)]
+    homes_info = [f"{it[2]}% in 5+ storey apartments ({ordinal(a)} of 158) · {it[3]}% single-detached houses ({ordinal(b)} of 158) · {inc}" for it, a, b, inc in zip(items, rt, rs, income_info)]
+    income_src = open_data_source(npkg, nres["url"], "rows 'Median total income of household in 2020 ($)' and 'Prevalence of low income based on the Low-income measure, after tax (LIM-AT) (%)'",
+                                  "As published, shown in each neighbourhood's details; ranks are among the 158 neighbourhoods.")
     save("homes", "Homes by neighbourhood", "The share of homes in apartment buildings of 5+ storeys, or in single-detached houses (2021 census).", "Housing and the city",
          {"type": "choropleth", "measures": [{"label": "Apartments, 5+ storeys", "color": C[5]}, {"label": "Single-detached houses", "color": C[2]}], "items": items, "info": homes_info},
          [open_data_source(npkg, nres["url"], "rows 'Total - Occupied private dwellings by structural type of dwelling', 'Single-detached house', "
                            "'Apartment in a building that has five or more storeys'", "Each neighbourhood's count ÷ its total occupied private dwellings × 100."),
-          open_data_source(package("neighbourhoods"), f"{CKAN}/package_show?id=neighbourhoods", "all 158 neighbourhoods", "Outlines simplified for drawing.")],
+          open_data_source(package("neighbourhoods"), f"{CKAN}/package_show?id=neighbourhoods", "all 158 neighbourhoods", "Outlines simplified for drawing."), income_src],
          "The census can't tell condos from rental apartments: 'apartments, 5+ storeys' includes both.")
 
     save("density", "Population density", "People per square kilometre in each neighbourhood (2021 census).", "Housing and the city",
          {"type": "choropleth", "measures": [{"label": "People per km²", "color": C[0], "bins": [0, 4000, 8000, 12000, 20000], "unit": "/km²"}],
           "items": [[n, d, v] for n, d, v, _, _ in dens],
-          "info": [f"{p:,} people on {a} km² · {ordinal(k)} densest of {len(dens)}" for (n, _, _, a, p), k in zip(dens, ranks([x[2] for x in dens]))]},
+          "info": [f"{p:,} people on {a} km² · {ordinal(k)} densest of {len(dens)} · {inc}" for (n, _, _, a, p), k, inc in zip(dens, ranks([x[2] for x in dens]), income_info)]},
          [open_data_source(npkg, nres["url"], "row 'Total - Age groups of the population - 25% sample data' (each neighbourhood's population)",
                            "Population ÷ land area. The profile has no area, so area is computed here from the City's neighbourhood boundary."),
-          open_data_source(package("neighbourhoods"), f"{CKAN}/package_show?id=neighbourhoods", "all 158 neighbourhoods", "Each boundary's area (unsimplified), for the density.")],
+          open_data_source(package("neighbourhoods"), f"{CKAN}/package_show?id=neighbourhoods", "all 158 neighbourhoods", "Each boundary's area (unsimplified), for the density."), income_src],
          "Population is the census's own count for each neighbourhood (from its 25% sample, so rounded); area is measured from the City's boundary, water included where a boundary takes it in.")
 
     write(INDEX, {"map": {"width": wards["width"], "height": wards["height"], "paths": [p["d"] for p in wards["paths"]], "source": wards["source"]}, "views": index},

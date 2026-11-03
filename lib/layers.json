@@ -86,7 +86,7 @@
    "blurb": "Every bus route's path (one per route).",
    "group": "Getting around",
    "count": 209,
-   "bytes": 62969,
+   "bytes": 62993,
    "sources": [
     {
      "publisher": "City of Toronto — Open Data",
@@ -333,7 +333,7 @@
    "blurb": "The share of homes in apartment buildings of 5+ storeys, or in single-detached houses (2021 census).",
    "group": "Housing and the city",
    "count": 158,
-   "bytes": 53752,
+   "bytes": 68695,
    "sources": [
     {
      "publisher": "City of Toronto — Open Data",
@@ -352,6 +352,15 @@
      "member": null,
      "locator": "all 158 neighbourhoods",
      "method": "Outlines simplified for drawing."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Neighbourhood Profiles",
+     "datasetUrl": "https://open.toronto.ca/dataset/neighbourhood-profiles/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6e19a90f-971c-46b3-852c-0c48c436d1fc/resource/19d4a806-7385-4889-acf2-256f1e079060/download/nbhd_2021_census_profile_full_158model.xlsx",
+     "member": null,
+     "locator": "rows 'Median total income of household in 2020 ($)' and 'Prevalence of low income based on the Low-income measure, after tax (LIM-AT) (%)'",
+     "method": "As published, shown in each neighbourhood's details; ranks are among the 158 neighbourhoods."
     }
    ],
    "note": "The census can't tell condos from rental apartments: 'apartments, 5+ storeys' includes both."
@@ -362,7 +371,7 @@
    "blurb": "People per square kilometre in each neighbourhood (2021 census).",
    "group": "Housing and the city",
    "count": 158,
-   "bytes": 46705,
+   "bytes": 61648,
    "sources": [
     {
      "publisher": "City of Toronto — Open Data",
@@ -381,6 +390,15 @@
      "member": null,
      "locator": "all 158 neighbourhoods",
      "method": "Each boundary's area (unsimplified), for the density."
+    },
+    {
+     "publisher": "City of Toronto — Open Data",
+     "dataset": "Neighbourhood Profiles",
+     "datasetUrl": "https://open.toronto.ca/dataset/neighbourhood-profiles/",
+     "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6e19a90f-971c-46b3-852c-0c48c436d1fc/resource/19d4a806-7385-4889-acf2-256f1e079060/download/nbhd_2021_census_profile_full_158model.xlsx",
+     "member": null,
+     "locator": "rows 'Median total income of household in 2020 ($)' and 'Prevalence of low income based on the Low-income measure, after tax (LIM-AT) (%)'",
+     "method": "As published, shown in each neighbourhood's details; ranks are among the 158 neighbourhoods."
     }
    ],
    "note": "Population is the census's own count for each neighbourhood (from its 25% sample, so rounded); area is measured from the City's boundary, water included where a boundary takes it in."

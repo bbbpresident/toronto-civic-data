@@ -7,14 +7,14 @@ import { LAYERS } from "@/lib/layers";
 import bus from "@/public/layers/bus.json";
 
 // The home page (the "magazine" layout): the budget as the lead story, the City's events calendar
-// and the daily game beside it, then twenty questions, one per section. Every figure links to the
+// and the daily game beside it, then twenty questions, one per section (construction lives on the map). Every figure links to the
 // section that cites its source; sections and figures live in lib/home.ts.
 
 const SECTION_FIGURE: Record<string, string | undefined> = {
   "/budget": "budget", "/elections": "turnout", "/council": "council", "/housing": "rent", "/people": "population",
   "/transit": "rides", "/schools": "students", "/crime": "crime", "/road-safety": "roads", "/sports": "titles",
   "/construction": "construction", "/lobbying": "lobbying", "/pcard": "pcard", "/homelessness": "homeless", "/delays": "delays",
-  "/parking": "parking", "/marriage": "marriage", "/311": "311", "/fire": "fire",
+  "/parking": "parking", "/marriage": "marriage", "/311": "311", "/fire": "fire", "/income": "income",
 };
 /** "TTC rides in a year" → "TTC rides in a year"; "People living…" → "people living…" (only the first letter, so names keep their capitals). */
 const lower = (t: string) => (/^[A-Z][a-z]/.test(t) ? t[0].toLowerCase() + t.slice(1) : t);
@@ -113,7 +113,8 @@ function CalendarCard() {
 
 export default function HomePage() {
   const budget = figure("budget"), tax = figure("propertytax");
-  const features = SECTIONS.filter(s => !["/budget", "/today"].includes(s.href));
+  // /construction has no card: road restrictions are a view on the map card.
+  const features = SECTIONS.filter(s => !["/budget", "/today", "/construction"].includes(s.href));
   return (
     <div style={{ maxWidth: 1040, margin: "0 auto" }}>
       <HoverStyles />

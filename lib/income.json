@@ -1,0 +1,2516 @@
+{
+ "generatedOn": "2026-11-03",
+ "generator": "scripts/extract_income.py",
+ "sunshineYear": 2025,
+ "series": {
+  "sunTotal": {
+   "id": "sunTotal",
+   "label": "City employees paid $100,000+",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 5542
+    },
+    {
+     "period": "2012",
+     "value": 7128
+    },
+    {
+     "period": "2013",
+     "value": 9798
+    },
+    {
+     "period": "2014",
+     "value": 11287
+    },
+    {
+     "period": "2015",
+     "value": 11376
+    },
+    {
+     "period": "2016",
+     "value": 11687
+    },
+    {
+     "period": "2017",
+     "value": 13593
+    },
+    {
+     "period": "2018",
+     "value": 14204
+    },
+    {
+     "period": "2019",
+     "value": 15052
+    },
+    {
+     "period": "2020",
+     "value": 15488
+    },
+    {
+     "period": "2021",
+     "value": 16093
+    },
+    {
+     "period": "2022",
+     "value": 18601
+    },
+    {
+     "period": "2023",
+     "value": 20320
+    },
+    {
+     "period": "2024",
+     "value": 24116
+    },
+    {
+     "period": "2025",
+     "value": 31039
+    }
+   ],
+   "source": {
+    "publisher": "Government of Ontario — Treasury Board Secretariat",
+    "dataset": "Public sector salary disclosure 2025",
+    "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+    "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv",
+    "member": null,
+    "locator": "rows whose Employer begins 'City of Toronto' (the City and its agencies and boards), plus Toronto Community Housing, listed without the prefix in 2011",
+    "method": "Rows counted per year's file."
+   },
+   "note": "The $100,000 threshold has been the same since 1996 and isn't adjusted for inflation, so more people cross it every year just from raises.",
+   "inputs": [
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2011",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2011",
+     "fileUrl": "https://data.ontario.ca/dataset/cbb64484-3cbb-4eed-b2ff-a2f5975611f9/resource/dc378388-29de-46d5-9cfb-fe585da89aa0/download/en-2011-pssd.csv",
+     "member": null,
+     "locator": "2011: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2012",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2012",
+     "fileUrl": "https://data.ontario.ca/dataset/23e5bddc-9c5a-4ede-b822-ca4233f4989c/resource/6693929f-bc74-4585-b2ae-08f19c193e36/download/en-2012-pssd.csv",
+     "member": null,
+     "locator": "2012: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2013",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2013",
+     "fileUrl": "https://data.ontario.ca/dataset/cfca02c4-6fc1-468d-aae1-0e02d6104557/resource/8d0d04a1-6c38-4105-bd59-9f9ac8a5be35/download/en-2013-pssd.csv",
+     "member": null,
+     "locator": "2013: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2014",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2014",
+     "fileUrl": "https://data.ontario.ca/dataset/958049ee-8985-4e8a-a8f2-63ad6c4862ac/resource/4cad572d-14c0-4273-91c2-3dcea0eb89c8/download/en-2014-pssd-full-compendium.csv",
+     "member": null,
+     "locator": "2014: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2015",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2015",
+     "fileUrl": "https://data.ontario.ca/dataset/2497ad2d-2b9f-4554-857b-a57639c01dee/resource/5ae5fd45-b482-4f65-be9f-f5f0e113db26/download/en-2015-pssd-compendium-with-addendum.csv",
+     "member": null,
+     "locator": "2015: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2016",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2016",
+     "fileUrl": "https://data.ontario.ca/dataset/3ce78e78-29e0-4893-bb8d-ef4d48bdf54d/resource/5d60e933-99eb-48f1-b62f-dd57ada57621/download/en-2016-pssd-compendium.csv",
+     "member": null,
+     "locator": "2016: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2017",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2017",
+     "fileUrl": "https://data.ontario.ca/dataset/4f347400-1469-494b-9523-3d9de65dc3f5/resource/b1076b41-7c66-473b-80a1-5e88d93002c6/download/en-2017-pssd-compendium.csv",
+     "member": null,
+     "locator": "2017: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2018",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2018",
+     "fileUrl": "https://data.ontario.ca/dataset/90bf08b0-d2c6-42e7-8888-02cb43b6d532/resource/761dd087-27b2-4953-bfba-2fe4dff99c2c/download/en-2018-pssd-compendium.csv",
+     "member": null,
+     "locator": "2018: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2019",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2019",
+     "fileUrl": "https://data.ontario.ca/dataset/3cc8129f-377a-4377-85b2-bedc83a75de9/resource/42130f2c-ed1e-4e19-96c1-c4048e4e86c9/download/en-2019-pssd-compendium.csv",
+     "member": null,
+     "locator": "2019: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2020",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2020",
+     "fileUrl": "https://data.ontario.ca/dataset/f4fbffef-aed0-404f-8e77-da8eb9cdea1e/resource/23172a73-7b85-49bd-9064-d600d2b21d37/download/en-2020-pssd-compendium.csv",
+     "member": null,
+     "locator": "2020: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2021",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2021/Compendium/F19229BD-E364-4090-B7DC-474B1A984027/tbs-pssd-compendium-salary-disclosed-2021-en-utf-8-2023-01-05.csv",
+     "member": null,
+     "locator": "2021: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2022",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2022/Compendium/68E37CD2-3CC5-4710-8814-72B88C4DC07C/tbs-pssd-compendium-salary-disclosed-2022-en-utf-8-2024-01-19.csv",
+     "member": null,
+     "locator": "2022: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2023",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2023/Compendium/DE37018F-5589-4FF6-8CEE-D420A6661264/tbs-pssd-compendium-salary-disclosed-2023-en-utf-8-2025-03-26.csv",
+     "member": null,
+     "locator": "2023: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2024",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2024/Compendium/2e714c8c-5f80-4368-94af-eccb435075e7/tbs-pssd-compendium-salary-disclosed-2024-en-utf-8-2026-01-29.csv",
+     "member": null,
+     "locator": "2024: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    }
+   ]
+  },
+  "sun_0": {
+   "id": "sun_0",
+   "label": "City of Toronto",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 2189
+    },
+    {
+     "period": "2012",
+     "value": 2375
+    },
+    {
+     "period": "2013",
+     "value": 4892
+    },
+    {
+     "period": "2014",
+     "value": 4901
+    },
+    {
+     "period": "2015",
+     "value": 4382
+    },
+    {
+     "period": "2016",
+     "value": 4400
+    },
+    {
+     "period": "2017",
+     "value": 5872
+    },
+    {
+     "period": "2018",
+     "value": 6188
+    },
+    {
+     "period": "2019",
+     "value": 6806
+    },
+    {
+     "period": "2020",
+     "value": 7239
+    },
+    {
+     "period": "2021",
+     "value": 7345
+    },
+    {
+     "period": "2022",
+     "value": 8107
+    },
+    {
+     "period": "2023",
+     "value": 9256
+    },
+    {
+     "period": "2024",
+     "value": 10256
+    },
+    {
+     "period": "2025",
+     "value": 13079
+    }
+   ],
+   "source": {
+    "publisher": "Government of Ontario — Treasury Board Secretariat",
+    "dataset": "Public sector salary disclosure 2025",
+    "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+    "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv",
+    "member": null,
+    "locator": "Employer group: City of Toronto",
+    "method": "Rows counted per year's file, grouped by employer name."
+   },
+   "inputs": [
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2011",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2011",
+     "fileUrl": "https://data.ontario.ca/dataset/cbb64484-3cbb-4eed-b2ff-a2f5975611f9/resource/dc378388-29de-46d5-9cfb-fe585da89aa0/download/en-2011-pssd.csv",
+     "member": null,
+     "locator": "2011: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2012",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2012",
+     "fileUrl": "https://data.ontario.ca/dataset/23e5bddc-9c5a-4ede-b822-ca4233f4989c/resource/6693929f-bc74-4585-b2ae-08f19c193e36/download/en-2012-pssd.csv",
+     "member": null,
+     "locator": "2012: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2013",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2013",
+     "fileUrl": "https://data.ontario.ca/dataset/cfca02c4-6fc1-468d-aae1-0e02d6104557/resource/8d0d04a1-6c38-4105-bd59-9f9ac8a5be35/download/en-2013-pssd.csv",
+     "member": null,
+     "locator": "2013: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2014",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2014",
+     "fileUrl": "https://data.ontario.ca/dataset/958049ee-8985-4e8a-a8f2-63ad6c4862ac/resource/4cad572d-14c0-4273-91c2-3dcea0eb89c8/download/en-2014-pssd-full-compendium.csv",
+     "member": null,
+     "locator": "2014: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2015",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2015",
+     "fileUrl": "https://data.ontario.ca/dataset/2497ad2d-2b9f-4554-857b-a57639c01dee/resource/5ae5fd45-b482-4f65-be9f-f5f0e113db26/download/en-2015-pssd-compendium-with-addendum.csv",
+     "member": null,
+     "locator": "2015: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2016",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2016",
+     "fileUrl": "https://data.ontario.ca/dataset/3ce78e78-29e0-4893-bb8d-ef4d48bdf54d/resource/5d60e933-99eb-48f1-b62f-dd57ada57621/download/en-2016-pssd-compendium.csv",
+     "member": null,
+     "locator": "2016: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2017",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2017",
+     "fileUrl": "https://data.ontario.ca/dataset/4f347400-1469-494b-9523-3d9de65dc3f5/resource/b1076b41-7c66-473b-80a1-5e88d93002c6/download/en-2017-pssd-compendium.csv",
+     "member": null,
+     "locator": "2017: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2018",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2018",
+     "fileUrl": "https://data.ontario.ca/dataset/90bf08b0-d2c6-42e7-8888-02cb43b6d532/resource/761dd087-27b2-4953-bfba-2fe4dff99c2c/download/en-2018-pssd-compendium.csv",
+     "member": null,
+     "locator": "2018: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2019",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2019",
+     "fileUrl": "https://data.ontario.ca/dataset/3cc8129f-377a-4377-85b2-bedc83a75de9/resource/42130f2c-ed1e-4e19-96c1-c4048e4e86c9/download/en-2019-pssd-compendium.csv",
+     "member": null,
+     "locator": "2019: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2020",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2020",
+     "fileUrl": "https://data.ontario.ca/dataset/f4fbffef-aed0-404f-8e77-da8eb9cdea1e/resource/23172a73-7b85-49bd-9064-d600d2b21d37/download/en-2020-pssd-compendium.csv",
+     "member": null,
+     "locator": "2020: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2021",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2021/Compendium/F19229BD-E364-4090-B7DC-474B1A984027/tbs-pssd-compendium-salary-disclosed-2021-en-utf-8-2023-01-05.csv",
+     "member": null,
+     "locator": "2021: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2022",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2022/Compendium/68E37CD2-3CC5-4710-8814-72B88C4DC07C/tbs-pssd-compendium-salary-disclosed-2022-en-utf-8-2024-01-19.csv",
+     "member": null,
+     "locator": "2022: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2023",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2023/Compendium/DE37018F-5589-4FF6-8CEE-D420A6661264/tbs-pssd-compendium-salary-disclosed-2023-en-utf-8-2025-03-26.csv",
+     "member": null,
+     "locator": "2023: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2024",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2024/Compendium/2e714c8c-5f80-4368-94af-eccb435075e7/tbs-pssd-compendium-salary-disclosed-2024-en-utf-8-2026-01-29.csv",
+     "member": null,
+     "locator": "2024: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    }
+   ]
+  },
+  "sun_1": {
+   "id": "sun_1",
+   "label": "TTC",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 1158
+    },
+    {
+     "period": "2012",
+     "value": 1395
+    },
+    {
+     "period": "2013",
+     "value": 1748
+    },
+    {
+     "period": "2014",
+     "value": 2075
+    },
+    {
+     "period": "2015",
+     "value": 2143
+    },
+    {
+     "period": "2016",
+     "value": 2307
+    },
+    {
+     "period": "2017",
+     "value": 2632
+    },
+    {
+     "period": "2018",
+     "value": 2734
+    },
+    {
+     "period": "2019",
+     "value": 3033
+    },
+    {
+     "period": "2020",
+     "value": 3171
+    },
+    {
+     "period": "2021",
+     "value": 3277
+    },
+    {
+     "period": "2022",
+     "value": 4804
+    },
+    {
+     "period": "2023",
+     "value": 4784
+    },
+    {
+     "period": "2024",
+     "value": 6842
+    },
+    {
+     "period": "2025",
+     "value": 9614
+    }
+   ],
+   "source": {
+    "publisher": "Government of Ontario — Treasury Board Secretariat",
+    "dataset": "Public sector salary disclosure 2025",
+    "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+    "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv",
+    "member": null,
+    "locator": "Employer group: TTC",
+    "method": "Rows counted per year's file, grouped by employer name."
+   },
+   "inputs": [
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2011",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2011",
+     "fileUrl": "https://data.ontario.ca/dataset/cbb64484-3cbb-4eed-b2ff-a2f5975611f9/resource/dc378388-29de-46d5-9cfb-fe585da89aa0/download/en-2011-pssd.csv",
+     "member": null,
+     "locator": "2011: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2012",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2012",
+     "fileUrl": "https://data.ontario.ca/dataset/23e5bddc-9c5a-4ede-b822-ca4233f4989c/resource/6693929f-bc74-4585-b2ae-08f19c193e36/download/en-2012-pssd.csv",
+     "member": null,
+     "locator": "2012: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2013",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2013",
+     "fileUrl": "https://data.ontario.ca/dataset/cfca02c4-6fc1-468d-aae1-0e02d6104557/resource/8d0d04a1-6c38-4105-bd59-9f9ac8a5be35/download/en-2013-pssd.csv",
+     "member": null,
+     "locator": "2013: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2014",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2014",
+     "fileUrl": "https://data.ontario.ca/dataset/958049ee-8985-4e8a-a8f2-63ad6c4862ac/resource/4cad572d-14c0-4273-91c2-3dcea0eb89c8/download/en-2014-pssd-full-compendium.csv",
+     "member": null,
+     "locator": "2014: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2015",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2015",
+     "fileUrl": "https://data.ontario.ca/dataset/2497ad2d-2b9f-4554-857b-a57639c01dee/resource/5ae5fd45-b482-4f65-be9f-f5f0e113db26/download/en-2015-pssd-compendium-with-addendum.csv",
+     "member": null,
+     "locator": "2015: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2016",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2016",
+     "fileUrl": "https://data.ontario.ca/dataset/3ce78e78-29e0-4893-bb8d-ef4d48bdf54d/resource/5d60e933-99eb-48f1-b62f-dd57ada57621/download/en-2016-pssd-compendium.csv",
+     "member": null,
+     "locator": "2016: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2017",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2017",
+     "fileUrl": "https://data.ontario.ca/dataset/4f347400-1469-494b-9523-3d9de65dc3f5/resource/b1076b41-7c66-473b-80a1-5e88d93002c6/download/en-2017-pssd-compendium.csv",
+     "member": null,
+     "locator": "2017: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2018",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2018",
+     "fileUrl": "https://data.ontario.ca/dataset/90bf08b0-d2c6-42e7-8888-02cb43b6d532/resource/761dd087-27b2-4953-bfba-2fe4dff99c2c/download/en-2018-pssd-compendium.csv",
+     "member": null,
+     "locator": "2018: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2019",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2019",
+     "fileUrl": "https://data.ontario.ca/dataset/3cc8129f-377a-4377-85b2-bedc83a75de9/resource/42130f2c-ed1e-4e19-96c1-c4048e4e86c9/download/en-2019-pssd-compendium.csv",
+     "member": null,
+     "locator": "2019: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2020",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2020",
+     "fileUrl": "https://data.ontario.ca/dataset/f4fbffef-aed0-404f-8e77-da8eb9cdea1e/resource/23172a73-7b85-49bd-9064-d600d2b21d37/download/en-2020-pssd-compendium.csv",
+     "member": null,
+     "locator": "2020: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2021",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2021/Compendium/F19229BD-E364-4090-B7DC-474B1A984027/tbs-pssd-compendium-salary-disclosed-2021-en-utf-8-2023-01-05.csv",
+     "member": null,
+     "locator": "2021: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2022",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2022/Compendium/68E37CD2-3CC5-4710-8814-72B88C4DC07C/tbs-pssd-compendium-salary-disclosed-2022-en-utf-8-2024-01-19.csv",
+     "member": null,
+     "locator": "2022: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2023",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2023/Compendium/DE37018F-5589-4FF6-8CEE-D420A6661264/tbs-pssd-compendium-salary-disclosed-2023-en-utf-8-2025-03-26.csv",
+     "member": null,
+     "locator": "2023: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2024",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2024/Compendium/2e714c8c-5f80-4368-94af-eccb435075e7/tbs-pssd-compendium-salary-disclosed-2024-en-utf-8-2026-01-29.csv",
+     "member": null,
+     "locator": "2024: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    }
+   ]
+  },
+  "sun_2": {
+   "id": "sun_2",
+   "label": "Toronto Police",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 2033
+    },
+    {
+     "period": "2012",
+     "value": 3186
+    },
+    {
+     "period": "2013",
+     "value": 2987
+    },
+    {
+     "period": "2014",
+     "value": 4130
+    },
+    {
+     "period": "2015",
+     "value": 4645
+    },
+    {
+     "period": "2016",
+     "value": 4762
+    },
+    {
+     "period": "2017",
+     "value": 4828
+    },
+    {
+     "period": "2018",
+     "value": 4963
+    },
+    {
+     "period": "2019",
+     "value": 4876
+    },
+    {
+     "period": "2020",
+     "value": 4589
+    },
+    {
+     "period": "2021",
+     "value": 5025
+    },
+    {
+     "period": "2022",
+     "value": 5198
+    },
+    {
+     "period": "2023",
+     "value": 5588
+    },
+    {
+     "period": "2024",
+     "value": 6114
+    },
+    {
+     "period": "2025",
+     "value": 7083
+    }
+   ],
+   "source": {
+    "publisher": "Government of Ontario — Treasury Board Secretariat",
+    "dataset": "Public sector salary disclosure 2025",
+    "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+    "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv",
+    "member": null,
+    "locator": "Employer group: Toronto Police",
+    "method": "Rows counted per year's file, grouped by employer name."
+   },
+   "inputs": [
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2011",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2011",
+     "fileUrl": "https://data.ontario.ca/dataset/cbb64484-3cbb-4eed-b2ff-a2f5975611f9/resource/dc378388-29de-46d5-9cfb-fe585da89aa0/download/en-2011-pssd.csv",
+     "member": null,
+     "locator": "2011: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2012",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2012",
+     "fileUrl": "https://data.ontario.ca/dataset/23e5bddc-9c5a-4ede-b822-ca4233f4989c/resource/6693929f-bc74-4585-b2ae-08f19c193e36/download/en-2012-pssd.csv",
+     "member": null,
+     "locator": "2012: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2013",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2013",
+     "fileUrl": "https://data.ontario.ca/dataset/cfca02c4-6fc1-468d-aae1-0e02d6104557/resource/8d0d04a1-6c38-4105-bd59-9f9ac8a5be35/download/en-2013-pssd.csv",
+     "member": null,
+     "locator": "2013: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2014",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2014",
+     "fileUrl": "https://data.ontario.ca/dataset/958049ee-8985-4e8a-a8f2-63ad6c4862ac/resource/4cad572d-14c0-4273-91c2-3dcea0eb89c8/download/en-2014-pssd-full-compendium.csv",
+     "member": null,
+     "locator": "2014: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2015",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2015",
+     "fileUrl": "https://data.ontario.ca/dataset/2497ad2d-2b9f-4554-857b-a57639c01dee/resource/5ae5fd45-b482-4f65-be9f-f5f0e113db26/download/en-2015-pssd-compendium-with-addendum.csv",
+     "member": null,
+     "locator": "2015: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2016",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2016",
+     "fileUrl": "https://data.ontario.ca/dataset/3ce78e78-29e0-4893-bb8d-ef4d48bdf54d/resource/5d60e933-99eb-48f1-b62f-dd57ada57621/download/en-2016-pssd-compendium.csv",
+     "member": null,
+     "locator": "2016: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2017",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2017",
+     "fileUrl": "https://data.ontario.ca/dataset/4f347400-1469-494b-9523-3d9de65dc3f5/resource/b1076b41-7c66-473b-80a1-5e88d93002c6/download/en-2017-pssd-compendium.csv",
+     "member": null,
+     "locator": "2017: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2018",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2018",
+     "fileUrl": "https://data.ontario.ca/dataset/90bf08b0-d2c6-42e7-8888-02cb43b6d532/resource/761dd087-27b2-4953-bfba-2fe4dff99c2c/download/en-2018-pssd-compendium.csv",
+     "member": null,
+     "locator": "2018: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2019",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2019",
+     "fileUrl": "https://data.ontario.ca/dataset/3cc8129f-377a-4377-85b2-bedc83a75de9/resource/42130f2c-ed1e-4e19-96c1-c4048e4e86c9/download/en-2019-pssd-compendium.csv",
+     "member": null,
+     "locator": "2019: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2020",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2020",
+     "fileUrl": "https://data.ontario.ca/dataset/f4fbffef-aed0-404f-8e77-da8eb9cdea1e/resource/23172a73-7b85-49bd-9064-d600d2b21d37/download/en-2020-pssd-compendium.csv",
+     "member": null,
+     "locator": "2020: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2021",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2021/Compendium/F19229BD-E364-4090-B7DC-474B1A984027/tbs-pssd-compendium-salary-disclosed-2021-en-utf-8-2023-01-05.csv",
+     "member": null,
+     "locator": "2021: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2022",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2022/Compendium/68E37CD2-3CC5-4710-8814-72B88C4DC07C/tbs-pssd-compendium-salary-disclosed-2022-en-utf-8-2024-01-19.csv",
+     "member": null,
+     "locator": "2022: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2023",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2023/Compendium/DE37018F-5589-4FF6-8CEE-D420A6661264/tbs-pssd-compendium-salary-disclosed-2023-en-utf-8-2025-03-26.csv",
+     "member": null,
+     "locator": "2023: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2024",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2024/Compendium/2e714c8c-5f80-4368-94af-eccb435075e7/tbs-pssd-compendium-salary-disclosed-2024-en-utf-8-2026-01-29.csv",
+     "member": null,
+     "locator": "2024: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    }
+   ]
+  },
+  "sun_3": {
+   "id": "sun_3",
+   "label": "Toronto Community Housing",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 54
+    },
+    {
+     "period": "2012",
+     "value": 57
+    },
+    {
+     "period": "2013",
+     "value": 55
+    },
+    {
+     "period": "2014",
+     "value": 65
+    },
+    {
+     "period": "2015",
+     "value": 77
+    },
+    {
+     "period": "2016",
+     "value": 81
+    },
+    {
+     "period": "2017",
+     "value": 114
+    },
+    {
+     "period": "2018",
+     "value": 171
+    },
+    {
+     "period": "2019",
+     "value": 168
+    },
+    {
+     "period": "2020",
+     "value": 274
+    },
+    {
+     "period": "2021",
+     "value": 283
+    },
+    {
+     "period": "2022",
+     "value": 278
+    },
+    {
+     "period": "2023",
+     "value": 402
+    },
+    {
+     "period": "2024",
+     "value": 477
+    },
+    {
+     "period": "2025",
+     "value": 668
+    }
+   ],
+   "source": {
+    "publisher": "Government of Ontario — Treasury Board Secretariat",
+    "dataset": "Public sector salary disclosure 2025",
+    "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+    "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv",
+    "member": null,
+    "locator": "Employer group: Toronto Community Housing",
+    "method": "Rows counted per year's file, grouped by employer name."
+   },
+   "inputs": [
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2011",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2011",
+     "fileUrl": "https://data.ontario.ca/dataset/cbb64484-3cbb-4eed-b2ff-a2f5975611f9/resource/dc378388-29de-46d5-9cfb-fe585da89aa0/download/en-2011-pssd.csv",
+     "member": null,
+     "locator": "2011: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2012",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2012",
+     "fileUrl": "https://data.ontario.ca/dataset/23e5bddc-9c5a-4ede-b822-ca4233f4989c/resource/6693929f-bc74-4585-b2ae-08f19c193e36/download/en-2012-pssd.csv",
+     "member": null,
+     "locator": "2012: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2013",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2013",
+     "fileUrl": "https://data.ontario.ca/dataset/cfca02c4-6fc1-468d-aae1-0e02d6104557/resource/8d0d04a1-6c38-4105-bd59-9f9ac8a5be35/download/en-2013-pssd.csv",
+     "member": null,
+     "locator": "2013: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2014",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2014",
+     "fileUrl": "https://data.ontario.ca/dataset/958049ee-8985-4e8a-a8f2-63ad6c4862ac/resource/4cad572d-14c0-4273-91c2-3dcea0eb89c8/download/en-2014-pssd-full-compendium.csv",
+     "member": null,
+     "locator": "2014: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2015",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2015",
+     "fileUrl": "https://data.ontario.ca/dataset/2497ad2d-2b9f-4554-857b-a57639c01dee/resource/5ae5fd45-b482-4f65-be9f-f5f0e113db26/download/en-2015-pssd-compendium-with-addendum.csv",
+     "member": null,
+     "locator": "2015: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2016",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2016",
+     "fileUrl": "https://data.ontario.ca/dataset/3ce78e78-29e0-4893-bb8d-ef4d48bdf54d/resource/5d60e933-99eb-48f1-b62f-dd57ada57621/download/en-2016-pssd-compendium.csv",
+     "member": null,
+     "locator": "2016: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2017",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2017",
+     "fileUrl": "https://data.ontario.ca/dataset/4f347400-1469-494b-9523-3d9de65dc3f5/resource/b1076b41-7c66-473b-80a1-5e88d93002c6/download/en-2017-pssd-compendium.csv",
+     "member": null,
+     "locator": "2017: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2018",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2018",
+     "fileUrl": "https://data.ontario.ca/dataset/90bf08b0-d2c6-42e7-8888-02cb43b6d532/resource/761dd087-27b2-4953-bfba-2fe4dff99c2c/download/en-2018-pssd-compendium.csv",
+     "member": null,
+     "locator": "2018: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2019",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2019",
+     "fileUrl": "https://data.ontario.ca/dataset/3cc8129f-377a-4377-85b2-bedc83a75de9/resource/42130f2c-ed1e-4e19-96c1-c4048e4e86c9/download/en-2019-pssd-compendium.csv",
+     "member": null,
+     "locator": "2019: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2020",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2020",
+     "fileUrl": "https://data.ontario.ca/dataset/f4fbffef-aed0-404f-8e77-da8eb9cdea1e/resource/23172a73-7b85-49bd-9064-d600d2b21d37/download/en-2020-pssd-compendium.csv",
+     "member": null,
+     "locator": "2020: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2021",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2021/Compendium/F19229BD-E364-4090-B7DC-474B1A984027/tbs-pssd-compendium-salary-disclosed-2021-en-utf-8-2023-01-05.csv",
+     "member": null,
+     "locator": "2021: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2022",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2022/Compendium/68E37CD2-3CC5-4710-8814-72B88C4DC07C/tbs-pssd-compendium-salary-disclosed-2022-en-utf-8-2024-01-19.csv",
+     "member": null,
+     "locator": "2022: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2023",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2023/Compendium/DE37018F-5589-4FF6-8CEE-D420A6661264/tbs-pssd-compendium-salary-disclosed-2023-en-utf-8-2025-03-26.csv",
+     "member": null,
+     "locator": "2023: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2024",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2024/Compendium/2e714c8c-5f80-4368-94af-eccb435075e7/tbs-pssd-compendium-salary-disclosed-2024-en-utf-8-2026-01-29.csv",
+     "member": null,
+     "locator": "2024: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    }
+   ]
+  },
+  "sun_4": {
+   "id": "sun_4",
+   "label": "Toronto Public Library",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 60
+    },
+    {
+     "period": "2012",
+     "value": 61
+    },
+    {
+     "period": "2013",
+     "value": 64
+    },
+    {
+     "period": "2014",
+     "value": 63
+    },
+    {
+     "period": "2015",
+     "value": 71
+    },
+    {
+     "period": "2016",
+     "value": 74
+    },
+    {
+     "period": "2017",
+     "value": 78
+    },
+    {
+     "period": "2018",
+     "value": 85
+    },
+    {
+     "period": "2019",
+     "value": 104
+    },
+    {
+     "period": "2020",
+     "value": 144
+    },
+    {
+     "period": "2021",
+     "value": 106
+    },
+    {
+     "period": "2022",
+     "value": 149
+    },
+    {
+     "period": "2023",
+     "value": 168
+    },
+    {
+     "period": "2024",
+     "value": 266
+    },
+    {
+     "period": "2025",
+     "value": 371
+    }
+   ],
+   "source": {
+    "publisher": "Government of Ontario — Treasury Board Secretariat",
+    "dataset": "Public sector salary disclosure 2025",
+    "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+    "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv",
+    "member": null,
+    "locator": "Employer group: Toronto Public Library",
+    "method": "Rows counted per year's file, grouped by employer name."
+   },
+   "inputs": [
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2011",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2011",
+     "fileUrl": "https://data.ontario.ca/dataset/cbb64484-3cbb-4eed-b2ff-a2f5975611f9/resource/dc378388-29de-46d5-9cfb-fe585da89aa0/download/en-2011-pssd.csv",
+     "member": null,
+     "locator": "2011: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2012",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2012",
+     "fileUrl": "https://data.ontario.ca/dataset/23e5bddc-9c5a-4ede-b822-ca4233f4989c/resource/6693929f-bc74-4585-b2ae-08f19c193e36/download/en-2012-pssd.csv",
+     "member": null,
+     "locator": "2012: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2013",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2013",
+     "fileUrl": "https://data.ontario.ca/dataset/cfca02c4-6fc1-468d-aae1-0e02d6104557/resource/8d0d04a1-6c38-4105-bd59-9f9ac8a5be35/download/en-2013-pssd.csv",
+     "member": null,
+     "locator": "2013: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2014",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2014",
+     "fileUrl": "https://data.ontario.ca/dataset/958049ee-8985-4e8a-a8f2-63ad6c4862ac/resource/4cad572d-14c0-4273-91c2-3dcea0eb89c8/download/en-2014-pssd-full-compendium.csv",
+     "member": null,
+     "locator": "2014: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2015",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2015",
+     "fileUrl": "https://data.ontario.ca/dataset/2497ad2d-2b9f-4554-857b-a57639c01dee/resource/5ae5fd45-b482-4f65-be9f-f5f0e113db26/download/en-2015-pssd-compendium-with-addendum.csv",
+     "member": null,
+     "locator": "2015: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2016",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2016",
+     "fileUrl": "https://data.ontario.ca/dataset/3ce78e78-29e0-4893-bb8d-ef4d48bdf54d/resource/5d60e933-99eb-48f1-b62f-dd57ada57621/download/en-2016-pssd-compendium.csv",
+     "member": null,
+     "locator": "2016: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2017",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2017",
+     "fileUrl": "https://data.ontario.ca/dataset/4f347400-1469-494b-9523-3d9de65dc3f5/resource/b1076b41-7c66-473b-80a1-5e88d93002c6/download/en-2017-pssd-compendium.csv",
+     "member": null,
+     "locator": "2017: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2018",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2018",
+     "fileUrl": "https://data.ontario.ca/dataset/90bf08b0-d2c6-42e7-8888-02cb43b6d532/resource/761dd087-27b2-4953-bfba-2fe4dff99c2c/download/en-2018-pssd-compendium.csv",
+     "member": null,
+     "locator": "2018: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2019",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2019",
+     "fileUrl": "https://data.ontario.ca/dataset/3cc8129f-377a-4377-85b2-bedc83a75de9/resource/42130f2c-ed1e-4e19-96c1-c4048e4e86c9/download/en-2019-pssd-compendium.csv",
+     "member": null,
+     "locator": "2019: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2020",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2020",
+     "fileUrl": "https://data.ontario.ca/dataset/f4fbffef-aed0-404f-8e77-da8eb9cdea1e/resource/23172a73-7b85-49bd-9064-d600d2b21d37/download/en-2020-pssd-compendium.csv",
+     "member": null,
+     "locator": "2020: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2021",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2021/Compendium/F19229BD-E364-4090-B7DC-474B1A984027/tbs-pssd-compendium-salary-disclosed-2021-en-utf-8-2023-01-05.csv",
+     "member": null,
+     "locator": "2021: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2022",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2022/Compendium/68E37CD2-3CC5-4710-8814-72B88C4DC07C/tbs-pssd-compendium-salary-disclosed-2022-en-utf-8-2024-01-19.csv",
+     "member": null,
+     "locator": "2022: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2023",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2023/Compendium/DE37018F-5589-4FF6-8CEE-D420A6661264/tbs-pssd-compendium-salary-disclosed-2023-en-utf-8-2025-03-26.csv",
+     "member": null,
+     "locator": "2023: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2024",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2024/Compendium/2e714c8c-5f80-4368-94af-eccb435075e7/tbs-pssd-compendium-salary-disclosed-2024-en-utf-8-2026-01-29.csv",
+     "member": null,
+     "locator": "2024: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    }
+   ]
+  },
+  "sun_5": {
+   "id": "sun_5",
+   "label": "Other City agencies and boards",
+   "unit": "count",
+   "points": [
+    {
+     "period": "2011",
+     "value": 48
+    },
+    {
+     "period": "2012",
+     "value": 54
+    },
+    {
+     "period": "2013",
+     "value": 52
+    },
+    {
+     "period": "2014",
+     "value": 53
+    },
+    {
+     "period": "2015",
+     "value": 58
+    },
+    {
+     "period": "2016",
+     "value": 63
+    },
+    {
+     "period": "2017",
+     "value": 69
+    },
+    {
+     "period": "2018",
+     "value": 63
+    },
+    {
+     "period": "2019",
+     "value": 65
+    },
+    {
+     "period": "2020",
+     "value": 71
+    },
+    {
+     "period": "2021",
+     "value": 57
+    },
+    {
+     "period": "2022",
+     "value": 65
+    },
+    {
+     "period": "2023",
+     "value": 122
+    },
+    {
+     "period": "2024",
+     "value": 161
+    },
+    {
+     "period": "2025",
+     "value": 224
+    }
+   ],
+   "source": {
+    "publisher": "Government of Ontario — Treasury Board Secretariat",
+    "dataset": "Public sector salary disclosure 2025",
+    "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+    "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv",
+    "member": null,
+    "locator": "Employer group: Other City agencies and boards",
+    "method": "Rows counted per year's file, grouped by employer name."
+   },
+   "inputs": [
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2011",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2011",
+     "fileUrl": "https://data.ontario.ca/dataset/cbb64484-3cbb-4eed-b2ff-a2f5975611f9/resource/dc378388-29de-46d5-9cfb-fe585da89aa0/download/en-2011-pssd.csv",
+     "member": null,
+     "locator": "2011: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2012",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2012",
+     "fileUrl": "https://data.ontario.ca/dataset/23e5bddc-9c5a-4ede-b822-ca4233f4989c/resource/6693929f-bc74-4585-b2ae-08f19c193e36/download/en-2012-pssd.csv",
+     "member": null,
+     "locator": "2012: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2013",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2013",
+     "fileUrl": "https://data.ontario.ca/dataset/cfca02c4-6fc1-468d-aae1-0e02d6104557/resource/8d0d04a1-6c38-4105-bd59-9f9ac8a5be35/download/en-2013-pssd.csv",
+     "member": null,
+     "locator": "2013: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2014",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2014",
+     "fileUrl": "https://data.ontario.ca/dataset/958049ee-8985-4e8a-a8f2-63ad6c4862ac/resource/4cad572d-14c0-4273-91c2-3dcea0eb89c8/download/en-2014-pssd-full-compendium.csv",
+     "member": null,
+     "locator": "2014: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2015",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2015",
+     "fileUrl": "https://data.ontario.ca/dataset/2497ad2d-2b9f-4554-857b-a57639c01dee/resource/5ae5fd45-b482-4f65-be9f-f5f0e113db26/download/en-2015-pssd-compendium-with-addendum.csv",
+     "member": null,
+     "locator": "2015: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2016",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2016",
+     "fileUrl": "https://data.ontario.ca/dataset/3ce78e78-29e0-4893-bb8d-ef4d48bdf54d/resource/5d60e933-99eb-48f1-b62f-dd57ada57621/download/en-2016-pssd-compendium.csv",
+     "member": null,
+     "locator": "2016: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2017",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2017",
+     "fileUrl": "https://data.ontario.ca/dataset/4f347400-1469-494b-9523-3d9de65dc3f5/resource/b1076b41-7c66-473b-80a1-5e88d93002c6/download/en-2017-pssd-compendium.csv",
+     "member": null,
+     "locator": "2017: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2018",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2018",
+     "fileUrl": "https://data.ontario.ca/dataset/90bf08b0-d2c6-42e7-8888-02cb43b6d532/resource/761dd087-27b2-4953-bfba-2fe4dff99c2c/download/en-2018-pssd-compendium.csv",
+     "member": null,
+     "locator": "2018: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2019",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2019",
+     "fileUrl": "https://data.ontario.ca/dataset/3cc8129f-377a-4377-85b2-bedc83a75de9/resource/42130f2c-ed1e-4e19-96c1-c4048e4e86c9/download/en-2019-pssd-compendium.csv",
+     "member": null,
+     "locator": "2019: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2020",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2020",
+     "fileUrl": "https://data.ontario.ca/dataset/f4fbffef-aed0-404f-8e77-da8eb9cdea1e/resource/23172a73-7b85-49bd-9064-d600d2b21d37/download/en-2020-pssd-compendium.csv",
+     "member": null,
+     "locator": "2020: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2021",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2021/Compendium/F19229BD-E364-4090-B7DC-474B1A984027/tbs-pssd-compendium-salary-disclosed-2021-en-utf-8-2023-01-05.csv",
+     "member": null,
+     "locator": "2021: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2022",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2022/Compendium/68E37CD2-3CC5-4710-8814-72B88C4DC07C/tbs-pssd-compendium-salary-disclosed-2022-en-utf-8-2024-01-19.csv",
+     "member": null,
+     "locator": "2022: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2023",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2023/Compendium/DE37018F-5589-4FF6-8CEE-D420A6661264/tbs-pssd-compendium-salary-disclosed-2023-en-utf-8-2025-03-26.csv",
+     "member": null,
+     "locator": "2023: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2024",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2024/Compendium/2e714c8c-5f80-4368-94af-eccb435075e7/tbs-pssd-compendium-salary-disclosed-2024-en-utf-8-2026-01-29.csv",
+     "member": null,
+     "locator": "2024: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    }
+   ]
+  },
+  "sunMedian": {
+   "id": "sunMedian",
+   "label": "Median salary of those on the list",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2011",
+     "value": 109972
+    },
+    {
+     "period": "2012",
+     "value": 110926
+    },
+    {
+     "period": "2013",
+     "value": 111204
+    },
+    {
+     "period": "2014",
+     "value": 113399
+    },
+    {
+     "period": "2015",
+     "value": 114055
+    },
+    {
+     "period": "2016",
+     "value": 113957
+    },
+    {
+     "period": "2017",
+     "value": 114692
+    },
+    {
+     "period": "2018",
+     "value": 115807
+    },
+    {
+     "period": "2019",
+     "value": 117238
+    },
+    {
+     "period": "2020",
+     "value": 117875
+    },
+    {
+     "period": "2021",
+     "value": 119940
+    },
+    {
+     "period": "2022",
+     "value": 121898
+    },
+    {
+     "period": "2023",
+     "value": 122736
+    },
+    {
+     "period": "2024",
+     "value": 123865
+    },
+    {
+     "period": "2025",
+     "value": 126043
+    }
+   ],
+   "source": {
+    "publisher": "Government of Ontario — Treasury Board Secretariat",
+    "dataset": "Public sector salary disclosure 2025",
+    "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+    "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv",
+    "member": null,
+    "locator": "Salary paid, rows whose Employer begins 'City of Toronto'",
+    "method": "Median per year of everyone listed (all $100,000+)."
+   },
+   "note": "The $100,000 threshold has been the same since 1996 and isn't adjusted for inflation, so more people cross it every year just from raises.",
+   "inputs": [
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2011",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2011",
+     "fileUrl": "https://data.ontario.ca/dataset/cbb64484-3cbb-4eed-b2ff-a2f5975611f9/resource/dc378388-29de-46d5-9cfb-fe585da89aa0/download/en-2011-pssd.csv",
+     "member": null,
+     "locator": "2011: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2012",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2012",
+     "fileUrl": "https://data.ontario.ca/dataset/23e5bddc-9c5a-4ede-b822-ca4233f4989c/resource/6693929f-bc74-4585-b2ae-08f19c193e36/download/en-2012-pssd.csv",
+     "member": null,
+     "locator": "2012: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2013",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2013",
+     "fileUrl": "https://data.ontario.ca/dataset/cfca02c4-6fc1-468d-aae1-0e02d6104557/resource/8d0d04a1-6c38-4105-bd59-9f9ac8a5be35/download/en-2013-pssd.csv",
+     "member": null,
+     "locator": "2013: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2014",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2014",
+     "fileUrl": "https://data.ontario.ca/dataset/958049ee-8985-4e8a-a8f2-63ad6c4862ac/resource/4cad572d-14c0-4273-91c2-3dcea0eb89c8/download/en-2014-pssd-full-compendium.csv",
+     "member": null,
+     "locator": "2014: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2015",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2015",
+     "fileUrl": "https://data.ontario.ca/dataset/2497ad2d-2b9f-4554-857b-a57639c01dee/resource/5ae5fd45-b482-4f65-be9f-f5f0e113db26/download/en-2015-pssd-compendium-with-addendum.csv",
+     "member": null,
+     "locator": "2015: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2016",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2016",
+     "fileUrl": "https://data.ontario.ca/dataset/3ce78e78-29e0-4893-bb8d-ef4d48bdf54d/resource/5d60e933-99eb-48f1-b62f-dd57ada57621/download/en-2016-pssd-compendium.csv",
+     "member": null,
+     "locator": "2016: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2017",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2017",
+     "fileUrl": "https://data.ontario.ca/dataset/4f347400-1469-494b-9523-3d9de65dc3f5/resource/b1076b41-7c66-473b-80a1-5e88d93002c6/download/en-2017-pssd-compendium.csv",
+     "member": null,
+     "locator": "2017: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2018",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2018",
+     "fileUrl": "https://data.ontario.ca/dataset/90bf08b0-d2c6-42e7-8888-02cb43b6d532/resource/761dd087-27b2-4953-bfba-2fe4dff99c2c/download/en-2018-pssd-compendium.csv",
+     "member": null,
+     "locator": "2018: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2019",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2019",
+     "fileUrl": "https://data.ontario.ca/dataset/3cc8129f-377a-4377-85b2-bedc83a75de9/resource/42130f2c-ed1e-4e19-96c1-c4048e4e86c9/download/en-2019-pssd-compendium.csv",
+     "member": null,
+     "locator": "2019: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2020",
+     "datasetUrl": "https://data.ontario.ca/dataset/public-sector-salary-disclosure-2020",
+     "fileUrl": "https://data.ontario.ca/dataset/f4fbffef-aed0-404f-8e77-da8eb9cdea1e/resource/23172a73-7b85-49bd-9064-d600d2b21d37/download/en-2020-pssd-compendium.csv",
+     "member": null,
+     "locator": "2020: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2021",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2021/Compendium/F19229BD-E364-4090-B7DC-474B1A984027/tbs-pssd-compendium-salary-disclosed-2021-en-utf-8-2023-01-05.csv",
+     "member": null,
+     "locator": "2021: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2022",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2022/Compendium/68E37CD2-3CC5-4710-8814-72B88C4DC07C/tbs-pssd-compendium-salary-disclosed-2022-en-utf-8-2024-01-19.csv",
+     "member": null,
+     "locator": "2022: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2023",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2023/Compendium/DE37018F-5589-4FF6-8CEE-D420A6661264/tbs-pssd-compendium-salary-disclosed-2023-en-utf-8-2025-03-26.csv",
+     "member": null,
+     "locator": "2023: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    },
+    {
+     "publisher": "Government of Ontario — Treasury Board Secretariat",
+     "dataset": "Public sector salary disclosure 2024",
+     "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+     "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2024/Compendium/2e714c8c-5f80-4368-94af-eccb435075e7/tbs-pssd-compendium-salary-disclosed-2024-en-utf-8-2026-01-29.csv",
+     "member": null,
+     "locator": "2024: rows whose Employer begins 'City of Toronto'",
+     "method": "Counted as described."
+    }
+   ]
+  },
+  "wageMedian": {
+   "id": "wageMedian",
+   "label": "Median wages, salaries and commissions",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2017",
+     "value": 38850.0
+    },
+    {
+     "period": "2018",
+     "value": 40250.0
+    },
+    {
+     "period": "2019",
+     "value": 40810.0
+    },
+    {
+     "period": "2020",
+     "value": 41400.0
+    },
+    {
+     "period": "2021",
+     "value": 45000.0
+    },
+    {
+     "period": "2022",
+     "value": 46490.0
+    },
+    {
+     "period": "2023",
+     "value": 48990.0
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Wages, salaries and commissions of tax filers aged 15 years and over by main industry sector and sex (table 11-10-0073-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110007301",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/11100073-eng.zip",
+    "member": "11100073.csv",
+    "locator": "GEO = Toronto, Ontario; All industries; Median wages, salaries and commissions",
+    "method": "As published."
+   },
+   "geography": "Toronto, Ontario (Statistics Canada)"
+  },
+  "wageMen": {
+   "id": "wageMen",
+   "label": "Men",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2017",
+     "value": 44630.0
+    },
+    {
+     "period": "2018",
+     "value": 46080.0
+    },
+    {
+     "period": "2019",
+     "value": 46650.0
+    },
+    {
+     "period": "2020",
+     "value": 47840.0
+    },
+    {
+     "period": "2021",
+     "value": 51130.0
+    },
+    {
+     "period": "2022",
+     "value": 52550.0
+    },
+    {
+     "period": "2023",
+     "value": 55000.0
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Wages, salaries and commissions of tax filers aged 15 years and over by sex and age group (table 11-10-0072-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110007201",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/11100072-eng.zip",
+    "member": "11100072.csv",
+    "locator": "GEO = Toronto, Ontario; Males; Ages 15 years and over; Median wages, salaries and commissions",
+    "method": "As published."
+   },
+   "geography": "Toronto, Ontario (Statistics Canada)"
+  },
+  "wageWomen": {
+   "id": "wageWomen",
+   "label": "Women",
+   "unit": "dollars",
+   "points": [
+    {
+     "period": "2017",
+     "value": 34010.0
+    },
+    {
+     "period": "2018",
+     "value": 35520.0
+    },
+    {
+     "period": "2019",
+     "value": 36000.0
+    },
+    {
+     "period": "2020",
+     "value": 35770.0
+    },
+    {
+     "period": "2021",
+     "value": 39750.0
+    },
+    {
+     "period": "2022",
+     "value": 41500.0
+    },
+    {
+     "period": "2023",
+     "value": 44000.0
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Wages, salaries and commissions of tax filers aged 15 years and over by sex and age group (table 11-10-0072-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110007201",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/11100072-eng.zip",
+    "member": "11100072.csv",
+    "locator": "GEO = Toronto, Ontario; Females; Ages 15 years and over; Median wages, salaries and commissions",
+    "method": "As published."
+   },
+   "geography": "Toronto, Ontario (Statistics Canada)"
+  }
+ },
+ "ranks": {
+  "sunEmployers": {
+   "id": "sunEmployers",
+   "title": "Who's on the list, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "City of Toronto",
+     "value": 13079
+    },
+    {
+     "label": "TTC",
+     "value": 9614
+    },
+    {
+     "label": "Toronto Police",
+     "value": 7083
+    },
+    {
+     "label": "Toronto Community Housing",
+     "value": 668
+    },
+    {
+     "label": "Toronto Public Library",
+     "value": 371
+    },
+    {
+     "label": "Other City agencies and boards",
+     "value": 224
+    }
+   ],
+   "source": {
+    "publisher": "Government of Ontario — Treasury Board Secretariat",
+    "dataset": "Public sector salary disclosure 2025",
+    "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+    "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv",
+    "member": null,
+    "locator": "Employer, rows beginning 'City of Toronto'",
+    "method": "Rows counted per employer group."
+   }
+  },
+  "sunTitles": {
+   "id": "sunTitles",
+   "title": "Most common job titles on the list, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "Operator",
+     "value": 3433,
+     "sub": "median $109,184"
+    },
+    {
+     "label": "Police Constable",
+     "value": 2720,
+     "sub": "median $139,647"
+    },
+    {
+     "label": "Firefighter Operation",
+     "value": 1793,
+     "sub": "median $136,000"
+    },
+    {
+     "label": "Plainclothes Police Constable",
+     "value": 1286,
+     "sub": "median $158,152"
+    },
+    {
+     "label": "Paramedic Level 1",
+     "value": 687,
+     "sub": "median $126,158"
+    },
+    {
+     "label": "Coach Technician",
+     "value": 536,
+     "sub": "median $112,116"
+    },
+    {
+     "label": "Captain Operation",
+     "value": 453,
+     "sub": "median $156,235"
+    },
+    {
+     "label": "Detective",
+     "value": 402,
+     "sub": "median $170,983"
+    },
+    {
+     "label": "Sergeant",
+     "value": 398,
+     "sub": "median $171,955"
+    },
+    {
+     "label": "Court Officer",
+     "value": 364,
+     "sub": "median $110,384"
+    },
+    {
+     "label": "Senior Engineer",
+     "value": 222,
+     "sub": "median $153,397"
+    },
+    {
+     "label": "Personal Support Worker",
+     "value": 212,
+     "sub": "median $114,861"
+    },
+    {
+     "label": "Communications Operator",
+     "value": 212,
+     "sub": "median $123,463"
+    },
+    {
+     "label": "Training Constable",
+     "value": 209,
+     "sub": "median $160,441"
+    },
+    {
+     "label": "Special Constable",
+     "value": 189,
+     "sub": "median $112,634"
+    }
+   ],
+   "source": {
+    "publisher": "Government of Ontario — Treasury Board Secretariat",
+    "dataset": "Public sector salary disclosure 2025",
+    "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+    "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv",
+    "member": null,
+    "locator": "Job Title and Salary paid, City of Toronto employers",
+    "method": "Rows counted per job title as written; median salary of each."
+   }
+  },
+  "sunTop": {
+   "id": "sunTop",
+   "title": "Best-paid job titles, 2025 (titles held by 5 or more people)",
+   "unit": "dollars",
+   "rows": [
+    {
+     "label": "Chief Executive Officer",
+     "value": 376961,
+     "sub": "5 people"
+    },
+    {
+     "label": "Deputy City Solicitor",
+     "value": 294235,
+     "sub": "6 people"
+    },
+    {
+     "label": "Associate Medical Officer Of Health",
+     "value": 280858,
+     "sub": "10 people"
+    },
+    {
+     "label": "Deputy Fire Chief Director",
+     "value": 253889,
+     "sub": "6 people"
+    },
+    {
+     "label": "Director Legal Services",
+     "value": 252273,
+     "sub": "16 people"
+    },
+    {
+     "label": "Chief Superintendent",
+     "value": 251039,
+     "sub": "10 people"
+    },
+    {
+     "label": "Deputy Chief",
+     "value": 240271,
+     "sub": "8 people"
+    },
+    {
+     "label": "Superintendent",
+     "value": 234112,
+     "sub": "35 people"
+    },
+    {
+     "label": "Division Commander",
+     "value": 231004,
+     "sub": "7 people"
+    },
+    {
+     "label": "Director Strategic Policy And Programs",
+     "value": 230417,
+     "sub": "7 people"
+    },
+    {
+     "label": "Solicitor 1",
+     "value": 225240,
+     "sub": "135 people"
+    },
+    {
+     "label": "Manager Office Of The Chief Information",
+     "value": 223400,
+     "sub": "14 people"
+    }
+   ],
+   "source": {
+    "publisher": "Government of Ontario — Treasury Board Secretariat",
+    "dataset": "Public sector salary disclosure 2025",
+    "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+    "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv",
+    "member": null,
+    "locator": "Job Title and Salary paid, City of Toronto employers",
+    "method": "Median salary per job title, for titles held by at least 5 people (so no one person is singled out)."
+   }
+  },
+  "sunBands": {
+   "id": "sunBands",
+   "title": "How far over $100,000, 2025",
+   "unit": "count",
+   "rows": [
+    {
+     "label": "$100K to $125K",
+     "value": 14977
+    },
+    {
+     "label": "$125K to $150K",
+     "value": 8568
+    },
+    {
+     "label": "$150K to $200K",
+     "value": 6336
+    },
+    {
+     "label": "$200K to $300K",
+     "value": 1088
+    },
+    {
+     "label": "$300K and up",
+     "value": 70
+    }
+   ],
+   "source": {
+    "publisher": "Government of Ontario — Treasury Board Secretariat",
+    "dataset": "Public sector salary disclosure 2025",
+    "datasetUrl": "https://www.ontario.ca/page/public-sector-salary-disclosure",
+    "fileUrl": "https://www.ontario.ca/public-sector-salary-disclosure_artifacts/2025/Compendium/b0f64c65-7552-4e43-9e31-86340dd68916/tbs-pssd-compendium-salary-disclosed-2025-en-utf-8-2026-03-23.csv",
+    "member": null,
+    "locator": "Salary paid, City of Toronto employers",
+    "method": "People counted per salary band."
+   }
+  },
+  "jobs": {
+   "id": "jobs",
+   "title": "What common jobs pay, per hour (median)",
+   "unit": "dollars",
+   "rows": [
+    {
+     "label": "Lawyers and Quebec notaries",
+     "value": 69.74,
+     "sub": "$33.65 low to $112.98 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Police officers (except commissioned)",
+     "value": 52.88,
+     "sub": "$32.21 low to $64.66 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Pharmacists",
+     "value": 52.54,
+     "sub": "$27.50 low to $64.10 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Firefighters",
+     "value": 50.0,
+     "sub": "$36.00 low to $64.58 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Software developers and programmers",
+     "value": 48.08,
+     "sub": "$30.00 low to $76.92 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Secondary school teachers",
+     "value": 47.5,
+     "sub": "$28.85 low to $59.89 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Elementary school and kindergarten teachers",
+     "value": 47.12,
+     "sub": "$27.47 low to $58.28 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Dental hygienists and dental therapists",
+     "value": 45.0,
+     "sub": "$33.00 low to $55.00 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Paramedical occupations",
+     "value": 42.17,
+     "sub": "$24.00 low to $48.75 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Financial auditors and accountants",
+     "value": 41.34,
+     "sub": "$25.00 low to $74.36 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Registered nurses and registered psychiatric nurses",
+     "value": 40.59,
+     "sub": "$28.00 low to $55.00 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Social workers",
+     "value": 36.66,
+     "sub": "$23.50 low to $51.78 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Carpenters",
+     "value": 36.0,
+     "sub": "$22.00 low to $48.43 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Plumbers",
+     "value": 35.2,
+     "sub": "$24.93 low to $53.09 high · Small Area Estimation, 2024"
+    },
+    {
+     "label": "Electricians (except industrial and power system)",
+     "value": 34.86,
+     "sub": "$20.62 low to $51.40 high · Small Area Estimation, 2024"
+    },
+    {
+     "label": "Web designers",
+     "value": 33.65,
+     "sub": "$17.79 low to $51.28 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Bus drivers, subway operators and other transit operators",
+     "value": 30.06,
+     "sub": "$19.00 low to $38.50 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Construction trades helpers and labourers",
+     "value": 30.0,
+     "sub": "$18.00 low to $43.50 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Accounting technicians and bookkeepers",
+     "value": 29.22,
+     "sub": "$18.00 low to $47.36 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Administrative assistants",
+     "value": 26.5,
+     "sub": "$19.00 low to $38.46 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Transport truck drivers",
+     "value": 25.1,
+     "sub": "$19.78 low to $37.78 high · Small Area Estimation, 2024"
+    },
+    {
+     "label": "Nurse aides, orderlies and patient service associates",
+     "value": 23.0,
+     "sub": "$19.00 low to $30.00 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Janitors, caretakers and heavy-duty cleaners",
+     "value": 22.77,
+     "sub": "$17.60 low to $29.00 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Early childhood educators and assistants",
+     "value": 22.0,
+     "sub": "$17.60 low to $32.97 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Chefs",
+     "value": 22.0,
+     "sub": "$17.60 low to $34.62 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Cooks",
+     "value": 18.0,
+     "sub": "$17.60 low to $24.00 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Retail salespersons and visual merchandisers",
+     "value": 17.6,
+     "sub": "$17.60 low to $27.88 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Cashiers",
+     "value": 17.6,
+     "sub": "$17.60 low to $18.50 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Food counter attendants, kitchen helpers and related support occupations",
+     "value": 17.6,
+     "sub": "$17.60 low to $21.00 high · Labour Force Survey, 2023-2024"
+    },
+    {
+     "label": "Hairstylists and barbers",
+     "value": 17.6,
+     "sub": "$17.60 low to $28.57 high · Labour Force Survey, 2023-2024"
+    }
+   ],
+   "source": {
+    "publisher": "Employment and Social Development Canada — Job Bank",
+    "dataset": "Wages (2025 Wages)",
+    "datasetUrl": "https://open.canada.ca/data/en/dataset/adad580f-76b0-4502-bd05-20c125de9116",
+    "fileUrl": "https://open.canada.ca/data/dataset/adad580f-76b0-4502-bd05-20c125de9116/resource/9da94d63-b178-4a64-aeb3-b6a3bd721ad2/download/2a71-das-wage2025opendata-esdc-all-19nov2025-vf.csv",
+    "member": null,
+    "locator": "rows with ER_Code_Code_RE = ER3530 (Toronto economic region), selected NOC codes",
+    "method": "Median_Wage_Salaire_Median as published (hourly), with Low and High wages; each row's data source and reference period shown."
+   }
+  },
+  "industries": {
+   "id": "industries",
+   "title": "Median pay by industry, 2023",
+   "unit": "dollars",
+   "rows": [
+    {
+     "label": "Utilities",
+     "value": 124240
+    },
+    {
+     "label": "Mining, quarrying, and oil and gas extraction",
+     "value": 95610
+    },
+    {
+     "label": "Finance and insurance",
+     "value": 88020
+    },
+    {
+     "label": "Information and cultural industries",
+     "value": 83920
+    },
+    {
+     "label": "Professional, scientific and technical services",
+     "value": 77810
+    },
+    {
+     "label": "Public administration",
+     "value": 77390
+    },
+    {
+     "label": "Wholesale trade",
+     "value": 62490
+    },
+    {
+     "label": "Construction",
+     "value": 61600
+    },
+    {
+     "label": "Manufacturing [31-33]",
+     "value": 55220
+    },
+    {
+     "label": "Real estate and rental and leasing",
+     "value": 55000
+    },
+    {
+     "label": "Educational services",
+     "value": 53000
+    },
+    {
+     "label": "Health care and social assistance",
+     "value": 51590
+    },
+    {
+     "label": "Transportation and warehousing [48-49]",
+     "value": 45060
+    },
+    {
+     "label": "Other services (except public administration)",
+     "value": 38600
+    },
+    {
+     "label": "Business, building and other support services [55-56]",
+     "value": 35090
+    },
+    {
+     "label": "Agriculture, forestry, fishing and hunting",
+     "value": 29140
+    },
+    {
+     "label": "Retail trade [44-45]",
+     "value": 26640
+    },
+    {
+     "label": "Accommodation and food services",
+     "value": 19660
+    },
+    {
+     "label": "Arts, entertainment and recreation",
+     "value": 19400
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Wages, salaries and commissions of tax filers aged 15 years and over by main industry sector and sex (table 11-10-0073-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110007301",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/11100073-eng.zip",
+    "member": "11100073.csv",
+    "locator": "GEO = Toronto, Ontario; Median wages, salaries and commissions; each industry; 2023",
+    "method": "As published: the median of wages, salaries and commissions among tax filers who had any."
+   }
+  },
+  "ages": {
+   "id": "ages",
+   "title": "Median pay by age, 2023",
+   "unit": "dollars",
+   "rows": [
+    {
+     "label": "15 to 24 years",
+     "value": 15090
+    },
+    {
+     "label": "25 to 34 years",
+     "value": 49100
+    },
+    {
+     "label": "35 to 44 years",
+     "value": 67050
+    },
+    {
+     "label": "45 to 54 years",
+     "value": 69310
+    },
+    {
+     "label": "55 to 64 years",
+     "value": 59990
+    },
+    {
+     "label": "65 to 74 years",
+     "value": 35020
+    },
+    {
+     "label": "75 years and older",
+     "value": 540
+    }
+   ],
+   "source": {
+    "publisher": "Statistics Canada",
+    "dataset": "Wages, salaries and commissions of tax filers aged 15 years and over by sex and age group (table 11-10-0072-01)",
+    "datasetUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110007201",
+    "fileUrl": "https://www150.statcan.gc.ca/n1/tbl/csv/11100072-eng.zip",
+    "member": "11100072.csv",
+    "locator": "GEO = Toronto, Ontario; Both sexes; Median wages, salaries and commissions; each age group; 2023",
+    "method": "As published."
+   }
+  },
+  "richest": {
+   "id": "richest",
+   "title": "Highest median household income",
+   "unit": "dollars",
+   "rows": [
+    {
+     "label": "Bridle Path-Sunnybrook-York Mills",
+     "value": 222000.0
+    },
+    {
+     "label": "Kingsway South",
+     "value": 184000.0
+    },
+    {
+     "label": "Lawrence Park North",
+     "value": 168000.0
+    },
+    {
+     "label": "Princess-Rosethorn",
+     "value": 162000.0
+    },
+    {
+     "label": "Lawrence Park South",
+     "value": 162000.0
+    },
+    {
+     "label": "Leaside-Bennington",
+     "value": 148000.0
+    },
+    {
+     "label": "Runnymede-Bloor West Village",
+     "value": 138000.0
+    },
+    {
+     "label": "Bedford Park-Nortown",
+     "value": 135000.0
+    },
+    {
+     "label": "Centennial Scarborough",
+     "value": 134000.0
+    },
+    {
+     "label": "Rosedale-Moore Park",
+     "value": 122000.0
+    },
+    {
+     "label": "Highland Creek",
+     "value": 120000.0
+    },
+    {
+     "label": "St.Andrew-Windfields",
+     "value": 118000.0
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Neighbourhood Profiles",
+    "datasetUrl": "https://open.toronto.ca/dataset/neighbourhood-profiles/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6e19a90f-971c-46b3-852c-0c48c436d1fc/resource/19d4a806-7385-4889-acf2-256f1e079060/download/nbhd_2021_census_profile_full_158model.xlsx",
+    "member": null,
+    "locator": "row 'Median total income of household in 2020 ($)', each neighbourhood",
+    "method": "As published (2021 census, 2020 incomes)."
+   }
+  },
+  "poorest": {
+   "id": "poorest",
+   "title": "Lowest median household income",
+   "unit": "dollars",
+   "rows": [
+    {
+     "label": "South Parkdale",
+     "value": 57200.0
+    },
+    {
+     "label": "Bay-Cloverhill",
+     "value": 58400.0
+    },
+    {
+     "label": "North St. James Town",
+     "value": 59200.0
+    },
+    {
+     "label": "Oakridge",
+     "value": 60000.0
+    },
+    {
+     "label": "Church-Wellesley",
+     "value": 60400.0
+    },
+    {
+     "label": "Kensington-Chinatown",
+     "value": 62000.0
+    },
+    {
+     "label": "Beechborough-Greenbrook",
+     "value": 62400.0
+    },
+    {
+     "label": "Rustic",
+     "value": 64000.0
+    },
+    {
+     "label": "Weston",
+     "value": 64500.0
+    },
+    {
+     "label": "Moss Park",
+     "value": 65000.0
+    },
+    {
+     "label": "Black Creek",
+     "value": 65000.0
+    },
+    {
+     "label": "Regent Park",
+     "value": 65500.0
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Neighbourhood Profiles",
+    "datasetUrl": "https://open.toronto.ca/dataset/neighbourhood-profiles/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6e19a90f-971c-46b3-852c-0c48c436d1fc/resource/19d4a806-7385-4889-acf2-256f1e079060/download/nbhd_2021_census_profile_full_158model.xlsx",
+    "member": null,
+    "locator": "row 'Median total income of household in 2020 ($)', each neighbourhood",
+    "method": "As published (2021 census, 2020 incomes)."
+   }
+  },
+  "lowIncome": {
+   "id": "lowIncome",
+   "title": "Highest share of people in low income",
+   "unit": "percent",
+   "rows": [
+    {
+     "label": "Bay-Cloverhill",
+     "value": 29.0
+    },
+    {
+     "label": "Yonge-Bay Corridor",
+     "value": 24.3
+    },
+    {
+     "label": "Thorncliffe Park",
+     "value": 24.2
+    },
+    {
+     "label": "Moss Park",
+     "value": 23.3
+    },
+    {
+     "label": "Church-Wellesley",
+     "value": 23.3
+    },
+    {
+     "label": "Kensington-Chinatown",
+     "value": 23.0
+    },
+    {
+     "label": "Regent Park",
+     "value": 22.9
+    },
+    {
+     "label": "Oakridge",
+     "value": 22.5
+    },
+    {
+     "label": "Yonge-Doris",
+     "value": 22.5
+    },
+    {
+     "label": "Downtown Yonge East",
+     "value": 22.4
+    },
+    {
+     "label": "North St. James Town",
+     "value": 21.9
+    },
+    {
+     "label": "South Parkdale",
+     "value": 20.2
+    }
+   ],
+   "source": {
+    "publisher": "City of Toronto — Open Data",
+    "dataset": "Neighbourhood Profiles",
+    "datasetUrl": "https://open.toronto.ca/dataset/neighbourhood-profiles/",
+    "fileUrl": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/6e19a90f-971c-46b3-852c-0c48c436d1fc/resource/19d4a806-7385-4889-acf2-256f1e079060/download/nbhd_2021_census_profile_full_158model.xlsx",
+    "member": null,
+    "locator": "row 'Prevalence of low income based on the Low-income measure, after tax (LIM-AT) (%)', each neighbourhood",
+    "method": "As published (2021 census, 2020 incomes)."
+   },
+   "note": "Low income here is Statistics Canada's low-income measure after tax (LIM-AT): household income below half the national median, adjusted for household size."
+  }
+ }
+}

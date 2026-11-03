@@ -35,6 +35,7 @@ python3 -m venv .venv && .venv/bin/pip install pandas openpyxl xlrd
 .venv/bin/python scripts/extract_lobbying.py  # Lobbyist Registry XML (~210MB)
 .venv/bin/python scripts/extract_311.py       # 311 service requests since 2010 (~1GB of yearly zips)
 .venv/bin/python scripts/extract_fire.py
+.venv/bin/python scripts/extract_income.py    # Sunshine List 2011– (~1GB), Job Bank wages, StatCan 11-10-0072/0073, neighbourhood income
 # CIVIC_CACHE=/some/dir keeps downloads between runs while developing (scripts/_common.py)
 ```
 
@@ -54,7 +55,7 @@ No automated tests; the type-check and the extractor's reconciliation checks are
 
 | Path | What |
 |---|---|
-| `app/page.tsx`, `components/HomePage.tsx`, `lib/home.ts` | Home (the "magazine" layout the user picked): the budget as lead story, the City events mini-calendar and the 416 banner (CN Tower graphic) beside it, then "Questions worth asking" — exactly 20 cards (the user grew it from 12 by adding eight sections on 2026-11-03), one per section in `SECTIONS` (minus /budget and /today, which have their own blocks). Headline figures in `FIGURES` are read from the datasets and link to the section that cites them. Ask the user before adding or removing a card |
+| `app/page.tsx`, `components/HomePage.tsx`, `lib/home.ts` | Home (the "magazine" layout the user picked): the budget as lead story, the City events mini-calendar and the 416 banner (CN Tower graphic) beside it, then "Questions worth asking" — exactly 20 cards (the user grew it from 12 by adding nine sections on 2026-11-03, then dropped Construction because it's a map view), one per section in `SECTIONS` (minus /budget and /today, which have their own blocks, and /construction, which is on the map). Headline figures in `FIGURES` are read from the datasets and link to the section that cites them. Ask the user before adding or removing a card |
 | `app/events`, `components/EventsCalendar.tsx`, `app/construction`, `components/ConstructionList.tsx`, `lib/city.ts`, `scripts/extract_city.py` | What's on (City Festivals & Events calendar, month grid + day list; "today" is computed in the browser, Toronto time) and Where's the construction (current road restrictions plotted on simplified ward boundaries, drawn as our own SVG — no map tiles, CSP stays self-only) |
 | `app/get-involved`, `lib/get-involved.ts` | Official City forms and contacts (submit an event, email the mayor, councillors, 311, deputations, permits). Hand-curated; toronto.ca links only, each with a `PageSource` and checked date |
 | `app/elections/page.tsx` | Turnout chart + data table; clicking an election opens its top 10 mayoral candidates |
@@ -122,6 +123,7 @@ Adding a dataset: a generator script under `scripts/` that records sources, its 
 - Homelessness: Shelter System Flow counts people who used a City-funded overnight service in the last three months; the City estimates ~18% of people experiencing homelessness aren't in it (noted on the series). Population groups overlap.
 - TTC delays: only rows with Min Delay > 0. Subway: single-line codes only (YU, BD, SRT, SHP); combined codes carry no minutes. Bus/streetcar grouped by route number. Code descriptions are double-encoded in the City's file (`fix()`). Lines 5 and 6 aren't in the subway file.
 - 311: resident-initiated requests only; wards are the 25-ward names in recent files. Fire: Final_Incident_Type 03 (no-loss outdoor) exists only from 2018, so it's its own series and is left out of cause rankings; casualties don't separate deaths from injuries.
+- Income (`app/income`): Sunshine List rows are City of Toronto employers only ("City of Toronto …", plus Toronto Community Housing without the prefix in 2011), shown by employer and job title, **never by name** (titles with 5+ people for the best-paid list). 2011–2020 from data.ontario.ca packages, 2021+ from ontario.ca's `pssdfiles.json` index. The $100K threshold isn't indexed (noted on the series). Job Bank: Toronto economic region ER3530, hourly occupations from `JOBS`. StatCan tax-filer tables give "Toronto, Ontario" (labelled the Toronto region). Neighbourhood household income and LIM-AT also appear in the map's Homes and Density details (extract_layers.py).
 - Lobbying: contacts de-duplicated per SMNumber + CommunicationGroupId. Only members of Council are named; City staff are counted by office.
 
 ## Gotcha: dropped spaces in JSX text

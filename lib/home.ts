@@ -17,6 +17,7 @@ import { DELAYS } from "@/lib/delays";
 import { LOBBYING } from "@/lib/lobbying";
 import { THREE11 } from "@/lib/three11";
 import { FIRE } from "@/lib/fire";
+import { INCOME } from "@/lib/income";
 import { fmtPeriod } from "@/lib/chart-format";
 import { fmtMoney } from "@/lib/format";
 import type { Series } from "@/lib/types";
@@ -56,6 +57,7 @@ export const SECTIONS: Section[] = [
   { href: "/marriage", hub: "living", title: "Marriage licences", question: "When does Toronto get married?", blurb: "Marriage licences issued each month since 2011: wedding season, the pandemic dip and the busiest months on record." },
   { href: "/311", hub: "living", title: "311 requests", question: "What does Toronto call 311 about?", blurb: "Every resident service request since 2010: bins, potholes, wildlife and snow, by division, ward and hour." },
   { href: "/fire", hub: "safety", title: "Fires", question: "What starts fires in Toronto?", blurb: "Every fire Toronto Fire Services responded to since 2011: casualties, damage, causes, response times and smoke alarms." },
+  { href: "/income", hub: "living", title: "Income", question: "How much do people make?", blurb: "Median pay in the region, what common jobs pay, income by neighbourhood, and City employees on the Sunshine List." },
   { href: "/get-involved", hub: "money", title: "Get involved", question: "How do I have my say?", blurb: "The City's own forms: list your event, email the mayor, reach your councillor, ask 311, speak at a committee." },
   { href: "/today", hub: "play", title: "416", question: "How well do you know Toronto?", blurb: "4 questions. 1 minute. 6ix tiers." },
   { href: "/sports", hub: "play", title: "Sports", question: "How have our teams done?", blurb: "The Blue Jays, Raptors, Maple Leafs, Tempo and Toronto FC: every season's record and playoff run, championships, and player records." },
@@ -139,6 +141,8 @@ export const FIGURES: Figure[] = [
     href: "/311", trend: trend(THREE11.series.requests, 16) },
   { id: "fire", hub: "safety", label: "Fires and explosions", value: n0(last(FIRE.series.fires).value), period: last(FIRE.series.fires).period,
     href: "/fire", trend: trend(FIRE.series.fires, 14) },
+  { id: "income", hub: "living", label: "Median pay, Toronto region", value: `$${n0(last(INCOME.series.wageMedian).value)}`, period: last(INCOME.series.wageMedian).period,
+    href: "/income", trend: trend(INCOME.series.wageMedian, 10), note: "Wages, salaries and commissions of tax filers." },
   { id: "titles", hub: "play", label: "Championships won", value: String(TITLES), period: "All time",
     href: "/sports", note: "World Series, Stanley Cups, NBA and MLS titles." },
 ];
